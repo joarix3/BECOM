@@ -6,11 +6,15 @@ UI1
 </name>
 </assembly>
 <members>
+<<<<<<< HEAD
 <member name="T:UI1.DataSetPrincipal">
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member><member name="P:UI1.My.Resources.Resources.ResourceManager">
+=======
+<member name="P:UI1.My.Resources.Resources.ResourceManager">
+>>>>>>> master
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -23,6 +27,13 @@ Represents a strongly typed in-memory cache of data.
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
+<<<<<<< HEAD
+=======
+</member><member name="T:UI1.DataSetPrincipal">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+>>>>>>> master
 </member>
 </members>
 </doc>

@@ -39,7 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="GestorTipoBeca.cs" />
+=======
+    <Compile Include="GestorBeneficio.cs" />
+>>>>>>> master
     <Compile Include="GestorUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
