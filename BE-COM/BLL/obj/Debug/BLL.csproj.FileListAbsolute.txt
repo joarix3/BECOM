@@ -1,31 +1,3 @@
-C:\Users\Douglas\Documents\Soft506\BE-COM\BLL\bin\Debug\BLL.dll
-C:\Users\Douglas\Documents\Soft506\BE-COM\BLL\bin\Debug\BLL.pdb
-C:\Users\Douglas\Documents\Soft506\BE-COM\BLL\bin\Debug\DAL.dll
-C:\Users\Douglas\Documents\Soft506\BE-COM\BLL\bin\Debug\EntitiesLayer.dll
-C:\Users\Douglas\Documents\Soft506\BE-COM\BLL\bin\Debug\DAL.pdb
-C:\Users\Douglas\Documents\Soft506\BE-COM\BLL\bin\Debug\EntitiesLayer.pdb
-C:\Users\Douglas\Documents\Soft506\BE-COM\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-C:\Users\Douglas\Documents\Soft506\BE-COM\BLL\obj\Debug\BLL.dll
-C:\Users\Douglas\Documents\Soft506\BE-COM\BLL\obj\Debug\BLL.pdb
-C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\bin\Debug\BLL.dll
-C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\bin\Debug\BLL.pdb
-C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\bin\Debug\DAL.dll
-C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\bin\Debug\EntitiesLayer.dll
-C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\bin\Debug\DAL.pdb
-C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\bin\Debug\EntitiesLayer.pdb
-C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\obj\Debug\BLL.dll
-C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\obj\Debug\BLL.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\bin\Debug\BLL.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\bin\Debug\BLL.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\bin\Debug\DAL.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\bin\Debug\EntitiesLayer.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\bin\Debug\DAL.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\bin\Debug\EntitiesLayer.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\obj\Debug\BLL.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\obj\Debug\BLL.pdb
-<<<<<<< HEAD
 C:\Users\PC\Documents\BECOM\BE-COM\BLL\bin\Debug\BLL.dll
 C:\Users\PC\Documents\BECOM\BE-COM\BLL\bin\Debug\BLL.pdb
 C:\Users\PC\Documents\BECOM\BE-COM\BLL\bin\Debug\DAL.dll
@@ -35,14 +7,3 @@ C:\Users\PC\Documents\BECOM\BE-COM\BLL\bin\Debug\EntitiesLayer.pdb
 C:\Users\PC\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\PC\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.dll
 C:\Users\PC\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.pdb
-=======
-C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\BLL.dll
-C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\BLL.pdb
-C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\DAL.dll
-C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\EntitiesLayer.dll
-C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\DAL.pdb
-C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\EntitiesLayer.pdb
-C:\Users\dani\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-C:\Users\dani\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.dll
-C:\Users\dani\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.pdb
->>>>>>> master

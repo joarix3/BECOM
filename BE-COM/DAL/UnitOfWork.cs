@@ -13,11 +13,11 @@ namespace DAL
 
         private IRepository<Permiso> _permisoRepository;
         private IRepository<Rol> _rolRepository;
-<<<<<<< HEAD
+
         private IRepository<TipoBeca> _tipoBecaRepository;
-=======
+
         private IRepository<Beneficio> _beneficioRepository;
->>>>>>> master
+
         
         public IRepository<Permiso> PermisoRepository
         {
@@ -43,7 +43,7 @@ namespace DAL
             }
         }
 
-<<<<<<< HEAD
+
         public IRepository<TipoBeca> TipoBecaRepository
         {
             get
@@ -55,7 +55,7 @@ namespace DAL
                 return _tipoBecaRepository;
             }
         }
-=======
+
         public IRepository<Beneficio> BeneficioRepository
         {
             get
@@ -68,7 +68,7 @@ namespace DAL
             }
         }
 
->>>>>>> master
+
 
     }
 }

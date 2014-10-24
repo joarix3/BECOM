@@ -41,7 +41,7 @@ namespace DAL.Repositories
         public IEnumerable<Beneficio> GetAll()
         {
             List<Beneficio> pbeneficio = null;
-            var sqlQuery = "SELECT Id, Nombre, porcentaje, descripcion FROM TbBeneficio";
+            var sqlQuery = "SELECT IdBeneficio, Nombre, Porcentaje FROM TbBeneficio";
             SqlCommand cmd = new SqlCommand(sqlQuery);
 
             var ds = DBAccess.ExecuteQuery(cmd);
@@ -53,14 +53,13 @@ namespace DAL.Repositories
                 {
                     pbeneficio.Add(new Beneficio
                     {
-                        Id = Convert.ToInt32(dr["Id"]),
+                        Id = Convert.ToInt32(dr["IdBeneficio"]),
                         Nombre = dr["Nombre"].ToString(),
-                        Porcentaje = Convert.ToInt32(dr["Porcentaje"]),
-                        Descripcion = dr["Descripcion"].ToString()
+                        Porcentaje = Convert.ToDouble(dr["Porcentaje"])
                     });
                 }
             }
-
+            
             return pbeneficio;
         }
 

@@ -15,7 +15,7 @@ namespace EntitiesLayer
             set { idBeneficio = value; }
         }
         public String Nombre { get; set; }
-        public int Porcentaje { get; set; }
+        public double Porcentaje { get; set; }
         public String Descripcion { get; set; }
 
 
