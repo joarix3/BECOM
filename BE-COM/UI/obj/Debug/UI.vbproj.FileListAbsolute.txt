@@ -63,3 +63,4 @@ C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.MostrarBeneficios.resource
 C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarCarreras.resources
 C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarBeneficios.resources
 C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarBeneficio.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.xml
