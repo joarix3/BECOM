@@ -46,6 +46,7 @@
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\PermisoRepository.cs" />
     <Compile Include="Repositories\RolRepository.cs" />
+    <Compile Include="Repositories\TipoBecaRepository.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup />

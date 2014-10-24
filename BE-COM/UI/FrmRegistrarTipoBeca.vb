@@ -1,4 +1,5 @@
-﻿Public Class FrmMostrarTiposDeBeca
+﻿Public Class FrmRegistrarTipoBeca
+
     Dim formAnterior As Form
 
     Public Sub New(pformAnterior As Form)
@@ -13,10 +14,14 @@
         formAnterior.Show()
         Me.Hide()
     End Sub
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim frmRegistrarTiposBeca As Form = New FrmRegistrarTipoBeca(Me)
-        frmRegistrarTiposBeca.Show()
+
+    Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
+
+        Dim nombre As String = txtNombre.Text
+        Dim descripion As String = rctDescripcion.Text
+        Dim periodo As string = 
+
+
+        gestorTipoBeca.agregarTipoBeca()
     End Sub
-
-
 End Class

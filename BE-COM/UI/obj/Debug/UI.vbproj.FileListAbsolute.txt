@@ -31,3 +31,32 @@ C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
 >>>>>>> 3d1eb936ed2ceb7a5ee47ea18c8ce0720284f8f8
+C:\Users\PC\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
+C:\Users\PC\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe
+C:\Users\PC\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
+C:\Users\PC\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.xml
+C:\Users\PC\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.dll
+C:\Users\PC\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.dll
+C:\Users\PC\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.dll
+C:\Users\PC\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.pdb
+C:\Users\PC\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
+C:\Users\PC\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarHistorialAcademico.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarTiposDeBeca.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRol.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarUsuario.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.Resources.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopAgregado.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
+C:\Users\PC\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarTipoBeca.resources
