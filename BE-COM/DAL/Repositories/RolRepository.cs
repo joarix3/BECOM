@@ -104,6 +104,29 @@ namespace DAL.Repositories
             return pRol;
         }
 
+        public IEnumerable<Rol> GetAllByName(String pnombre)
+        {
+            List<Rol> pRol = null;
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.Add(new SqlParameter("@Nombre", pnombre));
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarRolPorNombre");
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                pRol = new List<Rol>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    pRol.Add(new Rol
+                    {
+                        Nombre = dr["Nombre"].ToString(),
+                        Descripcion = dr["Descripcion"].ToString(),
+                    });
+                }
+            }
+
+            return pRol;
+        }
+
         private void InsertRol(Rol objRol)
         {
 

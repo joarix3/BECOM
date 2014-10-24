@@ -66,7 +66,6 @@ Public Class FrmRegistrarRol
         For Each permisoSeleccionado As Integer In LchkPermisos.CheckedIndices
             permisosSeleccionados.Add(permisoSeleccionado)
         Next
-
         Return permisosSeleccionados
     End Function
 
