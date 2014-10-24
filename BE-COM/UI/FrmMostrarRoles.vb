@@ -1,4 +1,4 @@
-﻿
+﻿'Clase para mostrar los roles de la aplicación.
 Public Class FrmMostrarRoles
     Dim formAnterior As Form
 
