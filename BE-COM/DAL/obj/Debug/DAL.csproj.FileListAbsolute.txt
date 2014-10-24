@@ -12,3 +12,10 @@ C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\DAL\bin\Debug\EntitiesLayer
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\DAL\obj\Debug\DAL.dll
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\DAL\obj\Debug\DAL.pdb
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb

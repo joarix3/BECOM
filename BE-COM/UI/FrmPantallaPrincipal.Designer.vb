@@ -193,7 +193,7 @@ Partial Class FrmPantallaPrincipal
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Segoe UI Light", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(252, 402)
+        Me.Label11.Location = New System.Drawing.Point(259, 402)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(152, 40)
         Me.Label11.TabIndex = 48
@@ -202,7 +202,7 @@ Partial Class FrmPantallaPrincipal
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(259, 312)
+        Me.PictureBox6.Location = New System.Drawing.Point(267, 312)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(136, 111)
         Me.PictureBox6.TabIndex = 47
@@ -226,7 +226,7 @@ Partial Class FrmPantallaPrincipal
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(561, 443)
+        Me.Label8.Location = New System.Drawing.Point(563, 443)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(192, 34)
         Me.Label8.TabIndex = 45
@@ -238,7 +238,7 @@ Partial Class FrmPantallaPrincipal
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Segoe UI Light", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(588, 402)
+        Me.Label9.Location = New System.Drawing.Point(596, 402)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(126, 40)
         Me.Label9.TabIndex = 44
@@ -247,7 +247,7 @@ Partial Class FrmPantallaPrincipal
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(583, 312)
+        Me.PictureBox5.Location = New System.Drawing.Point(591, 312)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(136, 111)
         Me.PictureBox5.TabIndex = 43
@@ -271,7 +271,7 @@ Partial Class FrmPantallaPrincipal
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(380, 166)
+        Me.Label7.Location = New System.Drawing.Point(375, 166)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(216, 34)
         Me.Label7.TabIndex = 41
@@ -283,7 +283,7 @@ Partial Class FrmPantallaPrincipal
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(441, 125)
+        Me.Label6.Location = New System.Drawing.Point(440, 125)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(86, 40)
         Me.Label6.TabIndex = 40
@@ -292,7 +292,7 @@ Partial Class FrmPantallaPrincipal
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(417, 5)
+        Me.PictureBox4.Location = New System.Drawing.Point(415, 5)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(136, 130)
         Me.PictureBox4.TabIndex = 39
@@ -316,7 +316,7 @@ Partial Class FrmPantallaPrincipal
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(678, 166)
+        Me.Label5.Location = New System.Drawing.Point(681, 166)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(238, 34)
         Me.Label5.TabIndex = 37
@@ -328,7 +328,7 @@ Partial Class FrmPantallaPrincipal
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(714, 125)
+        Me.Label4.Location = New System.Drawing.Point(730, 125)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(140, 40)
         Me.Label4.TabIndex = 36
@@ -337,7 +337,7 @@ Partial Class FrmPantallaPrincipal
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(718, 5)
+        Me.PictureBox3.Location = New System.Drawing.Point(732, 5)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(136, 130)
         Me.PictureBox3.TabIndex = 35
@@ -361,7 +361,7 @@ Partial Class FrmPantallaPrincipal
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(38, 166)
+        Me.Label3.Location = New System.Drawing.Point(40, 166)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(229, 34)
         Me.Label3.TabIndex = 33
@@ -373,7 +373,7 @@ Partial Class FrmPantallaPrincipal
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(85, 123)
+        Me.Label2.Location = New System.Drawing.Point(94, 123)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(120, 40)
         Me.Label2.TabIndex = 32
@@ -382,7 +382,7 @@ Partial Class FrmPantallaPrincipal
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(80, 5)
+        Me.PictureBox2.Location = New System.Drawing.Point(86, 5)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(136, 130)
         Me.PictureBox2.TabIndex = 25
