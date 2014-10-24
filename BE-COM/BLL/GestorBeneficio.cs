@@ -28,6 +28,12 @@ namespace BLL
             }
         }
 
+        public IEnumerable<Beneficio> obtenerBeneficios()
+        {
+            System.Console.WriteLine("entre");
+            return UoW.BeneficioRepository.GetAll();
+        }
+
         public void guardarCambios()
         {
             UoW.BeneficioRepository.Save();

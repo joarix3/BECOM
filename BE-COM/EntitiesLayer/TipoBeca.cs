@@ -6,34 +6,42 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    public class Beneficio : IEntity
+    public class TipoBeca : IEntity
     {
-        private int idBeneficio;
+        private int _idTipoBeca;
+
         public int Id
         {
-            get { return idBeneficio; }
-            set { idBeneficio = value; }
+            get { return _idTipoBeca; }
+            set { _idTipoBeca = value; }
         }
+
         public String Nombre { get; set; }
-        public double Porcentaje { get; set; }
         public String Descripcion { get; set; }
+        public String Estado { get; set; }
+        public int IdPeriodo { get; set; }
 
-
-        public Beneficio()
+        public TipoBeca()
         {
             Id = 0;
             Nombre = "";
-            Porcentaje = 0;
             Descripcion = "";
+            Estado = "";
+            IdPeriodo = 0;
         }
 
-        public Beneficio(string pnombre, int pporcentaje, string pdescripcion)
+        public TipoBeca(string pnombre, string pdescripcion, string pestado, int pidperiodo)
         {
             Id = 0;
             Nombre = pnombre;
-            Porcentaje = pporcentaje;
             Descripcion = pdescripcion;
+            Estado = pestado;
+            IdPeriodo = pidperiodo;
         }
+
+
+
+
 
     }
 }

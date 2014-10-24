@@ -13,7 +13,11 @@ namespace DAL
 
         private IRepository<Permiso> _permisoRepository;
         private IRepository<Rol> _rolRepository;
+
+        private IRepository<TipoBeca> _tipoBecaRepository;
+
         private IRepository<Beneficio> _beneficioRepository;
+
         
         public IRepository<Permiso> PermisoRepository
         {
@@ -39,6 +43,19 @@ namespace DAL
             }
         }
 
+
+        public IRepository<TipoBeca> TipoBecaRepository
+        {
+            get
+            {
+                if (this._tipoBecaRepository == null)
+                {
+                    this._tipoBecaRepository = new TipoBecaRepository();
+                }
+                return _tipoBecaRepository;
+            }
+        }
+
         public IRepository<Beneficio> BeneficioRepository
         {
             get
@@ -50,6 +67,7 @@ namespace DAL
                 return _beneficioRepository;
             }
         }
+
 
 
     }
