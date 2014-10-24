@@ -1,5 +1,6 @@
 ﻿'Clase para mostrar los roles de la aplicación.
 'revisado por daniel maietta
+'Excelente revisión.
 Public Class FrmMostrarRoles
     Dim formAnterior As Form
 
