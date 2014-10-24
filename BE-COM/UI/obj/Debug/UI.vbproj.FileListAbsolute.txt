@@ -1,0 +1,112 @@
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\bin\Debug\UI1.exe.config
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\bin\Debug\UI1.exe
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\bin\Debug\UI1.pdb
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\bin\Debug\UI1.xml
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\bin\Debug\BLL.dll
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\bin\Debug\EntitiesLayer.dll
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\bin\Debug\DAL.dll
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\bin\Debug\BLL.pdb
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\bin\Debug\DAL.pdb
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarTiposDeBeca.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRol.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.FrmRegistrarUsuario.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.Resources.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.PopAgregado.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.exe
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.xml
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.pdb
+C:\Users\Douglas\Documents\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarHistorialAcademico.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\bin\Debug\UI1.exe.config
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\bin\Debug\UI1.exe
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\bin\Debug\UI1.pdb
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\bin\Debug\UI1.xml
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\bin\Debug\BLL.dll
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\bin\Debug\EntitiesLayer.dll
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\bin\Debug\DAL.dll
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\bin\Debug\BLL.pdb
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\bin\Debug\DAL.pdb
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarHistorialAcademico.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarTiposDeBeca.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRol.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.FrmRegistrarUsuario.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.Resources.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.PopAgregado.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.exe
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.xml
+C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\UI\obj\Debug\UI1.pdb
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\bin\Debug\UI1.exe.config
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.exe
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.xml
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.pdb
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\bin\Debug\UI1.exe
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\bin\Debug\UI1.pdb
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\bin\Debug\UI1.xml
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\bin\Debug\BLL.dll
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\bin\Debug\EntitiesLayer.dll
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\bin\Debug\DAL.dll
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\bin\Debug\BLL.pdb
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\bin\Debug\DAL.pdb
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarHistorialAcademico.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarTiposDeBeca.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRol.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmRegistrarUsuario.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.Resources.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.PopAgregado.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
+C:\Users\Mauricio Araica\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\bin\Debug\UI1.exe.config
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.exe
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.xml
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.pdb
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\bin\Debug\UI1.exe
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\bin\Debug\UI1.pdb
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\bin\Debug\UI1.xml
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\bin\Debug\BLL.dll
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\bin\Debug\EntitiesLayer.dll
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\bin\Debug\DAL.dll
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\bin\Debug\BLL.pdb
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\bin\Debug\DAL.pdb
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarHistorialAcademico.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmMostrarTiposDeBeca.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRol.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.FrmRegistrarUsuario.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.Resources.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.PopAgregado.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
+C:\Users\dani\Dropbox\Soft506\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
