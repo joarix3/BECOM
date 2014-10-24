@@ -78,6 +78,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmAcademico.Designer.vb">
+      <DependentUpon>FrmAcademico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAcademico.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmIniciarSesion.Designer.vb">
       <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </Compile>
