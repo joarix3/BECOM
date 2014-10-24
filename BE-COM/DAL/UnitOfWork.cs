@@ -13,6 +13,7 @@ namespace DAL
 
         private IRepository<Permiso> _permisoRepository;
         private IRepository<Rol> _rolRepository;
+        private IRepository<Beneficio> _beneficioRepository;
         
         public IRepository<Permiso> PermisoRepository
         {
@@ -35,6 +36,18 @@ namespace DAL
                     this._rolRepository = new RolRepository();
                 }
                 return _rolRepository;
+            }
+        }
+
+        public IRepository<Beneficio> BeneficioRepository
+        {
+            get
+            {
+                if (this._beneficioRepository == null)
+                {
+                    this._beneficioRepository = new BeneficioRepository();
+                }
+                return _beneficioRepository;
             }
         }
 

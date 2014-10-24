@@ -299,7 +299,7 @@ Partial Class FrmMostrarBeneficios
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.Panel3.Controls.Add(Me.btnVolver)
         Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Location = New System.Drawing.Point(231, 1)
+        Me.Panel3.Location = New System.Drawing.Point(238, 48)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(969, 130)
         Me.Panel3.TabIndex = 32
