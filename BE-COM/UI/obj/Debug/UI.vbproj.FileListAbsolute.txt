@@ -138,3 +138,7 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resour
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.exe
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
+C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
+C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
+C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
+C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
