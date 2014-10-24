@@ -148,7 +148,6 @@ C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.dll
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.pdb
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarHistorialAcademico.resources

@@ -90,6 +90,12 @@
     <Compile Include="FrmMantenimientoUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmMostrarCarreras.Designer.vb">
+      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarCarreras.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmMostrarHistorialAcademico.Designer.vb">
       <DependentUpon>FrmMostrarHistorialAcademico.vb</DependentUpon>
     </Compile>
