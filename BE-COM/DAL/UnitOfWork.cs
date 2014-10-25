@@ -39,17 +39,17 @@ namespace DAL
             }
         }
 
-        public IRepository<Beneficio> BeneficioRepository
-        {
-            get
-            {
-                if (this._beneficioRepository == null)
-                {
-                    this._beneficioRepository = new BeneficioRepository();
-                }
-                return _beneficioRepository;
-            }
-        }
+        //public IRepository<Beneficio> BeneficioRepository
+        //{
+        //    get
+        //    {
+        //        if (this._beneficioRepository == null)
+        //        {
+        //            this._beneficioRepository = new BeneficioRepository();
+        //        }
+        //        return _beneficioRepository;
+        //    }
+        //}
 
 
     }

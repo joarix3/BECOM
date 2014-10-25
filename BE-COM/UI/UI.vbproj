@@ -273,6 +273,10 @@
       <Project>{1df68d8d-5d81-4d98-9761-8834cf6e88a4}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{9e7c6ccc-d37a-464b-8f8b-07eed1fd1446}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EntitiesLayer\EntitiesLayer.csproj">
       <Project>{aaf9ed03-2d38-4a7e-8616-b656c7b4663e}</Project>
       <Name>EntitiesLayer</Name>

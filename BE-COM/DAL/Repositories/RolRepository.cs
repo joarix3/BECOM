@@ -129,21 +129,19 @@ namespace DAL.Repositories
 
         private void InsertRol(Rol objRol)
         {
+            string nombreS = "Madre";
+            string descrpcionS = "descripcion";
 
-            try
-            {
-                SqlCommand cmd = new SqlCommand();
+                SqlCommand cmd = new SqlCommand("PaRegistrarRol",Connection.obtenerConexion());
+                cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.Add(new SqlParameter("@Nombre", objRol.Nombre));
-                cmd.Parameters.Add(new SqlParameter("@Descripcion", objRol.Descripcion));
-
-                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaRegistrarRol");
-
-            }
-            catch (Exception ex)
-            {
-
-            }
+                SqlParameter nombre = cmd.Parameters.Add("@Nombre",SqlDbType.VarChar,50);
+                nombre.Direction = ParameterDirection.Input;
+                nombre.Value = nombreS; 
+                SqlParameter descripcion = cmd.Parameters.Add("@Descripcion", SqlDbType.VarChar, 200);
+                descripcion.Direction = ParameterDirection.Input;
+                descripcion.Value = descrpcionS;
+                SqlDataReader dr = cmd.ExecuteReader();
 
         }
 
