@@ -175,7 +175,7 @@ namespace DAL
                 pCmd.CommandText = pName;
                 pCmd.CommandType = CommandType.StoredProcedure;
                 pCmd.CommandTimeout = 0;
-
+                pCmd.Connection.Open();
                 adp = new SqlDataAdapter(pCmd);
                 adp.Fill(tempDataset);
 

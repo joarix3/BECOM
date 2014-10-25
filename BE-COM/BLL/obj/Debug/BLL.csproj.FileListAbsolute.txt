@@ -27,6 +27,18 @@ C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\bin\Debug\EntitiesLayer
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\obj\Debug\BLL.dll
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\BLL\obj\Debug\BLL.pdb
+<<<<<<< HEAD
+=======
+C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\BLL.dll
+C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\BLL.pdb
+C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\DAL.dll
+C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\EntitiesLayer.dll
+C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\DAL.pdb
+C:\Users\dani\Documents\BECOM\BE-COM\BLL\bin\Debug\EntitiesLayer.pdb
+C:\Users\dani\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\dani\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.dll
+C:\Users\dani\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.pdb
+>>>>>>> BECOMJ
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\bin\Debug\BLL.dll
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\bin\Debug\BLL.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\bin\Debug\DAL.dll
@@ -36,6 +48,7 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\bin\Debug\EntitiesLayer.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\obj\Debug\BLL.dll
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\BLL\obj\Debug\BLL.pdb
+<<<<<<< HEAD
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\BLL\bin\Debug\BLL.dll
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\BLL\bin\Debug\BLL.pdb
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\BLL\bin\Debug\DAL.dll
@@ -46,3 +59,5 @@ C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.csprojResolveA
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.dll
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\BLL\obj\Debug\BLL.pdb
 >>>>>>> BECOMM
+=======
+>>>>>>> BECOMJ
