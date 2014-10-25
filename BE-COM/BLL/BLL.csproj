@@ -48,11 +48,9 @@
 
 =======
     <Compile Include="GestorCarrera.cs" />
->>>>>>> BECOMM
-=======
+
     <Compile Include="GestorBeneficio.cs" />
     <Compile Include="GestorCarrera.cs" />
->>>>>>> BECOMJ
     <Compile Include="GestorUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
