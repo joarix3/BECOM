@@ -1,6 +1,4 @@
 ﻿'Clase para mostrar los roles de la aplicación.
-'revisado por daniel maietta
-'Excelente revisión.
 Public Class FrmMostrarRoles
     Dim formAnterior As Form
 
@@ -17,15 +15,10 @@ Public Class FrmMostrarRoles
     End Sub
 
     Private Sub FrmMostrarRoles_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cmbFiltroBusqueda.SelectedIndex = 0
-        txtBuscar.Focus()
-        mostrarRoles()
-        configurarColumnasDGV()
-
     End Sub
 
-    Private Sub gridMostrarAlumnos_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMostrarRoles.CellMouseEnter
-        dgvMostrarRoles.RowsDefaultCellStyle.SelectionBackColor = Color.Purple
+    Private Sub gridMostrarAlumnos_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles gridMostrarAlumnos.CellMouseEnter
+        gridMostrarAlumnos.RowsDefaultCellStyle.SelectionBackColor = Color.Purple
     End Sub
 
 
@@ -40,40 +33,5 @@ Public Class FrmMostrarRoles
         Me.Hide()
     End Sub
 
-    Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
-
-        If String.IsNullOrEmpty(txtBuscar.Text) = True Then
-            lblRolesNoRegistrados.Visible = False
-            mostrarRoles()
-            configurarColumnasDGV()
-        Else
-            Select Case cmbFiltroBusqueda.SelectedIndex
-                Case 0
-                    mostrarRolesPorNombre()
-            End Select
-        End If
-    End Sub
-
-    Private Sub configurarColumnasDGV()
-        dgvMostrarRoles.Columns(0).Visible = False
-        dgvMostrarRoles.Columns(1).HeaderText = "Nombre"
-        dgvMostrarRoles.Columns(2).HeaderText = "Descripción"
-    End Sub
-
-    Private Sub mostrarRoles()
-        dgvMostrarRoles.DataSource = gestorUsuario.obtenerRoles()
-    End Sub
-
-    Private Sub mostrarRolesPorNombre()
-
-        If gestorUsuario.buscarRolPorNombre(txtBuscar.Text) Is Nothing = False Then
-            lblRolesNoRegistrados.Visible = False
-            dgvMostrarRoles.DataSource = gestorUsuario.buscarRolPorNombre(txtBuscar.Text)
-            configurarColumnasDGV()
-        Else
-            dgvMostrarRoles.DataSource = Nothing
-            lblRolesNoRegistrados.Visible = True
-        End If
-
-    End Sub
+ 
 End Class

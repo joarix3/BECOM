@@ -6,6 +6,7 @@ UI1
 </name>
 </assembly>
 <members>
+<<<<<<< HEAD
 <member name="M:UI1.FrmRegistrarTipoBeca.btnRegistrar_Click(System.Object,System.EventArgs)">
 	<summary>
  Metodo con el evento click para registrar los campos del formulario Tipo de beca
@@ -14,6 +15,9 @@ UI1
 	<param name="e">EventArgs</param>
 	<remarks></remarks>
 </member><member name="T:UI1.DataSetPrincipal">
+=======
+<member name="T:UI1.DataSetPrincipal">
+>>>>>>> BECOMM
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>

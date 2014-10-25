@@ -43,7 +43,11 @@
   <ItemGroup>
     <Compile Include="DBAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Repositories\BeneficioRepository.cs" />
+=======
+    <Compile Include="Repositories\CarreraRepository.cs" />
+>>>>>>> BECOMM
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\PermisoRepository.cs" />
     <Compile Include="Repositories\RolRepository.cs" />

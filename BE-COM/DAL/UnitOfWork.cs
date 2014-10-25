@@ -13,11 +13,15 @@ namespace DAL
 
         private IRepository<Permiso> _permisoRepository;
         private IRepository<Rol> _rolRepository;
+<<<<<<< HEAD
 
         private IRepository<TipoBeca> _tipoBecaRepository;
 
         private IRepository<Beneficio> _beneficioRepository;
 
+=======
+        private IRepository<Carrera> _carreraRepository;
+>>>>>>> BECOMM
         
         public IRepository<Permiso> PermisoRepository
         {
@@ -40,6 +44,17 @@ namespace DAL
                     this._rolRepository = new RolRepository();
                 }
                 return _rolRepository;
+            }
+        }
+        public IRepository<Carrera> CarreraRepository
+        {
+            get
+            {
+                if (this._carreraRepository == null)
+                {
+                    this._carreraRepository = new CarreraRepository();
+                }
+                return _carreraRepository;
             }
         }
 

@@ -4,6 +4,7 @@ Imports EntitiesLayer
 Module GlobalModule
 
     Public gestorUsuario As New GestorUsuarios()
+    Public gestorCarrera As New GestorCarrera()
     Public validaciones As New Validaciones()
     Public gestorBeneficio As New GestorBeneficio
     Public campoCorrecto As Image = Image.FromFile("C:\Users\PC\Dropbox\Soft506\BE-COM\Imagens\Validaciones\Correcto.png")
