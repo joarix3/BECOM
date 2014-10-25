@@ -39,11 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="GestorBeneficio.cs" />
-=======
     <Compile Include="GestorCarrera.cs" />
->>>>>>> origin/BECOMM
     <Compile Include="GestorUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -22,10 +22,9 @@ Partial Class FrmMostrarCarreras
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-<<<<<<< HEAD
         Me.SuspendLayout()
         '
-=======
+
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -447,17 +446,15 @@ Partial Class FrmMostrarCarreras
         Me.BtnDirector.TabIndex = 45
         Me.BtnDirector.UseVisualStyleBackColor = True
         '
->>>>>>> origin/BECOMM
         'FrmMostrarCarreras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-<<<<<<< HEAD
+
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Name = "FrmMostrarCarreras"
         Me.Text = "FrmMostrarCarreras"
         Me.ResumeLayout(False)
-=======
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1202, 720)
         Me.Controls.Add(Me.BtnDirector)
@@ -481,7 +478,6 @@ Partial Class FrmMostrarCarreras
         Me.Panel3.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
->>>>>>> origin/BECOMM
 
     End Sub
     Friend WithEvents dtgCarreras As System.Windows.Forms.DataGridView
