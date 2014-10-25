@@ -84,6 +84,18 @@
     <Compile Include="FrmAcademico.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmMostrarCarreras.Designer.vb">
+      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarCarreras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarCarrera.Designer.vb">
+      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarCarrera.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmIniciarSesion.Designer.vb">
       <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </Compile>
@@ -94,12 +106,6 @@
       <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmMantenimientoUsuarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMostrarCarreras.Designer.vb">
-      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarCarreras.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMostrarHistorialAcademico.Designer.vb">
@@ -180,6 +186,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmAcademico.resx">
+      <DependentUpon>FrmAcademico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarCarreras.resx">
+      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarCarrera.resx">
+      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmIniciarSesion.resx">
       <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </EmbeddedResource>

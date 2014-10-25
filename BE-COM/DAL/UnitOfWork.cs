@@ -13,6 +13,7 @@ namespace DAL
 
         private IRepository<Permiso> _permisoRepository;
         private IRepository<Rol> _rolRepository;
+        private IRepository<Carrera> _carreraRepository;
         
         public IRepository<Permiso> PermisoRepository
         {
@@ -35,6 +36,17 @@ namespace DAL
                     this._rolRepository = new RolRepository();
                 }
                 return _rolRepository;
+            }
+        }
+        public IRepository<Carrera> CarreraRepository
+        {
+            get
+            {
+                if (this._carreraRepository == null)
+                {
+                    this._carreraRepository = new CarreraRepository();
+                }
+                return _carreraRepository;
             }
         }
 

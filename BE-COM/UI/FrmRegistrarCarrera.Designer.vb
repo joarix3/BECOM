@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmAcademico
+Partial Class FrmRegistrarCarrera
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,7 @@ Partial Class FrmAcademico
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmAcademico))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmRegistrarCarrera))
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -42,25 +42,24 @@ Partial Class FrmAcademico
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnCarreras = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ptrCarreras = New System.Windows.Forms.PictureBox()
-        Me.btnCursos = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ptrCursos = New System.Windows.Forms.PictureBox()
-        Me.btnEstudiantes = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtCodigo = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.comboDirector = New System.Windows.Forms.ComboBox()
+        Me.rctColor = New System.Windows.Forms.RichTextBox()
+        Me.btnColor = New System.Windows.Forms.Button()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.cdCarrera = New System.Windows.Forms.ColorDialog()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ptrEstudiantes = New System.Windows.Forms.PictureBox()
+        Me.txtBecasOtorgables = New System.Windows.Forms.TextBox()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
-        CType(Me.ptrCarreras, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ptrCursos, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ptrEstudiantes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel4
@@ -79,11 +78,11 @@ Partial Class FrmAcademico
         Me.Panel4.Controls.Add(Me.btnInicio)
         Me.Panel4.Controls.Add(Me.btnAyuda)
         Me.Panel4.Controls.Add(Me.btnPerfil)
-        Me.Panel4.Location = New System.Drawing.Point(0, -1)
+        Me.Panel4.Location = New System.Drawing.Point(2, 0)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(231, 719)
-        Me.Panel4.TabIndex = 47
+        Me.Panel4.Size = New System.Drawing.Size(231, 721)
+        Me.Panel4.TabIndex = 46
         '
         'Button10
         '
@@ -113,10 +112,10 @@ Partial Class FrmAcademico
         Me.Button8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
         Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button8.Location = New System.Drawing.Point(20, 603)
+        Me.Button8.Location = New System.Drawing.Point(17, 601)
         Me.Button8.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(190, 77)
+        Me.Button8.Size = New System.Drawing.Size(191, 77)
         Me.Button8.TabIndex = 33
         Me.Button8.Text = "Becas"
         Me.Button8.UseVisualStyleBackColor = False
@@ -131,10 +130,10 @@ Partial Class FrmAcademico
         Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.Location = New System.Drawing.Point(20, 449)
+        Me.Button7.Location = New System.Drawing.Point(17, 447)
         Me.Button7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(190, 77)
+        Me.Button7.Size = New System.Drawing.Size(191, 77)
         Me.Button7.TabIndex = 32
         Me.Button7.Text = "Académico"
         Me.Button7.UseVisualStyleBackColor = False
@@ -149,10 +148,10 @@ Partial Class FrmAcademico
         Me.Button9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Button9.Image = CType(resources.GetObject("Button9.Image"), System.Drawing.Image)
         Me.Button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button9.Location = New System.Drawing.Point(20, 526)
+        Me.Button9.Location = New System.Drawing.Point(17, 524)
         Me.Button9.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(190, 77)
+        Me.Button9.Size = New System.Drawing.Size(191, 77)
         Me.Button9.TabIndex = 34
         Me.Button9.Text = "Seguridad"
         Me.Button9.UseVisualStyleBackColor = False
@@ -167,10 +166,10 @@ Partial Class FrmAcademico
         Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
         Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.Location = New System.Drawing.Point(20, 372)
+        Me.Button6.Location = New System.Drawing.Point(17, 370)
         Me.Button6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(190, 77)
+        Me.Button6.Size = New System.Drawing.Size(191, 77)
         Me.Button6.TabIndex = 31
         Me.Button6.Text = "Usuarios"
         Me.Button6.UseVisualStyleBackColor = False
@@ -184,16 +183,16 @@ Partial Class FrmAcademico
         Me.Panel5.Location = New System.Drawing.Point(0, 1)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(231, 130)
+        Me.Panel5.Size = New System.Drawing.Size(269, 129)
         Me.Panel5.TabIndex = 30
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(82, 13)
+        Me.PictureBox3.Location = New System.Drawing.Point(93, 12)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(54, 52)
+        Me.PictureBox3.Size = New System.Drawing.Size(62, 65)
         Me.PictureBox3.TabIndex = 31
         Me.PictureBox3.TabStop = False
         '
@@ -211,7 +210,7 @@ Partial Class FrmAcademico
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(49, 69)
+        Me.Label2.Location = New System.Drawing.Point(55, 81)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(133, 25)
         Me.Label2.TabIndex = 16
@@ -271,10 +270,10 @@ Partial Class FrmAcademico
         Me.btnInicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnInicio.Image = CType(resources.GetObject("btnInicio.Image"), System.Drawing.Image)
         Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInicio.Location = New System.Drawing.Point(20, 145)
+        Me.btnInicio.Location = New System.Drawing.Point(17, 138)
         Me.btnInicio.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnInicio.Name = "btnInicio"
-        Me.btnInicio.Size = New System.Drawing.Size(190, 77)
+        Me.btnInicio.Size = New System.Drawing.Size(191, 77)
         Me.btnInicio.TabIndex = 20
         Me.btnInicio.Text = "Inicio"
         Me.btnInicio.UseVisualStyleBackColor = False
@@ -289,10 +288,10 @@ Partial Class FrmAcademico
         Me.btnAyuda.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnAyuda.Image = CType(resources.GetObject("btnAyuda.Image"), System.Drawing.Image)
         Me.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAyuda.Location = New System.Drawing.Point(20, 295)
+        Me.btnAyuda.Location = New System.Drawing.Point(17, 293)
         Me.btnAyuda.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnAyuda.Name = "btnAyuda"
-        Me.btnAyuda.Size = New System.Drawing.Size(190, 77)
+        Me.btnAyuda.Size = New System.Drawing.Size(191, 77)
         Me.btnAyuda.TabIndex = 18
         Me.btnAyuda.Text = "Ayuda"
         Me.btnAyuda.UseVisualStyleBackColor = False
@@ -307,10 +306,10 @@ Partial Class FrmAcademico
         Me.btnPerfil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnPerfil.Image = CType(resources.GetObject("btnPerfil.Image"), System.Drawing.Image)
         Me.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPerfil.Location = New System.Drawing.Point(20, 217)
+        Me.btnPerfil.Location = New System.Drawing.Point(17, 215)
         Me.btnPerfil.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnPerfil.Name = "btnPerfil"
-        Me.btnPerfil.Size = New System.Drawing.Size(190, 77)
+        Me.btnPerfil.Size = New System.Drawing.Size(191, 77)
         Me.btnPerfil.TabIndex = 17
         Me.btnPerfil.Text = "Mi perfil"
         Me.btnPerfil.UseVisualStyleBackColor = False
@@ -320,11 +319,11 @@ Partial Class FrmAcademico
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.Panel3.Controls.Add(Me.btnVolver)
         Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Location = New System.Drawing.Point(231, 1)
+        Me.Panel3.Location = New System.Drawing.Point(232, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(969, 129)
-        Me.Panel3.TabIndex = 48
+        Me.Panel3.Size = New System.Drawing.Size(969, 130)
+        Me.Panel3.TabIndex = 47
         '
         'btnVolver
         '
@@ -351,178 +350,171 @@ Partial Class FrmAcademico
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(334, 61)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Académico"
-        '
-        'btnCarreras
-        '
-        Me.btnCarreras.FlatAppearance.BorderSize = 2
-        Me.btnCarreras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCarreras.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCarreras.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
-        Me.btnCarreras.Location = New System.Drawing.Point(344, 365)
-        Me.btnCarreras.Name = "btnCarreras"
-        Me.btnCarreras.Size = New System.Drawing.Size(226, 38)
-        Me.btnCarreras.TabIndex = 52
-        Me.btnCarreras.Text = "Ingresar"
-        Me.btnCarreras.UseVisualStyleBackColor = True
+        Me.Label1.Text = "Agregar carrera"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(343, 328)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(544, 165)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(227, 34)
-        Me.Label3.TabIndex = 51
-        Me.Label3.Text = "Módulo de carreras en el cual se podrá " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      tener acceso a su mantenimiento."
+        Me.Label3.Size = New System.Drawing.Size(76, 25)
+        Me.Label3.TabIndex = 48
+        Me.Label3.Text = "Código:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(397, 285)
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(549, 340)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(118, 40)
-        Me.Label4.TabIndex = 50
-        Me.Label4.Text = "Carreras"
-        '
-        'ptrCarreras
-        '
-        Me.ptrCarreras.Image = CType(resources.GetObject("ptrCarreras.Image"), System.Drawing.Image)
-        Me.ptrCarreras.Location = New System.Drawing.Point(389, 167)
-        Me.ptrCarreras.Name = "ptrCarreras"
-        Me.ptrCarreras.Size = New System.Drawing.Size(136, 130)
-        Me.ptrCarreras.TabIndex = 49
-        Me.ptrCarreras.TabStop = False
-        '
-        'btnCursos
-        '
-        Me.btnCursos.FlatAppearance.BorderSize = 2
-        Me.btnCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCursos.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCursos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
-        Me.btnCursos.Location = New System.Drawing.Point(886, 365)
-        Me.btnCursos.Name = "btnCursos"
-        Me.btnCursos.Size = New System.Drawing.Size(226, 38)
-        Me.btnCursos.TabIndex = 56
-        Me.btnCursos.Text = "Ingresar"
-        Me.btnCursos.UseVisualStyleBackColor = True
+        Me.Label4.Size = New System.Drawing.Size(171, 25)
+        Me.Label4.TabIndex = 49
+        Me.Label4.Text = "Director académico:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(886, 328)
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(545, 431)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(227, 34)
-        Me.Label5.TabIndex = 55
-        Me.Label5.Text = "Módulo de carreras en el cual se podrá " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      tener acceso a su mantenimiento."
+        Me.Label5.Size = New System.Drawing.Size(61, 25)
+        Me.Label5.TabIndex = 50
+        Me.Label5.Text = "Color:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(950, 285)
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(549, 253)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(99, 40)
-        Me.Label6.TabIndex = 54
-        Me.Label6.Text = "Cursos"
-        '
-        'ptrCursos
-        '
-        Me.ptrCursos.Image = CType(resources.GetObject("ptrCursos.Image"), System.Drawing.Image)
-        Me.ptrCursos.Location = New System.Drawing.Point(931, 167)
-        Me.ptrCursos.Name = "ptrCursos"
-        Me.ptrCursos.Size = New System.Drawing.Size(136, 130)
-        Me.ptrCursos.TabIndex = 53
-        Me.ptrCursos.TabStop = False
-        '
-        'btnEstudiantes
-        '
-        Me.btnEstudiantes.FlatAppearance.BorderSize = 2
-        Me.btnEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEstudiantes.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEstudiantes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
-        Me.btnEstudiantes.Location = New System.Drawing.Point(612, 637)
-        Me.btnEstudiantes.Name = "btnEstudiantes"
-        Me.btnEstudiantes.Size = New System.Drawing.Size(226, 38)
-        Me.btnEstudiantes.TabIndex = 60
-        Me.btnEstudiantes.Text = "Ingresar"
-        Me.btnEstudiantes.UseVisualStyleBackColor = True
+        Me.Label6.Size = New System.Drawing.Size(83, 25)
+        Me.Label6.TabIndex = 51
+        Me.Label6.Text = "Nombre:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(611, 600)
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(632, 605)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(229, 34)
-        Me.Label7.TabIndex = 59
-        Me.Label7.Text = "Módulo estudiantes en el cual se podrá " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      tener acceso a su información."
+        Me.Label7.Size = New System.Drawing.Size(0, 25)
+        Me.Label7.TabIndex = 52
+        '
+        'txtCodigo
+        '
+        Me.txtCodigo.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCodigo.Location = New System.Drawing.Point(547, 196)
+        Me.txtCodigo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtCodigo.Name = "txtCodigo"
+        Me.txtCodigo.Size = New System.Drawing.Size(263, 33)
+        Me.txtCodigo.TabIndex = 54
+        '
+        'txtNombre
+        '
+        Me.txtNombre.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(547, 281)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(263, 33)
+        Me.txtNombre.TabIndex = 55
+        '
+        'comboDirector
+        '
+        Me.comboDirector.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.comboDirector.FormattingEnabled = True
+        Me.comboDirector.Location = New System.Drawing.Point(547, 369)
+        Me.comboDirector.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.comboDirector.Name = "comboDirector"
+        Me.comboDirector.Size = New System.Drawing.Size(263, 33)
+        Me.comboDirector.TabIndex = 56
+        '
+        'rctColor
+        '
+        Me.rctColor.Location = New System.Drawing.Point(547, 462)
+        Me.rctColor.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rctColor.Name = "rctColor"
+        Me.rctColor.Size = New System.Drawing.Size(263, 76)
+        Me.rctColor.TabIndex = 57
+        Me.rctColor.Text = ""
+        '
+        'btnColor
+        '
+        Me.btnColor.FlatAppearance.BorderSize = 2
+        Me.btnColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnColor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.btnColor.Location = New System.Drawing.Point(605, 428)
+        Me.btnColor.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnColor.Name = "btnColor"
+        Me.btnColor.Size = New System.Drawing.Size(205, 30)
+        Me.btnColor.TabIndex = 58
+        Me.btnColor.Text = "Seleccione un color"
+        Me.btnColor.UseVisualStyleBackColor = True
+        '
+        'btnAgregar
+        '
+        Me.btnAgregar.FlatAppearance.BorderSize = 2
+        Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnAgregar.Location = New System.Drawing.Point(547, 656)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(263, 40)
+        Me.btnAgregar.TabIndex = 59
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.UseVisualStyleBackColor = True
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(648, 557)
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(549, 550)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(155, 40)
-        Me.Label8.TabIndex = 58
-        Me.Label8.Text = "Estudiantes"
+        Me.Label8.Size = New System.Drawing.Size(255, 25)
+        Me.Label8.TabIndex = 60
+        Me.Label8.Text = "Cantidad de becas otorgables:"
         '
-        'ptrEstudiantes
+        'txtBecasOtorgables
         '
-        Me.ptrEstudiantes.Image = CType(resources.GetObject("ptrEstudiantes.Image"), System.Drawing.Image)
-        Me.ptrEstudiantes.Location = New System.Drawing.Point(657, 439)
-        Me.ptrEstudiantes.Name = "ptrEstudiantes"
-        Me.ptrEstudiantes.Size = New System.Drawing.Size(136, 130)
-        Me.ptrEstudiantes.TabIndex = 57
-        Me.ptrEstudiantes.TabStop = False
+        Me.txtBecasOtorgables.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBecasOtorgables.Location = New System.Drawing.Point(549, 579)
+        Me.txtBecasOtorgables.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtBecasOtorgables.Name = "txtBecasOtorgables"
+        Me.txtBecasOtorgables.Size = New System.Drawing.Size(263, 33)
+        Me.txtBecasOtorgables.TabIndex = 61
         '
-        'FrmAcademico
+        'FrmRegistrarCarrera
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1202, 720)
-        Me.Controls.Add(Me.btnEstudiantes)
-        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.txtBecasOtorgables)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.ptrEstudiantes)
-        Me.Controls.Add(Me.btnCursos)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.btnAgregar)
+        Me.Controls.Add(Me.btnColor)
+        Me.Controls.Add(Me.rctColor)
+        Me.Controls.Add(Me.comboDirector)
+        Me.Controls.Add(Me.txtNombre)
+        Me.Controls.Add(Me.txtCodigo)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.ptrCursos)
-        Me.Controls.Add(Me.btnCarreras)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.ptrCarreras)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
+        Me.Font = New System.Drawing.Font("Segoe UI Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "FrmAcademico"
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Name = "FrmRegistrarCarrera"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmAcademico"
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
-        CType(Me.ptrCarreras, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ptrCursos, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ptrEstudiantes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -546,16 +538,18 @@ Partial Class FrmAcademico
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents btnVolver As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents btnCarreras As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents ptrCarreras As System.Windows.Forms.PictureBox
-    Friend WithEvents btnCursos As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents ptrCursos As System.Windows.Forms.PictureBox
-    Friend WithEvents btnEstudiantes As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents txtCodigo As System.Windows.Forms.TextBox
+    Friend WithEvents txtNombre As System.Windows.Forms.TextBox
+    Friend WithEvents comboDirector As System.Windows.Forms.ComboBox
+    Friend WithEvents rctColor As System.Windows.Forms.RichTextBox
+    Friend WithEvents btnColor As System.Windows.Forms.Button
+    Friend WithEvents btnAgregar As System.Windows.Forms.Button
+    Friend WithEvents cdCarrera As System.Windows.Forms.ColorDialog
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents ptrEstudiantes As System.Windows.Forms.PictureBox
+    Friend WithEvents txtBecasOtorgables As System.Windows.Forms.TextBox
 End Class

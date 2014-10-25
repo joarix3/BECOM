@@ -32,4 +32,6 @@ Public Class FrmMostrarRoles
         frmRegistrarRol.Show()
         Me.Hide()
     End Sub
+
+ 
 End Class
