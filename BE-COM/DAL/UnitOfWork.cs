@@ -14,6 +14,7 @@ namespace DAL
         private IRepository<Permiso> _permisoRepository;
         private IRepository<Rol> _rolRepository;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         private IRepository<TipoBeca> _tipoBecaRepository;
 
@@ -22,6 +23,12 @@ namespace DAL
 =======
         private IRepository<Carrera> _carreraRepository;
 >>>>>>> BECOMM
+=======
+        private IRepository<Beneficio> _beneficioRepository;
+=======
+        private IRepository<Carrera> _carreraRepository;
+>>>>>>> origin/BECOMM
+>>>>>>> BECOMJ
         
         public IRepository<Permiso> PermisoRepository
         {

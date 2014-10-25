@@ -7,6 +7,7 @@ UI1
 </assembly>
 <members>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <member name="M:UI1.FrmRegistrarTipoBeca.btnRegistrar_Click(System.Object,System.EventArgs)">
 	<summary>
  Metodo con el evento click para registrar los campos del formulario Tipo de beca
@@ -16,12 +17,19 @@ UI1
 	<remarks></remarks>
 </member><member name="T:UI1.DataSetPrincipal">
 =======
+<member name="P:UI1.My.Resources.Resources.ResourceManager">
+>>>>>>> BECOMJ
+=======
 <member name="T:UI1.DataSetPrincipal">
 >>>>>>> BECOMM
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member><member name="P:UI1.My.Resources.Resources.ResourceManager">
+<<<<<<< HEAD
+=======
+>>>>>>> origin/BECOMM
+>>>>>>> BECOMJ
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -34,6 +42,16 @@ Represents a strongly typed in-memory cache of data.
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+</member><member name="T:UI1.DataSetPrincipal">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+=======
+>>>>>>> origin/BECOMM
+>>>>>>> BECOMJ
 </member>
 </members>
 </doc>

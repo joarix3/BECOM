@@ -37,6 +37,9 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+>>>>>>> BECOMJ
+<<<<<<< HEAD
+=======
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
@@ -140,6 +143,10 @@ C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAss
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmAcademico.resources
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarCarrera.resources
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarCarreras.resources
+<<<<<<< HEAD
 >>>>>>> BECOMM
 =======
+>>>>>>> BECOMJ
+=======
+>>>>>>> origin/BECOMM
 >>>>>>> BECOMJ

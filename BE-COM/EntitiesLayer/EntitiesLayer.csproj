@@ -42,10 +42,15 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Beneficio.cs" />
 =======
     <Compile Include="Carrera.cs" />
 >>>>>>> BECOMM
+=======
+    <Compile Include="Beneficio.cs" />
+    <Compile Include="Carrera.cs" />
+>>>>>>> BECOMJ
     <Compile Include="IEntity.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
