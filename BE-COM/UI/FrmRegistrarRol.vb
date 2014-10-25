@@ -6,8 +6,8 @@ Imports DAL
 Public Class FrmRegistrarRol
     Dim formAnterior As Form
     Dim listaDatos As List(Of Boolean)
-    Dim objGestor As New GestorUsuarios()
-    Dim objValidaciones As New Validaciones()
+    'Dim objGestor As New GestorUsuarios()
+    'Dim objValidaciones As New Validaciones()
 
     Public Sub New(pformAnterior As Form)
         formAnterior = pformAnterior
@@ -17,13 +17,13 @@ Public Class FrmRegistrarRol
         ' Add any initialization after the InitializeComponent() call.
 
     End Sub
-    Private Sub FrmRegistrarRol_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim objGestor As New GestorUsuarios()
-        For Each permiso As Permiso In objGestor.obtenerPermisos()
-            LchkPermisos.Items.Add(permiso.Nombre())
-        Next
+    'Private Sub FrmRegistrarRol_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    '    'Dim objGestor As New GestorUsuarios()
+    '    'For Each permiso As Permiso In objGestor.obtenerPermisos()
+    '    LchkPermisos.Items.Add(permiso.Nombre())
+    '    Next
 
-    End Sub
+    'End Sub
 
     Private Sub btnMin_Click(sender As Object, e As EventArgs)
         Me.WindowState = FormWindowState.Minimized
@@ -91,22 +91,22 @@ Public Class FrmRegistrarRol
 
     Private Sub txtNombre_Leave(sender As Object, e As EventArgs) Handles txtNombre.Leave
 
-        If objValidaciones.validarCamposTexto(txtNombre) = True Then
-            lblNombreV.Image = campoCorrecto
-            lblNombreV.Visible = True
-        Else
-            lblNombreV.Image = campoIncorrecto
-            lblNombreV.Visible = True
-        End If
-    End Sub
+        '    If objValidaciones.validarCamposTexto(txtNombre) = True Then
+        '        lblNombreV.Image = campoCorrecto
+        '        lblNombreV.Visible = True
+        '    Else
+        '        lblNombreV.Image = campoIncorrecto
+        '        lblNombreV.Visible = True
+        '    End If
+        'End Sub
 
-    Private Sub rctDescripcion_Leave(sender As Object, e As EventArgs) Handles rctDescripcion.Leave
-        If objValidaciones.validarCamposTexto(rctDescripcion) = True Then
-            lblDescripcionV.Image = campoCorrecto
-            lblDescripcionV.Visible = True
-        Else
-            lblDescripcionV.Image = campoIncorrecto
-            lblDescripcionV.Visible = True
-        End If
+        '    Private Sub rctDescripcion_Leave(sender As Object, e As EventArgs) Handles rctDescripcion.Leave
+        '        If objValidaciones.validarCamposTexto(rctDescripcion) = True Then
+        '            lblDescripcionV.Image = campoCorrecto
+        '            lblDescripcionV.Visible = True
+        '        Else
+        '            lblDescripcionV.Image = campoIncorrecto
+        '            lblDescripcionV.Visible = True
+        '        End If
     End Sub
 End Class

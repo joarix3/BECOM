@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Beneficio.cs" />
+=======
+    <Compile Include="Carrera.cs" />
+>>>>>>> origin/BECOMM
     <Compile Include="IEntity.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
