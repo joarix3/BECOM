@@ -20,6 +20,7 @@ namespace BLL
         {
             Rol rol = new Rol (pnombre,pdescripcion);
             UoW.RolRepository.Insert(rol);
+
         }
 
         public void modificarUsuario()

@@ -1,5 +1,6 @@
 ﻿Imports EntitiesLayer
 Imports BLL
+
 Public Class FrmRegistrarRol
     Dim formAnterior As Form
     Dim listaDatos As List(Of Boolean)

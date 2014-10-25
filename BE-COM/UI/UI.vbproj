@@ -102,22 +102,22 @@
     <Compile Include="FrmMostrarCarreras.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMostrarHistorialAcademico.Designer.vb">
-      <DependentUpon>FrmMostrarHistorialAcademico.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarHistorialAcademico.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmMostrarRoles.Designer.vb">
       <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmMostrarRoles.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMostrarTiposDeBeca.Designer.vb">
-      <DependentUpon>FrmMostrarTiposDeBeca.vb</DependentUpon>
+    <Compile Include="FrmRegistrarPeriodo.Designer.vb">
+      <DependentUpon>FrmRegistrarPeriodo.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmMostrarTiposDeBeca.vb">
+    <Compile Include="FrmRegistrarPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarPeriodos.Designer.vb">
+      <DependentUpon>FrmMostrarPeriodos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarPeriodos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPantallaPrincipal.Designer.vb">
@@ -186,14 +186,14 @@
     <EmbeddedResource Include="FrmMantenimientoUsuarios.resx">
       <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarHistorialAcademico.resx">
-      <DependentUpon>FrmMostrarHistorialAcademico.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarRoles.resx">
       <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarTiposDeBeca.resx">
-      <DependentUpon>FrmMostrarTiposDeBeca.vb</DependentUpon>
+    <EmbeddedResource Include="FrmRegistrarPeriodo.resx">
+      <DependentUpon>FrmRegistrarPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarPeriodos.resx">
+      <DependentUpon>FrmMostrarPeriodos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPantallaPrincipal.resx">
       <DependentUpon>FrmPantallaPrincipal.vb</DependentUpon>
