@@ -1,4 +1,7 @@
 ﻿'Clase para mostrar los roles de la aplicación.
+'revisado por daniel maietta
+'Excelente revisión.
+Imports BLL.GestorUsuarios
 Public Class FrmMostrarRoles
     Dim formAnterior As Form
 
@@ -15,10 +18,15 @@ Public Class FrmMostrarRoles
     End Sub
 
     Private Sub FrmMostrarRoles_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cmbFiltroBusqueda.SelectedIndex = 0
+        txtBuscar.Focus()
+        mostrarRoles()
+        configurarColumnasDGV()
+
     End Sub
 
-    Private Sub gridMostrarAlumnos_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles gridMostrarAlumnos.CellMouseEnter
-        gridMostrarAlumnos.RowsDefaultCellStyle.SelectionBackColor = Color.Purple
+    Private Sub gridMostrarAlumnos_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMostrarRoles.CellMouseEnter
+        dgvMostrarRoles.RowsDefaultCellStyle.SelectionBackColor = Color.Purple
     End Sub
 
 
@@ -32,11 +40,6 @@ Public Class FrmMostrarRoles
         frmRegistrarRol.Show()
         Me.Hide()
     End Sub
-
-<<<<<<< HEAD
- 
-=======
-<<<<<<< HEAD
     Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
 
         If String.IsNullOrEmpty(txtBuscar.Text) = True Then
@@ -73,8 +76,5 @@ Public Class FrmMostrarRoles
         End If
 
     End Sub
-=======
- 
->>>>>>> origin/BECOMM
->>>>>>> BECOMJ
+
 End Class
