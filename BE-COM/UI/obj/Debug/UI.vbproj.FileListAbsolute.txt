@@ -1,3 +1,18 @@
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarHistorialAcademico.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarTiposDeBeca.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRol.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarUsuario.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.Resources.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopAgregado.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.exe
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
@@ -8,6 +23,7 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\bin\Debug\DAL.dll
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\bin\Debug\BLL.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
+<<<<<<< HEAD
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmAcademico.resources
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarCarreras.resources
@@ -26,6 +42,8 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopFalloIngres
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
+=======
+>>>>>>> 87645983a73f50fb7f923e12e64135be62872b89
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.exe
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.xml
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
