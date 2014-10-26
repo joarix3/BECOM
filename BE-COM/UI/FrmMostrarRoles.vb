@@ -1,6 +1,7 @@
 ﻿'Clase para mostrar los roles de la aplicación.
 'revisado por daniel maietta
 'Excelente revisión.
+Imports BLL.GestorUsuarios
 Public Class FrmMostrarRoles
     Dim formAnterior As Form
 
@@ -39,10 +40,6 @@ Public Class FrmMostrarRoles
         frmRegistrarRol.Show()
         Me.Hide()
     End Sub
-
-<<<<<<< HEAD
- 
-=======
     Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
 
         If String.IsNullOrEmpty(txtBuscar.Text) = True Then
@@ -79,5 +76,5 @@ Public Class FrmMostrarRoles
         End If
 
     End Sub
->>>>>>> 87645983a73f50fb7f923e12e64135be62872b89
+
 End Class

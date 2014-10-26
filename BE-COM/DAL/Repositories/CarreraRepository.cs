@@ -129,6 +129,37 @@ namespace DAL.Repositories
             return objCarrera;
         }
 
+
+        public IEnumerable<Carrera> GetAllByName(String pcarrera)
+        {
+            List<Carrera> objCarrera = null;
+
+            SqlCommand cmd = new SqlCommand();
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerCarreras");
+
+
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                objCarrera = new List<Carrera>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    objCarrera.Add(new Carrera
+                    {
+                        Id = Convert.ToInt32(dr["IdCarrera"]),
+                        Codigo = dr["Codigo"].ToString(),
+                        Nombre = dr["Nombre"].ToString(),
+                        Universidad = Convert.ToInt32(dr["IdUniversidad"]),
+                        Color = dr["Color"].ToString(),
+                        BecasOtor = Convert.ToInt32(dr["CantidadBecasOtorgables"])
+                    });
+                }
+            }
+
+            return objCarrera;
+        }
+
+
         private void InsertCarrera(Carrera objCarrera)
         {
 
