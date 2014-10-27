@@ -1,5 +1,8 @@
-﻿Public Class FrmMostrarPeriodos
+﻿Imports EntitiesLayer
+
+Public Class FrmMostrarPeriodos
     Dim formAnterior As Form
+
 
 
     Public Sub New(pformAnterior As Form)
@@ -30,13 +33,32 @@
         dtgPeriodos.Columns(1).HeaderText = "Nombre"
         dtgPeriodos.Columns(2).HeaderText = "Dias"
         dtgPeriodos.Columns(3).HeaderText = "Meses"
-        
+
 
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim p As New FrmRegistrarPeriodo(Me)
+        Dim p As Form = New FrmRegistrarPeriodo(Me)
         p.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        Dim objPeriodo As Periodo
+
+        If (dtgPeriodos.SelectedRows.Count = 1) Then
+
+            Dim id As Integer = Convert.ToInt32(dtgPeriodos.CurrentRow.Cells(0).Value)
+            objPeriodo = objGestorPeriodo.ObtenerPeriodoPorId(id)
+            Dim p As New FrmModificarPeriodo(Me, objPeriodo)
+            p.Show()
+            Me.Hide()
+        Else
+            MessageBox.Show("debe de seleccionar una fila")
+        End If
+
+
+
 
     End Sub
 End Class

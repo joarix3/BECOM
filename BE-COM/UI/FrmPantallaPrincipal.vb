@@ -43,6 +43,7 @@
     Private Sub btnBeca_Click(sender As Object, e As EventArgs) Handles btnBeca.Click
         Dim frmMostrarPeriodos As Form = New FrmMostrarPeriodos(Me)
         frmMostrarPeriodos.Show()
+        Me.Hide()
     End Sub
 
 

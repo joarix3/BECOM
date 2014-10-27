@@ -18,9 +18,9 @@ namespace EntitiesLayer
         public String Nombre { get; set; }
         public int Dia { get; set; }
         public int Mes { get; set; }
-        public int Estado { get; set; }
+        public String Estado { get; set; }
 
-        public Periodo(String pnombre, int pdia, int pmes, int pestado){
+        public Periodo(String pnombre, int pdia, int pmes, String pestado){
             Nombre = pnombre;
             Dia = pdia;
             Mes = pmes;
@@ -32,6 +32,16 @@ namespace EntitiesLayer
             Dia = pdia;
             Mes = pmes;
         }
+
+        public Periodo(int pid, String pnombre, int pdia, int pmes, String pestado)
+        {
+            Id = pid;
+            Nombre = pnombre;
+            Dia = pdia;
+            Mes = pmes;
+            Estado = pestado;
+        }
+
         public Periodo()
         {
             Id = 0;

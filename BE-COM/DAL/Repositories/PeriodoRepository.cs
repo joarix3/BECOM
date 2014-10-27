@@ -72,24 +72,25 @@ namespace DAL
         public Periodo GetById(int id)
         {
             Periodo objPeriodo = null;
-            ////var sqlQuery = "SELECT Id, Nombre, Precio FROM Producto WHERE id = @idProducto";
-            ////SqlCommand cmd = new SqlCommand(sqlQuery);
-            ////cmd.Parameters.AddWithValue("@idProducto", id);
+            var sqlQuery = "SELECT IdPeriodo, Nombre, Dia, Mes, Estado FROM TbPeriodo WHERE IdPeriodo = @IdPeriodo";
+            SqlCommand cmd = new SqlCommand(sqlQuery);
+            cmd.Parameters.AddWithValue("@IdPeriodo", id);
 
-            ////var ds = DBAccess.ExecuteQuery(cmd);
+            var ds = DBAccess.ExecuteQuery(cmd);
 
-            ////if (ds.Tables[0].Rows.Count > 0)
-            ////{
-            ////    var dr = ds.Tables[0].Rows[0];
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                var dr = ds.Tables[0].Rows[0];
 
-            ////    objTipoBeca = new TipoBeca
-            ////    {
-            ////        Id = Convert.ToInt32(dr["Id"]),
-            ////        Nombre = dr["Nombre"].ToString(),
-            ////        Descripcion = dr["Descripcion"].ToString(),
-            ////        Estado = dr["Estado"].ToString()
-            ////    };
-            ////}
+                objPeriodo = new Periodo
+                {
+                    Id = Convert.ToInt32(dr["idPeriodo"]),
+                    Nombre = dr["Nombre"].ToString(),
+                    Dia = Convert.ToInt32(dr["Dia"]),
+                    Mes = Convert.ToInt32(dr["Mes"]),
+                    Estado = dr["Estado"].ToString()
+                };
+            }
             return objPeriodo;
         }
 
@@ -111,7 +112,7 @@ namespace DAL
                     {
                         foreach (Periodo p in _updateItems)
                         {
-                            UpdateHueso(p);
+                            UpdatePeriodo(p);
                         }
                     }
 
@@ -171,18 +172,21 @@ namespace DAL
 
         }
 
-        private void UpdateHueso(Periodo objTipoBeca)
+        private void UpdatePeriodo(Periodo pobjPeriodo)
         {
+
             //try
             //{
-            //    SqlCommand cmd = new SqlCommand();
+                SqlCommand cmd = new SqlCommand();
 
-            //    cmd.Parameters.Add(new SqlParameter("@nomb", objHueso.Nombre));
-            //    cmd.Parameters.Add(new SqlParameter("@tipo", objHueso.Tipo));
-            //    cmd.Parameters.Add(new SqlParameter("@ubicacion", objHueso.Ubicacion));
+                cmd.Parameters.Add(new SqlParameter("@nombre", pobjPeriodo.Nombre));
+                cmd.Parameters.Add(new SqlParameter("@dia", pobjPeriodo.Dia));
+                cmd.Parameters.Add(new SqlParameter("@mes", pobjPeriodo.Mes));
+                cmd.Parameters.Add(new SqlParameter("@estado", pobjPeriodo.Estado));
+                cmd.Parameters.Add(new SqlParameter("@idPeriodo", pobjPeriodo.Id));
 
 
-            //    DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "pa_modificar_hueso");
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaModificarPeriodo");
 
             //}
             //catch (Exception ex)

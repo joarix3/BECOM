@@ -59,6 +59,22 @@ namespace BLL
         {
             return UoW.PeriodoRepository.GetAll();
         }
+        
+         //Metodo que optienen un periodo de vigencia
+         //de acuardo al id que reciba
+        public Periodo ObtenerPeriodoPorId(int pid)
+        {
+            return UoW.PeriodoRepository.GetById(pid);
+        }
+
+        //Metodo que modifica la informacion de un periodo de vigencia
+        public void modificarPeriodo(int pid, String pnombre, int pdia, int pmes, String pestado)
+        {
+
+            Periodo objPeriodo = new Periodo(pid, pnombre, pdia, pmes, pestado);
+            UoW.PeriodoRepository.Update(objPeriodo);
+
+        }
 
     }
 }
