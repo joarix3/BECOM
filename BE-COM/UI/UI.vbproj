@@ -84,18 +84,6 @@
     <Compile Include="FrmAcademico.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMostrarCarreras.Designer.vb">
-      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarCarreras.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistrarCarrera.Designer.vb">
-      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRegistrarCarrera.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmIniciarSesion.Designer.vb">
       <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </Compile>
@@ -108,10 +96,10 @@
     <Compile Include="FrmMantenimientoUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMostrarHistorialAcademico.Designer.vb">
-      <DependentUpon>FrmMostrarHistorialAcademico.vb</DependentUpon>
+    <Compile Include="FrmMostrarCarreras.Designer.vb">
+      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmMostrarHistorialAcademico.vb">
+    <Compile Include="FrmMostrarCarreras.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMostrarRoles.Designer.vb">
@@ -120,22 +108,34 @@
     <Compile Include="FrmMostrarRoles.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMostrarTiposDeBeca.Designer.vb">
-      <DependentUpon>FrmMostrarTiposDeBeca.vb</DependentUpon>
+    <Compile Include="FrmModificarPeriodo.Designer.vb">
+      <DependentUpon>FrmModificarPeriodo.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmMostrarTiposDeBeca.vb">
+    <Compile Include="FrmModificarPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarCarrera.Designer.vb">
+      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarCarrera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarPeriodo.Designer.vb">
+      <DependentUpon>FrmRegistrarPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarPeriodos.Designer.vb">
+      <DependentUpon>FrmMostrarPeriodos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarPeriodos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPantallaPrincipal.Designer.vb">
       <DependentUpon>FrmPantallaPrincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmPantallaPrincipal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmModificarRol.Designer.vb">
-      <DependentUpon>FrmModificarRol.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmModificarRol.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmRegistrarRol.Designer.vb">
@@ -192,35 +192,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmAcademico.resx">
-      <DependentUpon>FrmAcademico.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarCarreras.resx">
-      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarCarrera.resx">
-      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmIniciarSesion.resx">
       <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientoUsuarios.resx">
       <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarHistorialAcademico.resx">
-      <DependentUpon>FrmMostrarHistorialAcademico.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarRoles.resx">
       <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarTiposDeBeca.resx">
-      <DependentUpon>FrmMostrarTiposDeBeca.vb</DependentUpon>
+    <EmbeddedResource Include="FrmModificarPeriodo.resx">
+      <DependentUpon>FrmModificarPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarCarrera.resx">
+      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarPeriodo.resx">
+      <DependentUpon>FrmRegistrarPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarPeriodos.resx">
+      <DependentUpon>FrmMostrarPeriodos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPantallaPrincipal.resx">
       <DependentUpon>FrmPantallaPrincipal.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmModificarRol.resx">
-      <DependentUpon>FrmModificarRol.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarRol.resx">
       <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
@@ -274,10 +268,6 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{1df68d8d-5d81-4d98-9761-8834cf6e88a4}</Project>
       <Name>BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{9e7c6ccc-d37a-464b-8f8b-07eed1fd1446}</Project>
-      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\EntitiesLayer\EntitiesLayer.csproj">
       <Project>{aaf9ed03-2d38-4a7e-8616-b656c7b4663e}</Project>

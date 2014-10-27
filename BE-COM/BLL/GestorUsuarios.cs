@@ -21,6 +21,7 @@ namespace BLL
             char estado = '1';
             Rol rol = new Rol (pnombre,pdescripcion,estado);
             UoW.RolRepository.Insert(rol);
+
         }
 
         public void modificarUsuario(String pnombre, String pdescripcion, char pestado, List<int> ppermisosSeleccionados)

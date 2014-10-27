@@ -13,115 +13,112 @@ using DAL.Repositories;
 
 namespace DAL
 {
-    public class TipoBecaRepository : IRepository<TipoBeca>
+    public class PeriodoRepository : IRepository<Periodo>
     {
 
         private List<IEntity> _insertItems;
         private List<IEntity> _deleteItems;
         private List<IEntity> _updateItems;
 
-        public TipoBecaRepository()
+        public PeriodoRepository()
         {
             _insertItems = new List<IEntity>();
             _deleteItems = new List<IEntity>();
             _updateItems = new List<IEntity>();
         }
 
-        public void Insert(TipoBeca entity)
+        public void Insert(Periodo entity)
         {
             _insertItems.Add(entity);
         }
 
-        public void Delete(TipoBeca entity)
+        public void Delete(Periodo entity)
         {
             _deleteItems.Add(entity);
         }
 
-        public void Update(TipoBeca entity)
+        public void Update(Periodo entity)
         {
             _updateItems.Add(entity);
         }
 
-        public IEnumerable<TipoBeca> GetAll()
+        public IEnumerable<Periodo> GetAll()
         {
-
-
-            List<TipoBeca> phueso = null;
+            List<Periodo> objPeriodo = null;
 
             SqlCommand cmd = new SqlCommand();
-            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "pa_listar_huesos");
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerPeriodos");
 
 
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                phueso = new List<TipoBeca>();
+                objPeriodo = new List<Periodo>();
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {
-                    phueso.Add(new TipoBeca
+                    objPeriodo.Add(new Periodo
                     {
-                        Id = Convert.ToInt32(dr["IdTipoBeca"]),
+                        Id = Convert.ToInt32(dr["IdPeriodo"]),
                         Nombre = dr["Nombre"].ToString(),
-                        Descripcion = dr["Descripcion"].ToString(),
-                        Estado = dr["Estado"].ToString()
+                        Dia = Convert.ToInt32(dr["Dia"]),
+                        Mes = Convert.ToInt32(dr["Mes"])
                     });
                 }
             }
 
-            return phueso;
+            return objPeriodo;
         }
 
-        public IEnumerable<TipoBeca> GetAllByName(string ptipobeca)
+        public IEnumerable<Periodo> GetAllByName(string pnombre)
         {
-
-
-            List<TipoBeca> phueso = null;
+            List<Periodo> objPeriodo = null;
 
             SqlCommand cmd = new SqlCommand();
-            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "pa_listar_huesos");
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerPeriodos");
 
 
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                phueso = new List<TipoBeca>();
+                objPeriodo = new List<Periodo>();
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {
-                    phueso.Add(new TipoBeca
+                    objPeriodo.Add(new Periodo
                     {
-                        Id = Convert.ToInt32(dr["IdTipoBeca"]),
+                        Id = Convert.ToInt32(dr["IdPeriodo"]),
                         Nombre = dr["Nombre"].ToString(),
-                        Descripcion = dr["Descripcion"].ToString(),
-                        Estado = dr["Estado"].ToString()
+                        Dia = Convert.ToInt32(dr["Dia"]),
+                        Mes = Convert.ToInt32(dr["Mes"])
                     });
                 }
             }
 
-            return phueso;
+            return objPeriodo;
         }
 
-        public TipoBeca GetById(int id)
+        public Periodo GetById(int id)
         {
-            TipoBeca objHueso = null;
-            ////var sqlQuery = "SELECT Id, Nombre, Precio FROM Producto WHERE id = @idProducto";
-            ////SqlCommand cmd = new SqlCommand(sqlQuery);
-            ////cmd.Parameters.AddWithValue("@idProducto", id);
+            Periodo objPeriodo = null;
+            var sqlQuery = "SELECT IdPeriodo, Nombre, Dia, Mes, Estado FROM TbPeriodo WHERE IdPeriodo = @IdPeriodo";
+            SqlCommand cmd = new SqlCommand(sqlQuery);
+            cmd.Parameters.AddWithValue("@IdPeriodo", id);
 
-            ////var ds = DBAccess.ExecuteQuery(cmd);
+            var ds = DBAccess.ExecuteQuery(cmd);
 
-            ////if (ds.Tables[0].Rows.Count > 0)
-            ////{
-            ////    var dr = ds.Tables[0].Rows[0];
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                var dr = ds.Tables[0].Rows[0];
 
-            ////    objTipoBeca = new TipoBeca
-            ////    {
-            ////        Id = Convert.ToInt32(dr["Id"]),
-            ////        Nombre = dr["Nombre"].ToString(),
-            ////        Descripcion = dr["Descripcion"].ToString(),
-            ////        Estado = dr["Estado"].ToString()
-            ////    };
-            ////}
-            return objHueso;
+                objPeriodo = new Periodo
+                {
+                    Id = Convert.ToInt32(dr["idPeriodo"]),
+                    Nombre = dr["Nombre"].ToString(),
+                    Dia = Convert.ToInt32(dr["Dia"]),
+                    Mes = Convert.ToInt32(dr["Mes"]),
+                    Estado = dr["Estado"].ToString()
+                };
+            }
+            return objPeriodo;
         }
 
         public void Save()
@@ -132,23 +129,23 @@ namespace DAL
                 {
                     if (_insertItems.Count > 0)
                     {
-                        foreach (TipoBeca objTipoBeca in _insertItems)
+                        foreach (Periodo objPeriodo in _insertItems)
                         {
-                            InsertTipoBeca(objTipoBeca);
+                            InsertTipoBeca(objPeriodo);
                         }
                     }
 
                     if (_updateItems.Count > 0)
                     {
-                        foreach (TipoBeca p in _updateItems)
+                        foreach (Periodo p in _updateItems)
                         {
-                            UpdateHueso(p);
+                            UpdatePeriodo(p);
                         }
                     }
 
                     if (_deleteItems.Count > 0)
                     {
-                        foreach (TipoBeca p in _deleteItems)
+                        foreach (Periodo p in _deleteItems)
                         {
                             DeleteHueso(p);
                         }
@@ -179,7 +176,7 @@ namespace DAL
             _updateItems.Clear();
         }
 
-        private void InsertTipoBeca(TipoBeca objTipoBeca)
+        private void InsertTipoBeca(Periodo objPeriodo)
 
         {
 
@@ -187,11 +184,11 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
 
-                cmd.Parameters.Add(new SqlParameter("@nombre", objTipoBeca.Nombre));
-                cmd.Parameters.Add(new SqlParameter("@descripcion", objTipoBeca.Descripcion));
-                cmd.Parameters.Add(new SqlParameter("@idPeriodo", objTipoBeca.IdPeriodo));
+                cmd.Parameters.Add(new SqlParameter("@Nombre", objPeriodo.Nombre));
+                cmd.Parameters.Add(new SqlParameter("@Dia", objPeriodo.Dia));
+                cmd.Parameters.Add(new SqlParameter("@Mes", objPeriodo.Mes));
 
-                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaAgregearTipoBeca");
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaAgregarPeriodo");
 
             }
             catch (Exception ex)
@@ -202,18 +199,21 @@ namespace DAL
 
         }
 
-        private void UpdateHueso(TipoBeca objTipoBeca)
+        private void UpdatePeriodo(Periodo pobjPeriodo)
         {
+
             //try
             //{
-            //    SqlCommand cmd = new SqlCommand();
+                SqlCommand cmd = new SqlCommand();
 
-            //    cmd.Parameters.Add(new SqlParameter("@nomb", objHueso.Nombre));
-            //    cmd.Parameters.Add(new SqlParameter("@tipo", objHueso.Tipo));
-            //    cmd.Parameters.Add(new SqlParameter("@ubicacion", objHueso.Ubicacion));
+                cmd.Parameters.Add(new SqlParameter("@nombre", pobjPeriodo.Nombre));
+                cmd.Parameters.Add(new SqlParameter("@dia", pobjPeriodo.Dia));
+                cmd.Parameters.Add(new SqlParameter("@mes", pobjPeriodo.Mes));
+                cmd.Parameters.Add(new SqlParameter("@estado", pobjPeriodo.Estado));
+                cmd.Parameters.Add(new SqlParameter("@idPeriodo", pobjPeriodo.Id));
 
 
-            //    DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "pa_modificar_hueso");
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaModificarPeriodo");
 
             //}
             //catch (Exception ex)
@@ -222,7 +222,7 @@ namespace DAL
             //}
         }
 
-        private void DeleteHueso(TipoBeca objTipoBeca)
+        private void DeleteHueso(Periodo objTipoBeca)
         {
             //try
             //{

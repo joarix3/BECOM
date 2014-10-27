@@ -409,7 +409,7 @@ Partial Class FrmMostrarRoles
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(243, 153)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(67, 25)
+        Me.Label2.Size = New System.Drawing.Size(66, 25)
         Me.Label2.TabIndex = 38
         Me.Label2.Text = "Buscar:"
         '
@@ -419,7 +419,7 @@ Partial Class FrmMostrarRoles
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(537, 153)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(100, 25)
+        Me.Label4.Size = New System.Drawing.Size(99, 25)
         Me.Label4.TabIndex = 40
         Me.Label4.Text = "Buscar por:"
         '

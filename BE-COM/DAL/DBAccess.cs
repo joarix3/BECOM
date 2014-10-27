@@ -7,7 +7,6 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
 
-
 namespace DAL
 {
     public class DBAccess

@@ -15,33 +15,30 @@ namespace EntitiesLayer
             get { return _idTipoBeca; }
             set { _idTipoBeca = value; }
         }
-
         public String Nombre { get; set; }
         public String Descripcion { get; set; }
         public String Estado { get; set; }
-        public int IdPeriodo { get; set; }
+        public String IdPeriodo { get; set; }
 
-        public TipoBeca()
-        {
-            Id = 0;
+
+        public TipoBeca(){
             Nombre = "";
             Descripcion = "";
-            Estado = "";
-            IdPeriodo = 0;
+            Estado = "1";
+            IdPeriodo = "1";
         }
 
-        public TipoBeca(string pnombre, string pdescripcion, string pestado, int pidperiodo)
-        {
-            Id = 0;
+        public TipoBeca(String pnombre, String pdescripcion, String pidPeriodo){
             Nombre = pnombre;
             Descripcion = pdescripcion;
-            Estado = pestado;
-            IdPeriodo = pidperiodo;
+            IdPeriodo = pidPeriodo;
         }
 
-
-
-
-
+        public TipoBeca(String pnombre, String pdescripcion, String pidPeriodo, String pestado){
+            Nombre = pnombre;
+            Descripcion = pdescripcion;
+            IdPeriodo = pidPeriodo;
+            Estado = pestado;
+        }
     }
 }

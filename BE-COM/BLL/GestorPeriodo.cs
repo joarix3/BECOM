@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DAL.Repositories;
-using EntitiesLayer;
 using DAL;
+using EntitiesLayer;
+
 
 namespace BLL
 {
-    public class GestorTipoBeca
+    public class GestorPeriodo
     {
         private UnitOfWork UoW = new UnitOfWork();
 
-        public void agregarTipoBeca(string pnombre, string pdescripcion , string pidPeriodo){
+        public void agregarPeriodo(String pnombre, int pdia, int pmes){
             //try
             //{
-                TipoBeca objTipoBeca = new TipoBeca(pnombre, pdescripcion, pidPeriodo);
+                Periodo objPeriodo = new Periodo(pnombre, pdia, pmes);
             //    if (objTipoBeca.IsValid)
             //    {
-                    UoW.TipoBecaRepository.Insert(objTipoBeca);
+                    UoW.PeriodoRepository.Insert(objPeriodo);
             //    }
             //    else
             //    {
@@ -42,7 +42,7 @@ namespace BLL
         {
             //try
             //{
-            UoW.TipoBecaRepository.Save();
+            UoW.PeriodoRepository.Save();
             //    }
             //    catch (DataAccessException ex)
             //    {
@@ -53,6 +53,27 @@ namespace BLL
             //        //logear a la bd
             //        throw new BusinessLogicException("Ha ocurrido un error al eliminar un usuario", ex);
             //    }
+        }
+
+        public IEnumerable<Periodo> obtenerPeriodos()
+        {
+            return UoW.PeriodoRepository.GetAll();
+        }
+        
+         //Metodo que optienen un periodo de vigencia
+         //de acuardo al id que reciba
+        public Periodo ObtenerPeriodoPorId(int pid)
+        {
+            return UoW.PeriodoRepository.GetById(pid);
+        }
+
+        //Metodo que modifica la informacion de un periodo de vigencia
+        public void modificarPeriodo(int pid, String pnombre, int pdia, int pmes, String pestado)
+        {
+
+            Periodo objPeriodo = new Periodo(pid, pnombre, pdia, pmes, pestado);
+            UoW.PeriodoRepository.Update(objPeriodo);
+
         }
 
     }

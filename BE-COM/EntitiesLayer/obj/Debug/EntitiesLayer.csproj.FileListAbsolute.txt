@@ -8,25 +8,22 @@ C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\EntitiesLayer\bin\Debug\Ent
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
 C:\Users\dani\Documents\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.dll
 C:\Users\dani\Documents\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
 C:\Users\dani\Documents\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
 C:\Users\dani\Documents\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\dani\Documents\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
-<<<<<<< HEAD
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
-=======
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
->>>>>>> 19b53650251c1f546677c2fd06a6567ad392fecc
+E:\Proyecto2\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+E:\Proyecto2\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+E:\Proyecto2\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+E:\Proyecto2\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+E:\Proyecto2\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+C:\Users\Douglas\Documents\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Douglas\Documents\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Douglas\Documents\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+C:\Users\Douglas\Documents\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
