@@ -44,21 +44,21 @@ Public Class FrmRegistrarRol
         Dim nombre As String = txtNombre.Text
         Dim descripcion As String = rctDescripcion.Text
 
-        validarCampoFormulario()
+        'validarCampoFormulario()
         permisosSeleccionados = obtenerPermisosSeleccionados()        
         gestorUsuario.agregarRol(nombre, descripcion, permisosSeleccionados)
         gestorUsuario.guardarCambios()
     End Sub
 
-    Private Sub validarCampoFormulario()
-        For Each validacion As Label In Me.pnFormulario.Controls.OfType(Of Label)()
-            If IsNumeric(validacion.Tag) = True Then
-                If validacion.Image.Equals(campoIncorrecto) Then
-                    MsgBox("Existen campos incorrectos")
-                End If
-            End If
-        Next
-    End Sub
+    'Private Sub validarCampoFormulario()
+    '    For Each validacion As Label In Me.pnFormulario.Controls.OfType(Of Label)()
+    '        If IsNumeric(validacion.Tag) = True Then
+    '            If validacion.Image.Equals(campoIncorrecto) Then
+    '                MsgBox("Existen campos incorrectos")
+    '            End If
+    '        End If
+    '    Next
+    'End Sub
 
     Private Function obtenerPermisosSeleccionados() As List(Of Integer)
         Dim permisosSeleccionados As List(Of Integer) = New List(Of Integer)
