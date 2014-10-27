@@ -46,7 +46,6 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Accessibility" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
@@ -115,12 +114,6 @@
     <Compile Include="FrmMostrarHistorialAcademico.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMostrarBeneficios.Designer.vb">
-      <DependentUpon>FrmMostrarBeneficios.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarBeneficios.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmMostrarRoles.Designer.vb">
       <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
     </Compile>
@@ -139,22 +132,10 @@
     <Compile Include="FrmPantallaPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegistrarBeneficio.Designer.vb">
-      <DependentUpon>FrmRegistrarBeneficio.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRegistrarBeneficio.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmRegistrarRol.Designer.vb">
       <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmRegistrarRol.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistrarTipoBeca.Designer.vb">
-      <DependentUpon>FrmRegistrarTipoBeca.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRegistrarTipoBeca.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmRegistrarUsuario.Designer.vb">
@@ -220,14 +201,8 @@
     <EmbeddedResource Include="FrmMantenimientoUsuarios.resx">
       <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarCarreras.resx">
-      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarHistorialAcademico.resx">
       <DependentUpon>FrmMostrarHistorialAcademico.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarBeneficios.resx">
-      <DependentUpon>FrmMostrarBeneficios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarRoles.resx">
       <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
@@ -238,14 +213,8 @@
     <EmbeddedResource Include="FrmPantallaPrincipal.resx">
       <DependentUpon>FrmPantallaPrincipal.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarBeneficio.resx">
-      <DependentUpon>FrmRegistrarBeneficio.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarRol.resx">
       <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarTipoBeca.resx">
-      <DependentUpon>FrmRegistrarTipoBeca.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarUsuario.resx">
       <DependentUpon>FrmRegistrarUsuario.vb</DependentUpon>
@@ -296,10 +265,6 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{1df68d8d-5d81-4d98-9761-8834cf6e88a4}</Project>
       <Name>BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{9e7c6ccc-d37a-464b-8f8b-07eed1fd1446}</Project>
-      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\EntitiesLayer\EntitiesLayer.csproj">
       <Project>{aaf9ed03-2d38-4a7e-8616-b656c7b4663e}</Project>

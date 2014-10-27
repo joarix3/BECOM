@@ -41,16 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Beneficio.cs" />
-
-    <Compile Include="Carrera.cs" />
-    <Compile Include="Beneficio.cs" />
     <Compile Include="Carrera.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rol.cs" />
-    <Compile Include="TipoBeca.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Validaciones.cs" />
   </ItemGroup>

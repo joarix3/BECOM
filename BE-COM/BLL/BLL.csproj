@@ -39,17 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    <Compile Include="GestorTipoBeca.cs" />
-
-    <Compile Include="GestorBeneficio.cs" />
-
-=======
-    <Compile Include="GestorCarrera.cs" />
-
-    <Compile Include="GestorBeneficio.cs" />
     <Compile Include="GestorCarrera.cs" />
     <Compile Include="GestorUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

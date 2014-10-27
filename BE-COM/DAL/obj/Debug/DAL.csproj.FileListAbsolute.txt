@@ -12,14 +12,6 @@ C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\DAL\bin\Debug\EntitiesLayer
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\DAL\obj\Debug\DAL.dll
 C:\Users\JuanManuel\Documents\Soft506\Soft506\BE-COM\DAL\obj\Debug\DAL.pdb
-C:\Users\dani\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
-C:\Users\dani\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
-C:\Users\dani\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
-C:\Users\dani\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
-C:\Users\dani\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\dani\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
-C:\Users\dani\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
-<<<<<<< HEAD
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
@@ -27,17 +19,6 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
-<<<<<<< HEAD
-=======
-C:\Users\PC\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
-C:\Users\PC\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
-C:\Users\PC\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
-C:\Users\PC\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
-C:\Users\PC\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\PC\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
-C:\Users\PC\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
->>>>>>> BECOMR
-=======
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
@@ -45,4 +26,3 @@ C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
->>>>>>> BECOMM

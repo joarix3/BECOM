@@ -13,9 +13,8 @@
         formAnterior.Show()
         Me.Hide()
     End Sub
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim frmRegistrarTiposBeca As Form = New FrmRegistrarTipoBeca(Me)
-        frmRegistrarTiposBeca.Show()
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+
     End Sub
 
 

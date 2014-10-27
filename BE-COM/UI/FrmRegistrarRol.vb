@@ -1,8 +1,5 @@
 ﻿Imports EntitiesLayer
 Imports BLL
-Imports System.Data.SqlClient
-Imports DAL
-
 Public Class FrmRegistrarRol
     Dim formAnterior As Form
     Dim listaDatos As List(Of Boolean)
@@ -48,26 +45,9 @@ Public Class FrmRegistrarRol
         Dim descripcion As String = rctDescripcion.Text
 
         validarCampoFormulario()
-        permisosSeleccionados = obtenerPermisosSeleccionados()
-        Dim conexion As SqlConnection = DBAccess.GetConnection()
-        conexion.Open()
-        Dim ParegistrarRol As SqlCommand = New SqlCommand("PaRegistrarRol", conexion)
-        ParegistrarRol.CommandType = CommandType.StoredProcedure
-
-        Dim nombreRol As SqlParameter = ParegistrarRol.Parameters.Add("@Nombre", SqlDbType.VarChar, 50)
-        nombreRol.Direction = ParameterDirection.Input
-
-        nombreRol.Value = nombre
-
-        Dim descripcionRol As SqlParameter = ParegistrarRol.Parameters.Add("@Descripcion", SqlDbType.VarChar, 50)
-        descripcionRol.Direction = ParameterDirection.Input
-
-        descripcionRol.Value = descripcion
-
-        Dim lectorId As SqlDataReader = ParegistrarRol.ExecuteReader
-
-        'gestorUsuario.agregarRol(nombre, descripcion, permisosSeleccionados)
-        'gestorUsuario.guardarCambios()
+        permisosSeleccionados = obtenerPermisosSeleccionados()        
+        gestorUsuario.agregarRol(nombre, descripcion, permisosSeleccionados)
+        gestorUsuario.guardarCambios()
     End Sub
 
     Private Sub validarCampoFormulario()
@@ -86,6 +66,7 @@ Public Class FrmRegistrarRol
         For Each permisoSeleccionado As Integer In LchkPermisos.CheckedIndices
             permisosSeleccionados.Add(permisoSeleccionado)
         Next
+
         Return permisosSeleccionados
     End Function
 

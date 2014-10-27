@@ -47,16 +47,6 @@ namespace BLL
             return UoW.PermisoRepository.GetAll();
         }
 
-        public IEnumerable<Rol> obtenerRoles()
-        {
-            return UoW.RolRepository.GetAll();
-        }
-
-        public IEnumerable<Rol> buscarRolPorNombre(String pnombre)
-        {
-            return UoW.RolRepository.GetAllByName(pnombre);
-        }
-
         public void guardarCambios()
         {
             UoW.RolRepository.Save();

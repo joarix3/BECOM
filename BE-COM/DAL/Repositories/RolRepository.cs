@@ -104,44 +104,23 @@ namespace DAL.Repositories
             return pRol;
         }
 
-        public IEnumerable<Rol> GetAllByName(String pnombre)
-        {
-            List<Rol> pRol = null;
-            SqlCommand cmd = new SqlCommand();
-            cmd.Parameters.Add(new SqlParameter("@Nombre", pnombre));
-            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarRolPorNombre");
-
-            if (ds.Tables[0].Rows.Count > 0)
-            {
-                pRol = new List<Rol>();
-                foreach (DataRow dr in ds.Tables[0].Rows)
-                {
-                    pRol.Add(new Rol
-                    {
-                        Nombre = dr["Nombre"].ToString(),
-                        Descripcion = dr["Descripcion"].ToString(),
-                    });
-                }
-            }
-
-            return pRol;
-        }
-
         private void InsertRol(Rol objRol)
         {
-            string nombreS = "Madre";
-            string descrpcionS = "descripcion";
 
-                SqlCommand cmd = new SqlCommand("PaRegistrarRol",Connection.obtenerConexion());
-                cmd.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
 
-                SqlParameter nombre = cmd.Parameters.Add("@Nombre",SqlDbType.VarChar,50);
-                nombre.Direction = ParameterDirection.Input;
-                nombre.Value = nombreS; 
-                SqlParameter descripcion = cmd.Parameters.Add("@Descripcion", SqlDbType.VarChar, 200);
-                descripcion.Direction = ParameterDirection.Input;
-                descripcion.Value = descrpcionS;
-                SqlDataReader dr = cmd.ExecuteReader();
+                cmd.Parameters.Add(new SqlParameter("@Nombre", objRol.Nombre));
+                cmd.Parameters.Add(new SqlParameter("@Descripcion", objRol.Descripcion));
+
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaRegistrarRol");
+
+            }
+            catch (Exception ex)
+            {
+
+            }
 
         }
 

@@ -12,10 +12,8 @@ namespace DAL.Repositories
         void Delete(T entity);
         void Update(T entity);
         IEnumerable<T> GetAll();
-        IEnumerable<T> GetAllByName(string pnombre);
         T GetById(int id);
         void Save();
         void Clear();
-
     }
 }

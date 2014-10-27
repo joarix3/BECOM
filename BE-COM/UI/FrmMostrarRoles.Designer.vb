@@ -22,11 +22,11 @@ Partial Class FrmMostrarRoles
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMostrarRoles))
-        Me.dgvMostrarRoles = New System.Windows.Forms.DataGridView()
+        Me.gridMostrarAlumnos = New System.Windows.Forms.DataGridView()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -53,54 +53,44 @@ Partial Class FrmMostrarRoles
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnRegistrar = New System.Windows.Forms.Button()
-        Me.lblRolesNoRegistrados = New System.Windows.Forms.Label()
-        CType(Me.dgvMostrarRoles, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridMostrarAlumnos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
-        'dgvMostrarRoles
+        'gridMostrarAlumnos
         '
-        Me.dgvMostrarRoles.AllowUserToAddRows = False
-        Me.dgvMostrarRoles.AllowUserToDeleteRows = False
-        Me.dgvMostrarRoles.AllowUserToResizeColumns = False
-        Me.dgvMostrarRoles.AllowUserToResizeRows = False
-        Me.dgvMostrarRoles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvMostrarRoles.BackgroundColor = System.Drawing.Color.White
-        Me.dgvMostrarRoles.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvMostrarRoles.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvMostrarRoles.ColumnHeadersHeight = 40
-        Me.dgvMostrarRoles.EnableHeadersVisualStyles = False
-        Me.dgvMostrarRoles.GridColor = System.Drawing.Color.White
-        Me.dgvMostrarRoles.Location = New System.Drawing.Point(243, 192)
-        Me.dgvMostrarRoles.Name = "dgvMostrarRoles"
-        Me.dgvMostrarRoles.ReadOnly = True
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvMostrarRoles.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
-        Me.dgvMostrarRoles.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.dgvMostrarRoles.RowsDefaultCellStyle = DataGridViewCellStyle6
-        Me.dgvMostrarRoles.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.dgvMostrarRoles.RowTemplate.Height = 30
-        Me.dgvMostrarRoles.Size = New System.Drawing.Size(871, 463)
-        Me.dgvMostrarRoles.TabIndex = 8
+        Me.gridMostrarAlumnos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.gridMostrarAlumnos.BackgroundColor = System.Drawing.Color.White
+        Me.gridMostrarAlumnos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.gridMostrarAlumnos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.gridMostrarAlumnos.EnableHeadersVisualStyles = False
+        Me.gridMostrarAlumnos.GridColor = System.Drawing.Color.White
+        Me.gridMostrarAlumnos.Location = New System.Drawing.Point(243, 192)
+        Me.gridMostrarAlumnos.Name = "gridMostrarAlumnos"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.gridMostrarAlumnos.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.gridMostrarAlumnos.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.gridMostrarAlumnos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.gridMostrarAlumnos.Size = New System.Drawing.Size(871, 463)
+        Me.gridMostrarAlumnos.TabIndex = 8
         '
         'Panel4
         '
@@ -380,7 +370,7 @@ Partial Class FrmMostrarRoles
         Me.txtBuscar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtBuscar.Location = New System.Drawing.Point(312, 149)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(186, 33)
+        Me.txtBuscar.Size = New System.Drawing.Size(201, 33)
         Me.txtBuscar.TabIndex = 35
         '
         'cmbFiltroBusqueda
@@ -391,7 +381,7 @@ Partial Class FrmMostrarRoles
         Me.cmbFiltroBusqueda.Items.AddRange(New Object() {"Nombre"})
         Me.cmbFiltroBusqueda.Location = New System.Drawing.Point(643, 149)
         Me.cmbFiltroBusqueda.Name = "cmbFiltroBusqueda"
-        Me.cmbFiltroBusqueda.Size = New System.Drawing.Size(186, 33)
+        Me.cmbFiltroBusqueda.Size = New System.Drawing.Size(201, 33)
         Me.cmbFiltroBusqueda.TabIndex = 36
         '
         'Label2
@@ -450,24 +440,12 @@ Partial Class FrmMostrarRoles
         Me.btnRegistrar.TabIndex = 43
         Me.btnRegistrar.UseVisualStyleBackColor = True
         '
-        'lblRolesNoRegistrados
-        '
-        Me.lblRolesNoRegistrados.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRolesNoRegistrados.Location = New System.Drawing.Point(429, 312)
-        Me.lblRolesNoRegistrados.Name = "lblRolesNoRegistrados"
-        Me.lblRolesNoRegistrados.Size = New System.Drawing.Size(498, 143)
-        Me.lblRolesNoRegistrados.TabIndex = 44
-        Me.lblRolesNoRegistrados.Text = "No se encuentran roles registrados que coincidan con su búsqueda."
-        Me.lblRolesNoRegistrados.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblRolesNoRegistrados.Visible = False
-        '
         'FrmMostrarRoles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1202, 720)
-        Me.Controls.Add(Me.lblRolesNoRegistrados)
         Me.Controls.Add(Me.btnRegistrar)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnEditar)
@@ -477,11 +455,11 @@ Partial Class FrmMostrarRoles
         Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
-        Me.Controls.Add(Me.dgvMostrarRoles)
+        Me.Controls.Add(Me.gridMostrarAlumnos)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmMostrarRoles"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        CType(Me.dgvMostrarRoles, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridMostrarAlumnos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -491,7 +469,7 @@ Partial Class FrmMostrarRoles
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents dgvMostrarRoles As System.Windows.Forms.DataGridView
+    Friend WithEvents gridMostrarAlumnos As System.Windows.Forms.DataGridView
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
@@ -518,5 +496,4 @@ Partial Class FrmMostrarRoles
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents lblRolesNoRegistrados As System.Windows.Forms.Label
 End Class
