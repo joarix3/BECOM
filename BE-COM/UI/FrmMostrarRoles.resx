@@ -379,7 +379,7 @@
   <data name="btnPermisosUsuario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
-        hAAAA4QBAwW54QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAITSURBVFhHvdY/
+        gwAAA4MBUUEfngAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAITSURBVFhHvdY/
         S1xBGIVxtTBio6SytUkTEUEQtE3SaRMw2lknjUUQi4BaBewMaey0t0yTTvQTWIkWJmqRIqSJEEhA3DwH
         34Hhcu7Oeln3hR87c+avuuvdvlar1Qg1gPkw4OZ0woYl1CSuoI6oPenmltiwhNqLg3N7bm6JDduh9Ku/
         iUNzyh78p7BhCXUQh+YO3NwSG5ZQs/gdB4vas25uiQ07QY3gfRhxczphwxJqDt9wGtSec3NLbNgOtYK/
@@ -415,4 +415,7 @@
         rhLGzAgYJywOKezz2Cot220EAoFAIBAI/msk6TfspFNRFMDfIgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>

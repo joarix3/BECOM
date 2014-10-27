@@ -69,6 +69,33 @@ namespace DAL
             return objPeriodo;
         }
 
+        public IEnumerable<Periodo> GetAllByName()
+        {
+            List<Periodo> objPeriodo = null;
+
+            SqlCommand cmd = new SqlCommand();
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerPeriodos");
+
+
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                objPeriodo = new List<Periodo>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    objPeriodo.Add(new Periodo
+                    {
+                        Id = Convert.ToInt32(dr["IdPeriodo"]),
+                        Nombre = dr["Nombre"].ToString(),
+                        Dia = Convert.ToInt32(dr["Dia"]),
+                        Mes = Convert.ToInt32(dr["Mes"])
+                    });
+                }
+            }
+
+            return objPeriodo;
+        }
+
         public Periodo GetById(int id)
         {
             Periodo objPeriodo = null;
