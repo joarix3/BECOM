@@ -1,6 +1,6 @@
 ﻿Imports EntitiesLayer
 Imports BLL
-Public Class FrmRegistrarRol
+Public Class FrmModificarRol
     Dim formAnterior As Form
     Dim listaDatos As List(Of Boolean)
     'Dim objGestor As New GestorUsuarios()
@@ -14,7 +14,7 @@ Public Class FrmRegistrarRol
         ' Add any initialization after the InitializeComponent() call.
 
     End Sub
-    Private Sub FrmRegistrarRol_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub FrmModificarRol_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim objGestor As New GestorUsuarios()
         For Each permiso As Permiso In objGestor.obtenerPermisos()
             LchkPermisos.Items.Add(permiso.Nombre())

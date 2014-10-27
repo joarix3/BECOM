@@ -21,3 +21,8 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\Entitie
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb

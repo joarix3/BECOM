@@ -132,6 +132,12 @@
     <Compile Include="FrmPantallaPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmModificarRol.Designer.vb">
+      <DependentUpon>FrmModificarRol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarRol.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmRegistrarRol.Designer.vb">
       <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
     </Compile>
@@ -213,6 +219,9 @@
     <EmbeddedResource Include="FrmPantallaPrincipal.resx">
       <DependentUpon>FrmPantallaPrincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarRol.resx">
+      <DependentUpon>FrmModificarRol.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarRol.resx">
       <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
     </EmbeddedResource>
@@ -265,6 +274,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{1df68d8d-5d81-4d98-9761-8834cf6e88a4}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{9e7c6ccc-d37a-464b-8f8b-07eed1fd1446}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\EntitiesLayer\EntitiesLayer.csproj">
       <Project>{aaf9ed03-2d38-4a7e-8616-b656c7b4663e}</Project>
