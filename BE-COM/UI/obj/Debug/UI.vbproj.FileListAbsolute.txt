@@ -33,3 +33,7 @@ C:\Users\JuanManuel\Documents\BECOM - copia (2)\BECOM\BE-COM\UI\bin\Debug\UI1.ex
 C:\Users\JuanManuel\Documents\BECOM - copia (2)\BECOM\BE-COM\UI\obj\Debug\UI1.exe
 C:\Users\JuanManuel\Documents\BECOM - copia (2)\BECOM\BE-COM\UI\obj\Debug\UI1.xml
 C:\Users\JuanManuel\Documents\BECOM - copia (2)\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.exe
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.xml
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
