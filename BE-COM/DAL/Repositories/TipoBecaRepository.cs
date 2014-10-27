@@ -71,6 +71,35 @@ namespace DAL
             return phueso;
         }
 
+        public IEnumerable<TipoBeca> GetAllByName(string ptipobeca)
+        {
+
+
+            List<TipoBeca> phueso = null;
+
+            SqlCommand cmd = new SqlCommand();
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "pa_listar_huesos");
+
+
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                phueso = new List<TipoBeca>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    phueso.Add(new TipoBeca
+                    {
+                        Id = Convert.ToInt32(dr["IdTipoBeca"]),
+                        Nombre = dr["Nombre"].ToString(),
+                        Descripcion = dr["Descripcion"].ToString(),
+                        Estado = dr["Estado"].ToString()
+                    });
+                }
+            }
+
+            return phueso;
+        }
+
         public TipoBeca GetById(int id)
         {
             TipoBeca objHueso = null;

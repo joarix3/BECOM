@@ -69,7 +69,7 @@ namespace DAL
             return objPeriodo;
         }
 
-        public IEnumerable<Periodo> GetAllByName()
+        public IEnumerable<Periodo> GetAllByName(string pnombre)
         {
             List<Periodo> objPeriodo = null;
 

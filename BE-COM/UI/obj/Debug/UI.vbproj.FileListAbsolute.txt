@@ -31,6 +31,7 @@ C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resour
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPeriodo.resources
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarCarrera.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarPeriodo.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarPeriodos.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
@@ -42,3 +43,16 @@ C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resourc
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.xml
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.dll
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.dll
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.dll
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.pdb
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
