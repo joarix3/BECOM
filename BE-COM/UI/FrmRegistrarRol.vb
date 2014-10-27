@@ -44,13 +44,8 @@ Public Class FrmRegistrarRol
         Dim nombre As String = txtNombre.Text
         Dim descripcion As String = rctDescripcion.Text
 
-<<<<<<< HEAD
         'validarCampoFormulario()
-        permisosSeleccionados = obtenerPermisosSeleccionados()        
-=======
-        validarCampoFormulario()
         permisosSeleccionados = obtenerPermisosSeleccionados()
->>>>>>> 19b53650251c1f546677c2fd06a6567ad392fecc
         gestorUsuario.agregarRol(nombre, descripcion, permisosSeleccionados)
         gestorUsuario.guardarCambios()
     End Sub
