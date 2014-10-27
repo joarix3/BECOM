@@ -2,6 +2,9 @@
 'revisado por daniel maietta
 'Excelente revisión.
 Imports BLL.GestorUsuarios
+Imports System.Data.SqlClient
+Imports DAL
+
 Public Class FrmMostrarRoles
     Dim formAnterior As Form
 
@@ -22,7 +25,6 @@ Public Class FrmMostrarRoles
         txtBuscar.Focus()
         mostrarRoles()
         configurarColumnasDGV()
-
     End Sub
 
     Private Sub gridMostrarAlumnos_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMostrarRoles.CellMouseEnter
@@ -58,6 +60,7 @@ Public Class FrmMostrarRoles
         dgvMostrarRoles.Columns(0).Visible = False
         dgvMostrarRoles.Columns(1).HeaderText = "Nombre"
         dgvMostrarRoles.Columns(2).HeaderText = "Descripción"
+        dgvMostrarRoles.Columns(3).Visible = False
     End Sub
 
     Private Sub mostrarRoles()
@@ -77,4 +80,32 @@ Public Class FrmMostrarRoles
 
     End Sub
 
+    Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
+        Dim idRol As Integer = dgvMostrarRoles.CurrentRow.Cells(0).Value.ToString()
+        gestorUsuario.eliminarRol(idRol)
+
+    End Sub
+
+    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+        PNoEliminar.Visible = True
+        'dgvMostrarRoles.Rows(dgvMostrarRoles.CurrentCell.RowIndex).Visible = Falsed
+        dgvMostrarRoles.CurrentCell = Nothing
+        '(dgvMostrarRoles.SelectedRows.Item)
+        'dgvMostrarRoles.SelectedRows(0).Visible = False
+    End Sub
+
+    Private Sub eliminarUsuario()
+        Dim idRolSeleccionado As Integer = dgvMostrarRoles.CurrentRow.Cells(0).Value.ToString()
+        Dim conexion As SqlConnection = DBAccess.GetConnection()
+        conexion.Open()
+        Dim PaEliminarRol As SqlCommand = New SqlCommand("PaEliminarRol", conexion)
+        PaEliminarRol.CommandType = CommandType.StoredProcedure
+
+        Dim idRol As SqlParameter = PaEliminarRol.Parameters.Add("@IdRol", SqlDbType.Int)
+        idRol.Direction = ParameterDirection.Input
+
+        idRol.Value = idRolSeleccionado
+
+        Dim lectorId As SqlDataReader = PaEliminarRol.ExecuteReader
+    End Sub
 End Class

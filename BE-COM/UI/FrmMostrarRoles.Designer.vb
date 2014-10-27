@@ -22,9 +22,10 @@ Partial Class FrmMostrarRoles
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMostrarRoles))
         Me.dgvMostrarRoles = New System.Windows.Forms.DataGridView()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -50,15 +51,21 @@ Partial Class FrmMostrarRoles
         Me.cmbFiltroBusqueda = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.lblRolesNoRegistrados = New System.Windows.Forms.Label()
+        Me.btnPermisosUsuario = New System.Windows.Forms.Button()
+        Me.TEliminacion = New System.Windows.Forms.Timer(Me.components)
+        Me.PNoEliminar = New System.Windows.Forms.Panel()
+        Me.btnDeshacer = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.dgvMostrarRoles, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
+        Me.PNoEliminar.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgvMostrarRoles
@@ -70,35 +77,37 @@ Partial Class FrmMostrarRoles
         Me.dgvMostrarRoles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvMostrarRoles.BackgroundColor = System.Drawing.Color.White
         Me.dgvMostrarRoles.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvMostrarRoles.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvMostrarRoles.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvMostrarRoles.ColumnHeadersHeight = 40
         Me.dgvMostrarRoles.EnableHeadersVisualStyles = False
         Me.dgvMostrarRoles.GridColor = System.Drawing.Color.White
         Me.dgvMostrarRoles.Location = New System.Drawing.Point(243, 192)
+        Me.dgvMostrarRoles.MultiSelect = False
         Me.dgvMostrarRoles.Name = "dgvMostrarRoles"
         Me.dgvMostrarRoles.ReadOnly = True
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvMostrarRoles.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvMostrarRoles.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvMostrarRoles.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.dgvMostrarRoles.RowsDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.dgvMostrarRoles.RowsDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvMostrarRoles.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
         Me.dgvMostrarRoles.RowTemplate.Height = 30
+        Me.dgvMostrarRoles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvMostrarRoles.Size = New System.Drawing.Size(871, 463)
         Me.dgvMostrarRoles.TabIndex = 8
         '
@@ -414,17 +423,17 @@ Partial Class FrmMostrarRoles
         Me.Label4.TabIndex = 40
         Me.Label4.Text = "Buscar por:"
         '
-        'btnEditar
+        'btnModificar
         '
-        Me.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEditar.Image = CType(resources.GetObject("btnEditar.Image"), System.Drawing.Image)
-        Me.btnEditar.Location = New System.Drawing.Point(1135, 293)
-        Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(55, 53)
-        Me.btnEditar.TabIndex = 41
-        Me.btnEditar.UseVisualStyleBackColor = True
+        Me.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificar.Image = CType(resources.GetObject("btnModificar.Image"), System.Drawing.Image)
+        Me.btnModificar.Location = New System.Drawing.Point(1135, 293)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(55, 53)
+        Me.btnModificar.TabIndex = 41
+        Me.btnModificar.UseVisualStyleBackColor = True
         '
         'btnEliminar
         '
@@ -461,16 +470,70 @@ Partial Class FrmMostrarRoles
         Me.lblRolesNoRegistrados.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lblRolesNoRegistrados.Visible = False
         '
+        'btnPermisosUsuario
+        '
+        Me.btnPermisosUsuario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnPermisosUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnPermisosUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPermisosUsuario.Image = CType(resources.GetObject("btnPermisosUsuario.Image"), System.Drawing.Image)
+        Me.btnPermisosUsuario.Location = New System.Drawing.Point(1135, 436)
+        Me.btnPermisosUsuario.Name = "btnPermisosUsuario"
+        Me.btnPermisosUsuario.Size = New System.Drawing.Size(55, 53)
+        Me.btnPermisosUsuario.TabIndex = 45
+        Me.btnPermisosUsuario.UseVisualStyleBackColor = True
+        '
+        'TEliminacion
+        '
+        Me.TEliminacion.Enabled = True
+        '
+        'PNoEliminar
+        '
+        Me.PNoEliminar.Controls.Add(Me.btnDeshacer)
+        Me.PNoEliminar.Controls.Add(Me.Label3)
+        Me.PNoEliminar.Location = New System.Drawing.Point(235, 661)
+        Me.PNoEliminar.Name = "PNoEliminar"
+        Me.PNoEliminar.Size = New System.Drawing.Size(955, 57)
+        Me.PNoEliminar.TabIndex = 46
+        Me.PNoEliminar.Visible = False
+        '
+        'btnDeshacer
+        '
+        Me.btnDeshacer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnDeshacer.FlatAppearance.BorderSize = 0
+        Me.btnDeshacer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnDeshacer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDeshacer.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDeshacer.Image = CType(resources.GetObject("btnDeshacer.Image"), System.Drawing.Image)
+        Me.btnDeshacer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDeshacer.Location = New System.Drawing.Point(412, 2)
+        Me.btnDeshacer.Name = "btnDeshacer"
+        Me.btnDeshacer.Size = New System.Drawing.Size(205, 53)
+        Me.btnDeshacer.TabIndex = 47
+        Me.btnDeshacer.Text = "Deshacer"
+        Me.btnDeshacer.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(25, 6)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(403, 44)
+        Me.Label3.TabIndex = 47
+        Me.Label3.Text = "Usuario eliminado correctamente."
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'FrmMostrarRoles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1202, 720)
+        Me.Controls.Add(Me.PNoEliminar)
+        Me.Controls.Add(Me.btnPermisosUsuario)
         Me.Controls.Add(Me.lblRolesNoRegistrados)
         Me.Controls.Add(Me.btnRegistrar)
         Me.Controls.Add(Me.btnEliminar)
-        Me.Controls.Add(Me.btnEditar)
+        Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.cmbFiltroBusqueda)
@@ -487,6 +550,7 @@ Partial Class FrmMostrarRoles
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
+        Me.PNoEliminar.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -510,7 +574,7 @@ Partial Class FrmMostrarRoles
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents btnVolver As System.Windows.Forms.Button
-    Friend WithEvents btnEditar As System.Windows.Forms.Button
+    Friend WithEvents btnModificar As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents btnRegistrar As System.Windows.Forms.Button
     Friend WithEvents Button10 As System.Windows.Forms.Button
@@ -519,4 +583,9 @@ Partial Class FrmMostrarRoles
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents lblRolesNoRegistrados As System.Windows.Forms.Label
+    Friend WithEvents btnPermisosUsuario As System.Windows.Forms.Button
+    Friend WithEvents TEliminacion As System.Windows.Forms.Timer
+    Friend WithEvents PNoEliminar As System.Windows.Forms.Panel
+    Friend WithEvents btnDeshacer As System.Windows.Forms.Button
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

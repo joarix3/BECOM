@@ -36,6 +36,7 @@ namespace DAL.Repositories
 
         public void Update(Rol entity)
         {
+            _updateItems.Add(entity);
         }
 
 
@@ -56,6 +57,14 @@ namespace DAL.Repositories
                         foreach (Rol objRol in _insertItems)
                         {
                             InsertRol(objRol);
+                        }
+                    }
+
+                    if (_updateItems.Count > 0)
+                    {
+                        foreach (Rol objRol in _updateItems)
+                        {
+                            UpdateRol(objRol);
                         }
                     }
                 }
@@ -95,6 +104,7 @@ namespace DAL.Repositories
                 {
                     pRol.Add(new Rol
                     {
+                        Id = Convert.ToInt32(dr["IdRol"]),
                         Nombre = dr["Nombre"].ToString(),
                         Descripcion = dr["Descripcion"].ToString(),
                     });
@@ -149,8 +159,15 @@ namespace DAL.Repositories
 
         private void UpdateRol(Rol objRol)
         {
+
             try
             {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Add(new SqlParameter("@IdRol", objRol.Id));
+
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaEliminarRol");
+
             }
             catch (Exception ex)
             {
