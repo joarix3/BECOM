@@ -45,9 +45,8 @@
         frmMostrarPeriodos.Show()
         Me.Hide()
     End Sub
-
-
-
-
-
+    Private Sub btnAcademico_Click(sender As Object, e As EventArgs) Handles btnAcademico.Click
+        Dim frmAcademico As Form = New FrmAcademico(Me)
+        frmAcademico.Show()
+    End Sub
 End Class

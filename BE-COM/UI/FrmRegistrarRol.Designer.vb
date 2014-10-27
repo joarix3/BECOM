@@ -69,7 +69,7 @@ Partial Class FrmRegistrarRol
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.Panel3.Controls.Add(Me.btnVolver)
         Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Location = New System.Drawing.Point(232, 1)
+        Me.Panel3.Location = New System.Drawing.Point(232, 0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(969, 130)
         Me.Panel3.TabIndex = 43
@@ -116,7 +116,7 @@ Partial Class FrmRegistrarRol
         Me.Panel4.Controls.Add(Me.btnInicio)
         Me.Panel4.Controls.Add(Me.btnAyuda)
         Me.Panel4.Controls.Add(Me.btnPerfil)
-        Me.Panel4.Location = New System.Drawing.Point(1, 0)
+        Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(231, 717)
         Me.Panel4.TabIndex = 45
@@ -371,7 +371,8 @@ Partial Class FrmRegistrarRol
         'btnRegistrar
         '
         Me.btnRegistrar.BackColor = System.Drawing.Color.White
-        Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnRegistrar.FlatAppearance.BorderSize = 2
+        Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegistrar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegistrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
@@ -379,7 +380,7 @@ Partial Class FrmRegistrarRol
         Me.btnRegistrar.Name = "btnRegistrar"
         Me.btnRegistrar.Size = New System.Drawing.Size(513, 37)
         Me.btnRegistrar.TabIndex = 47
-        Me.btnRegistrar.Text = "Agregar"
+        Me.btnRegistrar.Text = "Registrar"
         Me.btnRegistrar.UseVisualStyleBackColor = False
         '
         'lblPermisos

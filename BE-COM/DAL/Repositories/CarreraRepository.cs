@@ -11,39 +11,38 @@ using System.Data;
 
 namespace DAL.Repositories
 {
-    public class RolRepository : IRepository<Rol>
+    public class CarreraRepository : IRepository<Carrera>
     {
 
         private List<IEntity> _insertItems;
         private List<IEntity> _deleteItems;
         private List<IEntity> _updateItems;
 
-        public RolRepository()
+        public CarreraRepository()
         {
             _insertItems = new List<IEntity>();
             _deleteItems = new List<IEntity>();
             _updateItems = new List<IEntity>();
         }
 
-        public void Insert(Rol entity)
+        public void Insert(Carrera entity)
         {
             _insertItems.Add(entity);
         }
 
-        public void Delete(Rol entity)
+        public void Delete(Carrera entity)
         {
         }
 
-        public void Update(Rol entity)
+        public void Update(Carrera entity)
         {
-            _updateItems.Add(entity);
         }
 
 
-        public Rol GetById(int id)
+        public Carrera GetById(int id)
         {
-            Rol Rol = null;
-            return Rol;
+            Carrera carrera = null;
+            return carrera;
         }
 
         public void Save()
@@ -54,19 +53,29 @@ namespace DAL.Repositories
                 {
                     if (_insertItems.Count > 0)
                     {
-                        foreach (Rol objRol in _insertItems)
+                        foreach (Carrera objCarrera in _insertItems)
                         {
-                            InsertRol(objRol);
+                            InsertCarrera(objCarrera);
                         }
                     }
 
                     if (_updateItems.Count > 0)
                     {
-                        foreach (Rol objRol in _updateItems)
+                        foreach (Carrera p in _updateItems)
                         {
-                            UpdateRol(objRol);
+                            UpdateCarrera(p);
                         }
                     }
+
+                    if (_deleteItems.Count > 0)
+                    {
+                        foreach (Carrera p in _deleteItems)
+                        {
+                            DeleteCarrera(p);
+                        }
+                    }
+
+                    scope.Complete();
                 }
                 catch (TransactionAbortedException ex)
                 {
@@ -91,63 +100,80 @@ namespace DAL.Repositories
             _updateItems.Clear();
         }
 
-        public IEnumerable<Rol> GetAll()
+        public IEnumerable<Carrera> GetAll()
         {
-            List<Rol> pRol = null;
+            List<Carrera> objCarrera = null;
+
             SqlCommand cmd = new SqlCommand();
-            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerRoles");
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerCarreras");
+
+
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                pRol = new List<Rol>();
+                objCarrera = new List<Carrera>();
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {
-                    pRol.Add(new Rol
+                    objCarrera.Add(new Carrera
                     {
-                        Id = Convert.ToInt32(dr["IdRol"]),
+                        Id = Convert.ToInt32(dr["IdCarrera"]),
+                        Codigo = dr["Codigo"].ToString(),
                         Nombre = dr["Nombre"].ToString(),
-                        Descripcion = dr["Descripcion"].ToString(),
+                        Universidad = Convert.ToInt32(dr["IdUniversidad"]),
+                        Color = dr["Color"].ToString(),
+                        BecasOtor = Convert.ToInt32(dr["CantidadBecasOtorgables"])
                     });
                 }
             }
 
-            return pRol;
+            return objCarrera;
         }
 
-        public IEnumerable<Rol> GetAllByName(String pnombre)
+
+        public IEnumerable<Carrera> GetAllByName(String pcarrera)
         {
-            List<Rol> pRol = null;
+            List<Carrera> objCarrera = null;
+
             SqlCommand cmd = new SqlCommand();
-            cmd.Parameters.Add(new SqlParameter("@Nombre", pnombre));
-            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarRolPorNombre");
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerCarreras");
+
+
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                pRol = new List<Rol>();
+                objCarrera = new List<Carrera>();
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {
-                    pRol.Add(new Rol
+                    objCarrera.Add(new Carrera
                     {
+                        Id = Convert.ToInt32(dr["IdCarrera"]),
+                        Codigo = dr["Codigo"].ToString(),
                         Nombre = dr["Nombre"].ToString(),
-                        Descripcion = dr["Descripcion"].ToString(),
+                        Universidad = Convert.ToInt32(dr["IdUniversidad"]),
+                        Color = dr["Color"].ToString(),
+                        BecasOtor = Convert.ToInt32(dr["CantidadBecasOtorgables"])
                     });
                 }
             }
 
-            return pRol;
+            return objCarrera;
         }
 
-        private void InsertRol(Rol objRol)
+
+        private void InsertCarrera(Carrera objCarrera)
         {
 
             try
             {
                 SqlCommand cmd = new SqlCommand();
 
-                cmd.Parameters.Add(new SqlParameter("@Nombre", objRol.Nombre));
-                cmd.Parameters.Add(new SqlParameter("@Descripcion", objRol.Descripcion));
+                cmd.Parameters.Add(new SqlParameter("@Codigo", objCarrera.Codigo));
+                cmd.Parameters.Add(new SqlParameter("@Nombre", objCarrera.Nombre));
+                cmd.Parameters.Add(new SqlParameter("@IdUniversidad", objCarrera.Universidad));
+                cmd.Parameters.Add(new SqlParameter("@Color", objCarrera.Color));
+                cmd.Parameters.Add(new SqlParameter("@CantidadBecas", objCarrera.BecasOtor));
 
-                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaRegistrarRol");
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaRegistrarCarrera");
 
             }
             catch (Exception ex)
@@ -157,17 +183,10 @@ namespace DAL.Repositories
 
         }
 
-        private void UpdateRol(Rol objRol)
+        private void UpdateCarrera(Carrera objRol)
         {
-
             try
             {
-                SqlCommand cmd = new SqlCommand();
-
-                cmd.Parameters.Add(new SqlParameter("@IdRol", objRol.Id));
-
-                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaEliminarRol");
-
             }
             catch (Exception ex)
             {
@@ -175,7 +194,7 @@ namespace DAL.Repositories
             }
         }
 
-        private void DeleteRol(Rol objRol)
+        private void DeleteCarrera(Carrera objRol)
         {
             try
             {

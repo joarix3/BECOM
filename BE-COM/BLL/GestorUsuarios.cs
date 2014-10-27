@@ -18,12 +18,13 @@ namespace BLL
 
         public void agregarRol(String pnombre, String pdescripcion, List<int> ppermisosSeleccionados)
         {
-            Rol rol = new Rol (pnombre,pdescripcion);
+            char estado = '1';
+            Rol rol = new Rol (pnombre,pdescripcion,estado);
             UoW.RolRepository.Insert(rol);
 
         }
 
-        public void modificarUsuario()
+        public void modificarUsuario(String pnombre, String pdescripcion, char pestado, List<int> ppermisosSeleccionados)
         {
 
         }
@@ -38,14 +39,25 @@ namespace BLL
 
         }
 
-        public void eliminarRol()
+        public void eliminarRol(int idRol)
         {
-
+            Rol rol = new Rol {Id= idRol};
+            UoW.RolRepository.Update(rol);
         }
 
         public IEnumerable<Permiso> obtenerPermisos()
         {
             return UoW.PermisoRepository.GetAll();
+        }
+
+        public IEnumerable<Rol> obtenerRoles()
+        {
+            return UoW.RolRepository.GetAll();
+        }
+
+        public IEnumerable<Rol> buscarRolPorNombre(String pnombre)
+        {
+            return UoW.RolRepository.GetAllByName(pnombre);
         }
 
         public void guardarCambios()

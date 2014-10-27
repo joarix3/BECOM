@@ -18,6 +18,7 @@ namespace EntitiesLayer
 
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
+        public char Estado { get; set; }
         public List<Permiso> permisos;
 
         public Rol()
@@ -25,14 +26,16 @@ namespace EntitiesLayer
             Id = 0;
             Nombre = "";
             Descripcion = "";
+            Estado = '1';
             permisos = new List<Permiso>();
         }
 
-        public Rol(string pnombre, string pdescripcion)
+        public Rol(string pnombre, string pdescripcion, char pestado)
         {
             Id = 0;
             Nombre = pnombre;
             Descripcion = pdescripcion;
+            Estado = pestado;
         }
     }
 }

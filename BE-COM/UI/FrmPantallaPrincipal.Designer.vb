@@ -32,7 +32,7 @@ Partial Class FrmPantallaPrincipal
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnAcademico = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -137,7 +137,7 @@ Partial Class FrmPantallaPrincipal
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.White
-        Me.Panel6.Controls.Add(Me.Button4)
+        Me.Panel6.Controls.Add(Me.btnAcademico)
         Me.Panel6.Controls.Add(Me.Label10)
         Me.Panel6.Controls.Add(Me.Label11)
         Me.Panel6.Controls.Add(Me.PictureBox6)
@@ -163,17 +163,17 @@ Partial Class FrmPantallaPrincipal
         Me.Panel6.Size = New System.Drawing.Size(955, 579)
         Me.Panel6.TabIndex = 33
         '
-        'Button4
+        'btnAcademico
         '
-        Me.Button4.FlatAppearance.BorderSize = 2
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(222, 480)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(226, 38)
-        Me.Button4.TabIndex = 50
-        Me.Button4.Text = "Ingresar"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnAcademico.FlatAppearance.BorderSize = 2
+        Me.btnAcademico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAcademico.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.btnAcademico.Location = New System.Drawing.Point(222, 480)
+        Me.btnAcademico.Name = "btnAcademico"
+        Me.btnAcademico.Size = New System.Drawing.Size(226, 38)
+        Me.btnAcademico.TabIndex = 50
+        Me.btnAcademico.Text = "Ingresar"
+        Me.btnAcademico.UseVisualStyleBackColor = True
         '
         'Label10
         '
@@ -557,7 +557,7 @@ Partial Class FrmPantallaPrincipal
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents btnAcademico As System.Windows.Forms.Button
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox

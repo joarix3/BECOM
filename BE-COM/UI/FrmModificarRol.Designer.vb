@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmMostrarCarreras
+Partial Class FrmModificarRol
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,75 +22,86 @@ Partial Class FrmMostrarCarreras
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMostrarCarreras))
-        Me.dtgCarreras = New System.Windows.Forms.DataGridView()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmModificarRol))
+        Me.oflImagen = New System.Windows.Forms.OpenFileDialog()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.btnVolver = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.lblNombre = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.btnOut = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnInicio = New System.Windows.Forms.Button()
         Me.btnAyuda = New System.Windows.Forms.Button()
         Me.btnPerfil = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnVolver = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtBuscar = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnEditar = New System.Windows.Forms.Button()
-        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.pnFormulario = New System.Windows.Forms.Panel()
+        Me.lblDescripcionV = New System.Windows.Forms.Label()
+        Me.lblNombreV = New System.Windows.Forms.Label()
         Me.btnRegistrar = New System.Windows.Forms.Button()
-        Me.btnCursos = New System.Windows.Forms.Button()
-        Me.BtnDirector = New System.Windows.Forms.Button()
-        CType(Me.dtgCarreras, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel4.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.lblPermisos = New System.Windows.Forms.Label()
+        Me.LchkPermisos = New System.Windows.Forms.CheckedListBox()
+        Me.rctDescripcion = New System.Windows.Forms.RichTextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.chkActivo = New System.Windows.Forms.CheckBox()
+        Me.chkInactivo = New System.Windows.Forms.CheckBox()
         Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnFormulario.SuspendLayout()
         Me.SuspendLayout()
         '
-        'dtgCarreras
+        'oflImagen
         '
-        Me.dtgCarreras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dtgCarreras.BackgroundColor = System.Drawing.Color.White
-        Me.dtgCarreras.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgCarreras.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
-        Me.dtgCarreras.EnableHeadersVisualStyles = False
-        Me.dtgCarreras.GridColor = System.Drawing.Color.White
-        Me.dtgCarreras.Location = New System.Drawing.Point(243, 192)
-        Me.dtgCarreras.Name = "dtgCarreras"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgCarreras.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.dtgCarreras.RowsDefaultCellStyle = DataGridViewCellStyle9
-        Me.dtgCarreras.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.dtgCarreras.Size = New System.Drawing.Size(871, 463)
-        Me.dtgCarreras.TabIndex = 8
+        Me.oflImagen.FileName = "OpenFileDialog1"
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.btnVolver)
+        Me.Panel3.Controls.Add(Me.Label1)
+        Me.Panel3.Location = New System.Drawing.Point(232, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(969, 130)
+        Me.Panel3.TabIndex = 43
+        '
+        'btnVolver
+        '
+        Me.btnVolver.BackColor = System.Drawing.Color.Transparent
+        Me.btnVolver.FlatAppearance.BorderSize = 0
+        Me.btnVolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnVolver.Image = CType(resources.GetObject("btnVolver.Image"), System.Drawing.Image)
+        Me.btnVolver.Location = New System.Drawing.Point(11, 39)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(48, 47)
+        Me.btnVolver.TabIndex = 31
+        Me.btnVolver.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(72, 39)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(286, 47)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Modificar rol"
         '
         'Panel4
         '
@@ -101,17 +112,17 @@ Partial Class FrmMostrarCarreras
         Me.Panel4.Controls.Add(Me.Button7)
         Me.Panel4.Controls.Add(Me.Button9)
         Me.Panel4.Controls.Add(Me.Button6)
-        Me.Panel4.Controls.Add(Me.Panel1)
+        Me.Panel4.Controls.Add(Me.Panel5)
         Me.Panel4.Controls.Add(Me.btnOut)
         Me.Panel4.Controls.Add(Me.btnSalir)
         Me.Panel4.Controls.Add(Me.Button2)
         Me.Panel4.Controls.Add(Me.btnInicio)
         Me.Panel4.Controls.Add(Me.btnAyuda)
         Me.Panel4.Controls.Add(Me.btnPerfil)
-        Me.Panel4.Location = New System.Drawing.Point(1, 1)
+        Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(231, 721)
-        Me.Panel4.TabIndex = 30
+        Me.Panel4.Size = New System.Drawing.Size(231, 717)
+        Me.Panel4.TabIndex = 45
         '
         'Button10
         '
@@ -198,44 +209,44 @@ Partial Class FrmMostrarCarreras
         Me.Button6.Text = "Usuarios"
         Me.Button6.UseVisualStyleBackColor = False
         '
-        'Panel1
+        'Panel5
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Controls.Add(Me.lblNombre)
-        Me.Panel1.Location = New System.Drawing.Point(0, -2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(231, 131)
-        Me.Panel1.TabIndex = 30
+        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
+        Me.Panel5.Controls.Add(Me.PictureBox3)
+        Me.Panel5.Controls.Add(Me.Panel6)
+        Me.Panel5.Controls.Add(Me.Label2)
+        Me.Panel5.Location = New System.Drawing.Point(0, 1)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(231, 131)
+        Me.Panel5.TabIndex = 30
         '
-        'PictureBox1
+        'PictureBox3
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(89, 31)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(53, 50)
-        Me.PictureBox1.TabIndex = 31
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(89, 31)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(53, 50)
+        Me.PictureBox3.TabIndex = 31
+        Me.PictureBox3.TabStop = False
         '
-        'Panel2
+        'Panel6
         '
-        Me.Panel2.Location = New System.Drawing.Point(234, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(916, 69)
-        Me.Panel2.TabIndex = 30
+        Me.Panel6.Location = New System.Drawing.Point(234, 0)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(916, 69)
+        Me.Panel6.TabIndex = 30
         '
-        'lblNombre
+        'Label2
         '
-        Me.lblNombre.AutoSize = True
-        Me.lblNombre.BackColor = System.Drawing.Color.Transparent
-        Me.lblNombre.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombre.ForeColor = System.Drawing.Color.White
-        Me.lblNombre.Location = New System.Drawing.Point(49, 91)
-        Me.lblNombre.Name = "lblNombre"
-        Me.lblNombre.Size = New System.Drawing.Size(133, 25)
-        Me.lblNombre.TabIndex = 16
-        Me.lblNombre.Text = "Mauricio Araica"
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(49, 91)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(133, 25)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Mauricio Araica"
         '
         'btnOut
         '
@@ -329,174 +340,205 @@ Partial Class FrmMostrarCarreras
         Me.btnPerfil.Text = "Mi perfil"
         Me.btnPerfil.UseVisualStyleBackColor = False
         '
-        'Panel3
+        'pnFormulario
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.btnVolver)
-        Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Location = New System.Drawing.Point(231, 1)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(969, 130)
-        Me.Panel3.TabIndex = 32
+        Me.pnFormulario.BackColor = System.Drawing.Color.White
+        Me.pnFormulario.Controls.Add(Me.chkInactivo)
+        Me.pnFormulario.Controls.Add(Me.chkActivo)
+        Me.pnFormulario.Controls.Add(Me.Label3)
+        Me.pnFormulario.Controls.Add(Me.lblDescripcionV)
+        Me.pnFormulario.Controls.Add(Me.lblNombreV)
+        Me.pnFormulario.Controls.Add(Me.btnRegistrar)
+        Me.pnFormulario.Controls.Add(Me.lblPermisos)
+        Me.pnFormulario.Controls.Add(Me.LchkPermisos)
+        Me.pnFormulario.Controls.Add(Me.rctDescripcion)
+        Me.pnFormulario.Controls.Add(Me.Label12)
+        Me.pnFormulario.Controls.Add(Me.txtNombre)
+        Me.pnFormulario.Controls.Add(Me.Label4)
+        Me.pnFormulario.Location = New System.Drawing.Point(239, 137)
+        Me.pnFormulario.Name = "pnFormulario"
+        Me.pnFormulario.Size = New System.Drawing.Size(955, 579)
+        Me.pnFormulario.TabIndex = 47
         '
-        'btnVolver
+        'lblDescripcionV
         '
-        Me.btnVolver.BackColor = System.Drawing.Color.Transparent
-        Me.btnVolver.FlatAppearance.BorderSize = 0
-        Me.btnVolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVolver.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnVolver.Image = CType(resources.GetObject("btnVolver.Image"), System.Drawing.Image)
-        Me.btnVolver.Location = New System.Drawing.Point(11, 39)
-        Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(48, 47)
-        Me.btnVolver.TabIndex = 31
-        Me.btnVolver.UseVisualStyleBackColor = False
+        Me.lblDescripcionV.Location = New System.Drawing.Point(458, 143)
+        Me.lblDescripcionV.Name = "lblDescripcionV"
+        Me.lblDescripcionV.Size = New System.Drawing.Size(33, 31)
+        Me.lblDescripcionV.TabIndex = 49
         '
-        'Label1
+        'lblNombreV
         '
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(72, 39)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(210, 47)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Carreras"
-        '
-        'txtBuscar
-        '
-        Me.txtBuscar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBuscar.Location = New System.Drawing.Point(312, 149)
-        Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(201, 33)
-        Me.txtBuscar.TabIndex = 35
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(243, 153)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(67, 25)
-        Me.Label2.TabIndex = 38
-        Me.Label2.Text = "Buscar:"
-        '
-        'btnEditar
-        '
-        Me.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEditar.Image = CType(resources.GetObject("btnEditar.Image"), System.Drawing.Image)
-        Me.btnEditar.Location = New System.Drawing.Point(1135, 291)
-        Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(55, 53)
-        Me.btnEditar.TabIndex = 41
-        Me.btnEditar.UseVisualStyleBackColor = True
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminar.Image = CType(resources.GetObject("btnEliminar.Image"), System.Drawing.Image)
-        Me.btnEliminar.Location = New System.Drawing.Point(1135, 362)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(55, 53)
-        Me.btnEliminar.TabIndex = 42
-        Me.btnEliminar.UseVisualStyleBackColor = True
+        Me.lblNombreV.Location = New System.Drawing.Point(459, 56)
+        Me.lblNombreV.Name = "lblNombreV"
+        Me.lblNombreV.Size = New System.Drawing.Size(32, 33)
+        Me.lblNombreV.TabIndex = 48
         '
         'btnRegistrar
         '
-        Me.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnRegistrar.BackColor = System.Drawing.Color.White
+        Me.btnRegistrar.FlatAppearance.BorderSize = 2
+        Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
         Me.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRegistrar.Image = CType(resources.GetObject("btnRegistrar.Image"), System.Drawing.Image)
-        Me.btnRegistrar.Location = New System.Drawing.Point(1135, 220)
+        Me.btnRegistrar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnRegistrar.Location = New System.Drawing.Point(226, 516)
         Me.btnRegistrar.Name = "btnRegistrar"
-        Me.btnRegistrar.Size = New System.Drawing.Size(55, 53)
-        Me.btnRegistrar.TabIndex = 43
-        Me.btnRegistrar.UseVisualStyleBackColor = True
+        Me.btnRegistrar.Size = New System.Drawing.Size(513, 37)
+        Me.btnRegistrar.TabIndex = 47
+        Me.btnRegistrar.Text = "Registrar"
+        Me.btnRegistrar.UseVisualStyleBackColor = False
         '
-        'btnCursos
+        'lblPermisos
         '
-        Me.btnCursos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.btnCursos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCursos.Image = CType(resources.GetObject("btnCursos.Image"), System.Drawing.Image)
-        Me.btnCursos.Location = New System.Drawing.Point(1135, 433)
-        Me.btnCursos.Name = "btnCursos"
-        Me.btnCursos.Size = New System.Drawing.Size(55, 53)
-        Me.btnCursos.TabIndex = 44
-        Me.btnCursos.UseVisualStyleBackColor = True
+        Me.lblPermisos.AutoSize = True
+        Me.lblPermisos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblPermisos.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPermisos.Location = New System.Drawing.Point(515, 28)
+        Me.lblPermisos.Name = "lblPermisos"
+        Me.lblPermisos.Size = New System.Drawing.Size(82, 25)
+        Me.lblPermisos.TabIndex = 43
+        Me.lblPermisos.Text = "Permisos"
         '
-        'BtnDirector
+        'LchkPermisos
         '
-        Me.BtnDirector.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.BtnDirector.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.BtnDirector.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnDirector.Image = CType(resources.GetObject("BtnDirector.Image"), System.Drawing.Image)
-        Me.BtnDirector.Location = New System.Drawing.Point(1135, 504)
-        Me.BtnDirector.Name = "BtnDirector"
-        Me.BtnDirector.Size = New System.Drawing.Size(55, 53)
-        Me.BtnDirector.TabIndex = 45
-        Me.BtnDirector.UseVisualStyleBackColor = True
+        Me.LchkPermisos.CheckOnClick = True
+        Me.LchkPermisos.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LchkPermisos.FormattingEnabled = True
+        Me.LchkPermisos.Location = New System.Drawing.Point(520, 56)
+        Me.LchkPermisos.Name = "LchkPermisos"
+        Me.LchkPermisos.Size = New System.Drawing.Size(219, 436)
+        Me.LchkPermisos.TabIndex = 42
+        Me.LchkPermisos.ThreeDCheckBoxes = True
         '
-        'FrmMostrarCarreras
+        'rctDescripcion
+        '
+        Me.rctDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.rctDescripcion.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rctDescripcion.Location = New System.Drawing.Point(226, 143)
+        Me.rctDescripcion.Name = "rctDescripcion"
+        Me.rctDescripcion.Size = New System.Drawing.Size(226, 159)
+        Me.rctDescripcion.TabIndex = 41
+        Me.rctDescripcion.Text = ""
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(221, 115)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(108, 25)
+        Me.Label12.TabIndex = 40
+        Me.Label12.Text = "Descripción:"
+        '
+        'txtNombre
+        '
+        Me.txtNombre.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(226, 56)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(226, 33)
+        Me.txtNombre.TabIndex = 28
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(221, 28)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(83, 25)
+        Me.Label4.TabIndex = 27
+        Me.Label4.Text = "Nombre:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(221, 309)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(70, 25)
+        Me.Label3.TabIndex = 50
+        Me.Label3.Text = "Estado:"
+        '
+        'chkActivo
+        '
+        Me.chkActivo.AutoSize = True
+        Me.chkActivo.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkActivo.Location = New System.Drawing.Point(226, 351)
+        Me.chkActivo.Name = "chkActivo"
+        Me.chkActivo.Size = New System.Drawing.Size(81, 29)
+        Me.chkActivo.TabIndex = 51
+        Me.chkActivo.Tag = "1"
+        Me.chkActivo.Text = "Activo"
+        Me.chkActivo.UseVisualStyleBackColor = True
+        '
+        'chkInactivo
+        '
+        Me.chkInactivo.AutoSize = True
+        Me.chkInactivo.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkInactivo.Location = New System.Drawing.Point(371, 351)
+        Me.chkInactivo.Name = "chkInactivo"
+        Me.chkInactivo.Size = New System.Drawing.Size(92, 29)
+        Me.chkInactivo.TabIndex = 52
+        Me.chkInactivo.Tag = "2"
+        Me.chkInactivo.Text = "Inactivo"
+        Me.chkInactivo.UseVisualStyleBackColor = True
+        '
+        'FrmModificarRol
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1202, 720)
-        Me.Controls.Add(Me.BtnDirector)
-        Me.Controls.Add(Me.btnCursos)
-        Me.Controls.Add(Me.btnRegistrar)
-        Me.Controls.Add(Me.btnEliminar)
-        Me.Controls.Add(Me.btnEditar)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.txtBuscar)
-        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.pnFormulario)
         Me.Controls.Add(Me.Panel4)
-        Me.Controls.Add(Me.dtgCarreras)
+        Me.Controls.Add(Me.Panel3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "FrmMostrarCarreras"
+        Me.Name = "FrmModificarRol"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        CType(Me.dtgCarreras, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "FrmAgregarAlumno"
         Me.Panel3.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnFormulario.ResumeLayout(False)
+        Me.pnFormulario.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents dtgCarreras As System.Windows.Forms.DataGridView
+    Friend WithEvents oflImagen As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents btnVolver As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents lblNombre As System.Windows.Forms.Label
+    Friend WithEvents Button10 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents btnOut As System.Windows.Forms.Button
     Friend WithEvents btnSalir As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents btnInicio As System.Windows.Forms.Button
     Friend WithEvents btnAyuda As System.Windows.Forms.Button
     Friend WithEvents btnPerfil As System.Windows.Forms.Button
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents btnVolver As System.Windows.Forms.Button
-    Friend WithEvents btnEditar As System.Windows.Forms.Button
-    Friend WithEvents btnEliminar As System.Windows.Forms.Button
+    Friend WithEvents pnFormulario As System.Windows.Forms.Panel
+    Friend WithEvents txtNombre As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents rctDescripcion As System.Windows.Forms.RichTextBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents lblPermisos As System.Windows.Forms.Label
+    Friend WithEvents LchkPermisos As System.Windows.Forms.CheckedListBox
     Friend WithEvents btnRegistrar As System.Windows.Forms.Button
-    Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button9 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents btnCursos As System.Windows.Forms.Button
-    Friend WithEvents BtnDirector As System.Windows.Forms.Button
+    Friend WithEvents lblNombreV As System.Windows.Forms.Label
+    Friend WithEvents lblDescripcionV As System.Windows.Forms.Label
+    Friend WithEvents Panel5 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel6 As System.Windows.Forms.Panel
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents chkInactivo As System.Windows.Forms.CheckBox
+    Friend WithEvents chkActivo As System.Windows.Forms.CheckBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class
