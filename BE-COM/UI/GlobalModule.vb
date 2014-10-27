@@ -7,6 +7,7 @@ Module GlobalModule
     Public gestorCarrera As New GestorCarrera()
     Public validaciones As New Validaciones()
 <<<<<<< HEAD
+<<<<<<< HEAD
     Public campoCorrecto As Image = Image.FromFile("C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\Imagens\Validaciones\correcto.png")
     Public campoIncorrecto As Image = Image.FromFile("C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\Imagens\Validaciones\incorrecto.png")
 =======
@@ -14,5 +15,11 @@ Module GlobalModule
     Public campoCorrecto As Image = Image.FromFile("C:\Users\Douglas\Dropbox\Soft506\BE-COM\Imagens\Validaciones\Correcto.png")
     Public campoIncorrecto As Image = Image.FromFile("C:\Users\Douglas\Dropbox\Soft506\BE-COM\Imagens\Validaciones\Incorrecto.png")
 >>>>>>> 0b7236366789c9ec9d7e69a60bffb6fbae0719b0
+=======
+    'Public campoCorrecto As Image = Image.FromFile("C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\Imagens\Validaciones\Correcto.png")
+    'Public campoIncorrecto As Image = Image.FromFile("C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\Imagens\Validaciones\Incorrecto.png")
+    Public campoCorrecto As Image = Image.FromFile("C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\Imagens\Validaciones\correcto.png")
+    Public campoIncorrecto As Image = Image.FromFile("C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\Imagens\Validaciones\incorrecto.png")
+>>>>>>> BECOM1
 
 End Module
