@@ -10,66 +10,65 @@ using System.Data;
 
 namespace DAL.Repositories
 {
-    public class BeneficioRepository : IRepository<Beneficio>
+    public class RequisitoRepository : IRepository<Requisito>
     {
         private List<IEntity> _insertItems;
         private List<IEntity> _deleteItems;
         private List<IEntity> _updateItems;
 
-        public BeneficioRepository()
+        public RequisitoRepository()
         {
             _insertItems = new List<IEntity>();
             _deleteItems = new List<IEntity>();
             _updateItems = new List<IEntity>();
         }
 
-        public void Insert(Beneficio entity)
+        public void Insert(Requisito entity)
         {
             _insertItems.Add(entity);
         }
 
-        public void Delete(Beneficio entity)
+        public void Delete(Requisito entity)
         {
             _deleteItems.Add(entity);
         }
 
-        public void Update(Beneficio entity)
+        public void Update(Requisito entity)
         {
             _updateItems.Add(entity);
         }
 
-        public IEnumerable<Beneficio> GetAll()
+        public IEnumerable<Requisito> GetAll()
         {
-            List<Beneficio> pbeneficio = null;
-            var sqlQuery = "SELECT Id, Nombre, porcentaje, descripcion FROM TbBeneficio";
+            List<Requisito> prequisito = null;
+            var sqlQuery = "SELECT IdRequisito, Nombre, Descripcion FROM TbRequisito";
             SqlCommand cmd = new SqlCommand(sqlQuery);
 
             var ds = DBAccess.ExecuteQuery(cmd);
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                pbeneficio = new List<Beneficio>();
+                prequisito = new List<Requisito>();
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {
-                    pbeneficio.Add(new Beneficio
+                    prequisito.Add(new Requisito
                     {
-                        Id = Convert.ToInt32(dr["Id"]),
+                        Id = Convert.ToInt32(dr["IdRequisito"]),
                         Nombre = dr["Nombre"].ToString(),
-                        Porcentaje = Convert.ToInt32(dr["Porcentaje"]),
                         Descripcion = dr["Descripcion"].ToString()
                     });
                 }
             }
 
-            return pbeneficio;
+            return prequisito;
         }
 
-        public Beneficio GetById(int id)
+        public Requisito GetById(int id)
         {
-            Beneficio objBeneficio = null;
-            var sqlQuery = "SELECT IdBeneficio, Nombre, Porcentaje, Descripcion FROM TbBeneficio WHERE id = @idBeneficio";
+            Requisito objRequisito = null;
+            var sqlQuery = "SELECT IdRequisito, Nombre, Descripcion FROM TbRequisito WHERE id = @idRequisito";
             SqlCommand cmd = new SqlCommand(sqlQuery);
-            cmd.Parameters.AddWithValue("@idBeneficio", id);
+            cmd.Parameters.AddWithValue("@idRequisito", id);
 
             var ds = DBAccess.ExecuteQuery(cmd);
 
@@ -77,41 +76,39 @@ namespace DAL.Repositories
             {
                 var dr = ds.Tables[0].Rows[0];
 
-                objBeneficio = new Beneficio
+                objRequisito = new Requisito
                 {
-                    Id = Convert.ToInt32(dr["IdBeneficio"]),
+                    Id = Convert.ToInt32(dr["IdRequisito"]),
                     Nombre = dr["Nombre"].ToString(),
-                    Porcentaje = Convert.ToInt32(dr["Porcentaje"]),
                     Descripcion = dr["Descripcion"].ToString()
                 };
             }
 
-            return objBeneficio;
+            return objRequisito;
         }
 
-        public IEnumerable<Beneficio> GetByEstado() //Se trae los beneficios que no estan borrados
+        public IEnumerable<Requisito> GetByEstado() //Se trae los beneficios que no estan borrados
         {
-            List<Beneficio> pbeneficio = null;
-            var sqlQuery = "SELECT IdBeneficio, Nombre, Porcentaje, Descripcion FROM TbBeneficio"; //Aqui va la condición si está borrada osea where estado = 1
+            List<Requisito> prequisito = null;
+            var sqlQuery = "SELECT IdRequisito, Nombre, Descripcion FROM TbRequisito"; //Aqui va la condición si está borrada osea where estado = 1
             SqlCommand cmd = new SqlCommand(sqlQuery);
 
             var ds = DBAccess.ExecuteQuery(cmd);
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                pbeneficio = new List<Beneficio>();
+                prequisito = new List<Requisito>();
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {
-                    pbeneficio.Add(new Beneficio
+                    prequisito.Add(new Requisito
                     {
                         Id = Convert.ToInt32(dr["Id"]),
                         Nombre = dr["Nombre"].ToString(),
-                        Porcentaje = Convert.ToInt32(dr["Porcentaje"]),
                         Descripcion = dr["Descripcion"].ToString()
                     });
                 }
             }
-            return pbeneficio;
+            return prequisito;
         }
 
         public void Save()
@@ -120,28 +117,28 @@ namespace DAL.Repositories
             {
                 try
                 {
-                 
+
                     if (_insertItems.Count > 0)
                     {
-                        foreach (Beneficio objBeneficio in _insertItems)
+                        foreach (Requisito objRequisito in _insertItems)
                         {
-                            InsertBeneficio(objBeneficio);
+                            InsertRequisito(objRequisito);
                         }
                     }
 
                     if (_updateItems.Count > 0)
                     {
-                        foreach (Beneficio m in _updateItems)
+                        foreach (Requisito m in _updateItems)
                         {
-                            UpdateBeneficio(m);
+                            UpdateRequisito(m);
                         }
                     }
 
                     if (_deleteItems.Count > 0)
                     {
-                        foreach (Beneficio m in _deleteItems)
+                        foreach (Requisito m in _deleteItems)
                         {
-                            DeleteBeneficio(m);
+                            DeleteRequisito(m);
                         }
                     }
 
@@ -170,17 +167,16 @@ namespace DAL.Repositories
             _updateItems.Clear();
         }
 
-        private void InsertBeneficio(Beneficio objBeneficio)
+        private void InsertRequisito(Requisito objRequisito)
         {
             try
             {
                 SqlCommand cmd = new SqlCommand();
 
-                cmd.Parameters.Add(new SqlParameter("@nombre", objBeneficio.Nombre));
-                cmd.Parameters.Add(new SqlParameter("@porcentaje", objBeneficio.Porcentaje));
-                cmd.Parameters.Add(new SqlParameter("@descripcion", objBeneficio.Descripcion));
+                cmd.Parameters.Add(new SqlParameter("@nombre", objRequisito.Nombre));
+                cmd.Parameters.Add(new SqlParameter("@descripcion", objRequisito.Descripcion));
 
-                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaInsertarBeneficio");
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaInsertarRequisito");
 
             }
             catch (Exception ex)
@@ -189,17 +185,16 @@ namespace DAL.Repositories
 
         }
 
-        private void UpdateBeneficio(Beneficio objBeneficio)
+        private void UpdateRequisito(Requisito objRequisito)
         {
             try
             {
                 SqlCommand cmd = new SqlCommand();
 
-                cmd.Parameters.Add(new SqlParameter("@nombre", objBeneficio.Nombre));
-                cmd.Parameters.Add(new SqlParameter("@porcentaje", objBeneficio.Porcentaje));
-                cmd.Parameters.Add(new SqlParameter("@descripcion", objBeneficio.Descripcion));
+                cmd.Parameters.Add(new SqlParameter("@nombre", objRequisito.Nombre));
+                cmd.Parameters.Add(new SqlParameter("@descripcion", objRequisito.Descripcion));
 
-                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaModificarBeneficio");
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaModificarRequisito");
 
             }
             catch (Exception ex)
@@ -208,13 +203,13 @@ namespace DAL.Repositories
             }
         }
 
-        private void DeleteBeneficio(Beneficio objBeneficio)
+        private void DeleteRequisito(Requisito objRequisito)
         {
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                cmd.Parameters.Add(new SqlParameter("@", objBeneficio.Id));
-                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaEliminarBeneficio");
+                cmd.Parameters.Add(new SqlParameter("@", objRequisito.Id));
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaEliminarRequisito");
 
             }
             catch (SqlException ex)
@@ -230,7 +225,7 @@ namespace DAL.Repositories
             }
         }
 
-        Beneficio IRepository<Beneficio>.GetById(int id)
+        Requisito IRepository<Requisito>.GetById(int id)
         {
             throw new NotImplementedException();
         }

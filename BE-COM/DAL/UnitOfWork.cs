@@ -13,10 +13,9 @@ namespace DAL
 
         private IRepository<Permiso> _permisoRepository;
         private IRepository<Rol> _rolRepository;
-        private IRepository<Periodo> _periodoRepository;
-        private IRepository<TipoBeca> _tipoBecaRepository;
-        private IRepository<Carrera> _carreraRepository;
         private IRepository<Beneficio> _beneficioRepository;
+        private IRepository<BitacoraTransaccion> _bitacoraTransaccionRepository;
+        private IRepository<Requisito> _requisitoRepository;
         
         public IRepository<Permiso> PermisoRepository
         {
@@ -27,6 +26,18 @@ namespace DAL
                     this._permisoRepository = new PermisoRepository();
                 }
                 return _permisoRepository;
+            }
+        }
+
+        public IRepository<BitacoraTransaccion> BitacoraTransaccionRepository
+        {
+            get
+            {
+                if (this._bitacoraTransaccionRepository == null)
+                {
+                    this._bitacoraTransaccionRepository = new BitacoraTransaccionRepository();
+                }
+                return _bitacoraTransaccionRepository;
             }
         }
 
@@ -42,43 +53,6 @@ namespace DAL
             }
         }
 
-        public IRepository<Periodo> PeriodoRepository
-        {
-            get
-            {
-                if (this._periodoRepository == null)
-                {
-                    this._periodoRepository = new PeriodoRepository();
-                }
-                return _periodoRepository;
-            }
-        }
-
-        public IRepository<TipoBeca> TipoBecaRepository
-        {
-            get
-            {
-                if (this._tipoBecaRepository == null)
-                {
-                    this._tipoBecaRepository = new TipoBecaRepository();
-                }
-                return _tipoBecaRepository;
-            }
-        }
-
-
-        public IRepository<Carrera> CarreraRepository
-        {
-            get
-            {
-                if (this._carreraRepository == null)
-                {
-                    this._carreraRepository = new CarreraRepository();
-                }
-                return _carreraRepository;
-            }
-        }
-
         public IRepository<Beneficio> BeneficioRepository
         {
             get
@@ -90,6 +64,19 @@ namespace DAL
                 return _beneficioRepository;
             }
         }
+
+        public IRepository<Requisito> RequisitoRepository
+        {
+            get
+            {
+                if (this._requisitoRepository == null)
+                {
+                    this._requisitoRepository = new RequisitoRepository();
+                }
+                return _requisitoRepository;
+            }
+        }
+
 
     }
 }

@@ -6,32 +6,29 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    public class Beneficio : IEntity
+    public class Requisito : IEntity
     {
-        private int idBeneficio;
+        private int idRequisito;
         public int Id
         {
-            get { return idBeneficio; }
-            set { idBeneficio = value; }
+            get { return idRequisito; }
+            set { idRequisito = value; }
         }
         public String Nombre { get; set; }
-        public double Porcentaje { get; set; }
         public String Descripcion { get; set; }
 
 
-        public Beneficio()
+        public Requisito()
         {
             Id = 0;
             Nombre = "";
-            Porcentaje = 0;
             Descripcion = "";
         }
 
-        public Beneficio(string pnombre, double pporcentaje, string pdescripcion)
+        public Requisito(string pnombre, string pdescripcion)
         {
             Id = 0;
             Nombre = pnombre;
-            Porcentaje = pporcentaje;
             Descripcion = pdescripcion;
         }
 
