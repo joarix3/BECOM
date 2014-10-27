@@ -96,6 +96,12 @@ namespace DAL.Repositories
             return pPermiso;
         }
 
+        public IEnumerable<Permiso> GetAllByName(String pnombre)
+        {
+            List<Permiso> pPermiso = null;
+            return pPermiso;
+        }
+
         private void InsertPermiso(Permiso objPermiso)
         {
 

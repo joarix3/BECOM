@@ -40,10 +40,6 @@ Public Class FrmMostrarRoles
         frmRegistrarRol.Show()
         Me.Hide()
     End Sub
-<<<<<<< HEAD
-
- 
-=======
     Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
 
         If String.IsNullOrEmpty(txtBuscar.Text) = True Then
@@ -81,5 +77,4 @@ Public Class FrmMostrarRoles
 
     End Sub
 
->>>>>>> 094612cc7906ef1a06e1b9238b765f535f2d5927
 End Class
