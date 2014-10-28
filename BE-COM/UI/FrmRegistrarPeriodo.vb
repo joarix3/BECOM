@@ -24,7 +24,7 @@ Public Class FrmRegistrarPeriodo
         Dim dia As Integer = txtDia.Text
         Dim mes As Integer = txtMes.Text
 
-        objGestorPeriodo.agregarPeriodo(nombre, dia, mes)
-        objGestorPeriodo.guardarCambios()
+        gestorPeriodo.agregarPeriodo(nombre, dia, mes)
+        gestorPeriodo.guardarCambios()
     End Sub
 End Class

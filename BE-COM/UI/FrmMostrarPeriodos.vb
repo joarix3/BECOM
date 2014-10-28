@@ -22,7 +22,7 @@ Public Class FrmMostrarPeriodos
     End Sub
 
     Private Sub FrmMostrarPeriodos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        dtgPeriodos.DataSource = objGestorPeriodo.obtenerPeriodos
+        dtgPeriodos.DataSource = gestorPeriodo.obtenerPeriodos
         dtgPeriodos.Columns(0).Visible = False
         dtgPeriodos.Columns(4).Visible = False
 
@@ -49,7 +49,7 @@ Public Class FrmMostrarPeriodos
         If (dtgPeriodos.SelectedRows.Count = 1) Then
 
             Dim id As Integer = Convert.ToInt32(dtgPeriodos.CurrentRow.Cells(0).Value)
-            objPeriodo = objGestorPeriodo.ObtenerPeriodoPorId(id)
+            objPeriodo = gestorPeriodo.ObtenerPeriodoPorId(id)
             Dim p As New FrmModificarPeriodo(Me, objPeriodo)
             p.Show()
             Me.Hide()

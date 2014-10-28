@@ -35,8 +35,8 @@ Public Class FrmModificarPeriodo
             estado = "0"
         End If
 
-        objGestorPeriodo.modificarPeriodo(idPeriodo, nombre, dia, mes, estado)
-        objGestorPeriodo.guardarCambios()
+        gestorPeriodo.modificarPeriodo(idPeriodo, nombre, dia, mes, estado)
+        gestorPeriodo.guardarCambios()
     End Sub
 
     Private Sub FrmModificarPeriodo_Load(sender As Object, e As EventArgs) Handles MyBase.Load

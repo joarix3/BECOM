@@ -64,6 +64,31 @@ namespace DAL.Repositories
             return pbeneficio;
         }
 
+        public IEnumerable<Beneficio> GetAllByName(string pnombre)
+        {
+            List<Beneficio> pbeneficio = null;
+            var sqlQuery = "SELECT Id, Nombre, porcentaje, descripcion FROM TbBeneficio";
+            SqlCommand cmd = new SqlCommand(sqlQuery);
+
+            var ds = DBAccess.ExecuteQuery(cmd);
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                pbeneficio = new List<Beneficio>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    pbeneficio.Add(new Beneficio
+                    {
+                        Id = Convert.ToInt32(dr["Id"]),
+                        Nombre = dr["Nombre"].ToString(),
+                        Porcentaje = Convert.ToInt32(dr["Porcentaje"]),
+                        Descripcion = dr["Descripcion"].ToString()
+                    });
+                }
+            }
+
+            return pbeneficio;
+        }
         public Beneficio GetById(int id)
         {
             Beneficio objBeneficio = null;

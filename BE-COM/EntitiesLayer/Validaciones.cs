@@ -14,6 +14,12 @@ namespace EntitiesLayer
         {
             bool esNumerico;
 
+            if (String.IsNullOrWhiteSpace(textbox.Text) == true)
+            {
+                esNumerico = false;
+            }
+            else
+            {
             if (String.IsNullOrEmpty(textbox.Text) == true)
             {
                 esNumerico = false;
@@ -29,13 +35,20 @@ namespace EntitiesLayer
                     esNumerico = true;
                 }
             }
-            return esNumerico;
+            }
+                return esNumerico;
         }
 
         public Boolean validarCamposTexto(TextBox textbox)
         {
             bool esNumerico;
 
+            if (String.IsNullOrWhiteSpace(textbox.Text) == true)
+            {
+                esNumerico = false;
+            }
+            else
+            { 
             if (String.IsNullOrEmpty(textbox.Text) == true)
             {
                 esNumerico = false;
@@ -51,6 +64,7 @@ namespace EntitiesLayer
                     esNumerico = true;
                 }
             }
+        }
             return esNumerico;
         }
 
@@ -58,6 +72,13 @@ namespace EntitiesLayer
         {
             bool esTexto;
 
+            if (String.IsNullOrWhiteSpace(textbox.Text) == true)
+            {
+                esTexto = false;
+            }
+            else
+            { 
+        
             if (String.IsNullOrEmpty(textbox.Text) == true)
             {
                 esTexto = false;
@@ -73,7 +94,10 @@ namespace EntitiesLayer
                     esTexto = false;
                 }
             }
-            return esTexto;
+            
         }
+                return esTexto;
+        }
+
     }
 }

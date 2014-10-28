@@ -8,6 +8,7 @@ using System.Collections;
 using System.Transactions;
 using System.Data.SqlClient;
 using System.Data;
+using System.Data.Sql;
 
 namespace DAL.Repositories
 {
@@ -67,14 +68,7 @@ namespace DAL.Repositories
                             UpdateRol(objRol);
                         }
                     }
-                }
-                catch (TransactionAbortedException ex)
-                {
-
-                }
-                catch (ApplicationException ex)
-                {
-
+                    scope.Complete();
                 }
                 finally
                 {

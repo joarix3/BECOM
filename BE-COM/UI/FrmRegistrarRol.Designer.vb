@@ -53,6 +53,7 @@ Partial Class FrmRegistrarRol
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblEspaciosEnBlanco = New System.Windows.Forms.Label()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -340,6 +341,7 @@ Partial Class FrmRegistrarRol
         'pnFormulario
         '
         Me.pnFormulario.BackColor = System.Drawing.Color.White
+        Me.pnFormulario.Controls.Add(Me.lblEspaciosEnBlanco)
         Me.pnFormulario.Controls.Add(Me.lblDescripcionV)
         Me.pnFormulario.Controls.Add(Me.lblNombreV)
         Me.pnFormulario.Controls.Add(Me.btnRegistrar)
@@ -360,6 +362,7 @@ Partial Class FrmRegistrarRol
         Me.lblDescripcionV.Name = "lblDescripcionV"
         Me.lblDescripcionV.Size = New System.Drawing.Size(33, 31)
         Me.lblDescripcionV.TabIndex = 49
+        Me.lblDescripcionV.Tag = "2"
         '
         'lblNombreV
         '
@@ -367,6 +370,7 @@ Partial Class FrmRegistrarRol
         Me.lblNombreV.Name = "lblNombreV"
         Me.lblNombreV.Size = New System.Drawing.Size(32, 33)
         Me.lblNombreV.TabIndex = 48
+        Me.lblNombreV.Tag = "1"
         '
         'btnRegistrar
         '
@@ -444,6 +448,17 @@ Partial Class FrmRegistrarRol
         Me.Label4.TabIndex = 27
         Me.Label4.Text = "Nombre:"
         '
+        'lblEspaciosEnBlanco
+        '
+        Me.lblEspaciosEnBlanco.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEspaciosEnBlanco.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblEspaciosEnBlanco.Location = New System.Drawing.Point(221, 322)
+        Me.lblEspaciosEnBlanco.Name = "lblEspaciosEnBlanco"
+        Me.lblEspaciosEnBlanco.Size = New System.Drawing.Size(200, 101)
+        Me.lblEspaciosEnBlanco.TabIndex = 50
+        Me.lblEspaciosEnBlanco.Text = "*Existen espacios en blanco por favor llenarlos antes de continuar."
+        Me.lblEspaciosEnBlanco.Visible = False
+        '
         'FrmRegistrarRol
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -497,4 +512,5 @@ Partial Class FrmRegistrarRol
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblEspaciosEnBlanco As System.Windows.Forms.Label
 End Class

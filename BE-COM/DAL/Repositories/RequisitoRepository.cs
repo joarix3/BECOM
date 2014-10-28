@@ -62,6 +62,31 @@ namespace DAL.Repositories
 
             return prequisito;
         }
+        
+        public IEnumerable<Requisito> GetAllByName(string pnombre)
+        {
+            List<Requisito> prequisito = null;
+            var sqlQuery = "SELECT IdRequisito, Nombre, Descripcion FROM TbRequisito";
+            SqlCommand cmd = new SqlCommand(sqlQuery);
+
+            var ds = DBAccess.ExecuteQuery(cmd);
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                prequisito = new List<Requisito>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    prequisito.Add(new Requisito
+                    {
+                        Id = Convert.ToInt32(dr["IdRequisito"]),
+                        Nombre = dr["Nombre"].ToString(),
+                        Descripcion = dr["Descripcion"].ToString()
+                    });
+                }
+            }
+
+            return prequisito;
+        }
 
         public Requisito GetById(int id)
         {

@@ -24,7 +24,7 @@ namespace BLL
 
         }
 
-        public void modificarUsuario(String pnombre, String pdescripcion, char pestado, List<int> ppermisosSeleccionados)
+        public void modificarUsuario()
         {
 
         }

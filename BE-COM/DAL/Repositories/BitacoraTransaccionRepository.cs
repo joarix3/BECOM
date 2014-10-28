@@ -62,6 +62,31 @@ namespace DAL.Repositories
 
             return pbitacoraTransaccion;
         }
+        
+        public IEnumerable<BitacoraTransaccion> GetAllByName(string pnombre)
+        {
+            List<BitacoraTransaccion> pbitacoraTransaccion = null;
+            var sqlQuery = "SELECT IdUsuario, Fecha, Descripcion FROM TbBitacora";
+            SqlCommand cmd = new SqlCommand(sqlQuery);
+
+            var ds = DBAccess.ExecuteQuery(cmd);
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                pbitacoraTransaccion = new List<BitacoraTransaccion>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    pbitacoraTransaccion.Add(new BitacoraTransaccion
+                    {
+                        Id = Convert.ToInt32(dr["IdUsuario"]),
+                        Fecha = Convert.ToDateTime(dr["Fecha"]),
+                        Transaccion = dr["Descripcion"].ToString()
+                    });
+                }
+            }
+
+            return pbitacoraTransaccion;
+        }
 
         public BitacoraTransaccion GetById(int id)
         {
