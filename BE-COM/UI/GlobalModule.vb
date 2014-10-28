@@ -13,8 +13,8 @@ Module GlobalModule
     Public gestorPeriodo As New GestorPeriodo()
     Public gestorBitacoraTransaccion As New GestorBitacoraTransaccion()
 
-    Public campoCorrecto As Image = Image.FromFile("C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\Imagens\Validaciones\Correcto.png")
-    Public campoIncorrecto As Image = Image.FromFile("C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\Imagens\Validaciones\Incorrecto.png")
+    Public campoCorrecto As Image = Image.FromFile("C:\Users\Douglas\Documents\BECOM\BE-COM\Imagens\Validaciones\Correcto.png")
+    Public campoIncorrecto As Image = Image.FromFile("C:\Users\Douglas\Documents\BECOM\BE-COM\Imagens\Validaciones\Incorrecto.png")
     
 
 End Module
