@@ -44,18 +44,18 @@ Partial Class FrmModificarRol
         Me.btnAyuda = New System.Windows.Forms.Button()
         Me.btnPerfil = New System.Windows.Forms.Button()
         Me.pnFormulario = New System.Windows.Forms.Panel()
+        Me.rbtInactivo = New System.Windows.Forms.RadioButton()
+        Me.rbtActivo = New System.Windows.Forms.RadioButton()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.lblDescripcionV = New System.Windows.Forms.Label()
         Me.lblNombreV = New System.Windows.Forms.Label()
-        Me.btnRegistrar = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.lblPermisos = New System.Windows.Forms.Label()
         Me.LchkPermisos = New System.Windows.Forms.CheckedListBox()
         Me.rctDescripcion = New System.Windows.Forms.RichTextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.chkActivo = New System.Windows.Forms.CheckBox()
-        Me.chkInactivo = New System.Windows.Forms.CheckBox()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -343,12 +343,12 @@ Partial Class FrmModificarRol
         'pnFormulario
         '
         Me.pnFormulario.BackColor = System.Drawing.Color.White
-        Me.pnFormulario.Controls.Add(Me.chkInactivo)
-        Me.pnFormulario.Controls.Add(Me.chkActivo)
+        Me.pnFormulario.Controls.Add(Me.rbtInactivo)
+        Me.pnFormulario.Controls.Add(Me.rbtActivo)
         Me.pnFormulario.Controls.Add(Me.Label3)
         Me.pnFormulario.Controls.Add(Me.lblDescripcionV)
         Me.pnFormulario.Controls.Add(Me.lblNombreV)
-        Me.pnFormulario.Controls.Add(Me.btnRegistrar)
+        Me.pnFormulario.Controls.Add(Me.btnGuardar)
         Me.pnFormulario.Controls.Add(Me.lblPermisos)
         Me.pnFormulario.Controls.Add(Me.LchkPermisos)
         Me.pnFormulario.Controls.Add(Me.rctDescripcion)
@@ -359,6 +359,41 @@ Partial Class FrmModificarRol
         Me.pnFormulario.Name = "pnFormulario"
         Me.pnFormulario.Size = New System.Drawing.Size(955, 579)
         Me.pnFormulario.TabIndex = 47
+        '
+        'rbtInactivo
+        '
+        Me.rbtInactivo.AutoSize = True
+        Me.rbtInactivo.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbtInactivo.Location = New System.Drawing.Point(372, 351)
+        Me.rbtInactivo.Name = "rbtInactivo"
+        Me.rbtInactivo.Size = New System.Drawing.Size(91, 29)
+        Me.rbtInactivo.TabIndex = 54
+        Me.rbtInactivo.TabStop = True
+        Me.rbtInactivo.Text = "Inactivo"
+        Me.rbtInactivo.UseVisualStyleBackColor = True
+        '
+        'rbtActivo
+        '
+        Me.rbtActivo.AutoSize = True
+        Me.rbtActivo.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbtActivo.Location = New System.Drawing.Point(227, 351)
+        Me.rbtActivo.Name = "rbtActivo"
+        Me.rbtActivo.Size = New System.Drawing.Size(80, 29)
+        Me.rbtActivo.TabIndex = 53
+        Me.rbtActivo.TabStop = True
+        Me.rbtActivo.Text = "Activo"
+        Me.rbtActivo.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(221, 309)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(70, 25)
+        Me.Label3.TabIndex = 50
+        Me.Label3.Text = "Estado:"
         '
         'lblDescripcionV
         '
@@ -374,20 +409,20 @@ Partial Class FrmModificarRol
         Me.lblNombreV.Size = New System.Drawing.Size(32, 33)
         Me.lblNombreV.TabIndex = 48
         '
-        'btnRegistrar
+        'btnGuardar
         '
-        Me.btnRegistrar.BackColor = System.Drawing.Color.White
-        Me.btnRegistrar.FlatAppearance.BorderSize = 2
-        Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRegistrar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRegistrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.btnRegistrar.Location = New System.Drawing.Point(226, 516)
-        Me.btnRegistrar.Name = "btnRegistrar"
-        Me.btnRegistrar.Size = New System.Drawing.Size(513, 37)
-        Me.btnRegistrar.TabIndex = 47
-        Me.btnRegistrar.Text = "Registrar"
-        Me.btnRegistrar.UseVisualStyleBackColor = False
+        Me.btnGuardar.BackColor = System.Drawing.Color.White
+        Me.btnGuardar.FlatAppearance.BorderSize = 2
+        Me.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnGuardar.Location = New System.Drawing.Point(226, 516)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(513, 37)
+        Me.btnGuardar.TabIndex = 47
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = False
         '
         'lblPermisos
         '
@@ -450,41 +485,6 @@ Partial Class FrmModificarRol
         Me.Label4.TabIndex = 27
         Me.Label4.Text = "Nombre:"
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(221, 309)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(70, 25)
-        Me.Label3.TabIndex = 50
-        Me.Label3.Text = "Estado:"
-        '
-        'chkActivo
-        '
-        Me.chkActivo.AutoSize = True
-        Me.chkActivo.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkActivo.Location = New System.Drawing.Point(226, 351)
-        Me.chkActivo.Name = "chkActivo"
-        Me.chkActivo.Size = New System.Drawing.Size(81, 29)
-        Me.chkActivo.TabIndex = 51
-        Me.chkActivo.Tag = "1"
-        Me.chkActivo.Text = "Activo"
-        Me.chkActivo.UseVisualStyleBackColor = True
-        '
-        'chkInactivo
-        '
-        Me.chkInactivo.AutoSize = True
-        Me.chkInactivo.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkInactivo.Location = New System.Drawing.Point(371, 351)
-        Me.chkInactivo.Name = "chkInactivo"
-        Me.chkInactivo.Size = New System.Drawing.Size(92, 29)
-        Me.chkInactivo.TabIndex = 52
-        Me.chkInactivo.Tag = "2"
-        Me.chkInactivo.Text = "Inactivo"
-        Me.chkInactivo.UseVisualStyleBackColor = True
-        '
         'FrmModificarRol
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -531,14 +531,14 @@ Partial Class FrmModificarRol
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents lblPermisos As System.Windows.Forms.Label
     Friend WithEvents LchkPermisos As System.Windows.Forms.CheckedListBox
-    Friend WithEvents btnRegistrar As System.Windows.Forms.Button
+    Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents lblNombreV As System.Windows.Forms.Label
     Friend WithEvents lblDescripcionV As System.Windows.Forms.Label
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents chkInactivo As System.Windows.Forms.CheckBox
-    Friend WithEvents chkActivo As System.Windows.Forms.CheckBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents rbtInactivo As System.Windows.Forms.RadioButton
+    Friend WithEvents rbtActivo As System.Windows.Forms.RadioButton
 End Class

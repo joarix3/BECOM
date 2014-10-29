@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using EntitiesLayer;
+using DAL.Repositories;
 namespace BLL
 {
     public class GestorUsuarios
     {
         private UnitOfWork UoW = new UnitOfWork();
+        private RolRepository Rr = new RolRepository();
 
         public void agregarUsuario()
         {
@@ -18,9 +20,13 @@ namespace BLL
 
         public void agregarRol(String pnombre, String pdescripcion, List<int> ppermisosSeleccionados)
         {
-            char estado = '1';
-            Rol rol = new Rol (pnombre,pdescripcion,estado);
-            UoW.RolRepository.Insert(rol);
+            Rol rol = new Rol (pnombre,pdescripcion);
+            int idRol = Rr.InsertRolWithPrivileges(rol);
+            
+            foreach (int permiso in ppermisosSeleccionados){
+                Rr.SetPrivileges(idRol, permiso);
+            }
+
 
         }
 
@@ -29,9 +35,15 @@ namespace BLL
 
         }
 
-        public void modificarRol()
+        public void modificarRol(int pid, String pnombre, String pdescripcion, int pestado, List<int> ppermisosSeleccionados)
         {
-
+            Rol rol = new Rol (pid, pnombre, pdescripcion, pestado);
+            UoW.RolRepository.Update(rol);
+            Rr.ClearPrivileges(pid);
+            foreach (int permiso in ppermisosSeleccionados)
+            {
+                Rr.UpdatePrivileges(pid, permiso);
+            }
         }
 
         public void eliminarUsuario()
@@ -42,12 +54,17 @@ namespace BLL
         public void eliminarRol(int idRol)
         {
             Rol rol = new Rol {Id= idRol};
-            UoW.RolRepository.Update(rol);
+            UoW.RolRepository.Delete(rol);
         }
 
         public IEnumerable<Permiso> obtenerPermisos()
         {
             return UoW.PermisoRepository.GetAll();
+        }
+
+        public IEnumerable<Permiso> obtenerPermisosPorRol(int pidRol)
+        {
+            return Rr.getPrivilegesByRol(pidRol);
         }
 
         public IEnumerable<Rol> obtenerRoles()
@@ -58,6 +75,16 @@ namespace BLL
         public IEnumerable<Rol> buscarRolPorNombre(String pnombre)
         {
             return UoW.RolRepository.GetAllByName(pnombre);
+        }
+
+        public Rol buscarRolPorId(int pidRol)
+        {
+            return UoW.RolRepository.GetById(pidRol);
+        }
+
+        public IEnumerable<Rol> obtenerRolesInactivos()
+        {
+            return UoW.RolRepository.GetAllInactive();
         }
 
         public void guardarCambios()

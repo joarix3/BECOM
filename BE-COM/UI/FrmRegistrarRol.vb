@@ -2,7 +2,6 @@
 Imports BLL
 Public Class FrmRegistrarRol
     Dim formAnterior As Form
-    Dim listaDatos As List(Of Boolean)
     Dim idPermisos As New List(Of Integer)
 
     Public Sub New(pformAnterior As Form)
@@ -13,9 +12,10 @@ Public Class FrmRegistrarRol
         ' Add any initialization after the InitializeComponent() call.
 
     End Sub
+
     Private Sub FrmRegistrarRol_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim objGestor As New GestorUsuarios()
-        For Each permiso As Permiso In objGestor.obtenerPermisos()
+
+        For Each permiso As Permiso In gestorUsuario.obtenerPermisos()
             LchkPermisos.Items.Add(permiso.Nombre)
             idPermisos.Add(permiso.Id)
         Next
@@ -26,14 +26,6 @@ Public Class FrmRegistrarRol
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Function mostrarPermisos() As Boolean
-        If lblPermisos.Visible = True Or LchkPermisos.Visible = True Then
-            mostrarPermisos = False
-        Else
-            mostrarPermisos = True
-        End If
-    End Function
-
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
         formAnterior.Show()
         Me.Hide()
@@ -41,34 +33,84 @@ Public Class FrmRegistrarRol
 
     Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
 
+        If validarEspaciosBlanco() = True Then
+            If validarCamposFormulario() = True Then
+                registrarRol()
+            Else
+                MsgBox("Existen errores.")
+            End If
+        Else
+            MsgBox("Existen errores.")
+        End If
+
+
+
+    End Sub
+
+    Private Function validarEspaciosBlanco() As Boolean
+        Dim permitido = False
+
+        For Each textBox As TextBox In Me.pnFormulario.Controls.OfType(Of TextBox)()
+            If String.IsNullOrEmpty(textBox.Text) Then
+                lblEspaciosEnBlanco.Visible = True
+                permitido = False
+            Else
+                lblEspaciosEnBlanco.Visible = False
+                permitido = True
+            End If
+        Next
+        Return permitido
+    End Function
+
+    Private Function validarCamposFormulario() As Boolean
+        Dim listaCampos As New List(Of Boolean)
+        Dim permitido As Boolean
+
+        For Each validacion As Label In Me.pnFormulario.Controls.OfType(Of Label)()
+            If IsNumeric(validacion.Tag) = True Then
+                If validacion.Visible = True Then
+                    If validacion.Image.Equals(campoIncorrecto) Then
+                        listaCampos.Add(False)
+                    Else
+                        listaCampos.Add(True)
+                    End If
+                End If
+            End If
+        Next
+
+        permitido = corroborarDatos(listaCampos)
+
+        Return permitido
+    End Function
+
+    Private Function corroborarDatos(plistaCampos As List(Of Boolean))
+        Dim datosCorrectos As Boolean
+        For Each permiso As Boolean In plistaCampos
+            If (permiso.Equals(False)) Then
+                datosCorrectos = False
+                Exit For
+            Else
+                datosCorrectos = True
+            End If
+        Next
+
+        Return datosCorrectos
+
+    End Function
+
+    Private Sub registrarRol()
         Dim permisosSeleccionados As List(Of Integer)
         Dim nombre As String = txtNombre.Text.ToString()
         Dim descripcion As String = rctDescripcion.Text.ToString()
 
-        validarCampoFormulario()
         permisosSeleccionados = obtenerPermisosSeleccionados()
 
         gestorUsuario.agregarRol(nombre, descripcion, permisosSeleccionados)
         gestorUsuario.guardarCambios()
 
-    End Sub
+        PopAgregado.Show()
+        Me.Close()
 
-    Private Sub validarCampoFormulario()
-        For Each textBox As TextBox In Me.pnFormulario.Controls.OfType(Of TextBox)()
-            If String.IsNullOrEmpty(textBox.Text) Then
-                lblEspaciosEnBlanco.Visible = True
-            Else
-                lblEspaciosEnBlanco.Visible = False
-            End If
-        Next
-
-        For Each validacion As Label In Me.pnFormulario.Controls.OfType(Of Label)()
-            If IsNumeric(validacion.Tag) = True Then
-                If validacion.Image.Equals(campoIncorrecto) Then
-                    MsgBox("Existen campos incorrectos")
-                End If
-            End If
-        Next
     End Sub
 
     Private Function obtenerPermisosSeleccionados()
@@ -99,4 +141,5 @@ Public Class FrmRegistrarRol
             lblDescripcionV.Visible = True
         End If
     End Sub
+
 End Class

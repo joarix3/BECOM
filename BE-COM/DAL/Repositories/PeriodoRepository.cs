@@ -244,5 +244,11 @@ namespace DAL
             //}
         }
 
+        public IEnumerable<Periodo> GetAllInactive()
+        {
+            List<Periodo> pRol = null;
+            return pRol;
+        }
+
     }
 }

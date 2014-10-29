@@ -259,5 +259,11 @@ namespace DAL.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public IEnumerable<Beneficio> GetAllInactive()
+        {
+            List<Beneficio> pRol = null;
+            return pRol;
+        }
     }
 }

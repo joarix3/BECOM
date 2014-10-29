@@ -9,10 +9,11 @@ using System.Transactions;
 using System.Data.SqlClient;
 using System.Data;
 using System.Data.Sql;
+using System.Windows.Forms;
 
 namespace DAL.Repositories
 {
-    public class RolRepository : IRepository<Rol>
+    public class RolRepository : IRepository<Rol> , IUsers
     {
 
         private List<IEntity> _insertItems;
@@ -40,13 +41,6 @@ namespace DAL.Repositories
             _updateItems.Add(entity);
         }
 
-
-        public Rol GetById(int id)
-        {
-            Rol Rol = null;
-            return Rol;
-        }
-
         public void Save()
         {
             using (TransactionScope scope = new TransactionScope())
@@ -57,7 +51,7 @@ namespace DAL.Repositories
                     {
                         foreach (Rol objRol in _insertItems)
                         {
-                            InsertRol(objRol);
+                            InsertRolWithPrivileges(objRol);
                         }
                     }
 
@@ -83,6 +77,28 @@ namespace DAL.Repositories
             _insertItems.Clear();
             _deleteItems.Clear();
             _updateItems.Clear();
+        }
+
+        public Rol GetById(int pidRol)
+        {
+            Rol pRol = null;
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.Add(new SqlParameter("@IdRol", pidRol));
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarRolPorId");
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                pRol = new Rol();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    pRol.Id = Convert.ToInt32(dr["IdRol"]);
+                    pRol.Nombre = dr["Nombre"].ToString();
+                    pRol.Descripcion = dr["Descripcion"].ToString();
+                    pRol.Estado = Convert.ToInt32(dr["Estado"]);
+                }
+            }
+
+            return pRol;
         }
 
         public IEnumerable<Rol> GetAll()
@@ -122,6 +138,30 @@ namespace DAL.Repositories
                 {
                     pRol.Add(new Rol
                     {
+                        Id = Convert.ToInt32(dr["IdRol"]),
+                        Nombre = dr["Nombre"].ToString(),
+                        Descripcion = dr["Descripcion"].ToString(),
+                    });
+                }
+            }
+
+            return pRol;
+        }
+
+        public IEnumerable<Rol> GetAllInactive()
+        {
+            List<Rol> pRol = null;
+            SqlCommand cmd = new SqlCommand();
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerRolesInactivos");
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                pRol = new List<Rol>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    pRol.Add(new Rol
+                    {
+                        Id = Convert.ToInt32(dr["IdRol"]),
                         Nombre = dr["Nombre"].ToString(),
                         Descripcion = dr["Descripcion"].ToString(),
                     });
@@ -133,16 +173,13 @@ namespace DAL.Repositories
 
         private void InsertRol(Rol objRol)
         {
-
             try
             {
                 SqlCommand cmd = new SqlCommand();
 
                 cmd.Parameters.Add(new SqlParameter("@Nombre", objRol.Nombre));
                 cmd.Parameters.Add(new SqlParameter("@Descripcion", objRol.Descripcion));
-
                 DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaRegistrarRol");
-
             }
             catch (Exception ex)
             {
@@ -159,8 +196,10 @@ namespace DAL.Repositories
                 SqlCommand cmd = new SqlCommand();
 
                 cmd.Parameters.Add(new SqlParameter("@IdRol", objRol.Id));
-
-                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaEliminarRol");
+                cmd.Parameters.Add(new SqlParameter("@Nombre", objRol.Nombre));
+                cmd.Parameters.Add(new SqlParameter("@Descripcion", objRol.Descripcion));
+                cmd.Parameters.Add(new SqlParameter("@Estado", objRol.Estado));
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaModificarRol");
 
             }
             catch (Exception ex)
@@ -173,6 +212,19 @@ namespace DAL.Repositories
         {
             try
             {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand();
+
+                    cmd.Parameters.Add(new SqlParameter("@IdRol", objRol.Id));
+
+                    DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaEliminarRol");
+
+                }
+                catch (Exception ex)
+                {
+
+                }
             }
             catch (SqlException ex)
             {
@@ -185,6 +237,101 @@ namespace DAL.Repositories
                 //logear la excepcion a la bd con un Exception
                 //throw new DataAccessException("Ha ocurrido un error al eliminar un usuario", ex);
             }
+        }
+
+        public int InsertRolWithPrivileges(Rol objRol)
+        {
+            int idRol = 0;
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Add(new SqlParameter("@Nombre", objRol.Nombre));
+                cmd.Parameters.Add(new SqlParameter("@Descripcion", objRol.Descripcion));
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaRegistrarRol");
+
+                IDataReader lectorId = ds.CreateDataReader();
+                lectorId.Read();
+                idRol = Convert.ToInt32(lectorId.GetValue(0));
+
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return idRol;
+        }
+        
+        public void SetPrivileges(int pidRol, int pidPermiso)
+        {
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Add(new SqlParameter("@IdRol", pidRol));
+                cmd.Parameters.Add(new SqlParameter("@IdPermiso", pidPermiso));
+
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaAsignarPermisosARol");
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+    }
+
+        public void UpdatePrivileges(int pidRol, int pidPermiso)
+        {
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Add(new SqlParameter("@IdRol", pidRol));
+                cmd.Parameters.Add(new SqlParameter("@IdPermiso", pidPermiso));
+
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaModificarPermisosARol");
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        public IEnumerable<Permiso> getPrivilegesByRol(int pidRol)
+        {
+            List<Permiso> pPermiso = null;
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.Add(new SqlParameter("@IdRol", pidRol));
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarPermisosPorRol");
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                pPermiso = new List<Permiso>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    pPermiso.Add(new Permiso
+                    {
+                        Id = Convert.ToInt32(dr["IdPermiso"]),
+                        Nombre = dr["Nombre"].ToString(),
+                        Descripcion = dr["Descripcion"].ToString(),
+                    });
+                }
+            }
+
+            return pPermiso;
+        }
+
+        public void ClearPrivileges(int pidRol)
+        {
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.Add(new SqlParameter("@IdRol", pidRol));
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaClearTbPermisos");
         }
 
     }

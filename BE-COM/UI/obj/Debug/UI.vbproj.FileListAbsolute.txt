@@ -12,6 +12,7 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI.vbprojRes
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmAcademico.resources
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarRol.resources
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarCarreras.resources
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPeriodo.resources

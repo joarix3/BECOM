@@ -212,5 +212,11 @@ namespace DAL.Repositories
             }
         }
 
+        public IEnumerable<Carrera> GetAllInactive()
+        {
+            List<Carrera> pRol = null;
+            return pRol;
+        }
+
     }
 }

@@ -13,6 +13,7 @@ namespace DAL.Repositories
         void Update(T entity);
         IEnumerable<T> GetAll();
         IEnumerable<T> GetAllByName(string pnombre);
+        IEnumerable<T> GetAllInactive();
         T GetById(int id);
         void Save();
         void Clear();

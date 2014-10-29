@@ -145,5 +145,11 @@ namespace DAL.Repositories
             }
         }
 
+        public IEnumerable<Permiso> GetAllInactive()
+        {
+            List<Permiso> pRol = null;
+            return pRol;
+        }
+
     }
 }

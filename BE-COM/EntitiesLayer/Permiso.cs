@@ -26,8 +26,9 @@ namespace EntitiesLayer
             Descripcion = "";
         }
 
-        public Permiso(string pnombre, string pdescripcion)
+        public Permiso(int pidPermiso, string pnombre, string pdescripcion)
         {
+            Id = pidPermiso;
             Nombre = pnombre;
             Descripcion = pdescripcion;
         }

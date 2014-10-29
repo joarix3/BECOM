@@ -12,12 +12,9 @@ Public Class FrmMostrarRoles
         InitializeComponent()
         formAnterior = pformAnterior
     End Sub
+
     Private Sub btnMin_Click(sender As Object, e As EventArgs)
         Me.WindowState = FormWindowState.Minimized
-    End Sub
-
-    Private Sub FrmMostrarRoles_Paint(sender As Object, e As System.Windows.Forms.PaintEventArgs) Handles Me.Paint
-        ControlPaint.DrawBorder(e.Graphics, e.ClipRectangle, Color.Black, ButtonBorderStyle.Solid)
     End Sub
 
     Private Sub FrmMostrarRoles_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -26,11 +23,6 @@ Public Class FrmMostrarRoles
         mostrarRoles()
         configurarColumnasDGV()
     End Sub
-
-    Private Sub gridMostrarAlumnos_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvMostrarRoles.CellMouseEnter
-        dgvMostrarRoles.RowsDefaultCellStyle.SelectionBackColor = Color.Purple
-    End Sub
-
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
         formAnterior.Show()
@@ -42,6 +34,7 @@ Public Class FrmMostrarRoles
         frmRegistrarRol.Show()
         Me.Hide()
     End Sub
+
     Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
 
         If String.IsNullOrEmpty(txtBuscar.Text) = True Then
@@ -57,55 +50,51 @@ Public Class FrmMostrarRoles
     End Sub
 
     Private Sub configurarColumnasDGV()
-        dgvMostrarRoles.Columns(0).Visible = False
-        dgvMostrarRoles.Columns(1).HeaderText = "Nombre"
-        dgvMostrarRoles.Columns(2).HeaderText = "Descripción"
-        dgvMostrarRoles.Columns(3).Visible = False
+        dtgMostrarRoles.Columns(0).Visible = False
+        dtgMostrarRoles.Columns(1).HeaderText = "Nombre"
+        dtgMostrarRoles.Columns(2).HeaderText = "Descripción"
+        dtgMostrarRoles.Columns(3).Visible = False
     End Sub
 
     Private Sub mostrarRoles()
-        dgvMostrarRoles.DataSource = gestorUsuario.obtenerRoles()
+        dtgMostrarRoles.DataSource = gestorUsuario.obtenerRoles()
+        configurarColumnasDGV()
+    End Sub
+
+    Private Sub mostrarRolesInactivos()
+        dtgMostrarRoles.DataSource = gestorUsuario.obtenerRolesInactivos()
     End Sub
 
     Private Sub mostrarRolesPorNombre()
 
         If gestorUsuario.buscarRolPorNombre(txtBuscar.Text) Is Nothing = False Then
             lblRolesNoRegistrados.Visible = False
-            dgvMostrarRoles.DataSource = gestorUsuario.buscarRolPorNombre(txtBuscar.Text)
+            dtgMostrarRoles.DataSource = gestorUsuario.buscarRolPorNombre(txtBuscar.Text)
             configurarColumnasDGV()
         Else
-            dgvMostrarRoles.DataSource = Nothing
+            dtgMostrarRoles.DataSource = Nothing
             lblRolesNoRegistrados.Visible = True
         End If
 
     End Sub
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
-        Dim idRol As Integer = dgvMostrarRoles.CurrentRow.Cells(0).Value.ToString()
-        gestorUsuario.eliminarRol(idRol)
-
+        Dim idRol As Integer = dtgMostrarRoles.CurrentRow.Cells(0).Value.ToString()
+        Dim frmModificarRol As FrmModificarRol = New FrmModificarRol(Me, idRol)
+        frmModificarRol.Show()
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
-        PNoEliminar.Visible = True
-        'dgvMostrarRoles.Rows(dgvMostrarRoles.CurrentCell.RowIndex).Visible = Falsed
-        dgvMostrarRoles.CurrentCell = Nothing
-        '(dgvMostrarRoles.SelectedRows.Item)
-        'dgvMostrarRoles.SelectedRows(0).Visible = False
+        Dim idRolSeleccionado As Integer = dtgMostrarRoles.CurrentRow.Cells(0).Value.ToString()
+        gestorUsuario.eliminarRol(idRolSeleccionado)
     End Sub
 
-    'Private Sub eliminarUsuario()
-    '    Dim idRolSeleccionado As Integer = dgvMostrarRoles.CurrentRow.Cells(0).Value.ToString()
-    '    'Dim conexion As SqlConnection = DBAccess.GetConnection()
-    '    conexion.Open()
-    '    Dim PaEliminarRol As SqlCommand = New SqlCommand("PaEliminarRol", conexion)
-    '    PaEliminarRol.CommandType = CommandType.StoredProcedure
+    Private Sub chkUsuariosInactivos_CheckedChanged(sender As Object, e As EventArgs) Handles chkUsuariosInactivos.CheckedChanged
+        If chkUsuariosInactivos.Checked = True Then
+            mostrarRolesInactivos()
+        Else
+            mostrarRoles()
 
-    '    Dim idRol As SqlParameter = PaEliminarRol.Parameters.Add("@IdRol", SqlDbType.Int)
-    '    idRol.Direction = ParameterDirection.Input
-
-    '    idRol.Value = idRolSeleccionado
-
-    '    Dim lectorId As SqlDataReader = PaEliminarRol.ExecuteReader
-    'End Sub
+        End If
+    End Sub
 End Class

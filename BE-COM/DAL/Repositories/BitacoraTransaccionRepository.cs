@@ -233,5 +233,11 @@ namespace DAL.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public IEnumerable<BitacoraTransaccion> GetAllInactive()
+        {
+            List<BitacoraTransaccion> pRol = null;
+            return pRol;
+        }
     }
 }
