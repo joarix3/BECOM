@@ -14,7 +14,7 @@
 
 
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs)
-        PopAgregado.Show()
+        'PopAgregado.Show()
     End Sub
 
 
@@ -31,8 +31,5 @@
     End Sub
 
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        PopAgregado.Show()
 
-    End Sub
 End Class

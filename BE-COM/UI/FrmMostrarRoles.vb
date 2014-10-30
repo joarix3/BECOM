@@ -94,18 +94,18 @@ Public Class FrmMostrarRoles
         'dgvMostrarRoles.SelectedRows(0).Visible = False
     End Sub
 
-    Private Sub eliminarUsuario()
-        Dim idRolSeleccionado As Integer = dgvMostrarRoles.CurrentRow.Cells(0).Value.ToString()
-        Dim conexion As SqlConnection = DBAccess.GetConnection()
-        conexion.Open()
-        Dim PaEliminarRol As SqlCommand = New SqlCommand("PaEliminarRol", conexion)
-        PaEliminarRol.CommandType = CommandType.StoredProcedure
+    'Private Sub eliminarUsuario()
+    '    Dim idRolSeleccionado As Integer = dgvMostrarRoles.CurrentRow.Cells(0).Value.ToString()
+    '    'Dim conexion As SqlConnection = DBAccess.GetConnection()
+    '    conexion.Open()
+    '    Dim PaEliminarRol As SqlCommand = New SqlCommand("PaEliminarRol", conexion)
+    '    PaEliminarRol.CommandType = CommandType.StoredProcedure
 
-        Dim idRol As SqlParameter = PaEliminarRol.Parameters.Add("@IdRol", SqlDbType.Int)
-        idRol.Direction = ParameterDirection.Input
+    '    Dim idRol As SqlParameter = PaEliminarRol.Parameters.Add("@IdRol", SqlDbType.Int)
+    '    idRol.Direction = ParameterDirection.Input
 
-        idRol.Value = idRolSeleccionado
+    '    idRol.Value = idRolSeleccionado
 
-        Dim lectorId As SqlDataReader = PaEliminarRol.ExecuteReader
-    End Sub
+    '    Dim lectorId As SqlDataReader = PaEliminarRol.ExecuteReader
+    'End Sub
 End Class

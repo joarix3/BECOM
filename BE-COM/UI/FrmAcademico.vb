@@ -18,4 +18,9 @@
         Dim frmMostrarCarreras As Form = New FrmMostrarCarreras(Me)
         frmMostrarCarreras.Show()
     End Sub
+
+    Private Sub btnCursos_Click(sender As Object, e As EventArgs) Handles btnCursos.Click
+        Dim frmMostrarCursos As Form = New FrmMostrarCurso(Me)
+        frmMostrarCursos.Show()
+    End Sub
 End Class

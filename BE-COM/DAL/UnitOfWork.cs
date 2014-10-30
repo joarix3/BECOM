@@ -14,6 +14,7 @@ namespace DAL
         private IRepository<Permiso> _permisoRepository;
         private IRepository<Rol> _rolRepository;
         private IRepository<Carrera> _carreraRepository;
+        private IRepository<Curso> _cursoRepository;
         
         public IRepository<Permiso> PermisoRepository
         {
@@ -47,6 +48,18 @@ namespace DAL
                     this._carreraRepository = new CarreraRepository();
                 }
                 return _carreraRepository;
+            }
+        }
+
+        public IRepository<Curso> CursoRepository
+        {
+            get
+            {
+                if (this._cursoRepository == null)
+                {
+                    this._cursoRepository = new CursoRepository(); 
+                }
+                return _cursoRepository;
             }
         }
 
