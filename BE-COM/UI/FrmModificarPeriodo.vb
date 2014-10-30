@@ -4,11 +4,12 @@ Public Class FrmModificarPeriodo
     Dim formAnterior As Form
     Dim objPeriodo As Periodo
 
-    Public Sub New(pformAnterior As Form, pobjPeriodo As Periodo)
-        objPeriodo = pobjPeriodo
+    Public Sub New(pformAnterior As Form, pid As Integer)
+        objPeriodo = gestorPeriodo.ObtenerPeriodoPorId(pid)
         formAnterior = pformAnterior
         ' This call is required by the designer.
         InitializeComponent()
+
 
         ' Add any initialization after the InitializeComponent() call.
 
@@ -32,7 +33,7 @@ Public Class FrmModificarPeriodo
         If estado = "Activa" Then
             estado = "1"
         Else
-            estado = "0"
+            estado = "2"
         End If
 
         gestorPeriodo.modificarPeriodo(idPeriodo, nombre, dia, mes, estado)

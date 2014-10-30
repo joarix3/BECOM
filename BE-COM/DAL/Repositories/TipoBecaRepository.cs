@@ -46,19 +46,19 @@ namespace DAL
         {
 
 
-            List<TipoBeca> phueso = null;
+            List<TipoBeca> objTipoBeca = null;
 
             SqlCommand cmd = new SqlCommand();
-            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "pa_listar_huesos");
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerTiposBeca");
 
 
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                phueso = new List<TipoBeca>();
+                objTipoBeca = new List<TipoBeca>();
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {
-                    phueso.Add(new TipoBeca
+                    objTipoBeca.Add(new TipoBeca
                     {
                         Id = Convert.ToInt32(dr["IdTipoBeca"]),
                         Nombre = dr["Nombre"].ToString(),
@@ -68,26 +68,22 @@ namespace DAL
                 }
             }
 
-            return phueso;
+            return objTipoBeca;
         }
 
-        public IEnumerable<TipoBeca> GetAllByName(string ptipobeca)
+        public IEnumerable<TipoBeca> GetAllByName(String pnombre)
         {
-
-
-            List<TipoBeca> phueso = null;
-
+            List<TipoBeca> pTipoBeca = null;
             SqlCommand cmd = new SqlCommand();
-            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "pa_listar_huesos");
-
-
+            cmd.Parameters.Add(new SqlParameter("@NombreTipoBeca", pnombre));
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerTipoBecaPorNombre");
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                phueso = new List<TipoBeca>();
+                pTipoBeca = new List<TipoBeca>();
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {
-                    phueso.Add(new TipoBeca
+                    pTipoBeca.Add(new TipoBeca
                     {
                         Id = Convert.ToInt32(dr["IdTipoBeca"]),
                         Nombre = dr["Nombre"].ToString(),
@@ -97,7 +93,35 @@ namespace DAL
                 }
             }
 
-            return phueso;
+            return pTipoBeca;
+        }
+
+        public IEnumerable<TipoBeca> GetAllInactive()
+        {
+            List<TipoBeca> objTipoBeca = null;
+
+            //SqlCommand cmd = new SqlCommand();
+            //DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerTipoBecasInactivos");
+
+
+
+            //if (ds.Tables[0].Rows.Count > 0)
+            //{
+            //    objTipoBeca = new List<TipoBeca>();
+            //    foreach (DataRow dr in ds.Tables[0].Rows)
+            //    {
+            //        objTipoBeca.Add(new TipoBeca
+            //        {
+            //            Id = Convert.ToInt32(dr["IdTipoBeca"]),
+            //            Nombre = dr["Nombre"].ToString(),
+            //            Dia = Convert.ToInt32(dr["Dia"]),
+            //            Mes = Convert.ToInt32(dr["Mes"]),
+            //            Estado = dr["Estado"].ToString()
+            //        });
+            //    }
+            //}
+
+            return objTipoBeca;
         }
 
         public TipoBeca GetById(int id)

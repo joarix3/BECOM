@@ -1,4 +1,4 @@
-﻿Public Class FrmMostrarTiposDeBeca
+﻿Public Class FrmBuscarEstudiantes
     Dim formAnterior As Form
 
     Public Sub New(pformAnterior As Form)
@@ -20,31 +20,31 @@
 
     Private Sub FrmMostrarTiposDeBeca_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtBuscar.Focus()
-        mostrarTipoBecas()
+        mostrarEstudiantes()
         configurarColumnasDGV()
-        
+
     End Sub
 
-    Private Sub mostrarTipoBecas()
-        dtgMostrarTipoBeca.DataSource = gestorTipoBeca.obtenerTipoBecas()
+    Private Sub mostrarEstudiantes()
+        dtgMostrarEstudiantes.DataSource = gestorUsuarios.obtenerTipoBecas()
     End Sub
 
     Private Sub configurarColumnasDGV()
-        dtgMostrarTipoBeca.Columns(0).Visible = False
-        dtgMostrarTipoBeca.Columns(4).Visible = False
-        dtgMostrarTipoBeca.Columns(1).HeaderText = "Nombre"
-        dtgMostrarTipoBeca.Columns(2).HeaderText = "Descripción"
-        dtgMostrarTipoBeca.Columns(3).HeaderText = "Estado"
+        dtgMostrarEstudiantes.Columns(0).Visible = False
+        dtgMostrarEstudiantes.Columns(4).Visible = False
+        dtgMostrarEstudiantes.Columns(1).HeaderText = "Nombre"
+        dtgMostrarEstudiantes.Columns(2).HeaderText = "Descripción"
+        dtgMostrarEstudiantes.Columns(3).HeaderText = "Estado"
 
-        dtgMostrarTipoBeca.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        dtgMostrarTipoBeca.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        dtgMostrarTipoBeca.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        dtgMostrarEstudiantes.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        dtgMostrarEstudiantes.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        dtgMostrarEstudiantes.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
     End Sub
 
     Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
         If String.IsNullOrEmpty(txtBuscar.Text) = True Then
             lblRolesNoRegistrados.Visible = False
-            mostrarTipoBecas()
+            mostrarEstudiantes()
             configurarColumnasDGV()
         Else
             mostrarTiposDeBecaPorNombre()
@@ -52,12 +52,12 @@
     End Sub
     Private Sub mostrarTiposDeBecaPorNombre()
 
-        If gestorTipoBeca.buscarTipoBecaPorNombre(txtBuscar.Text) Is Nothing = False Then
+        If gestorUsuarios.buscarTipoBecaPorNombre(txtBuscar.Text) Is Nothing = False Then
             lblRolesNoRegistrados.Visible = False
-            dtgMostrarTipoBeca.DataSource = gestorTipoBeca.buscarTipoBecaPorNombre(txtBuscar.Text)
+            dtgMostrarEstudiantes.DataSource = gestorUsuarios.buscarTipoBecaPorNombre(txtBuscar.Text)
             configurarColumnasDGV()
         Else
-            dtgMostrarTipoBeca.DataSource = Nothing
+            dtgMostrarEstudiantes.DataSource = Nothing
             lblRolesNoRegistrados.Visible = True
         End If
 

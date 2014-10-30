@@ -61,7 +61,36 @@ namespace DAL
                         Id = Convert.ToInt32(dr["IdPeriodo"]),
                         Nombre = dr["Nombre"].ToString(),
                         Dia = Convert.ToInt32(dr["Dia"]),
-                        Mes = Convert.ToInt32(dr["Mes"])
+                        Mes = Convert.ToInt32(dr["Mes"]),
+                        Estado = dr["Estado"].ToString()
+                    });
+                }
+            }
+
+            return objPeriodo;
+        }
+
+        public IEnumerable<Periodo> GetAllInactive()
+        {
+            List<Periodo> objPeriodo = null;
+
+            SqlCommand cmd = new SqlCommand();
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerPeriodosInactivos");
+
+
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                objPeriodo = new List<Periodo>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    objPeriodo.Add(new Periodo
+                    {
+                        Id = Convert.ToInt32(dr["IdPeriodo"]),
+                        Nombre = dr["Nombre"].ToString(),
+                        Dia = Convert.ToInt32(dr["Dia"]),
+                        Mes = Convert.ToInt32(dr["Mes"]),
+                        Estado = dr["Estado"].ToString()
                     });
                 }
             }
@@ -88,7 +117,8 @@ namespace DAL
                         Id = Convert.ToInt32(dr["IdPeriodo"]),
                         Nombre = dr["Nombre"].ToString(),
                         Dia = Convert.ToInt32(dr["Dia"]),
-                        Mes = Convert.ToInt32(dr["Mes"])
+                        Mes = Convert.ToInt32(dr["Mes"]),
+                        Estado = dr["Estado"].ToString()
                     });
                 }
             }
@@ -147,7 +177,7 @@ namespace DAL
                     {
                         foreach (Periodo p in _deleteItems)
                         {
-                            DeleteHueso(p);
+                            DeletePeriodo(p);
                         }
                     }
 
@@ -222,13 +252,13 @@ namespace DAL
             //}
         }
 
-        private void DeleteHueso(Periodo objTipoBeca)
+        private void DeletePeriodo(Periodo pobjPeriodo)
         {
             //try
             //{
-            //    SqlCommand cmd = new SqlCommand();
-            //    cmd.Parameters.Add(new SqlParameter("@", objHueso.Id));
-            //    DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "pa_borrar_hueso");
+                SqlCommand cmd = new SqlCommand();
+                cmd.Parameters.Add(new SqlParameter("@IdPeriodo", pobjPeriodo.Id));
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaEliminarPeriodoVigencia");
 
             //}
             //catch (SqlException ex)

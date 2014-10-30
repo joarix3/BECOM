@@ -44,6 +44,7 @@ Partial Class FrmRegistrarRol
         Me.btnAyuda = New System.Windows.Forms.Button()
         Me.btnPerfil = New System.Windows.Forms.Button()
         Me.pnFormulario = New System.Windows.Forms.Panel()
+        Me.lblEspaciosEnBlanco = New System.Windows.Forms.Label()
         Me.lblDescripcionV = New System.Windows.Forms.Label()
         Me.lblNombreV = New System.Windows.Forms.Label()
         Me.btnRegistrar = New System.Windows.Forms.Button()
@@ -53,7 +54,6 @@ Partial Class FrmRegistrarRol
         Me.Label12 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblEspaciosEnBlanco = New System.Windows.Forms.Label()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -356,6 +356,17 @@ Partial Class FrmRegistrarRol
         Me.pnFormulario.Size = New System.Drawing.Size(955, 579)
         Me.pnFormulario.TabIndex = 47
         '
+        'lblEspaciosEnBlanco
+        '
+        Me.lblEspaciosEnBlanco.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEspaciosEnBlanco.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblEspaciosEnBlanco.Location = New System.Drawing.Point(221, 322)
+        Me.lblEspaciosEnBlanco.Name = "lblEspaciosEnBlanco"
+        Me.lblEspaciosEnBlanco.Size = New System.Drawing.Size(200, 101)
+        Me.lblEspaciosEnBlanco.TabIndex = 50
+        Me.lblEspaciosEnBlanco.Text = "*Existen espacios en blanco por favor llenarlos antes de continuar."
+        Me.lblEspaciosEnBlanco.Visible = False
+        '
         'lblDescripcionV
         '
         Me.lblDescripcionV.Location = New System.Drawing.Point(458, 143)
@@ -394,7 +405,7 @@ Partial Class FrmRegistrarRol
         Me.lblPermisos.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPermisos.Location = New System.Drawing.Point(515, 28)
         Me.lblPermisos.Name = "lblPermisos"
-        Me.lblPermisos.Size = New System.Drawing.Size(82, 25)
+        Me.lblPermisos.Size = New System.Drawing.Size(83, 25)
         Me.lblPermisos.TabIndex = 43
         Me.lblPermisos.Text = "Permisos"
         '
@@ -447,17 +458,6 @@ Partial Class FrmRegistrarRol
         Me.Label4.Size = New System.Drawing.Size(83, 25)
         Me.Label4.TabIndex = 27
         Me.Label4.Text = "Nombre:"
-        '
-        'lblEspaciosEnBlanco
-        '
-        Me.lblEspaciosEnBlanco.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEspaciosEnBlanco.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblEspaciosEnBlanco.Location = New System.Drawing.Point(221, 322)
-        Me.lblEspaciosEnBlanco.Name = "lblEspaciosEnBlanco"
-        Me.lblEspaciosEnBlanco.Size = New System.Drawing.Size(200, 101)
-        Me.lblEspaciosEnBlanco.TabIndex = 50
-        Me.lblEspaciosEnBlanco.Text = "*Existen espacios en blanco por favor llenarlos antes de continuar."
-        Me.lblEspaciosEnBlanco.Visible = False
         '
         'FrmRegistrarRol
         '

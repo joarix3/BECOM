@@ -54,6 +54,19 @@ namespace BLL
             //        throw new BusinessLogicException("Ha ocurrido un error al eliminar un usuario", ex);
             //    }
         }
+        //Metodo que obtiene la lista de los tipos de becas existentes
+        public IEnumerable<TipoBeca> obtenerTipoBecas()
+
+        {
+            return UoW.TipoBecaRepository.GetAll();
+        }
+
+        //Metodo que obtiene los tipos de beca Por nombre
+        public IEnumerable<TipoBeca> buscarTipoBecaPorNombre(String pnombre)
+
+        {
+            return UoW.TipoBecaRepository.GetAllByName(pnombre);
+        }
 
     }
 }

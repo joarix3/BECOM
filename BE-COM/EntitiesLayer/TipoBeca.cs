@@ -40,5 +40,13 @@ namespace EntitiesLayer
             IdPeriodo = pidPeriodo;
             Estado = pestado;
         }
+        public TipoBeca(int pidTipoBeca, String pnombre, String pdescripcion, String pidPeriodo, String pestado)
+        {
+            Id = pidTipoBeca;
+            Nombre = pnombre;
+            Descripcion = pdescripcion;
+            IdPeriodo = pidPeriodo;
+            Estado = pestado;
+        }
     }
 }

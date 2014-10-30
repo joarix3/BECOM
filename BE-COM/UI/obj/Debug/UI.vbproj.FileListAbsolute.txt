@@ -33,9 +33,6 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.exe
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.xml
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.xml
@@ -52,6 +49,7 @@ C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuario
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarCarreras.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPeriodo.resources
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarTiposDeBeca.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarBeneficio.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarCarrera.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarPeriodo.resources
@@ -66,3 +64,6 @@ C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resourc
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb

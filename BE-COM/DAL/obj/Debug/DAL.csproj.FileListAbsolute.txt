@@ -33,13 +33,6 @@ E:\Proyecto2\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
 E:\Proyecto2\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 E:\Proyecto2\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
 E:\Proyecto2\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
@@ -47,3 +40,10 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLay
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
+C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
+C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
+C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
+C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
+C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
+C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb

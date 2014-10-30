@@ -96,6 +96,34 @@ namespace DAL.Repositories
             return pPermiso;
         }
 
+        public IEnumerable<Permiso> GetAllInactive()
+        {
+            List<Permiso> objPermiso = null;
+
+            //SqlCommand cmd = new SqlCommand();
+            //DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerPermisosInactivos");
+
+
+
+            //if (ds.Tables[0].Rows.Count > 0)
+            //{
+            //    objPermiso = new List<Permiso>();
+            //    foreach (DataRow dr in ds.Tables[0].Rows)
+            //    {
+            //        objPermiso.Add(new Permiso
+            //        {
+            //            Id = Convert.ToInt32(dr["IdPermiso"]),
+            //            Nombre = dr["Nombre"].ToString(),
+            //            Dia = Convert.ToInt32(dr["Dia"]),
+            //            Mes = Convert.ToInt32(dr["Mes"]),
+            //            Estado = dr["Estado"].ToString()
+            //        });
+            //    }
+            //}
+
+            return objPermiso;
+        }
+
         public IEnumerable<Permiso> GetAllByName(String pnombre)
         {
             List<Permiso> pPermiso = null;

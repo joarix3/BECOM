@@ -54,10 +54,15 @@ namespace BLL
             //        throw new BusinessLogicException("Ha ocurrido un error al eliminar un usuario", ex);
             //    }
         }
-
+        //Metodo que retorna los de vigencia de los tipos de beca del sistema
         public IEnumerable<Periodo> obtenerPeriodos()
         {
             return UoW.PeriodoRepository.GetAll();
+        }
+
+        public IEnumerable<Periodo> obtenerPeriodosInaactivos()
+        {
+            return UoW.PeriodoRepository.GetAllInactive();
         }
         
          //Metodo que optienen un periodo de vigencia
@@ -74,6 +79,13 @@ namespace BLL
             Periodo objPeriodo = new Periodo(pid, pnombre, pdia, pmes, pestado);
             UoW.PeriodoRepository.Update(objPeriodo);
 
+        }
+
+        public void eliminarPeriodo(int pidPeriodo)
+        {
+            Periodo objPeriodo = new Periodo { Id = pidPeriodo };
+            UoW.PeriodoRepository.Delete(objPeriodo);
+            UoW.PeriodoRepository.Save();
         }
 
     }
