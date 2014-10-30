@@ -268,11 +268,5 @@ namespace DAL
             //}
         }
 
-        public IEnumerable<TipoBeca> GetAllInactive()
-        {
-            List<TipoBeca> pRol = null;
-            return pRol;
-        }
-
     }
 }

@@ -283,10 +283,5 @@ namespace DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Requisito> GetAllInactive()
-        {
-            List<Requisito> pRol = null;
-            return pRol;
-        }
     }
 }

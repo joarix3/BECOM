@@ -84,8 +84,7 @@ namespace DAL.Repositories
             return objBitacoraTransaccion;
         }
 
-<<<<<<< HEAD
-=======
+
         public IEnumerable<BitacoraTransaccion> GetAllInactive()
         {
             List<BitacoraTransaccion> objBitacoraTransaccion = null;
@@ -113,7 +112,6 @@ namespace DAL.Repositories
 
             return objBitacoraTransaccion;
         }
->>>>>>> BECOMD
 
         public BitacoraTransaccion GetById(int id)
         {
@@ -262,10 +260,5 @@ namespace DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public IEnumerable<BitacoraTransaccion> GetAllInactive()
-        {
-            List<BitacoraTransaccion> pRol = null;
-            return pRol;
-        }
     }
 }

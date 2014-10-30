@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
 C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmAcademico.resources
 C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmConfigurarParametros.resources
@@ -41,7 +40,6 @@ C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
 C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
 C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
 C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
-=======
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.exe
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
@@ -88,14 +86,11 @@ C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmAcademico.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarCarreras.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPeriodo.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarTiposDeBeca.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarBeneficio.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarCarrera.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarPeriodo.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarPeriodos.resources
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
@@ -111,4 +106,12 @@ C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
 C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
->>>>>>> BECOMD
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmConfigurarParametros.resources
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPerfil.resources
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarRol.resources
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarBitacoraTransaccion.resources
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarBitacoraErrores.resources
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarAyuda.resources
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarUsuarios.resources
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopExportadoExitoso.resources
+C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopRecuperarContrasenna.resources

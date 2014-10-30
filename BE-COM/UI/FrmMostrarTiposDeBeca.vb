@@ -17,15 +17,11 @@
 
     End Sub
 
-
-<<<<<<< HEAD
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-=======
     Private Sub FrmMostrarTiposDeBeca_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtBuscar.Focus()
         mostrarTipoBecas()
         configurarColumnasDGV()
-        
+
     End Sub
 
     Private Sub mostrarTipoBecas()
@@ -63,7 +59,6 @@
             dtgMostrarTipoBeca.DataSource = Nothing
             lblRolesNoRegistrados.Visible = True
         End If
->>>>>>> BECOMD
 
     End Sub
 End Class
