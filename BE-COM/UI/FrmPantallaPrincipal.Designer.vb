@@ -228,7 +228,7 @@ Partial Class FrmPantallaPrincipal
         Me.Label8.ForeColor = System.Drawing.Color.Black
         Me.Label8.Location = New System.Drawing.Point(563, 443)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(192, 34)
+        Me.Label8.Size = New System.Drawing.Size(191, 34)
         Me.Label8.TabIndex = 45
         Me.Label8.Text = "Módulo de reportes en el cual se" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "        podrá tener infromación."
         '
@@ -240,7 +240,7 @@ Partial Class FrmPantallaPrincipal
         Me.Label9.ForeColor = System.Drawing.Color.Black
         Me.Label9.Location = New System.Drawing.Point(596, 402)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(126, 40)
+        Me.Label9.Size = New System.Drawing.Size(125, 40)
         Me.Label9.TabIndex = 44
         Me.Label9.Text = "Reportes"
         '

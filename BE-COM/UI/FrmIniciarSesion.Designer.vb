@@ -38,10 +38,15 @@ Partial Class FrmIniciarSesion
         Me.pnAbajo = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
+<<<<<<< HEAD
         Me.pnFormulario = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblValidacion = New System.Windows.Forms.Label()
+=======
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+>>>>>>> BECOMMario
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnSub.SuspendLayout()
@@ -220,10 +225,11 @@ Partial Class FrmIniciarSesion
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(407, 7)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(123, 40)
+        Me.Label3.Size = New System.Drawing.Size(124, 40)
         Me.Label3.TabIndex = 47
         Me.Label3.Text = "BE-COM"
         '
+<<<<<<< HEAD
         'pnFormulario
         '
         Me.pnFormulario.BackgroundImage = CType(resources.GetObject("pnFormulario.BackgroundImage"), System.Drawing.Image)
@@ -275,6 +281,30 @@ Partial Class FrmIniciarSesion
         Me.lblValidacion.Size = New System.Drawing.Size(172, 139)
         Me.lblValidacion.TabIndex = 22
         Me.lblValidacion.Visible = False
+=======
+        'Panel3
+        '
+        Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
+        Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel3.Controls.Add(Me.Panel4)
+        Me.Panel3.Controls.Add(Me.Label2)
+        Me.Panel3.Controls.Add(Me.txtPasS)
+        Me.Panel3.Controls.Add(Me.btnAcceder)
+        Me.Panel3.Controls.Add(Me.txtCorreo)
+        Me.Panel3.Controls.Add(Me.LinkLabel1)
+        Me.Panel3.Location = New System.Drawing.Point(1, 227)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(945, 375)
+        Me.Panel3.TabIndex = 46
+        '
+        'Panel4
+        '
+        Me.Panel4.Location = New System.Drawing.Point(362, 67)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(200, 100)
+        Me.Panel4.TabIndex = 22
+        Me.Panel4.Visible = False
+>>>>>>> BECOMMario
         '
         'FrmIniciarSesion
         '
@@ -319,7 +349,11 @@ Partial Class FrmIniciarSesion
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents pnFormulario As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
+<<<<<<< HEAD
     Friend WithEvents lblValidacion As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
+=======
+    Friend WithEvents Panel4 As System.Windows.Forms.Panel
+>>>>>>> BECOMMario
 End Class

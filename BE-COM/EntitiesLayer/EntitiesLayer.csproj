@@ -41,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Beneficio.cs" />
+=======
+    <Compile Include="BitacoraError.cs" />
+>>>>>>> BECOMMario
     <Compile Include="BitacoraTransaccion.cs" />
     <Compile Include="Carrera.cs" />
+    <Compile Include="Correo.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="Periodo.cs" />
     <Compile Include="Permiso.cs" />

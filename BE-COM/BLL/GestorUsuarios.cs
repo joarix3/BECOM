@@ -122,5 +122,15 @@ namespace BLL
             UoW.UsuarioRepository.Save();
         }
 
+        public Correo recuperarContra(string email) // metodo para recuperar la contrasenna
+        {
+            return CorreoRepository.GetByCorreo(email);
+        }
+
+        public void enviarCorreo(String correo,String clave){ // metodo para enviar los correos
+            Correo corre = new Correo();
+            corre.enviarCorreo(correo, clave);
+        }
+       
     }
 }

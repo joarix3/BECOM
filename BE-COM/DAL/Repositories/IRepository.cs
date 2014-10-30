@@ -18,5 +18,7 @@ namespace DAL.Repositories
         void Save();
         void Clear();
 
+
+
     }
 }
