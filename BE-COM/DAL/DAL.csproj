@@ -45,17 +45,12 @@
   <ItemGroup>
     <Compile Include="DBAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="Repositories\BeneficioRepository.cs" />
     <Compile Include="Repositories\BitacoraTransaccionRepository.cs" />
     <Compile Include="Repositories\CarreraRepository.cs" />
     <Compile Include="Repositories\IUsers.cs" />
-=======
     <Compile Include="Repositories\BitacoraErrorRepository.cs" />
-    <Compile Include="Repositories\BitacoraTransaccionRepository.cs" />
-    <Compile Include="Repositories\CarreraRepository.cs" />
     <Compile Include="CorreoRepository.cs" />
->>>>>>> BECOMMario
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\PermisoRepository.cs" />
     <Compile Include="Repositories\RequisitoRepository.cs" />

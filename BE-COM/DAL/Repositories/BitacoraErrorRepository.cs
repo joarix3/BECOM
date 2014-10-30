@@ -115,6 +115,29 @@ namespace DAL.Repositories
             }
         }
 
+         public IEnumerable<BitacoraError> GetAllInactive()
+         {
+             List<BitacoraError> objBitacoraError = null;
+             SqlCommand cmd = new SqlCommand();
+             DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerBitacoraErrores");
+             if (ds.Tables[0].Rows.Count > 0)
+             {
+                 objBitacoraError = new List<BitacoraError>();
+                 foreach (DataRow dr in ds.Tables[0].Rows)
+                 {
+                     objBitacoraError.Add(new BitacoraError
+                     {
+                         Id = Convert.ToInt32(dr["IdBitacoraError"]),
+                         IdUsuario = Convert.ToInt32(dr["IdUsuario"]),
+                         Fecha = Convert.ToDateTime(dr["Fecha"]),
+                         Descripcion = dr["Descripcion"].ToString()
+                     });
+                 }
+             }
+             return objBitacoraError;
+         }
+
+
     }
 
        

@@ -40,7 +40,6 @@ namespace DAL.Repositories
 
         public IEnumerable<BitacoraTransaccion> GetAll()
         {
-<<<<<<< HEAD
             List<BitacoraTransaccion> pbitacoraTransaccion = null;
             var sqlQuery = "SELECT IdUsuario, Fecha, Descripcion FROM TbBitacora";
             SqlCommand cmd = new SqlCommand(sqlQuery);
@@ -66,28 +65,6 @@ namespace DAL.Repositories
         
         public IEnumerable<BitacoraTransaccion> GetAllByName(string pnombre)
         {
-            List<BitacoraTransaccion> pbitacoraTransaccion = null;
-            var sqlQuery = "SELECT IdUsuario, Fecha, Descripcion FROM TbBitacora";
-            SqlCommand cmd = new SqlCommand(sqlQuery);
-
-            var ds = DBAccess.ExecuteQuery(cmd);
-
-            if (ds.Tables[0].Rows.Count > 0)
-            {
-                pbitacoraTransaccion = new List<BitacoraTransaccion>();
-                foreach (DataRow dr in ds.Tables[0].Rows)
-                {
-                    pbitacoraTransaccion.Add(new BitacoraTransaccion
-                    {
-                        Id = Convert.ToInt32(dr["IdUsuario"]),
-                        Fecha = Convert.ToDateTime(dr["Fecha"]),
-                        Transaccion = dr["Descripcion"].ToString()
-                    });
-                }
-            }
-
-            return pbitacoraTransaccion;
-=======
             List<BitacoraTransaccion> objBitacoraTransaccion = null;
             SqlCommand cmd = new SqlCommand();
             DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerBitacoraEventos");
@@ -107,12 +84,6 @@ namespace DAL.Repositories
             return objBitacoraTransaccion;
         }
 
-        public IEnumerable<BitacoraTransaccion> GetAllByName(string nombre)
-        {
-            List<BitacoraTransaccion> pbitacora = null;
-            return pbitacora;
->>>>>>> BECOMMario
-        }
 
         public BitacoraTransaccion GetById(int id)
         {
@@ -129,16 +100,10 @@ namespace DAL.Repositories
 
                 objBitacoraTransaccion = new BitacoraTransaccion
                 {
-<<<<<<< HEAD
-                    Id = Convert.ToInt32(dr["IdUsuario"]),
-                    Fecha = Convert.ToDateTime(dr["Fecha"]),
-                    Transaccion = dr["Descripcion"].ToString()
-=======
 
                     Id = Convert.ToInt32(dr["IdUsuario"]),
                     Fecha = Convert.ToDateTime(dr["Fecha"]),
-                    Descripcion = dr["Descripcion"].ToString()
->>>>>>> BECOMMario
+                    Transaccion = dr["Descripcion"].ToString()
                 };
             }
 
@@ -210,11 +175,7 @@ namespace DAL.Repositories
 
                 cmd.Parameters.Add(new SqlParameter("@idUsuario", objBitacoraTransaccion.Id));
                 cmd.Parameters.Add(new SqlParameter("@Fecha", objBitacoraTransaccion.Fecha));
-<<<<<<< HEAD
-                cmd.Parameters.Add(new SqlParameter("@Descripcion", objBitacoraTransaccion.Transaccion));
-=======
                 cmd.Parameters.Add(new SqlParameter("@Descripcion", objBitacoraTransaccion.Descripcion));
->>>>>>> BECOMMario
 
                 DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaInsertarBitacora");
 
@@ -234,11 +195,7 @@ namespace DAL.Repositories
 
                 cmd.Parameters.Add(new SqlParameter("@idUsuario", objBitacoraTransaccion.Id));
                 cmd.Parameters.Add(new SqlParameter("@Fecha", objBitacoraTransaccion.Fecha));
-<<<<<<< HEAD
-                cmd.Parameters.Add(new SqlParameter("@Descripcion", objBitacoraTransaccion.Transaccion));
-=======
                 cmd.Parameters.Add(new SqlParameter("@Descripcion", objBitacoraTransaccion.Descripcion));
->>>>>>> BECOMMario
 
                 DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaModificarBitacora");
 
@@ -274,14 +231,11 @@ namespace DAL.Repositories
         {
             throw new NotImplementedException();
         }
-<<<<<<< HEAD
 
         public IEnumerable<BitacoraTransaccion> GetAllInactive()
         {
             List<BitacoraTransaccion> pRol = null;
             return pRol;
         }
-=======
->>>>>>> BECOMMario
     }
 }

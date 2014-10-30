@@ -46,8 +46,6 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <Reference Include="itextsharp">
       <HintPath>..\..\..\..\Desktop\Nueva carpeta\itextsharp.dll</HintPath>
     </Reference>
@@ -56,7 +54,6 @@
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
->>>>>>> BECOMMario
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -92,8 +89,6 @@
     <Compile Include="FrmAcademico.vb">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
-=======
     <Compile Include="FrmConfigurarParametros.Designer.vb">
       <DependentUpon>FrmConfigurarParametros.vb</DependentUpon>
     </Compile>
@@ -104,6 +99,10 @@
       <DependentUpon>FrmModificarPerfil.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmModificarPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarRol.Designer.vb" />
+    <Compile Include="FrmModificarRol.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMostrarBitacoraTransaccion.Designer.vb">
@@ -124,41 +123,10 @@
     <Compile Include="FrmMostrarAyuda.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMostrarCarreras.Designer.vb">
-      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarCarreras.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistrarCarrera.Designer.vb">
-      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRegistrarCarrera.vb">
-      <SubType>Form</SubType>
-    </Compile>
->>>>>>> BECOMMario
-    <Compile Include="FrmIniciarSesion.Designer.vb">
-      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmIniciarSesion.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmMantenimientoUsuarios.Designer.vb">
       <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmMantenimientoUsuarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmModificarRol.Designer.vb">
-      <DependentUpon>FrmModificarRol.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmModificarRol.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMostrarCarreras.Designer.vb">
-      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarCarreras.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMostrarUsuarios.Designer.vb">
@@ -183,12 +151,6 @@
       <DependentUpon>FrmRegistrarBeneficio.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmRegistrarBeneficio.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistrarCarrera.Designer.vb">
-      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRegistrarCarrera.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmRegistrarPeriodo.Designer.vb">
@@ -273,29 +235,25 @@
     <Compile Include="PopMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="SessionModule.vb" />
-=======
     <Compile Include="PopRecuperarContrasenna.Designer.vb">
       <DependentUpon>PopRecuperarContrasenna.vb</DependentUpon>
     </Compile>
     <Compile Include="PopRecuperarContrasenna.vb">
       <SubType>Form</SubType>
     </Compile>
->>>>>>> BECOMMario
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FrmAcademico.resx">
       <DependentUpon>FrmAcademico.vb</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-=======
     <EmbeddedResource Include="FrmConfigurarParametros.resx">
       <DependentUpon>FrmConfigurarParametros.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModificarPerfil.resx">
       <DependentUpon>FrmModificarPerfil.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarRol.resx" />
     <EmbeddedResource Include="FrmMostrarBitacoraTransaccion.resx">
       <DependentUpon>FrmMostrarBitacoraTransaccion.vb</DependentUpon>
     </EmbeddedResource>
@@ -305,24 +263,8 @@
     <EmbeddedResource Include="FrmMostrarAyuda.resx">
       <DependentUpon>FrmMostrarAyuda.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarCarreras.resx">
-      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarCarrera.resx">
-      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
-    </EmbeddedResource>
->>>>>>> BECOMMario
-    <EmbeddedResource Include="FrmIniciarSesion.resx">
-      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientoUsuarios.resx">
       <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmModificarRol.resx">
-      <DependentUpon>FrmModificarRol.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarCarreras.resx">
-      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarUsuarios.resx">
       <DependentUpon>FrmMostrarUsuarios.vb</DependentUpon>
@@ -335,9 +277,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarBeneficio.resx">
       <DependentUpon>FrmRegistrarBeneficio.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarCarrera.resx">
-      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarPeriodo.resx">
       <DependentUpon>FrmRegistrarPeriodo.vb</DependentUpon>

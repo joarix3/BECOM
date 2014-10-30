@@ -14,13 +14,13 @@ namespace DAL
         private IRepository<Permiso> _permisoRepository;
         private IRepository<Rol> _rolRepository;
         private IRepository<Beneficio> _beneficioRepository;
-        private IRepository<BitacoraTransaccion> _bitacoraTransaccionRepository;
         private IRepository<Requisito> _requisitoRepository;
         private IRepository<Carrera> _carreraRepository;
-<<<<<<< HEAD
         private IRepository<Periodo> _periodoRepository;
         private IRepository<TipoBeca> _tipoBecaRepository;
         private IRepository<Usuario> _usuarioRepository;
+        private IRepository<BitacoraError> _bitacoraErrorRepository;
+        private IRepository<BitacoraTransaccion> _bitacoraTransaccionRepository;
 
         public IRepository<Usuario> UsuarioRepository
         {
@@ -36,11 +36,6 @@ namespace DAL
 
 
 
-
-=======
-        private IRepository<BitacoraError> _bitacoraErrorRepository;
-        private IRepository<BitacoraTransaccion> _bitacoraTransaccionRepository;
->>>>>>> BECOMMario
         public IRepository<Permiso> PermisoRepository
         {
             get
@@ -113,7 +108,6 @@ namespace DAL
             }
         }
 
-<<<<<<< HEAD
         public IRepository<Periodo> PeriodoRepository
         {
             get
@@ -137,7 +131,6 @@ namespace DAL
                 return _tipoBecaRepository;
             }
         }
-=======
         public IRepository<BitacoraError> BitacoraErrorRepository
         {
             get
@@ -150,19 +143,9 @@ namespace DAL
             }
         }
 
-        public IRepository<BitacoraTransaccion> BitacoraTransaccionRepository
-        {
-            get
-            {
-                if (this._bitacoraTransaccionRepository == null)
-                {
-                    this._bitacoraTransaccionRepository = new BitacoraTransaccionRepository();
-                }
-                return _bitacoraTransaccionRepository;
-            }
-        }
 
->>>>>>> BECOMMario
+
+
 
     }
 }

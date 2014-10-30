@@ -39,13 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="GestorRequisito.cs" /> 
    <Compile Include="GestorBeneficio.cs" />
     <Compile Include="GestorBitacoraTransaccion.cs" /> 
-=======
+
     <Compile Include="GestorBitacora.cs" />
->>>>>>> BECOMMario
     <Compile Include="GestorCarrera.cs" />
     <Compile Include="GestorPeriodo.cs" />
     <Compile Include="GestorTipoBeca.cs" />

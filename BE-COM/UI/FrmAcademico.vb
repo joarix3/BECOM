@@ -14,8 +14,8 @@
         Me.Hide()
     End Sub
 
-    Private Sub btnCarreras_Click(sender As Object, e As EventArgs) Handles btnCarreras.Click
-        Dim frmMostrarCarreras As Form = New FrmMostrarCarreras(Me)
-        frmMostrarCarreras.Show()
-    End Sub
+    ''Private Sub btnCarreras_Click(sender As Object, e As EventArgs) Handles btnCarreras.Click
+    '    Dim frmMostrarCarreras As Form = New FrmMostrarCarreras(Me)
+    '    frmMostrarCarreras.Show()
+    'End Sub
 End Class
