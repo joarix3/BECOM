@@ -334,5 +334,17 @@ namespace DAL.Repositories
             DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaClearTbPermisos");
         }
 
+        public IEnumerable<Usuario> getUsersByRol(int idRol)
+        {
+            List<Usuario> pUsuario = null;
+            return pUsuario;
+        }
+
+        public IEnumerable<Usuario> getUsersByIdentifier(string idRol)
+        {
+            List<Usuario> pUsuario = null;
+            return pUsuario;
+        }
+
     }
 }

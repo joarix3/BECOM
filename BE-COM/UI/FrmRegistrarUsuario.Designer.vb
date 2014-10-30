@@ -23,32 +23,9 @@ Partial Class FrmRegistrarUsuario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmRegistrarUsuario))
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.txtCedula = New System.Windows.Forms.TextBox()
-        Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.txtApellido1 = New System.Windows.Forms.TextBox()
-        Me.txtApellido3 = New System.Windows.Forms.TextBox()
-        Me.txtEdad = New System.Windows.Forms.TextBox()
-        Me.txtTelefono = New System.Windows.Forms.TextBox()
-        Me.dtpNacimiento = New System.Windows.Forms.DateTimePicker()
-        Me.rbtnMasculino = New System.Windows.Forms.RadioButton()
-        Me.rbtnFemenino = New System.Windows.Forms.RadioButton()
-        Me.comboRol = New System.Windows.Forms.ComboBox()
-        Me.boxDireccion = New System.Windows.Forms.RichTextBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.ptrFoto = New System.Windows.Forms.PictureBox()
         Me.oflImagen = New System.Windows.Forms.OpenFileDialog()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Button10 = New System.Windows.Forms.Button()
@@ -56,7 +33,6 @@ Partial Class FrmRegistrarUsuario
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -67,235 +43,47 @@ Partial Class FrmRegistrarUsuario
         Me.btnInicio = New System.Windows.Forms.Button()
         Me.btnAyuda = New System.Windows.Forms.Button()
         Me.btnPerfil = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        CType(Me.ptrFoto, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnFormulario = New System.Windows.Forms.Panel()
+        Me.lblFechaV = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.lblDireccionV = New System.Windows.Forms.Label()
+        Me.lblTelefonoV = New System.Windows.Forms.Label()
+        Me.lblSegundoAV = New System.Windows.Forms.Label()
+        Me.lblPrimerAV = New System.Windows.Forms.Label()
+        Me.lblNombreV = New System.Windows.Forms.Label()
+        Me.lblCedulaV = New System.Windows.Forms.Label()
+        Me.lblEspaciosEnBlanco = New System.Windows.Forms.Label()
+        Me.txtCorreoElectronico = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.btnRegistrar = New System.Windows.Forms.Button()
+        Me.rctDireccion = New System.Windows.Forms.RichTextBox()
+        Me.cmbRol = New System.Windows.Forms.ComboBox()
+        Me.rbtnFemenino = New System.Windows.Forms.RadioButton()
+        Me.rbtnMasculino = New System.Windows.Forms.RadioButton()
+        Me.dtpNacimiento = New System.Windows.Forms.DateTimePicker()
+        Me.txtTelefono = New System.Windows.Forms.TextBox()
+        Me.txtEdad = New System.Windows.Forms.TextBox()
+        Me.txtSegundoApellido = New System.Windows.Forms.TextBox()
+        Me.txtPrimerApellido = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtCedula = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtCifra = New System.Windows.Forms.TextBox()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnFormulario.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(291, 317)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(72, 25)
-        Me.Label3.TabIndex = 12
-        Me.Label3.Text = "Cédula:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(291, 393)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(83, 25)
-        Me.Label4.TabIndex = 13
-        Me.Label4.Text = "Nombre:"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(291, 466)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(140, 25)
-        Me.Label5.TabIndex = 14
-        Me.Label5.Text = "Primer Apellido:"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(291, 547)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(160, 25)
-        Me.Label6.TabIndex = 15
-        Me.Label6.Text = "Segundo Apellido:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(757, 140)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(158, 25)
-        Me.Label7.TabIndex = 16
-        Me.Label7.Text = "Fecha Nacimiento:"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(757, 227)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(57, 25)
-        Me.Label8.TabIndex = 17
-        Me.Label8.Text = "Edad:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(757, 311)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(76, 25)
-        Me.Label9.TabIndex = 18
-        Me.Label9.Text = "Genero:"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(757, 378)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(42, 25)
-        Me.Label10.TabIndex = 19
-        Me.Label10.Text = "Rol:"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(757, 458)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(84, 25)
-        Me.Label11.TabIndex = 20
-        Me.Label11.Text = "Teléfono:"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(757, 540)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(90, 25)
-        Me.Label12.TabIndex = 21
-        Me.Label12.Text = "Direccion:"
-        '
-        'txtCedula
-        '
-        Me.txtCedula.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCedula.Location = New System.Drawing.Point(476, 308)
-        Me.txtCedula.Name = "txtCedula"
-        Me.txtCedula.Size = New System.Drawing.Size(234, 33)
-        Me.txtCedula.TabIndex = 24
-        '
-        'txtNombre
-        '
-        Me.txtNombre.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(476, 385)
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(234, 33)
-        Me.txtNombre.TabIndex = 26
-        '
-        'txtApellido1
-        '
-        Me.txtApellido1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtApellido1.Location = New System.Drawing.Point(476, 462)
-        Me.txtApellido1.Name = "txtApellido1"
-        Me.txtApellido1.Size = New System.Drawing.Size(234, 33)
-        Me.txtApellido1.TabIndex = 27
-        '
-        'txtApellido3
-        '
-        Me.txtApellido3.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtApellido3.Location = New System.Drawing.Point(476, 539)
-        Me.txtApellido3.Name = "txtApellido3"
-        Me.txtApellido3.Size = New System.Drawing.Size(234, 33)
-        Me.txtApellido3.TabIndex = 28
-        '
-        'txtEdad
-        '
-        Me.txtEdad.Enabled = False
-        Me.txtEdad.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEdad.Location = New System.Drawing.Point(929, 219)
-        Me.txtEdad.Name = "txtEdad"
-        Me.txtEdad.Size = New System.Drawing.Size(234, 33)
-        Me.txtEdad.TabIndex = 29
-        '
-        'txtTelefono
-        '
-        Me.txtTelefono.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTelefono.Location = New System.Drawing.Point(929, 458)
-        Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(234, 33)
-        Me.txtTelefono.TabIndex = 32
-        '
-        'dtpNacimiento
-        '
-        Me.dtpNacimiento.CalendarFont = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpNacimiento.Location = New System.Drawing.Point(944, 145)
-        Me.dtpNacimiento.Name = "dtpNacimiento"
-        Me.dtpNacimiento.Size = New System.Drawing.Size(234, 20)
-        Me.dtpNacimiento.TabIndex = 35
-        '
-        'rbtnMasculino
-        '
-        Me.rbtnMasculino.AutoSize = True
-        Me.rbtnMasculino.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbtnMasculino.Location = New System.Drawing.Point(944, 315)
-        Me.rbtnMasculino.Name = "rbtnMasculino"
-        Me.rbtnMasculino.Size = New System.Drawing.Size(109, 29)
-        Me.rbtnMasculino.TabIndex = 36
-        Me.rbtnMasculino.TabStop = True
-        Me.rbtnMasculino.Text = "Masculino"
-        Me.rbtnMasculino.UseVisualStyleBackColor = True
-        '
-        'rbtnFemenino
-        '
-        Me.rbtnFemenino.AutoSize = True
-        Me.rbtnFemenino.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbtnFemenino.Location = New System.Drawing.Point(1068, 315)
-        Me.rbtnFemenino.Name = "rbtnFemenino"
-        Me.rbtnFemenino.Size = New System.Drawing.Size(110, 29)
-        Me.rbtnFemenino.TabIndex = 37
-        Me.rbtnFemenino.TabStop = True
-        Me.rbtnFemenino.Text = "Femenino"
-        Me.rbtnFemenino.UseVisualStyleBackColor = True
-        '
-        'comboRol
-        '
-        Me.comboRol.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.comboRol.FormattingEnabled = True
-        Me.comboRol.Location = New System.Drawing.Point(926, 384)
-        Me.comboRol.Name = "comboRol"
-        Me.comboRol.Size = New System.Drawing.Size(234, 33)
-        Me.comboRol.TabIndex = 38
-        '
-        'boxDireccion
-        '
-        Me.boxDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.boxDireccion.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.boxDireccion.Location = New System.Drawing.Point(929, 538)
-        Me.boxDireccion.Name = "boxDireccion"
-        Me.boxDireccion.Size = New System.Drawing.Size(231, 96)
-        Me.boxDireccion.TabIndex = 39
-        Me.boxDireccion.Text = ""
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(291, 140)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(53, 25)
-        Me.Label13.TabIndex = 41
-        Me.Label13.Text = "Foto:"
-        '
-        'ptrFoto
-        '
-        Me.ptrFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ptrFoto.Location = New System.Drawing.Point(475, 140)
-        Me.ptrFoto.Name = "ptrFoto"
-        Me.ptrFoto.Size = New System.Drawing.Size(234, 124)
-        Me.ptrFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.ptrFoto.TabIndex = 42
-        Me.ptrFoto.TabStop = False
         '
         'oflImagen
         '
@@ -304,27 +92,27 @@ Partial Class FrmRegistrarUsuario
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.Button1)
+        Me.Panel3.Controls.Add(Me.btnVolver)
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Location = New System.Drawing.Point(232, 1)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(969, 130)
         Me.Panel3.TabIndex = 43
         '
-        'Button1
+        'btnVolver
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(11, 39)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(48, 47)
-        Me.Button1.TabIndex = 31
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnVolver.BackColor = System.Drawing.Color.Transparent
+        Me.btnVolver.FlatAppearance.BorderSize = 0
+        Me.btnVolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnVolver.Image = CType(resources.GetObject("btnVolver.Image"), System.Drawing.Image)
+        Me.btnVolver.Location = New System.Drawing.Point(11, 39)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(48, 47)
+        Me.btnVolver.TabIndex = 31
+        Me.btnVolver.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -339,14 +127,13 @@ Partial Class FrmRegistrarUsuario
         '
         'Panel4
         '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel4.Controls.Add(Me.Button10)
         Me.Panel4.Controls.Add(Me.Button8)
         Me.Panel4.Controls.Add(Me.Button7)
         Me.Panel4.Controls.Add(Me.Button9)
         Me.Panel4.Controls.Add(Me.Button6)
-        Me.Panel4.Controls.Add(Me.PictureBox2)
         Me.Panel4.Controls.Add(Me.Panel5)
         Me.Panel4.Controls.Add(Me.btnOut)
         Me.Panel4.Controls.Add(Me.btnSalir)
@@ -354,10 +141,10 @@ Partial Class FrmRegistrarUsuario
         Me.Panel4.Controls.Add(Me.btnInicio)
         Me.Panel4.Controls.Add(Me.btnAyuda)
         Me.Panel4.Controls.Add(Me.btnPerfil)
-        Me.Panel4.Location = New System.Drawing.Point(1, 0)
+        Me.Panel4.Location = New System.Drawing.Point(1, 1)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(231, 717)
-        Me.Panel4.TabIndex = 45
+        Me.Panel4.Size = New System.Drawing.Size(231, 782)
+        Me.Panel4.TabIndex = 49
         '
         'Button10
         '
@@ -369,7 +156,7 @@ Partial Class FrmRegistrarUsuario
         Me.Button10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Button10.Image = CType(resources.GetObject("Button10.Image"), System.Drawing.Image)
         Me.Button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button10.Location = New System.Drawing.Point(11, 547)
+        Me.Button10.Location = New System.Drawing.Point(15, 547)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(200, 59)
         Me.Button10.TabIndex = 35
@@ -386,7 +173,7 @@ Partial Class FrmRegistrarUsuario
         Me.Button8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
         Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button8.Location = New System.Drawing.Point(11, 488)
+        Me.Button8.Location = New System.Drawing.Point(15, 488)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(200, 59)
         Me.Button8.TabIndex = 33
@@ -403,7 +190,7 @@ Partial Class FrmRegistrarUsuario
         Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.Location = New System.Drawing.Point(11, 370)
+        Me.Button7.Location = New System.Drawing.Point(15, 370)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(200, 59)
         Me.Button7.TabIndex = 32
@@ -420,7 +207,7 @@ Partial Class FrmRegistrarUsuario
         Me.Button9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Button9.Image = CType(resources.GetObject("Button9.Image"), System.Drawing.Image)
         Me.Button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button9.Location = New System.Drawing.Point(11, 429)
+        Me.Button9.Location = New System.Drawing.Point(15, 429)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(200, 59)
         Me.Button9.TabIndex = 34
@@ -437,21 +224,12 @@ Partial Class FrmRegistrarUsuario
         Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
         Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.Location = New System.Drawing.Point(11, 311)
+        Me.Button6.Location = New System.Drawing.Point(15, 311)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(200, 59)
         Me.Button6.TabIndex = 31
         Me.Button6.Text = "Usuarios"
         Me.Button6.UseVisualStyleBackColor = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(9, 676)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(36, 34)
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
         '
         'Panel5
         '
@@ -502,7 +280,7 @@ Partial Class FrmRegistrarUsuario
         Me.btnOut.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnOut.Image = CType(resources.GetObject("btnOut.Image"), System.Drawing.Image)
         Me.btnOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnOut.Location = New System.Drawing.Point(9, 606)
+        Me.btnOut.Location = New System.Drawing.Point(15, 606)
         Me.btnOut.Name = "btnOut"
         Me.btnOut.Size = New System.Drawing.Size(200, 59)
         Me.btnOut.TabIndex = 25
@@ -543,7 +321,7 @@ Partial Class FrmRegistrarUsuario
         Me.btnInicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnInicio.Image = CType(resources.GetObject("btnInicio.Image"), System.Drawing.Image)
         Me.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnInicio.Location = New System.Drawing.Point(11, 134)
+        Me.btnInicio.Location = New System.Drawing.Point(15, 134)
         Me.btnInicio.Name = "btnInicio"
         Me.btnInicio.Size = New System.Drawing.Size(200, 59)
         Me.btnInicio.TabIndex = 20
@@ -560,7 +338,7 @@ Partial Class FrmRegistrarUsuario
         Me.btnAyuda.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnAyuda.Image = CType(resources.GetObject("btnAyuda.Image"), System.Drawing.Image)
         Me.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAyuda.Location = New System.Drawing.Point(11, 252)
+        Me.btnAyuda.Location = New System.Drawing.Point(15, 252)
         Me.btnAyuda.Name = "btnAyuda"
         Me.btnAyuda.Size = New System.Drawing.Size(200, 59)
         Me.btnAyuda.TabIndex = 18
@@ -577,99 +355,409 @@ Partial Class FrmRegistrarUsuario
         Me.btnPerfil.ForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.btnPerfil.Image = CType(resources.GetObject("btnPerfil.Image"), System.Drawing.Image)
         Me.btnPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPerfil.Location = New System.Drawing.Point(11, 193)
+        Me.btnPerfil.Location = New System.Drawing.Point(15, 193)
         Me.btnPerfil.Name = "btnPerfil"
         Me.btnPerfil.Size = New System.Drawing.Size(200, 59)
         Me.btnPerfil.TabIndex = 17
         Me.btnPerfil.Text = "Mi perfil"
         Me.btnPerfil.UseVisualStyleBackColor = False
         '
-        'Button3
+        'pnFormulario
         '
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(475, 628)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(234, 37)
-        Me.Button3.TabIndex = 46
-        Me.Button3.Text = "Agregar"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.pnFormulario.Controls.Add(Me.txtCifra)
+        Me.pnFormulario.Controls.Add(Me.lblFechaV)
+        Me.pnFormulario.Controls.Add(Me.Label14)
+        Me.pnFormulario.Controls.Add(Me.lblDireccionV)
+        Me.pnFormulario.Controls.Add(Me.lblTelefonoV)
+        Me.pnFormulario.Controls.Add(Me.lblSegundoAV)
+        Me.pnFormulario.Controls.Add(Me.lblPrimerAV)
+        Me.pnFormulario.Controls.Add(Me.lblNombreV)
+        Me.pnFormulario.Controls.Add(Me.lblCedulaV)
+        Me.pnFormulario.Controls.Add(Me.lblEspaciosEnBlanco)
+        Me.pnFormulario.Controls.Add(Me.txtCorreoElectronico)
+        Me.pnFormulario.Controls.Add(Me.Label13)
+        Me.pnFormulario.Controls.Add(Me.btnRegistrar)
+        Me.pnFormulario.Controls.Add(Me.rctDireccion)
+        Me.pnFormulario.Controls.Add(Me.cmbRol)
+        Me.pnFormulario.Controls.Add(Me.rbtnFemenino)
+        Me.pnFormulario.Controls.Add(Me.rbtnMasculino)
+        Me.pnFormulario.Controls.Add(Me.dtpNacimiento)
+        Me.pnFormulario.Controls.Add(Me.txtTelefono)
+        Me.pnFormulario.Controls.Add(Me.txtEdad)
+        Me.pnFormulario.Controls.Add(Me.txtSegundoApellido)
+        Me.pnFormulario.Controls.Add(Me.txtPrimerApellido)
+        Me.pnFormulario.Controls.Add(Me.txtNombre)
+        Me.pnFormulario.Controls.Add(Me.txtCedula)
+        Me.pnFormulario.Controls.Add(Me.Label12)
+        Me.pnFormulario.Controls.Add(Me.Label11)
+        Me.pnFormulario.Controls.Add(Me.Label10)
+        Me.pnFormulario.Controls.Add(Me.Label9)
+        Me.pnFormulario.Controls.Add(Me.Label8)
+        Me.pnFormulario.Controls.Add(Me.Label7)
+        Me.pnFormulario.Controls.Add(Me.Label6)
+        Me.pnFormulario.Controls.Add(Me.Label5)
+        Me.pnFormulario.Controls.Add(Me.Label4)
+        Me.pnFormulario.Controls.Add(Me.Label3)
+        Me.pnFormulario.Location = New System.Drawing.Point(243, 138)
+        Me.pnFormulario.Name = "pnFormulario"
+        Me.pnFormulario.Size = New System.Drawing.Size(947, 579)
+        Me.pnFormulario.TabIndex = 50
         '
-        'FrmAgregarUsuario
+        'lblFechaV
+        '
+        Me.lblFechaV.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaV.Location = New System.Drawing.Point(752, 56)
+        Me.lblFechaV.Name = "lblFechaV"
+        Me.lblFechaV.Size = New System.Drawing.Size(182, 75)
+        Me.lblFechaV.TabIndex = 83
+        Me.lblFechaV.Text = "*Ingrese una fecha válida."
+        Me.lblFechaV.Visible = False
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(197, 37)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(217, 19)
+        Me.Label14.TabIndex = 82
+        Me.Label14.Text = "*Debe de tener mínimo 9 números."
+        '
+        'lblDireccionV
+        '
+        Me.lblDireccionV.Location = New System.Drawing.Point(752, 371)
+        Me.lblDireccionV.Name = "lblDireccionV"
+        Me.lblDireccionV.Size = New System.Drawing.Size(32, 33)
+        Me.lblDireccionV.TabIndex = 81
+        Me.lblDireccionV.Tag = "6"
+        '
+        'lblTelefonoV
+        '
+        Me.lblTelefonoV.Location = New System.Drawing.Point(446, 459)
+        Me.lblTelefonoV.Name = "lblTelefonoV"
+        Me.lblTelefonoV.Size = New System.Drawing.Size(32, 33)
+        Me.lblTelefonoV.TabIndex = 77
+        Me.lblTelefonoV.Tag = "5"
+        '
+        'lblSegundoAV
+        '
+        Me.lblSegundoAV.Location = New System.Drawing.Point(441, 295)
+        Me.lblSegundoAV.Name = "lblSegundoAV"
+        Me.lblSegundoAV.Size = New System.Drawing.Size(32, 33)
+        Me.lblSegundoAV.TabIndex = 76
+        Me.lblSegundoAV.Tag = "4"
+        '
+        'lblPrimerAV
+        '
+        Me.lblPrimerAV.Location = New System.Drawing.Point(441, 213)
+        Me.lblPrimerAV.Name = "lblPrimerAV"
+        Me.lblPrimerAV.Size = New System.Drawing.Size(32, 33)
+        Me.lblPrimerAV.TabIndex = 75
+        Me.lblPrimerAV.Tag = "3"
+        '
+        'lblNombreV
+        '
+        Me.lblNombreV.Location = New System.Drawing.Point(441, 131)
+        Me.lblNombreV.Name = "lblNombreV"
+        Me.lblNombreV.Size = New System.Drawing.Size(32, 33)
+        Me.lblNombreV.TabIndex = 74
+        Me.lblNombreV.Tag = "2"
+        '
+        'lblCedulaV
+        '
+        Me.lblCedulaV.Location = New System.Drawing.Point(441, 49)
+        Me.lblCedulaV.Name = "lblCedulaV"
+        Me.lblCedulaV.Size = New System.Drawing.Size(32, 33)
+        Me.lblCedulaV.TabIndex = 73
+        Me.lblCedulaV.Tag = "1"
+        '
+        'lblEspaciosEnBlanco
+        '
+        Me.lblEspaciosEnBlanco.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEspaciosEnBlanco.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblEspaciosEnBlanco.Location = New System.Drawing.Point(14, 27)
+        Me.lblEspaciosEnBlanco.Name = "lblEspaciosEnBlanco"
+        Me.lblEspaciosEnBlanco.Size = New System.Drawing.Size(157, 147)
+        Me.lblEspaciosEnBlanco.TabIndex = 51
+        Me.lblEspaciosEnBlanco.Text = "*Existen espacios en blanco por favor llenarlos antes de continuar."
+        Me.lblEspaciosEnBlanco.Visible = False
+        '
+        'txtCorreoElectronico
+        '
+        Me.txtCorreoElectronico.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCorreoElectronico.Location = New System.Drawing.Point(512, 295)
+        Me.txtCorreoElectronico.Name = "txtCorreoElectronico"
+        Me.txtCorreoElectronico.ReadOnly = True
+        Me.txtCorreoElectronico.Size = New System.Drawing.Size(234, 33)
+        Me.txtCorreoElectronico.TabIndex = 72
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(512, 260)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(165, 25)
+        Me.Label13.TabIndex = 71
+        Me.Label13.Text = "Correo eléctronico:"
+        '
+        'btnRegistrar
+        '
+        Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRegistrar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegistrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnRegistrar.Location = New System.Drawing.Point(201, 529)
+        Me.btnRegistrar.Name = "btnRegistrar"
+        Me.btnRegistrar.Size = New System.Drawing.Size(542, 37)
+        Me.btnRegistrar.TabIndex = 70
+        Me.btnRegistrar.Text = "Registrar"
+        Me.btnRegistrar.UseVisualStyleBackColor = True
+        '
+        'rctDireccion
+        '
+        Me.rctDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.rctDireccion.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rctDireccion.Location = New System.Drawing.Point(515, 371)
+        Me.rctDireccion.Name = "rctDireccion"
+        Me.rctDireccion.Size = New System.Drawing.Size(231, 121)
+        Me.rctDireccion.TabIndex = 69
+        Me.rctDireccion.Text = ""
+        '
+        'cmbRol
+        '
+        Me.cmbRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbRol.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbRol.FormattingEnabled = True
+        Me.cmbRol.Location = New System.Drawing.Point(512, 213)
+        Me.cmbRol.Name = "cmbRol"
+        Me.cmbRol.Size = New System.Drawing.Size(234, 33)
+        Me.cmbRol.TabIndex = 68
+        '
+        'rbtnFemenino
+        '
+        Me.rbtnFemenino.AutoSize = True
+        Me.rbtnFemenino.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbtnFemenino.Location = New System.Drawing.Point(330, 371)
+        Me.rbtnFemenino.Name = "rbtnFemenino"
+        Me.rbtnFemenino.Size = New System.Drawing.Size(110, 29)
+        Me.rbtnFemenino.TabIndex = 67
+        Me.rbtnFemenino.TabStop = True
+        Me.rbtnFemenino.Text = "Femenino"
+        Me.rbtnFemenino.UseVisualStyleBackColor = True
+        '
+        'rbtnMasculino
+        '
+        Me.rbtnMasculino.AutoSize = True
+        Me.rbtnMasculino.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbtnMasculino.Location = New System.Drawing.Point(206, 371)
+        Me.rbtnMasculino.Name = "rbtnMasculino"
+        Me.rbtnMasculino.Size = New System.Drawing.Size(109, 29)
+        Me.rbtnMasculino.TabIndex = 66
+        Me.rbtnMasculino.TabStop = True
+        Me.rbtnMasculino.Text = "Masculino"
+        Me.rbtnMasculino.UseVisualStyleBackColor = True
+        '
+        'dtpNacimiento
+        '
+        Me.dtpNacimiento.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.dtpNacimiento.CalendarFont = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpNacimiento.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpNacimiento.Location = New System.Drawing.Point(512, 56)
+        Me.dtpNacimiento.Name = "dtpNacimiento"
+        Me.dtpNacimiento.Size = New System.Drawing.Size(234, 33)
+        Me.dtpNacimiento.TabIndex = 65
+        Me.dtpNacimiento.Value = New Date(2014, 10, 28, 0, 0, 0, 0)
+        '
+        'txtTelefono
+        '
+        Me.txtTelefono.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTelefono.Location = New System.Drawing.Point(206, 459)
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.Size = New System.Drawing.Size(234, 33)
+        Me.txtTelefono.TabIndex = 64
+        '
+        'txtEdad
+        '
+        Me.txtEdad.Enabled = False
+        Me.txtEdad.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEdad.Location = New System.Drawing.Point(512, 131)
+        Me.txtEdad.Name = "txtEdad"
+        Me.txtEdad.ReadOnly = True
+        Me.txtEdad.Size = New System.Drawing.Size(116, 33)
+        Me.txtEdad.TabIndex = 63
+        '
+        'txtSegundoApellido
+        '
+        Me.txtSegundoApellido.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSegundoApellido.Location = New System.Drawing.Point(201, 295)
+        Me.txtSegundoApellido.Name = "txtSegundoApellido"
+        Me.txtSegundoApellido.Size = New System.Drawing.Size(234, 33)
+        Me.txtSegundoApellido.TabIndex = 62
+        '
+        'txtPrimerApellido
+        '
+        Me.txtPrimerApellido.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPrimerApellido.Location = New System.Drawing.Point(201, 213)
+        Me.txtPrimerApellido.Name = "txtPrimerApellido"
+        Me.txtPrimerApellido.Size = New System.Drawing.Size(234, 33)
+        Me.txtPrimerApellido.TabIndex = 61
+        '
+        'txtNombre
+        '
+        Me.txtNombre.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(201, 131)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(234, 33)
+        Me.txtNombre.TabIndex = 60
+        '
+        'txtCedula
+        '
+        Me.txtCedula.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCedula.Location = New System.Drawing.Point(201, 57)
+        Me.txtCedula.Name = "txtCedula"
+        Me.txtCedula.Size = New System.Drawing.Size(234, 33)
+        Me.txtCedula.TabIndex = 59
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(510, 343)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(90, 25)
+        Me.Label12.TabIndex = 58
+        Me.Label12.Text = "Dirección:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(201, 415)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(84, 25)
+        Me.Label11.TabIndex = 57
+        Me.Label11.Text = "Teléfono:"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(507, 176)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(42, 25)
+        Me.Label10.TabIndex = 56
+        Me.Label10.Text = "Rol:"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(201, 343)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(76, 25)
+        Me.Label9.TabIndex = 55
+        Me.Label9.Text = "Género:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(507, 94)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(57, 25)
+        Me.Label8.TabIndex = 54
+        Me.Label8.Text = "Edad:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(507, 12)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(158, 25)
+        Me.Label7.TabIndex = 53
+        Me.Label7.Text = "Fecha Nacimiento:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(201, 260)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(160, 25)
+        Me.Label6.TabIndex = 52
+        Me.Label6.Text = "Segundo Apellido:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(201, 176)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(140, 25)
+        Me.Label5.TabIndex = 51
+        Me.Label5.Text = "Primer Apellido:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(202, 94)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(83, 25)
+        Me.Label4.TabIndex = 50
+        Me.Label4.Text = "Nombre:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(201, 12)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(72, 25)
+        Me.Label3.TabIndex = 49
+        Me.Label3.Text = "Cédula:"
+        '
+        'txtCifra
+        '
+        Me.txtCifra.Enabled = False
+        Me.txtCifra.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCifra.Location = New System.Drawing.Point(630, 131)
+        Me.txtCifra.Name = "txtCifra"
+        Me.txtCifra.ReadOnly = True
+        Me.txtCifra.Size = New System.Drawing.Size(116, 33)
+        Me.txtCifra.TabIndex = 84
+        Me.txtCifra.Text = "Años"
+        '
+        'FrmRegistrarUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1202, 720)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.pnFormulario)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.ptrFoto)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.boxDireccion)
-        Me.Controls.Add(Me.comboRol)
-        Me.Controls.Add(Me.rbtnFemenino)
-        Me.Controls.Add(Me.rbtnMasculino)
-        Me.Controls.Add(Me.dtpNacimiento)
-        Me.Controls.Add(Me.txtTelefono)
-        Me.Controls.Add(Me.txtEdad)
-        Me.Controls.Add(Me.txtApellido3)
-        Me.Controls.Add(Me.txtApellido1)
-        Me.Controls.Add(Me.txtNombre)
-        Me.Controls.Add(Me.txtCedula)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "FrmAgregarUsuario"
+        Me.Name = "FrmRegistrarUsuario"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmAgregarAlumno"
-        CType(Me.ptrFoto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnFormulario.ResumeLayout(False)
+        Me.pnFormulario.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents txtCedula As System.Windows.Forms.TextBox
-    Friend WithEvents txtNombre As System.Windows.Forms.TextBox
-    Friend WithEvents txtApellido1 As System.Windows.Forms.TextBox
-    Friend WithEvents txtApellido3 As System.Windows.Forms.TextBox
-    Friend WithEvents txtEdad As System.Windows.Forms.TextBox
-    Friend WithEvents txtTelefono As System.Windows.Forms.TextBox
-    Friend WithEvents dtpNacimiento As System.Windows.Forms.DateTimePicker
-    Friend WithEvents rbtnMasculino As System.Windows.Forms.RadioButton
-    Friend WithEvents rbtnFemenino As System.Windows.Forms.RadioButton
-    Friend WithEvents comboRol As System.Windows.Forms.ComboBox
-    Friend WithEvents boxDireccion As System.Windows.Forms.RichTextBox
-    Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents ptrFoto As System.Windows.Forms.PictureBox
     Friend WithEvents oflImagen As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnVolver As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents Button10 As System.Windows.Forms.Button
@@ -677,7 +765,6 @@ Partial Class FrmRegistrarUsuario
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
@@ -688,5 +775,39 @@ Partial Class FrmRegistrarUsuario
     Friend WithEvents btnInicio As System.Windows.Forms.Button
     Friend WithEvents btnAyuda As System.Windows.Forms.Button
     Friend WithEvents btnPerfil As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents pnFormulario As System.Windows.Forms.Panel
+    Friend WithEvents txtCorreoElectronico As System.Windows.Forms.TextBox
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents btnRegistrar As System.Windows.Forms.Button
+    Friend WithEvents rctDireccion As System.Windows.Forms.RichTextBox
+    Friend WithEvents cmbRol As System.Windows.Forms.ComboBox
+    Friend WithEvents rbtnFemenino As System.Windows.Forms.RadioButton
+    Friend WithEvents rbtnMasculino As System.Windows.Forms.RadioButton
+    Friend WithEvents dtpNacimiento As System.Windows.Forms.DateTimePicker
+    Friend WithEvents txtTelefono As System.Windows.Forms.TextBox
+    Friend WithEvents txtEdad As System.Windows.Forms.TextBox
+    Friend WithEvents txtSegundoApellido As System.Windows.Forms.TextBox
+    Friend WithEvents txtPrimerApellido As System.Windows.Forms.TextBox
+    Friend WithEvents txtNombre As System.Windows.Forms.TextBox
+    Friend WithEvents txtCedula As System.Windows.Forms.TextBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lblEspaciosEnBlanco As System.Windows.Forms.Label
+    Friend WithEvents lblDireccionV As System.Windows.Forms.Label
+    Friend WithEvents lblTelefonoV As System.Windows.Forms.Label
+    Friend WithEvents lblSegundoAV As System.Windows.Forms.Label
+    Friend WithEvents lblPrimerAV As System.Windows.Forms.Label
+    Friend WithEvents lblNombreV As System.Windows.Forms.Label
+    Friend WithEvents lblCedulaV As System.Windows.Forms.Label
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents lblFechaV As System.Windows.Forms.Label
+    Friend WithEvents txtCifra As System.Windows.Forms.TextBox
 End Class

@@ -22,6 +22,10 @@ Public Class FrmRegistrarRol
 
     End Sub
 
+    Private Sub FrmRegistrarRol_Paint(sender As Object, e As System.Windows.Forms.PaintEventArgs) Handles Me.Paint
+        ControlPaint.DrawBorder(e.Graphics, e.ClipRectangle, Color.Black, ButtonBorderStyle.Solid)
+    End Sub
+
     Private Sub btnMin_Click(sender As Object, e As EventArgs)
         Me.WindowState = FormWindowState.Minimized
     End Sub

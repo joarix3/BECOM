@@ -70,7 +70,7 @@ Partial Class FrmRegistrarRol
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.Panel3.Controls.Add(Me.btnVolver)
         Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Location = New System.Drawing.Point(232, 0)
+        Me.Panel3.Location = New System.Drawing.Point(232, 1)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(969, 130)
         Me.Panel3.TabIndex = 43
@@ -119,7 +119,7 @@ Partial Class FrmRegistrarRol
         Me.Panel4.Controls.Add(Me.btnPerfil)
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(231, 717)
+        Me.Panel4.Size = New System.Drawing.Size(231, 737)
         Me.Panel4.TabIndex = 45
         '
         'Button10

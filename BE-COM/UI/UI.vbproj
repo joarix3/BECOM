@@ -105,6 +105,12 @@
     <Compile Include="FrmMostrarCarreras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmMostrarUsuarios.Designer.vb">
+      <DependentUpon>FrmMostrarUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmMostrarRoles.Designer.vb">
       <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
     </Compile>
@@ -205,6 +211,7 @@
     <Compile Include="PopMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SessionModule.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FrmAcademico.resx">
@@ -221,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarCarreras.resx">
       <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarUsuarios.resx">
+      <DependentUpon>FrmMostrarUsuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarRoles.resx">
       <DependentUpon>FrmMostrarRoles.vb</DependentUpon>

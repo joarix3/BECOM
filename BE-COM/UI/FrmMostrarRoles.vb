@@ -13,15 +13,17 @@ Public Class FrmMostrarRoles
         formAnterior = pformAnterior
     End Sub
 
-    Private Sub btnMin_Click(sender As Object, e As EventArgs)
-        Me.WindowState = FormWindowState.Minimized
-    End Sub
-
     Private Sub FrmMostrarRoles_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cmbFiltroBusqueda.SelectedIndex = 0
-        txtBuscar.Focus()
         mostrarRoles()
-        configurarColumnasDGV()
+    End Sub
+
+    Private Sub FrmMostrarRoles_Paint(sender As Object, e As System.Windows.Forms.PaintEventArgs) Handles Me.Paint
+        ControlPaint.DrawBorder(e.Graphics, e.ClipRectangle, Color.Black, ButtonBorderStyle.Solid)
+    End Sub
+
+    Private Sub btnMin_Click(sender As Object, e As EventArgs)
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
@@ -57,12 +59,25 @@ Public Class FrmMostrarRoles
     End Sub
 
     Private Sub mostrarRoles()
-        dtgMostrarRoles.DataSource = gestorUsuario.obtenerRoles()
-        configurarColumnasDGV()
+        If gestorUsuario.obtenerRoles() Is Nothing = False Then
+            lblRolesNoRegistrados.Visible = False
+            dtgMostrarRoles.DataSource = gestorUsuario.obtenerRoles()
+            configurarColumnasDGV()
+        Else
+            dtgMostrarRoles.DataSource = Nothing
+            lblRolesNoRegistrados.Visible = True
+        End If
     End Sub
 
     Private Sub mostrarRolesInactivos()
-        dtgMostrarRoles.DataSource = gestorUsuario.obtenerRolesInactivos()
+        If gestorUsuario.obtenerRolesInactivos() Is Nothing = False Then
+            lblRolesNoRegistrados.Visible = False
+            dtgMostrarRoles.DataSource = gestorUsuario.obtenerRolesInactivos()
+            configurarColumnasDGV()
+        Else
+            dtgMostrarRoles.DataSource = Nothing
+            lblRolesNoRegistrados.Visible = True
+        End If
     End Sub
 
     Private Sub mostrarRolesPorNombre()
@@ -94,7 +109,6 @@ Public Class FrmMostrarRoles
             mostrarRolesInactivos()
         Else
             mostrarRoles()
-
         End If
     End Sub
 End Class

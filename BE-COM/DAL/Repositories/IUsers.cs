@@ -12,6 +12,8 @@ namespace DAL.Repositories
         void UpdatePrivileges(int idRol, int idPermiso);
         int InsertRolWithPrivileges(Rol objRol);
         IEnumerable<Permiso> getPrivilegesByRol(int idRol);
+        IEnumerable<Usuario> getUsersByRol(int idRol);
+        IEnumerable<Usuario> getUsersByIdentifier(string cedula);
         void ClearPrivileges(int idRol);
     }
 }

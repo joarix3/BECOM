@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    public class Usuario
+    public class Usuario:IEntity
     {
         private int _idUsuario;
 
@@ -49,8 +49,8 @@ namespace EntitiesLayer
             rol = null;
         }
 
-        public Usuario(String pnombre, String pprimerApellido, String psegundoApellido, int pnumeroCedula,
-        String pcontrasena, String pcorreoElectronico, String pdireccion, int pnumeroTelefono, String pfechaNacimiento, int pedad, Rol prol)
+        public Usuario(int pnumeroCedula, String pnombre, String pprimerApellido, String psegundoApellido, String pgenero, int pnumeroTelefono,
+            String pfechaNacimiento,int pedad, int pidRol, string pcorreoElectronico, string pdireccion, string pcontrasena)
         {
             Nombre = pnombre;
             PrimerApellido = pprimerApellido;
@@ -62,7 +62,8 @@ namespace EntitiesLayer
             NumeroTelefono = pnumeroTelefono;
             FechaNacimiento = pfechaNacimiento;
             Edad = pedad;
-            rol = prol;
+            IdRol = pidRol;
+            Genero = pgenero;
 
         }
 

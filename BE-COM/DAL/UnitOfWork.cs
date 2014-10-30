@@ -19,7 +19,23 @@ namespace DAL
         private IRepository<Carrera> _carreraRepository;
         private IRepository<Periodo> _periodoRepository;
         private IRepository<TipoBeca> _tipoBecaRepository;
- 
+        private IRepository<Usuario> _usuarioRepository;
+
+        public IRepository<Usuario> UsuarioRepository
+        {
+            get
+            {
+                if (this._usuarioRepository == null)
+                {
+                    this._usuarioRepository = new UsuarioRepository();
+                }
+                return _usuarioRepository;
+            }
+        }
+
+
+
+
         public IRepository<Permiso> PermisoRepository
         {
             get

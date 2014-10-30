@@ -12,10 +12,14 @@ namespace BLL
     {
         private UnitOfWork UoW = new UnitOfWork();
         private RolRepository Rr = new RolRepository();
+        private UsuarioRepository Ur = new UsuarioRepository();
 
-        public void agregarUsuario()
+        public void agregarUsuario(int pcedula, String pnombre, String pprimerApellido, String psegundoApellido, String pgenero, int pnumeroTelefono, String pfechaNacimiento, int pedad, int pidRol, String pcorreoElectronico, String pdireccion, String pcontrasena)
         {
 
+            Usuario usuario = new Usuario(pcedula, pnombre, pprimerApellido, psegundoApellido, pgenero, pnumeroTelefono,pfechaNacimiento, pedad,pidRol,pcorreoElectronico,pdireccion,pcontrasena);
+            UoW.UsuarioRepository.Insert(usuario);
+        
         }
 
         public void agregarRol(String pnombre, String pdescripcion, List<int> ppermisosSeleccionados)
@@ -72,6 +76,31 @@ namespace BLL
             return UoW.RolRepository.GetAll();
         }
 
+        public IEnumerable<Usuario> obtenerUsuarios()
+        {
+            return UoW.UsuarioRepository.GetAll();
+        }
+
+        public IEnumerable<Usuario> obtenerUsuariosInactivos()
+        {
+            return UoW.UsuarioRepository.GetAllInactive();
+        }
+
+        public IEnumerable<Usuario> buscarUsuarioPorNombre(string pnombre)
+        {
+            return UoW.UsuarioRepository.GetAllByName(pnombre);
+        }
+
+        public IEnumerable<Usuario> buscarUsuarioPorCedula(string pcedula)
+        {
+            return Ur.GetAllByIdentifier(pcedula);
+        }
+
+        public IEnumerable<Usuario> buscarUsuariosPorRol(int pidRol)
+        {
+            return Ur.GetUsersByRol(pidRol);
+        }
+
         public IEnumerable<Rol> buscarRolPorNombre(String pnombre)
         {
             return UoW.RolRepository.GetAllByName(pnombre);
@@ -90,6 +119,7 @@ namespace BLL
         public void guardarCambios()
         {
             UoW.RolRepository.Save();
+            UoW.UsuarioRepository.Save();
         }
 
     }

@@ -36,7 +36,9 @@
     End Sub
 
     Private Sub btnUsuarios_Click(sender As Object, e As EventArgs) Handles btnUsuarios.Click
-
+        Dim frmMostrarUsuarios As FrmMostrarUsuarios = New FrmMostrarUsuarios(Me)
+        frmMostrarUsuarios.Show()
+        Me.Hide()
     End Sub
 
     Private Sub btnRoles_Click(sender As Object, e As EventArgs) Handles btnRoles.Click

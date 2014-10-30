@@ -24,11 +24,11 @@ Partial Class FrmIniciarSesion
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmIniciarSesion))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtPasS = New System.Windows.Forms.TextBox()
+        Me.txtContrasena = New System.Windows.Forms.TextBox()
         Me.txtCorreo = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.btnAcceder = New System.Windows.Forms.Button()
+        Me.btnIniciarSesion = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -38,14 +38,17 @@ Partial Class FrmIniciarSesion
         Me.pnAbajo = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.pnFormulario = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblValidacion = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnSub.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.pnAbajo.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
+        Me.pnFormulario.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -58,27 +61,26 @@ Partial Class FrmIniciarSesion
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Te damos la bienvenida a la aplicación"
         '
-        'txtPasS
+        'txtContrasena
         '
-        Me.txtPasS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtPasS.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPasS.ForeColor = System.Drawing.SystemColors.InactiveCaption
-        Me.txtPasS.Location = New System.Drawing.Point(124, 176)
-        Me.txtPasS.Name = "txtPasS"
-        Me.txtPasS.Size = New System.Drawing.Size(220, 33)
-        Me.txtPasS.TabIndex = 4
-        Me.txtPasS.Text = "Contraseña"
+        Me.txtContrasena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtContrasena.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContrasena.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.txtContrasena.Location = New System.Drawing.Point(121, 186)
+        Me.txtContrasena.Name = "txtContrasena"
+        Me.txtContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtContrasena.Size = New System.Drawing.Size(220, 33)
+        Me.txtContrasena.TabIndex = 4
         '
         'txtCorreo
         '
         Me.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtCorreo.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCorreo.ForeColor = System.Drawing.SystemColors.InactiveCaption
-        Me.txtCorreo.Location = New System.Drawing.Point(124, 102)
+        Me.txtCorreo.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.txtCorreo.Location = New System.Drawing.Point(121, 112)
         Me.txtCorreo.Name = "txtCorreo"
         Me.txtCorreo.Size = New System.Drawing.Size(220, 33)
         Me.txtCorreo.TabIndex = 3
-        Me.txtCorreo.Text = "Correo"
         '
         'Label2
         '
@@ -86,7 +88,7 @@ Partial Class FrmIniciarSesion
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(144, 43)
+        Me.Label2.Location = New System.Drawing.Point(145, 31)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(172, 40)
         Me.Label2.TabIndex = 0
@@ -107,20 +109,20 @@ Partial Class FrmIniciarSesion
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "¿Olvido su contraseña?"
         '
-        'btnAcceder
+        'btnIniciarSesion
         '
-        Me.btnAcceder.BackColor = System.Drawing.Color.Transparent
-        Me.btnAcceder.FlatAppearance.BorderSize = 2
-        Me.btnAcceder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(113, Byte), Integer))
-        Me.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAcceder.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAcceder.ForeColor = System.Drawing.Color.White
-        Me.btnAcceder.Location = New System.Drawing.Point(124, 240)
-        Me.btnAcceder.Name = "btnAcceder"
-        Me.btnAcceder.Size = New System.Drawing.Size(220, 36)
-        Me.btnAcceder.TabIndex = 7
-        Me.btnAcceder.Text = "Acceder"
-        Me.btnAcceder.UseVisualStyleBackColor = False
+        Me.btnIniciarSesion.BackColor = System.Drawing.Color.Transparent
+        Me.btnIniciarSesion.FlatAppearance.BorderSize = 2
+        Me.btnIniciarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(113, Byte), Integer))
+        Me.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnIniciarSesion.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIniciarSesion.ForeColor = System.Drawing.Color.White
+        Me.btnIniciarSesion.Location = New System.Drawing.Point(121, 240)
+        Me.btnIniciarSesion.Name = "btnIniciarSesion"
+        Me.btnIniciarSesion.Size = New System.Drawing.Size(220, 36)
+        Me.btnIniciarSesion.TabIndex = 7
+        Me.btnIniciarSesion.Text = "Acceder"
+        Me.btnIniciarSesion.UseVisualStyleBackColor = False
         '
         'btnSalir
         '
@@ -222,33 +224,71 @@ Partial Class FrmIniciarSesion
         Me.Label3.TabIndex = 47
         Me.Label3.Text = "BE-COM"
         '
-        'Panel3
+        'pnFormulario
         '
-        Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
-        Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel3.Controls.Add(Me.Label2)
-        Me.Panel3.Controls.Add(Me.txtPasS)
-        Me.Panel3.Controls.Add(Me.btnAcceder)
-        Me.Panel3.Controls.Add(Me.txtCorreo)
-        Me.Panel3.Controls.Add(Me.LinkLabel1)
-        Me.Panel3.Location = New System.Drawing.Point(1, 227)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(945, 375)
-        Me.Panel3.TabIndex = 46
+        Me.pnFormulario.BackgroundImage = CType(resources.GetObject("pnFormulario.BackgroundImage"), System.Drawing.Image)
+        Me.pnFormulario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pnFormulario.Controls.Add(Me.Label5)
+        Me.pnFormulario.Controls.Add(Me.Label4)
+        Me.pnFormulario.Controls.Add(Me.lblValidacion)
+        Me.pnFormulario.Controls.Add(Me.Label2)
+        Me.pnFormulario.Controls.Add(Me.txtContrasena)
+        Me.pnFormulario.Controls.Add(Me.btnIniciarSesion)
+        Me.pnFormulario.Controls.Add(Me.txtCorreo)
+        Me.pnFormulario.Controls.Add(Me.LinkLabel1)
+        Me.pnFormulario.Location = New System.Drawing.Point(1, 227)
+        Me.pnFormulario.Name = "pnFormulario"
+        Me.pnFormulario.Size = New System.Drawing.Size(957, 375)
+        Me.pnFormulario.TabIndex = 46
         '
-        'FrmIniciaSesion
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(119, 158)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(106, 25)
+        Me.Label5.TabIndex = 24
+        Me.Label5.Text = "Contraseña:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(119, 84)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(72, 25)
+        Me.Label4.TabIndex = 23
+        Me.Label4.Text = "Correo:"
+        '
+        'lblValidacion
+        '
+        Me.lblValidacion.BackColor = System.Drawing.Color.Transparent
+        Me.lblValidacion.Font = New System.Drawing.Font("Segoe UI Light", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblValidacion.ForeColor = System.Drawing.Color.White
+        Me.lblValidacion.Location = New System.Drawing.Point(367, 102)
+        Me.lblValidacion.Name = "lblValidacion"
+        Me.lblValidacion.Size = New System.Drawing.Size(172, 139)
+        Me.lblValidacion.TabIndex = 22
+        Me.lblValidacion.Visible = False
+        '
+        'FrmIniciarSesion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(958, 654)
-        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.pnFormulario)
         Me.Controls.Add(Me.pnAbajo)
         Me.Controls.Add(Me.pnSub)
         Me.Controls.Add(Me.Panel1)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "FrmIniciaSesion"
+        Me.Name = "FrmIniciarSesion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmIniciaSesion"
         Me.Panel1.ResumeLayout(False)
@@ -258,15 +298,15 @@ Partial Class FrmIniciarSesion
         Me.pnAbajo.ResumeLayout(False)
         Me.pnAbajo.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
+        Me.pnFormulario.ResumeLayout(False)
+        Me.pnFormulario.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtCorreo As System.Windows.Forms.TextBox
-    Friend WithEvents btnAcceder As System.Windows.Forms.Button
+    Friend WithEvents btnIniciarSesion As System.Windows.Forms.Button
     Friend WithEvents btnSalir As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
@@ -275,8 +315,11 @@ Partial Class FrmIniciarSesion
     Friend WithEvents btnMin As System.Windows.Forms.Button
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
     Friend WithEvents pnAbajo As System.Windows.Forms.Panel
-    Friend WithEvents txtPasS As System.Windows.Forms.TextBox
+    Friend WithEvents txtContrasena As System.Windows.Forms.TextBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents pnFormulario As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents lblValidacion As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class
