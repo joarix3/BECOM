@@ -45,15 +45,15 @@ Public Class FrmRegistrarRol
         Dim nombre As String = txtNombre.Text.ToString()
         Dim descripcion As String = rctDescripcion.Text.ToString()
 
-<<<<<<< HEAD
+
         validarCampoFormulario()
         permisosSeleccionados = obtenerPermisosSeleccionados()
 
-=======
+
 
         'validarCampoFormulario()
         permisosSeleccionados = obtenerPermisosSeleccionados()        
->>>>>>> BECOMM
+
         gestorUsuario.agregarRol(nombre, descripcion, permisosSeleccionados)
         gestorUsuario.guardarCambios()
 

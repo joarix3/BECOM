@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Users\Douglas\Documents\Soft506\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.dll
 C:\Users\Douglas\Documents\Soft506\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
 C:\Users\Douglas\Documents\Soft506\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
@@ -32,9 +31,7 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\E
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
-=======
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.dll
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
->>>>>>> BECOMM

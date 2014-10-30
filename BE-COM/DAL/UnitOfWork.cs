@@ -17,14 +17,14 @@ namespace DAL
         private IRepository<BitacoraTransaccion> _bitacoraTransaccionRepository;
         private IRepository<Requisito> _requisitoRepository;
         private IRepository<Carrera> _carreraRepository;
-<<<<<<< HEAD
+
         private IRepository<Periodo> _periodoRepository;
         private IRepository<TipoBeca> _tipoBecaRepository;
  
-=======
+
         private IRepository<Curso> _cursoRepository;
         
->>>>>>> BECOMM
+
         public IRepository<Permiso> PermisoRepository
         {
             get
@@ -97,7 +97,7 @@ namespace DAL
             }
         }
 
-<<<<<<< HEAD
+
         public IRepository<Periodo> PeriodoRepository
         {
             get
@@ -121,7 +121,7 @@ namespace DAL
                 return _tipoBecaRepository;
             }
         }
-=======
+
         public IRepository<Curso> CursoRepository
         {
             get
@@ -134,7 +134,7 @@ namespace DAL
             }
         }
 
->>>>>>> BECOMM
+
 
     }
 }
