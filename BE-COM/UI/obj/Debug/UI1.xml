@@ -6,11 +6,7 @@ UI1
 </name>
 </assembly>
 <members>
-<member name="T:UI1.DataSetPrincipal">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="P:UI1.My.Resources.Resources.ResourceManager">
+<member name="P:UI1.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -23,6 +19,26 @@ Represents a strongly typed in-memory cache of data.
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
+</member><member name="M:UI1.FrmMostrarBitacoraErrores.btnExportar_Click(System.Object,System.EventArgs)">
+	<summary>
+ El tbnExportar, hace que exporte a pdf los datos que obtiene en el dataGridView.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:UI1.DataSetPrincipal">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:UI1.PopRecuperarContrasenna.btnEnviar_Click(System.Object,System.EventArgs)">
+	<summary>
+ En el boton se llama gestor de usuarios para la recuperacion de la contrasenna
+ cuando se crea un correo se le llama al metodo de recuperar contrasenna, y lo almacena 
+ despues se le llama enviarCorreo, este envia el correo para recuperar la contrasenna al usuario por medio del correo digitado
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
 </member>
 </members>
 </doc>

@@ -15,11 +15,9 @@ Public Class FrmRegistrarRol
 
     End Sub
     Private Sub FrmRegistrarRol_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim objGestor As New GestorUsuarios()
-        For Each permiso As Permiso In objGestor.obtenerPermisos()
+        For Each permiso As Permiso In gestorUsuario.obtenerPermisos()
             LchkPermisos.Items.Add(permiso.Nombre())
         Next
-
     End Sub
 
     Private Sub btnMin_Click(sender As Object, e As EventArgs)
@@ -44,13 +42,8 @@ Public Class FrmRegistrarRol
         Dim nombre As String = txtNombre.Text
         Dim descripcion As String = rctDescripcion.Text
 
-<<<<<<< HEAD
         'validarCampoFormulario()
-        permisosSeleccionados = obtenerPermisosSeleccionados()        
-=======
-        validarCampoFormulario()
         permisosSeleccionados = obtenerPermisosSeleccionados()
->>>>>>> 19b53650251c1f546677c2fd06a6567ad392fecc
         gestorUsuario.agregarRol(nombre, descripcion, permisosSeleccionados)
         gestorUsuario.guardarCambios()
     End Sub

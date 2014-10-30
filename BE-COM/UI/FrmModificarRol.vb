@@ -15,8 +15,8 @@ Public Class FrmModificarRol
 
     End Sub
     Private Sub FrmModificarRol_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim objGestor As New GestorUsuarios()
-        For Each permiso As Permiso In objGestor.obtenerPermisos()
+
+        For Each permiso As Permiso In gestorUsuario.obtenerPermisos()
             LchkPermisos.Items.Add(permiso.Nombre())
         Next
 

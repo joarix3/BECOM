@@ -14,7 +14,8 @@ namespace DAL
         private IRepository<Permiso> _permisoRepository;
         private IRepository<Rol> _rolRepository;
         private IRepository<Carrera> _carreraRepository;
-        
+        private IRepository<BitacoraError> _bitacoraErrorRepository;
+        private IRepository<BitacoraTransaccion> _bitacoraTransaccionRepository;
         public IRepository<Permiso> PermisoRepository
         {
             get
@@ -47,6 +48,30 @@ namespace DAL
                     this._carreraRepository = new CarreraRepository();
                 }
                 return _carreraRepository;
+            }
+        }
+
+        public IRepository<BitacoraError> BitacoraErrorRepository
+        {
+            get
+            {
+                if (this._bitacoraErrorRepository == null)
+                {
+                    this._bitacoraErrorRepository = new BitacoraErrorRepository();
+                }
+                return _bitacoraErrorRepository;
+            }
+        }
+
+        public IRepository<BitacoraTransaccion> BitacoraTransaccionRepository
+        {
+            get
+            {
+                if (this._bitacoraTransaccionRepository == null)
+                {
+                    this._bitacoraTransaccionRepository = new BitacoraTransaccionRepository();
+                }
+                return _bitacoraTransaccionRepository;
             }
         }
 

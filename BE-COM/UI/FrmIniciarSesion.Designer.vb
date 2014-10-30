@@ -39,6 +39,7 @@ Partial Class FrmIniciarSesion
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnSub.SuspendLayout()
@@ -218,7 +219,7 @@ Partial Class FrmIniciarSesion
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(407, 7)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(123, 40)
+        Me.Label3.Size = New System.Drawing.Size(124, 40)
         Me.Label3.TabIndex = 47
         Me.Label3.Text = "BE-COM"
         '
@@ -226,6 +227,7 @@ Partial Class FrmIniciarSesion
         '
         Me.Panel3.BackgroundImage = CType(resources.GetObject("Panel3.BackgroundImage"), System.Drawing.Image)
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel3.Controls.Add(Me.Panel4)
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Controls.Add(Me.txtPasS)
         Me.Panel3.Controls.Add(Me.btnAcceder)
@@ -236,7 +238,15 @@ Partial Class FrmIniciarSesion
         Me.Panel3.Size = New System.Drawing.Size(945, 375)
         Me.Panel3.TabIndex = 46
         '
-        'FrmIniciaSesion
+        'Panel4
+        '
+        Me.Panel4.Location = New System.Drawing.Point(362, 67)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(200, 100)
+        Me.Panel4.TabIndex = 22
+        Me.Panel4.Visible = False
+        '
+        'FrmIniciarSesion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -248,7 +258,7 @@ Partial Class FrmIniciarSesion
         Me.Controls.Add(Me.Panel1)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "FrmIniciaSesion"
+        Me.Name = "FrmIniciarSesion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmIniciaSesion"
         Me.Panel1.ResumeLayout(False)
@@ -279,4 +289,5 @@ Partial Class FrmIniciarSesion
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Panel4 As System.Windows.Forms.Panel
 End Class

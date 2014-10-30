@@ -46,6 +46,12 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Desktop\Nueva carpeta\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\..\..\Desktop\Nueva carpeta\itextsharp.pdfa.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
@@ -82,6 +88,36 @@
       <DependentUpon>FrmAcademico.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmAcademico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfigurarParametros.Designer.vb">
+      <DependentUpon>FrmConfigurarParametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfigurarParametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarPerfil.Designer.vb">
+      <DependentUpon>FrmModificarPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarBitacoraTransaccion.Designer.vb">
+      <DependentUpon>FrmMostrarBitacoraTransaccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarBitacoraTransaccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarBitacoraErrores.Designer.vb">
+      <DependentUpon>FrmMostrarBitacoraErrores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarBitacoraErrores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarAyuda.Designer.vb">
+      <DependentUpon>FrmMostrarAyuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarAyuda.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMostrarCarreras.Designer.vb">
@@ -166,6 +202,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PopExportadoExitoso.Designer.vb">
+      <DependentUpon>PopExportadoExitoso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopExportadoExitoso.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PopAgregado.Designer.vb">
       <DependentUpon>PopAgregado.vb</DependentUpon>
     </Compile>
@@ -190,10 +232,31 @@
     <Compile Include="PopMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PopRecuperarContrasenna.Designer.vb">
+      <DependentUpon>PopRecuperarContrasenna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopRecuperarContrasenna.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FrmAcademico.resx">
       <DependentUpon>FrmAcademico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfigurarParametros.resx">
+      <DependentUpon>FrmConfigurarParametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarPerfil.resx">
+      <DependentUpon>FrmModificarPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarBitacoraTransaccion.resx">
+      <DependentUpon>FrmMostrarBitacoraTransaccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarBitacoraErrores.resx">
+      <DependentUpon>FrmMostrarBitacoraErrores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarAyuda.resx">
+      <DependentUpon>FrmMostrarAyuda.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarCarreras.resx">
       <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
@@ -234,6 +297,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PopExportadoExitoso.resx">
+      <DependentUpon>PopExportadoExitoso.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PopAgregado.resx">
       <DependentUpon>PopAgregado.vb</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PopMenu.resx">
       <DependentUpon>PopMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopRecuperarContrasenna.resx">
+      <DependentUpon>PopRecuperarContrasenna.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -271,6 +340,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{1df68d8d-5d81-4d98-9761-8834cf6e88a4}</Project>
       <Name>BLL</Name>
@@ -283,9 +355,6 @@
       <Project>{aaf9ed03-2d38-4a7e-8616-b656c7b4663e}</Project>
       <Name>EntitiesLayer</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Imagenes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

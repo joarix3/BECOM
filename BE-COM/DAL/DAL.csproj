@@ -43,13 +43,15 @@
   <ItemGroup>
     <Compile Include="DBAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BitacoraErrorRepository.cs" />
+    <Compile Include="Repositories\BitacoraTransaccionRepository.cs" />
     <Compile Include="Repositories\CarreraRepository.cs" />
+    <Compile Include="CorreoRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\PermisoRepository.cs" />
     <Compile Include="Repositories\RolRepository.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\EntitiesLayer\EntitiesLayer.csproj">
       <Project>{aaf9ed03-2d38-4a7e-8616-b656c7b4663e}</Project>

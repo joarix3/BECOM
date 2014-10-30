@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitacoraError.cs" />
+    <Compile Include="BitacoraTransaccion.cs" />
     <Compile Include="Carrera.cs" />
+    <Compile Include="Correo.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

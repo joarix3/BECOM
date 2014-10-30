@@ -37,7 +37,6 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.exe.conf
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.exe
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.xml
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
-<<<<<<< HEAD
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
@@ -69,7 +68,6 @@ C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
 C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
-=======
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.exe
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.xml
@@ -98,4 +96,44 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngre
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarRol.resources
->>>>>>> 19b53650251c1f546677c2fd06a6567ad392fecc
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.xml
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.dll
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.dll
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.dll
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\itextsharp.dll
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\itextsharp.pdfa.dll
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.pdb
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmAcademico.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmConfigurarParametros.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarBitacoraTransaccion.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarBitacoraErrores.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarAyuda.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarCarreras.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarCarrera.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarHistorialAcademico.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarTiposDeBeca.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarRol.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRol.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarUsuario.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.Resources.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopExportadoExitoso.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopAgregado.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopRecuperarContrasenna.resources
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
+C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPerfil.resources
