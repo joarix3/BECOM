@@ -50,12 +50,16 @@ Partial Class FrmRegistrarCarrera
         Me.txtCodigo = New System.Windows.Forms.TextBox()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.comboDirector = New System.Windows.Forms.ComboBox()
-        Me.rctColor = New System.Windows.Forms.RichTextBox()
         Me.btnColor = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.cdCarrera = New System.Windows.Forms.ColorDialog()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtBecasOtorgables = New System.Windows.Forms.TextBox()
+        Me.pnColor = New System.Windows.Forms.Panel()
+        Me.lblEspaciosEnblanco = New System.Windows.Forms.Label()
+        Me.lblBecas = New System.Windows.Forms.Label()
+        Me.lblNombreV = New System.Windows.Forms.Label()
+        Me.lblCodigoV = New System.Windows.Forms.Label()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -429,15 +433,6 @@ Partial Class FrmRegistrarCarrera
         Me.comboDirector.Size = New System.Drawing.Size(263, 33)
         Me.comboDirector.TabIndex = 56
         '
-        'rctColor
-        '
-        Me.rctColor.Location = New System.Drawing.Point(547, 462)
-        Me.rctColor.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.rctColor.Name = "rctColor"
-        Me.rctColor.Size = New System.Drawing.Size(263, 76)
-        Me.rctColor.TabIndex = 57
-        Me.rctColor.Text = ""
-        '
         'btnColor
         '
         Me.btnColor.FlatAppearance.BorderSize = 2
@@ -484,17 +479,65 @@ Partial Class FrmRegistrarCarrera
         Me.txtBecasOtorgables.Size = New System.Drawing.Size(263, 33)
         Me.txtBecasOtorgables.TabIndex = 61
         '
+        'pnColor
+        '
+        Me.pnColor.Location = New System.Drawing.Point(554, 465)
+        Me.pnColor.Name = "pnColor"
+        Me.pnColor.Size = New System.Drawing.Size(256, 70)
+        Me.pnColor.TabIndex = 63
+        '
+        'lblEspaciosEnblanco
+        '
+        Me.lblEspaciosEnblanco.AutoSize = True
+        Me.lblEspaciosEnblanco.Font = New System.Drawing.Font("Segoe UI Semilight", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEspaciosEnblanco.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.lblEspaciosEnblanco.Location = New System.Drawing.Point(829, 656)
+        Me.lblEspaciosEnblanco.Name = "lblEspaciosEnblanco"
+        Me.lblEspaciosEnblanco.Size = New System.Drawing.Size(361, 40)
+        Me.lblEspaciosEnblanco.TabIndex = 65
+        Me.lblEspaciosEnblanco.Text = "*Existen espacios en blanco"
+        Me.lblEspaciosEnblanco.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.lblEspaciosEnblanco.Visible = False
+        '
+        'lblBecas
+        '
+        Me.lblBecas.Location = New System.Drawing.Point(842, 579)
+        Me.lblBecas.Name = "lblBecas"
+        Me.lblBecas.Size = New System.Drawing.Size(32, 33)
+        Me.lblBecas.TabIndex = 72
+        Me.lblBecas.Tag = "1"
+        '
+        'lblNombreV
+        '
+        Me.lblNombreV.Location = New System.Drawing.Point(842, 281)
+        Me.lblNombreV.Name = "lblNombreV"
+        Me.lblNombreV.Size = New System.Drawing.Size(32, 33)
+        Me.lblNombreV.TabIndex = 70
+        Me.lblNombreV.Tag = "1"
+        '
+        'lblCodigoV
+        '
+        Me.lblCodigoV.Location = New System.Drawing.Point(842, 196)
+        Me.lblCodigoV.Name = "lblCodigoV"
+        Me.lblCodigoV.Size = New System.Drawing.Size(32, 33)
+        Me.lblCodigoV.TabIndex = 69
+        Me.lblCodigoV.Tag = "1"
+        '
         'FrmRegistrarCarrera
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1202, 720)
+        Me.Controls.Add(Me.lblBecas)
+        Me.Controls.Add(Me.lblNombreV)
+        Me.Controls.Add(Me.lblCodigoV)
+        Me.Controls.Add(Me.lblEspaciosEnblanco)
+        Me.Controls.Add(Me.pnColor)
         Me.Controls.Add(Me.txtBecasOtorgables)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.btnColor)
-        Me.Controls.Add(Me.rctColor)
         Me.Controls.Add(Me.comboDirector)
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.txtCodigo)
@@ -546,10 +589,14 @@ Partial Class FrmRegistrarCarrera
     Friend WithEvents txtCodigo As System.Windows.Forms.TextBox
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
     Friend WithEvents comboDirector As System.Windows.Forms.ComboBox
-    Friend WithEvents rctColor As System.Windows.Forms.RichTextBox
     Friend WithEvents btnColor As System.Windows.Forms.Button
     Friend WithEvents btnAgregar As System.Windows.Forms.Button
     Friend WithEvents cdCarrera As System.Windows.Forms.ColorDialog
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents txtBecasOtorgables As System.Windows.Forms.TextBox
+    Friend WithEvents pnColor As System.Windows.Forms.Panel
+    Friend WithEvents lblEspaciosEnblanco As System.Windows.Forms.Label
+    Friend WithEvents lblBecas As System.Windows.Forms.Label
+    Friend WithEvents lblNombreV As System.Windows.Forms.Label
+    Friend WithEvents lblCodigoV As System.Windows.Forms.Label
 End Class

@@ -47,7 +47,9 @@
     <Compile Include="Repositories\BeneficioRepository.cs" />
     <Compile Include="Repositories\BitacoraTransaccionRepository.cs" />
     <Compile Include="Repositories\CarreraRepository.cs" />
+    <Compile Include="Repositories\CursoRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\IUser.cs" />
     <Compile Include="Repositories\PermisoRepository.cs" />
     <Compile Include="Repositories\RequisitoRepository.cs" />
     <Compile Include="Repositories\RolRepository.cs" />

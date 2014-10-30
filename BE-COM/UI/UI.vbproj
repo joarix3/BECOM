@@ -81,6 +81,63 @@
     <Compile Include="FrmAcademico.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="FrmInformacionCarrera.Designer.vb">
+      <DependentUpon>FrmInformacionCarrera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInformacionCarrera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsociarCursoCarrera.Designer.vb">
+      <DependentUpon>FrmAsociarCursoCarrera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsociarCursoCarrera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarCursosPorCarrera.Designer.vb">
+      <DependentUpon>FrmMostrarCursosPorCarrera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarCursosPorCarrera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarCurso.Designer.vb">
+      <DependentUpon>FrmMostrarCurso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarCurso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarCarreras.Designer.vb">
+      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarCarreras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarCarrera.Designer.vb">
+      <DependentUpon>FrmModificarCarrera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarCarrera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarCurso.Designer.vb">
+      <DependentUpon>FrmModificarCurso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificarCurso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarCurso.Designer.vb">
+      <DependentUpon>FrmRegistrarCurso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarCurso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarCarrera.Designer.vb">
+      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarCarrera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> BECOMM
     <Compile Include="FrmIniciarSesion.Designer.vb">
       <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </Compile>
@@ -175,6 +232,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PopEliminarCarrera.Designer.vb">
+      <DependentUpon>PopEliminarCarrera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopEliminarCarrera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopError.Designer.vb">
+      <DependentUpon>PopError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopEliminarCurso.Designer.vb">
+      <DependentUpon>PopEliminarCurso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PopEliminarCurso.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PopAgregado.Designer.vb">
       <DependentUpon>PopAgregado.vb</DependentUpon>
     </Compile>
@@ -204,6 +279,36 @@
     <EmbeddedResource Include="FrmAcademico.resx">
       <DependentUpon>FrmAcademico.vb</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="FrmInformacionCarrera.resx">
+      <DependentUpon>FrmInformacionCarrera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsociarCursoCarrera.resx">
+      <DependentUpon>FrmAsociarCursoCarrera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarCursosPorCarrera.resx">
+      <DependentUpon>FrmMostrarCursosPorCarrera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarCurso.resx">
+      <DependentUpon>FrmMostrarCurso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarCarreras.resx">
+      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarCarrera.resx">
+      <DependentUpon>FrmModificarCarrera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarCurso.resx">
+      <DependentUpon>FrmModificarCurso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarCurso.resx">
+      <DependentUpon>FrmRegistrarCurso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarCarrera.resx">
+      <DependentUpon>FrmRegistrarCarrera.vb</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> BECOMM
     <EmbeddedResource Include="FrmIniciarSesion.resx">
       <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
     </EmbeddedResource>
@@ -248,6 +353,15 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopEliminarCarrera.resx">
+      <DependentUpon>PopEliminarCarrera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopError.resx">
+      <DependentUpon>PopError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopEliminarCurso.resx">
+      <DependentUpon>PopEliminarCurso.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopAgregado.resx">
       <DependentUpon>PopAgregado.vb</DependentUpon>

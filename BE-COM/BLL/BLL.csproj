@@ -43,8 +43,12 @@
    <Compile Include="GestorBeneficio.cs" />
     <Compile Include="GestorBitacoraTransaccion.cs" /> 
     <Compile Include="GestorCarrera.cs" />
+<<<<<<< HEAD
     <Compile Include="GestorPeriodo.cs" />
     <Compile Include="GestorTipoBeca.cs" />
+=======
+    <Compile Include="GestorCurso.cs" />
+>>>>>>> BECOMM
     <Compile Include="GestorUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

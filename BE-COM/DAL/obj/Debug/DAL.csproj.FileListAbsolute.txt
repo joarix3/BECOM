@@ -26,6 +26,7 @@ C:\Users\dani\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
 C:\Users\dani\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\dani\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
 C:\Users\dani\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
+<<<<<<< HEAD
 E:\Proyecto2\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
 E:\Proyecto2\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
 E:\Proyecto2\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
@@ -40,6 +41,15 @@ C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
 C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
 C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
+=======
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
+C:\Users\JuanManuel\Documents\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
+>>>>>>> BECOMM
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
@@ -47,3 +57,10 @@ C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLay
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
 C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
+C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
+C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
+C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
+C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
+C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
+C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb

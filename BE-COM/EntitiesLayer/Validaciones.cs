@@ -87,11 +87,11 @@ namespace EntitiesLayer
             {
                 if (Information.IsNumeric(textbox.Text) == true)
                 {
-                    esTexto = true;
+                    esTexto = false;
                 }
                 else
                 {
-                    esTexto = false;
+                    esTexto = true;
                 }
             }
             

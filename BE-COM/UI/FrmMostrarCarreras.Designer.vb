@@ -22,9 +22,15 @@ Partial Class FrmMostrarCarreras
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+<<<<<<< HEAD
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+=======
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+>>>>>>> BECOMM
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMostrarCarreras))
         Me.dtgCarreras = New System.Windows.Forms.DataGridView()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -53,6 +59,10 @@ Partial Class FrmMostrarCarreras
         Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.btnCursos = New System.Windows.Forms.Button()
         Me.BtnDirector = New System.Windows.Forms.Button()
+        Me.btnDetalles = New System.Windows.Forms.Button()
+        Me.lblCarrerasNoRegistrados = New System.Windows.Forms.Label()
+        Me.chkinactivos = New System.Windows.Forms.CheckBox()
+        Me.btnAsociar = New System.Windows.Forms.Button()
         CType(Me.dtgCarreras, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -65,6 +75,7 @@ Partial Class FrmMostrarCarreras
         Me.dtgCarreras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dtgCarreras.BackgroundColor = System.Drawing.Color.White
         Me.dtgCarreras.BorderStyle = System.Windows.Forms.BorderStyle.None
+<<<<<<< HEAD
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -73,10 +84,21 @@ Partial Class FrmMostrarCarreras
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dtgCarreras.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+=======
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgCarreras.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+>>>>>>> BECOMM
         Me.dtgCarreras.EnableHeadersVisualStyles = False
         Me.dtgCarreras.GridColor = System.Drawing.Color.White
-        Me.dtgCarreras.Location = New System.Drawing.Point(243, 192)
+        Me.dtgCarreras.Location = New System.Drawing.Point(246, 192)
         Me.dtgCarreras.Name = "dtgCarreras"
+<<<<<<< HEAD
         DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -88,6 +110,19 @@ Partial Class FrmMostrarCarreras
         DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
         Me.dtgCarreras.RowsDefaultCellStyle = DataGridViewCellStyle6
+=======
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgCarreras.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.dtgCarreras.RowsDefaultCellStyle = DataGridViewCellStyle3
+>>>>>>> BECOMM
         Me.dtgCarreras.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
         Me.dtgCarreras.Size = New System.Drawing.Size(871, 463)
         Me.dtgCarreras.TabIndex = 8
@@ -378,7 +413,7 @@ Partial Class FrmMostrarCarreras
         Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditar.Image = CType(resources.GetObject("btnEditar.Image"), System.Drawing.Image)
-        Me.btnEditar.Location = New System.Drawing.Point(1135, 291)
+        Me.btnEditar.Location = New System.Drawing.Point(1135, 260)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(55, 53)
         Me.btnEditar.TabIndex = 41
@@ -390,7 +425,7 @@ Partial Class FrmMostrarCarreras
         Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminar.Image = CType(resources.GetObject("btnEliminar.Image"), System.Drawing.Image)
-        Me.btnEliminar.Location = New System.Drawing.Point(1135, 362)
+        Me.btnEliminar.Location = New System.Drawing.Point(1135, 328)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(55, 53)
         Me.btnEliminar.TabIndex = 42
@@ -402,7 +437,7 @@ Partial Class FrmMostrarCarreras
         Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegistrar.Image = CType(resources.GetObject("btnRegistrar.Image"), System.Drawing.Image)
-        Me.btnRegistrar.Location = New System.Drawing.Point(1135, 220)
+        Me.btnRegistrar.Location = New System.Drawing.Point(1135, 192)
         Me.btnRegistrar.Name = "btnRegistrar"
         Me.btnRegistrar.Size = New System.Drawing.Size(55, 53)
         Me.btnRegistrar.TabIndex = 43
@@ -414,7 +449,7 @@ Partial Class FrmMostrarCarreras
         Me.btnCursos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.btnCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCursos.Image = CType(resources.GetObject("btnCursos.Image"), System.Drawing.Image)
-        Me.btnCursos.Location = New System.Drawing.Point(1135, 433)
+        Me.btnCursos.Location = New System.Drawing.Point(1135, 396)
         Me.btnCursos.Name = "btnCursos"
         Me.btnCursos.Size = New System.Drawing.Size(55, 53)
         Me.btnCursos.TabIndex = 44
@@ -426,11 +461,58 @@ Partial Class FrmMostrarCarreras
         Me.BtnDirector.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.BtnDirector.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnDirector.Image = CType(resources.GetObject("BtnDirector.Image"), System.Drawing.Image)
-        Me.BtnDirector.Location = New System.Drawing.Point(1135, 504)
+        Me.BtnDirector.Location = New System.Drawing.Point(1135, 464)
         Me.BtnDirector.Name = "BtnDirector"
         Me.BtnDirector.Size = New System.Drawing.Size(55, 53)
         Me.BtnDirector.TabIndex = 45
         Me.BtnDirector.UseVisualStyleBackColor = True
+        '
+        'btnDetalles
+        '
+        Me.btnDetalles.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnDetalles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDetalles.Image = CType(resources.GetObject("btnDetalles.Image"), System.Drawing.Image)
+        Me.btnDetalles.Location = New System.Drawing.Point(1135, 532)
+        Me.btnDetalles.Name = "btnDetalles"
+        Me.btnDetalles.Size = New System.Drawing.Size(55, 53)
+        Me.btnDetalles.TabIndex = 46
+        Me.btnDetalles.UseVisualStyleBackColor = True
+        '
+        'lblCarrerasNoRegistrados
+        '
+        Me.lblCarrerasNoRegistrados.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCarrerasNoRegistrados.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.lblCarrerasNoRegistrados.Location = New System.Drawing.Point(452, 340)
+        Me.lblCarrerasNoRegistrados.Name = "lblCarrerasNoRegistrados"
+        Me.lblCarrerasNoRegistrados.Size = New System.Drawing.Size(498, 143)
+        Me.lblCarrerasNoRegistrados.TabIndex = 47
+        Me.lblCarrerasNoRegistrados.Text = "No se encuentran carreras registrados que coincidan con su búsqueda."
+        Me.lblCarrerasNoRegistrados.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblCarrerasNoRegistrados.Visible = False
+        '
+        'chkinactivos
+        '
+        Me.chkinactivos.AutoSize = True
+        Me.chkinactivos.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkinactivos.Location = New System.Drawing.Point(587, 152)
+        Me.chkinactivos.Name = "chkinactivos"
+        Me.chkinactivos.Size = New System.Drawing.Size(167, 29)
+        Me.chkinactivos.TabIndex = 48
+        Me.chkinactivos.Text = "Carreras inactivas"
+        Me.chkinactivos.UseVisualStyleBackColor = True
+        '
+        'btnAsociar
+        '
+        Me.btnAsociar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnAsociar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnAsociar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAsociar.Image = CType(resources.GetObject("btnAsociar.Image"), System.Drawing.Image)
+        Me.btnAsociar.Location = New System.Drawing.Point(1135, 600)
+        Me.btnAsociar.Name = "btnAsociar"
+        Me.btnAsociar.Size = New System.Drawing.Size(55, 53)
+        Me.btnAsociar.TabIndex = 49
+        Me.btnAsociar.UseVisualStyleBackColor = True
         '
         'FrmMostrarCarreras
         '
@@ -438,6 +520,10 @@ Partial Class FrmMostrarCarreras
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1202, 720)
+        Me.Controls.Add(Me.btnAsociar)
+        Me.Controls.Add(Me.chkinactivos)
+        Me.Controls.Add(Me.lblCarrerasNoRegistrados)
+        Me.Controls.Add(Me.btnDetalles)
         Me.Controls.Add(Me.BtnDirector)
         Me.Controls.Add(Me.btnCursos)
         Me.Controls.Add(Me.btnRegistrar)
@@ -488,4 +574,8 @@ Partial Class FrmMostrarCarreras
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents btnCursos As System.Windows.Forms.Button
     Friend WithEvents BtnDirector As System.Windows.Forms.Button
+    Friend WithEvents btnDetalles As System.Windows.Forms.Button
+    Friend WithEvents lblCarrerasNoRegistrados As System.Windows.Forms.Label
+    Friend WithEvents chkinactivos As System.Windows.Forms.CheckBox
+    Friend WithEvents btnAsociar As System.Windows.Forms.Button
 End Class
