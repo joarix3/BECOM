@@ -11,7 +11,7 @@ using System.Data;
 
 namespace DAL.Repositories
 {
-    public class CarreraRepository : IRepository<Carrera>
+    public class CarreraRepository : IRepository<Carrera>, IUser<Carrera>
     {
 
         private List<IEntity> _insertItems;
@@ -32,18 +32,16 @@ namespace DAL.Repositories
 
         public void Delete(Carrera entity)
         {
+            _deleteItems.Add(entity);
         }
 
         public void Update(Carrera entity)
         {
+            _updateItems.Add(entity);
         }
 
 
-        public Carrera GetById(int id)
-        {
-            Carrera carrera = null;
-            return carrera;
-        }
+       
 
         public void Save()
         {
@@ -99,36 +97,35 @@ namespace DAL.Repositories
             _deleteItems.Clear();
             _updateItems.Clear();
         }
-
-        public IEnumerable<Carrera> GetAll()
+        public IEnumerable<Carrera> GetAllByName(String pnombre)
         {
-            List<Carrera> objCarrera = null;
-
+            List<Carrera> pcarrera = null;
             SqlCommand cmd = new SqlCommand();
-            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerCarreras");
-
-
+            cmd.Parameters.Add(new SqlParameter("@Nombre", pnombre));
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarCarreraPorNombre");
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                objCarrera = new List<Carrera>();
+                pcarrera = new List<Carrera>();
                 foreach (DataRow dr in ds.Tables[0].Rows)
                 {
-                    objCarrera.Add(new Carrera
+                    pcarrera.Add(new Carrera
                     {
                         Id = Convert.ToInt32(dr["IdCarrera"]),
                         Codigo = dr["Codigo"].ToString(),
                         Nombre = dr["Nombre"].ToString(),
                         Universidad = Convert.ToInt32(dr["IdUniversidad"]),
                         Color = dr["Color"].ToString(),
-                        BecasOtor = Convert.ToInt32(dr["CantidadBecasOtorgables"])
+                        BecasOtor = Convert.ToInt32(dr["CantidadBecasOtorgables"]),
+                        Estado = Convert.ToInt32(dr["Estado"])
                     });
                 }
             }
 
-            return objCarrera;
+            return pcarrera;
         }
 
+<<<<<<< HEAD
         public IEnumerable<Carrera> GetAllInactive()
         {
             List<Carrera> objCarrera = null;
@@ -157,8 +154,58 @@ namespace DAL.Repositories
             return objCarrera;
         }
 
+=======
+        public IEnumerable<Curso> GetAllCursosByUnCarrera(int pidCarrera)
+        {
+            List<Curso> pcursos = null;
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.Add(new SqlParameter("@IdCarrera", pidCarrera));
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerCursosUnSeleccionados");
+>>>>>>> New
 
-        public IEnumerable<Carrera> GetAllByName(String pcarrera)
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                pcursos = new List<Curso>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    pcursos.Add(new Curso
+                    {
+                        Id = Convert.ToInt32(dr["IdCurso"]),
+                        Nombre = dr["Nombre"].ToString(),
+                    });
+                }
+            }
+
+            return pcursos;
+        }
+
+        public IEnumerable<Curso> GetAllCursosByCarrera(int pidCarrera)
+        {
+            List<Curso> pcursos = null;
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.Add(new SqlParameter("@IdCarrera", pidCarrera));
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerCursosPorCarrera");
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                pcursos = new List<Curso>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    pcursos.Add(new Curso
+                    {
+                        Id = Convert.ToInt32(dr["IdCurso"]),
+                        Codigo = dr["Codigo"].ToString(),
+                        Nombre = dr["Nombre"].ToString(),
+                        Creditos = Convert.ToInt32(dr["Creditos"]),
+                        Costo = Convert.ToInt32(dr["Costo"]),
+                        Estado = Convert.ToInt32(dr["Estado"])
+                    });
+                }
+            }
+
+            return pcursos;
+        }
+        public IEnumerable<Carrera> GetAll()
         {
             List<Carrera> objCarrera = null;
 
@@ -179,13 +226,44 @@ namespace DAL.Repositories
                         Nombre = dr["Nombre"].ToString(),
                         Universidad = Convert.ToInt32(dr["IdUniversidad"]),
                         Color = dr["Color"].ToString(),
-                        BecasOtor = Convert.ToInt32(dr["CantidadBecasOtorgables"])
+                        BecasOtor = Convert.ToInt32(dr["CantidadBecasOtorgables"]),
+                        Estado = Convert.ToInt32(dr["Estado"])
                     });
                 }
             }
 
             return objCarrera;
         }
+
+       
+        public Carrera GetById(int pid) 
+        {
+            Carrera objCarrera = null;
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@IdCarrera", pid);
+
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarCarreraPorId");
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                var dr = ds.Tables[0].Rows[0];
+
+                objCarrera = new Carrera
+                {
+                    Id = Convert.ToInt32(dr["IdCarrera"]),
+                    Codigo = dr["Codigo"].ToString(),
+                    Nombre = dr["Nombre"].ToString(),
+                    Universidad = Convert.ToInt32(dr["IdUniversidad"]),
+                    Color = dr["Color"].ToString(),
+                    BecasOtor = Convert.ToInt32(dr["CantidadBecasOtorgables"]),
+                    Estado = Convert.ToInt32(dr["Estado"])
+                };
+            }
+
+            return objCarrera;
+        }
+
+
 
 
         private void InsertCarrera(Carrera objCarrera)
@@ -200,6 +278,7 @@ namespace DAL.Repositories
                 cmd.Parameters.Add(new SqlParameter("@IdUniversidad", objCarrera.Universidad));
                 cmd.Parameters.Add(new SqlParameter("@Color", objCarrera.Color));
                 cmd.Parameters.Add(new SqlParameter("@CantidadBecas", objCarrera.BecasOtor));
+                cmd.Parameters.Add(new SqlParameter("@Estado", objCarrera.Estado));
 
                 DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaRegistrarCarrera");
 
@@ -211,10 +290,41 @@ namespace DAL.Repositories
 
         }
 
-        private void UpdateCarrera(Carrera objRol)
+        public void AsociarCursosCarrera(int pidCarrera, int pidCurso)
+        {
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Add(new SqlParameter("@IdCarrera", pidCarrera));
+                cmd.Parameters.Add(new SqlParameter("@IdCurso", pidCurso));
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaAsociarCursosCarrera");
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+        }
+
+        private void UpdateCarrera(Carrera objCarrera)
         {
             try
             {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Add(new SqlParameter("@IdCarrera", objCarrera.Id));
+                cmd.Parameters.Add(new SqlParameter("@Codigo", objCarrera.Codigo));
+                cmd.Parameters.Add(new SqlParameter("@Nombre", objCarrera.Nombre));
+                cmd.Parameters.Add(new SqlParameter("@IdUniversidad", objCarrera.Universidad));
+                cmd.Parameters.Add(new SqlParameter("@Color", objCarrera.Color));
+                cmd.Parameters.Add(new SqlParameter("@CantidadBecas", objCarrera.BecasOtor));
+                cmd.Parameters.Add(new SqlParameter("@Estado", objCarrera.Estado));
+
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaModificarCarrera");
+
             }
             catch (Exception ex)
             {
@@ -222,10 +332,15 @@ namespace DAL.Repositories
             }
         }
 
-        private void DeleteCarrera(Carrera objRol)
+        private void DeleteCarrera(Carrera objCarrera)
         {
             try
             {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Add(new SqlParameter("@IdCarrera", objCarrera.Id));
+
+                DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaEliminarCarrera");
             }
             catch (SqlException ex)
             {
@@ -239,6 +354,7 @@ namespace DAL.Repositories
                 //throw new DataAccessException("Ha ocurrido un error al eliminar un usuario", ex);
             }
         }
+
 
     }
 }

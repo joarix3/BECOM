@@ -65,8 +65,13 @@ Public Class FrmModificarRol
         Dim permisosSeleccionados As List(Of Integer)
         Dim nombre As String = txtNombre.Text
         Dim descripcion As String = rctDescripcion.Text
+<<<<<<< HEAD
         Dim estado As Integer = obtenerEstadoRol()
         validarCampoFormulario()
+=======
+
+        'validarCampoFormulario()
+>>>>>>> New
         permisosSeleccionados = obtenerPermisosSeleccionados()
 
 
@@ -75,6 +80,7 @@ Public Class FrmModificarRol
 
     End Sub
 
+<<<<<<< HEAD
     Public Function obtenerEstadoRol()
         Dim estado As Integer
 
@@ -96,6 +102,17 @@ Public Class FrmModificarRol
             End If
         Next
     End Sub
+=======
+    'Private Sub validarCampoFormulario()
+    '    For Each validacion As Label In Me.pnFormulario.Controls.OfType(Of Label)()
+    '        If IsNumeric(validacion.Tag) = True Then
+    '            If validacion.Image.Equals(campoIncorrecto) Then
+    '                MsgBox("Existen campos incorrectos")
+    '            End If
+    '        End If
+    '    Next
+    'End Sub
+>>>>>>> New
 
     Private Function obtenerPermisosSeleccionados()
         Dim listaPermisosSeleccionados As New List(Of Integer)

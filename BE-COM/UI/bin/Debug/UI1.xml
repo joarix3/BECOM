@@ -6,6 +6,7 @@ UI1
 </name>
 </assembly>
 <members>
+<<<<<<< HEAD
 <member name="M:UI1.FrmMostrarBitacoraErrores.btnExportar_Click(System.Object,System.EventArgs)">
 	<summary>
  El tbnExportar, hace que exporte a pdf los datos que obtiene en el dataGridView.
@@ -13,10 +14,74 @@ UI1
 	<param name="sender"></param>
 	<param name="e"></param>
 	<remarks></remarks>
+=======
+<member name="P:UI1.FrmRegistrarCarrera.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.btnAyuda_Image">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.btnInicio_Image">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.btnOut_Image">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.btnPerfil_Image">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.btnVolver_Image">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.Button10_Image">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.Button6_Image">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.Button7_Image">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.Button8_Image">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.Button9_Image">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.cdCarrera_TrayLocation">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Point similar a {X=17,Y=17}.
+</summary>
+</member><member name="P:UI1.FrmRegistrarCarrera.PictureBox3_Image">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="T:UI1.FrmRegistrarCarrera">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+>>>>>>> New
 </member><member name="T:UI1.DataSetPrincipal">
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
+<<<<<<< HEAD
 </member><member name="M:UI1.PopRecuperarContrasenna.btnEnviar_Click(System.Object,System.EventArgs)">
 	<summary>
  En el boton se llama gestor de usuarios para la recuperacion de la contrasenna
@@ -26,6 +91,8 @@ Represents a strongly typed in-memory cache of data.
 	<param name="sender"></param>
 	<param name="e"></param>
 	<remarks></remarks>
+=======
+>>>>>>> New
 </member><member name="P:UI1.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.

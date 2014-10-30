@@ -16,8 +16,10 @@ namespace DAL
         private IRepository<Beneficio> _beneficioRepository;
         private IRepository<Requisito> _requisitoRepository;
         private IRepository<Carrera> _carreraRepository;
+
         private IRepository<Periodo> _periodoRepository;
         private IRepository<TipoBeca> _tipoBecaRepository;
+<<<<<<< HEAD
         private IRepository<Usuario> _usuarioRepository;
         private IRepository<BitacoraError> _bitacoraErrorRepository;
         private IRepository<BitacoraTransaccion> _bitacoraTransaccionRepository;
@@ -35,6 +37,12 @@ namespace DAL
         }
 
 
+=======
+ 
+
+        private IRepository<Curso> _cursoRepository;
+        
+>>>>>>> New
 
         public IRepository<Permiso> PermisoRepository
         {
@@ -108,6 +116,7 @@ namespace DAL
             }
         }
 
+
         public IRepository<Periodo> PeriodoRepository
         {
             get
@@ -144,6 +153,20 @@ namespace DAL
         }
 
 
+
+
+
+        public IRepository<Curso> CursoRepository
+        {
+            get
+            {
+                if (this._cursoRepository == null)
+                {
+                    this._cursoRepository = new CursoRepository(); 
+                }
+                return _cursoRepository;
+            }
+        }
 
 
 

@@ -33,6 +33,7 @@ Public Class FrmRegistrarUsuario
     Private Function validarEspaciosBlanco() As Boolean
         Dim permitido = False
 
+<<<<<<< HEAD
         For Each textBox As TextBox In Me.pnFormulario.Controls.OfType(Of TextBox)()
             If String.IsNullOrEmpty(textBox.Text) Then
                 lblEspaciosEnBlanco.Visible = True
@@ -48,6 +49,10 @@ Public Class FrmRegistrarUsuario
     Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
         validarEspaciosBlanco()
         registrarUsuario()
+=======
+    Private Sub btnAgregar_Click(sender As Object, e As EventArgs)
+        'PopAgregado.Show()
+>>>>>>> New
     End Sub
 
     Private Function validarCamposFormulario() As Boolean
@@ -221,6 +226,7 @@ Public Class FrmRegistrarUsuario
         gestorUsuario.agregarUsuario(cedula, nombre, primerApellido, segundoApellido, genero, telefono, fechaNacimiento, edad, idRol, correoElectronico, direccion, contrasena)
         gestorUsuario.guardarCambios()
 
+<<<<<<< HEAD
         PopAgregado.Show()
         Me.Close()
 
@@ -239,4 +245,7 @@ Public Class FrmRegistrarUsuario
         Return genero
     End Function
 
+=======
+
+>>>>>>> New
 End Class

@@ -47,7 +47,21 @@ Public Class FrmRegistrarRol
             MsgBox("Existen errores.")
         End If
 
+<<<<<<< HEAD
 
+=======
+
+        validarCampoFormulario()
+        permisosSeleccionados = obtenerPermisosSeleccionados()
+
+
+
+        'validarCampoFormulario()
+        permisosSeleccionados = obtenerPermisosSeleccionados()        
+
+        gestorUsuario.agregarRol(nombre, descripcion, permisosSeleccionados)
+        gestorUsuario.guardarCambios()
+>>>>>>> New
 
     End Sub
 

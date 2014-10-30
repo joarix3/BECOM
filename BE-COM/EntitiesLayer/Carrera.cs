@@ -22,9 +22,10 @@ namespace EntitiesLayer
         public int Director { get; set; }
         public String Color { get; set; }
         public int BecasOtor { get; set; }
+        public int Estado { get; set; }
       
 
-        public Carrera(String pcodigo, String pnombre,int puniversidad,String pcolor,int pbecas)
+        public Carrera(String pcodigo, String pnombre,int puniversidad,String pcolor,int pbecas,int pestado)
         {
    
             Codigo = pcodigo;
@@ -33,8 +34,9 @@ namespace EntitiesLayer
             //Director = pdirector;
             Color= pcolor;
             BecasOtor = pbecas;
+            Estado = pestado;
         }
-        public Carrera(int pid,String pcodigo, String pnombre, int puniversidad, String pcolor, int pbecas)
+        public Carrera(int pid,String pcodigo, String pnombre, int puniversidad, String pcolor, int pbecas,int pestado)
         {
             Id = pid;
             Codigo = pcodigo;
@@ -43,6 +45,7 @@ namespace EntitiesLayer
             //Director = pdirector;
             Color = pcolor;
             BecasOtor = pbecas;
+            Estado = pestado;
         }
 
         public Carrera()

@@ -45,7 +45,11 @@
     <Compile Include="BitacoraError.cs" />
     <Compile Include="BitacoraTransaccion.cs" />
     <Compile Include="Carrera.cs" />
+<<<<<<< HEAD
     <Compile Include="Correo.cs" />
+=======
+    <Compile Include="Curso.cs" />
+>>>>>>> New
     <Compile Include="IEntity.cs" />
     <Compile Include="Periodo.cs" />
     <Compile Include="Permiso.cs" />

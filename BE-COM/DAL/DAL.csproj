@@ -48,10 +48,15 @@
     <Compile Include="Repositories\BeneficioRepository.cs" />
     <Compile Include="Repositories\BitacoraTransaccionRepository.cs" />
     <Compile Include="Repositories\CarreraRepository.cs" />
+<<<<<<< HEAD
     <Compile Include="Repositories\IUsers.cs" />
     <Compile Include="Repositories\BitacoraErrorRepository.cs" />
     <Compile Include="CorreoRepository.cs" />
+=======
+    <Compile Include="Repositories\CursoRepository.cs" />
+>>>>>>> New
     <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\IUser.cs" />
     <Compile Include="Repositories\PermisoRepository.cs" />
     <Compile Include="Repositories\RequisitoRepository.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
