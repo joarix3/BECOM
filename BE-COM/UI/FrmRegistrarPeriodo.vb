@@ -27,4 +27,34 @@ Public Class FrmRegistrarPeriodo
         gestorPeriodo.agregarPeriodo(nombre, dia, mes)
         gestorPeriodo.guardarCambios()
     End Sub
+
+
+    Private Sub txtMes_Leave(sender As Object, e As EventArgs) Handles txtMes.Leave
+        If String.IsNullOrEmpty(txtMes.Text) = True Then
+            txtMes.Text = 0
+        End If
+    End Sub
+
+    Private Sub txtDia_Leave(sender As Object, e As EventArgs) Handles txtDia.Leave
+        If String.IsNullOrEmpty(txtDia.Text) = True Then
+            txtDia.Text = 0
+        End If
+    End Sub
+
+    Private Sub FrmRegistrarPeriodo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txtMes.Text = 0
+        txtDia.Text = 0
+    End Sub
+
+    Private Sub txtMes_Enter(sender As Object, e As EventArgs) Handles txtMes.Enter
+        If String.IsNullOrEmpty(txtMes.Text) = False Then
+            txtMes.Text = ""
+        End If
+    End Sub
+
+    Private Sub txtDia_Enter(sender As Object, e As EventArgs) Handles txtDia.Enter
+        If String.IsNullOrEmpty(txtDia.Text) = False Then
+            txtDia.Text = ""
+        End If
+    End Sub
 End Class

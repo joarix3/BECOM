@@ -41,8 +41,9 @@
 
 
     Private Sub btnBeca_Click(sender As Object, e As EventArgs) Handles btnBeca.Click
-        Dim frmMostrarPeriodos As Form = New FrmMostrarPeriodos(Me)
-        frmMostrarPeriodos.Show()
+        Dim p As Form = New FrmMostrarPeriodos(Me)
+        'Dim p As Form = New FrmMostrarTiposDeBeca(Me)
+        p.Show()
         Me.Hide()
     End Sub
     Private Sub btnAcademico_Click(sender As Object, e As EventArgs) Handles btnAcademico.Click

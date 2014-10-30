@@ -62,7 +62,35 @@ namespace DAL.Repositories
 
             return prequisito;
         }
-        
+
+        public IEnumerable<Requisito> GetAllInactive()
+        {
+            List<Requisito> objRequisito = null;
+
+            //SqlCommand cmd = new SqlCommand();
+            //DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerRequisitosInactivos");
+
+
+
+            //if (ds.Tables[0].Rows.Count > 0)
+            //{
+            //    objRequisito = new List<Requisito>();
+            //    foreach (DataRow dr in ds.Tables[0].Rows)
+            //    {
+            //        objRequisito.Add(new Requisito
+            //        {
+            //            Id = Convert.ToInt32(dr["IdRequisito"]),
+            //            Nombre = dr["Nombre"].ToString(),
+            //            Dia = Convert.ToInt32(dr["Dia"]),
+            //            Mes = Convert.ToInt32(dr["Mes"]),
+            //            Estado = dr["Estado"].ToString()
+            //        });
+            //    }
+            //}
+
+            return objRequisito;
+        }
+
         public IEnumerable<Requisito> GetAllByName(string pnombre)
         {
             List<Requisito> prequisito = null;

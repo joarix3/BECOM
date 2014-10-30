@@ -27,6 +27,7 @@ Partial Class FrmRegistrarPeriodo
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.txtMes = New System.Windows.Forms.TextBox()
         Me.lblMes = New System.Windows.Forms.Label()
         Me.txtDia = New System.Windows.Forms.TextBox()
@@ -98,6 +99,7 @@ Partial Class FrmRegistrarPeriodo
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.txtMes)
         Me.Panel1.Controls.Add(Me.lblMes)
         Me.Panel1.Controls.Add(Me.txtDia)
@@ -105,35 +107,45 @@ Partial Class FrmRegistrarPeriodo
         Me.Panel1.Controls.Add(Me.lblDia)
         Me.Panel1.Controls.Add(Me.txtNombrePeriodo)
         Me.Panel1.Controls.Add(Me.lblNombrePeriodo)
-        Me.Panel1.Location = New System.Drawing.Point(232, 130)
+        Me.Panel1.Location = New System.Drawing.Point(232, 159)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(969, 589)
+        Me.Panel1.Size = New System.Drawing.Size(969, 560)
         Me.Panel1.TabIndex = 48
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(346, 231)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(87, 25)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "Duración:"
         '
         'txtMes
         '
         Me.txtMes.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMes.Location = New System.Drawing.Point(281, 358)
+        Me.txtMes.Location = New System.Drawing.Point(346, 317)
         Me.txtMes.Name = "txtMes"
-        Me.txtMes.Size = New System.Drawing.Size(263, 33)
+        Me.txtMes.Size = New System.Drawing.Size(126, 33)
         Me.txtMes.TabIndex = 9
         '
         'lblMes
         '
         Me.lblMes.AutoSize = True
         Me.lblMes.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMes.Location = New System.Drawing.Point(276, 309)
+        Me.lblMes.Location = New System.Drawing.Point(346, 274)
         Me.lblMes.Name = "lblMes"
-        Me.lblMes.Size = New System.Drawing.Size(49, 25)
+        Me.lblMes.Size = New System.Drawing.Size(66, 25)
         Me.lblMes.TabIndex = 8
-        Me.lblMes.Text = "Mes:"
+        Me.lblMes.Text = "Meses:"
         '
         'txtDia
         '
         Me.txtDia.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDia.Location = New System.Drawing.Point(281, 236)
+        Me.txtDia.Location = New System.Drawing.Point(478, 317)
         Me.txtDia.Name = "txtDia"
-        Me.txtDia.Size = New System.Drawing.Size(263, 33)
+        Me.txtDia.Size = New System.Drawing.Size(131, 33)
         Me.txtDia.TabIndex = 7
         '
         'btnRegistrar
@@ -143,7 +155,7 @@ Partial Class FrmRegistrarPeriodo
         Me.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegistrar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegistrar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.btnRegistrar.Location = New System.Drawing.Point(281, 483)
+        Me.btnRegistrar.Location = New System.Drawing.Point(346, 389)
         Me.btnRegistrar.Name = "btnRegistrar"
         Me.btnRegistrar.Size = New System.Drawing.Size(263, 39)
         Me.btnRegistrar.TabIndex = 6
@@ -154,16 +166,16 @@ Partial Class FrmRegistrarPeriodo
         '
         Me.lblDia.AutoSize = True
         Me.lblDia.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDia.Location = New System.Drawing.Point(276, 178)
+        Me.lblDia.Location = New System.Drawing.Point(473, 274)
         Me.lblDia.Name = "lblDia"
-        Me.lblDia.Size = New System.Drawing.Size(42, 25)
+        Me.lblDia.Size = New System.Drawing.Size(49, 25)
         Me.lblDia.TabIndex = 2
-        Me.lblDia.Text = "Día:"
+        Me.lblDia.Text = "Días:"
         '
         'txtNombrePeriodo
         '
         Me.txtNombrePeriodo.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombrePeriodo.Location = New System.Drawing.Point(281, 108)
+        Me.txtNombrePeriodo.Location = New System.Drawing.Point(346, 156)
         Me.txtNombrePeriodo.Name = "txtNombrePeriodo"
         Me.txtNombrePeriodo.Size = New System.Drawing.Size(263, 33)
         Me.txtNombrePeriodo.TabIndex = 1
@@ -172,7 +184,7 @@ Partial Class FrmRegistrarPeriodo
         '
         Me.lblNombrePeriodo.AutoSize = True
         Me.lblNombrePeriodo.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombrePeriodo.Location = New System.Drawing.Point(276, 57)
+        Me.lblNombrePeriodo.Location = New System.Drawing.Point(346, 111)
         Me.lblNombrePeriodo.Name = "lblNombrePeriodo"
         Me.lblNombrePeriodo.Size = New System.Drawing.Size(83, 25)
         Me.lblNombrePeriodo.TabIndex = 0
@@ -476,4 +488,5 @@ Partial Class FrmRegistrarPeriodo
     Friend WithEvents txtMes As System.Windows.Forms.TextBox
     Friend WithEvents lblMes As System.Windows.Forms.Label
     Friend WithEvents txtDia As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

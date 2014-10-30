@@ -124,6 +124,34 @@ namespace DAL.Repositories
             return pRol;
         }
 
+        public IEnumerable<Rol> GetAllInactive()
+        {
+            List<Rol> objRol = null;
+
+            //SqlCommand cmd = new SqlCommand();
+            //DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerRolsInactivos");
+
+
+
+            //if (ds.Tables[0].Rows.Count > 0)
+            //{
+            //    objRol = new List<Rol>();
+            //    foreach (DataRow dr in ds.Tables[0].Rows)
+            //    {
+            //        objRol.Add(new Rol
+            //        {
+            //            Id = Convert.ToInt32(dr["IdRol"]),
+            //            Nombre = dr["Nombre"].ToString(),
+            //            Dia = Convert.ToInt32(dr["Dia"]),
+            //            Mes = Convert.ToInt32(dr["Mes"]),
+            //            Estado = dr["Estado"].ToString()
+            //        });
+            //    }
+            //}
+
+            return objRol;
+        }
+
         public IEnumerable<Rol> GetAllByName(String pnombre)
         {
             List<Rol> pRol = null;

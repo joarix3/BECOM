@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmMostrarPeriodos
+Partial Class FrmBuscarEstudiantes
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,20 +22,20 @@ Partial Class FrmMostrarPeriodos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMostrarPeriodos))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmBuscarEstudiantes))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.chkPeriodosInactivos = New System.Windows.Forms.CheckBox()
         Me.lblRolesNoRegistrados = New System.Windows.Forms.Label()
-        Me.dtgPeriodos = New System.Windows.Forms.DataGridView()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
+        Me.dtgMostrarEstudiantes = New System.Windows.Forms.DataGridView()
         Me.lblNombreV = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -54,9 +54,11 @@ Partial Class FrmMostrarPeriodos
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cmbFiltroBusqueda = New System.Windows.Forms.ComboBox()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.dtgPeriodos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtgMostrarEstudiantes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -87,7 +89,7 @@ Partial Class FrmMostrarPeriodos
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(516, 59)
         Me.Label1.TabIndex = 32
-        Me.Label1.Text = "Períodos de vigencia"
+        Me.Label1.Text = "Buscar estudiantes"
         '
         'Panel3
         '
@@ -102,82 +104,49 @@ Partial Class FrmMostrarPeriodos
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.chkPeriodosInactivos)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.cmbFiltroBusqueda)
         Me.Panel1.Controls.Add(Me.lblRolesNoRegistrados)
-        Me.Panel1.Controls.Add(Me.dtgPeriodos)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.txtBuscar)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button13)
         Me.Panel1.Controls.Add(Me.Button14)
+        Me.Panel1.Controls.Add(Me.dtgMostrarEstudiantes)
         Me.Panel1.Controls.Add(Me.lblNombreV)
         Me.Panel1.Location = New System.Drawing.Point(232, 131)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(969, 588)
         Me.Panel1.TabIndex = 48
         '
-        'chkPeriodosInactivos
-        '
-        Me.chkPeriodosInactivos.AutoSize = True
-        Me.chkPeriodosInactivos.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkPeriodosInactivos.Location = New System.Drawing.Point(679, 16)
-        Me.chkPeriodosInactivos.Name = "chkPeriodosInactivos"
-        Me.chkPeriodosInactivos.Size = New System.Drawing.Size(207, 29)
-        Me.chkPeriodosInactivos.TabIndex = 57
-        Me.chkPeriodosInactivos.Text = "Ver periódos inactivos"
-        Me.chkPeriodosInactivos.UseVisualStyleBackColor = True
-        '
         'lblRolesNoRegistrados
         '
         Me.lblRolesNoRegistrados.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRolesNoRegistrados.Location = New System.Drawing.Point(208, 225)
+        Me.lblRolesNoRegistrados.Location = New System.Drawing.Point(207, 247)
         Me.lblRolesNoRegistrados.Name = "lblRolesNoRegistrados"
         Me.lblRolesNoRegistrados.Size = New System.Drawing.Size(498, 143)
-        Me.lblRolesNoRegistrados.TabIndex = 56
-        Me.lblRolesNoRegistrados.Text = "No se encuentran periodos registrados."
+        Me.lblRolesNoRegistrados.TabIndex = 55
+        Me.lblRolesNoRegistrados.Text = "No se encuentran estudiantes registrados que coincidan con su búsqueda."
         Me.lblRolesNoRegistrados.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lblRolesNoRegistrados.Visible = False
         '
-        'dtgPeriodos
+        'Label2
         '
-        Me.dtgPeriodos.AllowUserToAddRows = False
-        Me.dtgPeriodos.AllowUserToDeleteRows = False
-        Me.dtgPeriodos.AllowUserToResizeColumns = False
-        Me.dtgPeriodos.AllowUserToResizeRows = False
-        Me.dtgPeriodos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dtgPeriodos.BackgroundColor = System.Drawing.Color.White
-        Me.dtgPeriodos.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgPeriodos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.dtgPeriodos.ColumnHeadersHeight = 40
-        Me.dtgPeriodos.EnableHeadersVisualStyles = False
-        Me.dtgPeriodos.GridColor = System.Drawing.Color.White
-        Me.dtgPeriodos.Location = New System.Drawing.Point(15, 56)
-        Me.dtgPeriodos.MultiSelect = False
-        Me.dtgPeriodos.Name = "dtgPeriodos"
-        Me.dtgPeriodos.ReadOnly = True
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgPeriodos.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dtgPeriodos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.dtgPeriodos.RowsDefaultCellStyle = DataGridViewCellStyle3
-        Me.dtgPeriodos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.dtgPeriodos.RowTemplate.Height = 30
-        Me.dtgPeriodos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dtgPeriodos.Size = New System.Drawing.Size(871, 463)
-        Me.dtgPeriodos.TabIndex = 53
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(13, 17)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(66, 25)
+        Me.Label2.TabIndex = 54
+        Me.Label2.Text = "Buscar:"
+        '
+        'txtBuscar
+        '
+        Me.txtBuscar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBuscar.Location = New System.Drawing.Point(85, 14)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(186, 33)
+        Me.txtBuscar.TabIndex = 53
         '
         'Button2
         '
@@ -185,7 +154,7 @@ Partial Class FrmMostrarPeriodos
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(903, 91)
+        Me.Button2.Location = New System.Drawing.Point(907, 109)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(55, 53)
         Me.Button2.TabIndex = 52
@@ -197,7 +166,7 @@ Partial Class FrmMostrarPeriodos
         Me.Button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button13.Image = CType(resources.GetObject("Button13.Image"), System.Drawing.Image)
-        Me.Button13.Location = New System.Drawing.Point(903, 237)
+        Me.Button13.Location = New System.Drawing.Point(907, 255)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(55, 53)
         Me.Button13.TabIndex = 51
@@ -209,11 +178,37 @@ Partial Class FrmMostrarPeriodos
         Me.Button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
         Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button14.Image = CType(resources.GetObject("Button14.Image"), System.Drawing.Image)
-        Me.Button14.Location = New System.Drawing.Point(903, 164)
+        Me.Button14.Location = New System.Drawing.Point(907, 182)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(55, 53)
         Me.Button14.TabIndex = 50
         Me.Button14.UseVisualStyleBackColor = True
+        '
+        'dtgMostrarEstudiantes
+        '
+        Me.dtgMostrarEstudiantes.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dtgMostrarEstudiantes.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dtgMostrarEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dtgMostrarEstudiantes.DefaultCellStyle = DataGridViewCellStyle1
+        Me.dtgMostrarEstudiantes.Location = New System.Drawing.Point(18, 85)
+        Me.dtgMostrarEstudiantes.Name = "dtgMostrarEstudiantes"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgMostrarEstudiantes.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dtgMostrarEstudiantes.Size = New System.Drawing.Size(871, 463)
+        Me.dtgMostrarEstudiantes.TabIndex = 49
         '
         'lblNombreV
         '
@@ -470,7 +465,28 @@ Partial Class FrmMostrarPeriodos
         Me.Button1.Text = "Seguridad"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'FrmMostrarPeriodos
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(357, 17)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(99, 25)
+        Me.Label4.TabIndex = 57
+        Me.Label4.Text = "Buscar por:"
+        '
+        'cmbFiltroBusqueda
+        '
+        Me.cmbFiltroBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbFiltroBusqueda.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbFiltroBusqueda.FormattingEnabled = True
+        Me.cmbFiltroBusqueda.Items.AddRange(New Object() {"Nombre"})
+        Me.cmbFiltroBusqueda.Location = New System.Drawing.Point(462, 14)
+        Me.cmbFiltroBusqueda.Name = "cmbFiltroBusqueda"
+        Me.cmbFiltroBusqueda.Size = New System.Drawing.Size(186, 33)
+        Me.cmbFiltroBusqueda.TabIndex = 56
+        '
+        'FrmBuscarEstudiantes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -479,13 +495,13 @@ Partial Class FrmMostrarPeriodos
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel3)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "FrmMostrarPeriodos"
+        Me.Name = "FrmBuscarEstudiantes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmMostrarTiposDeBeca"
         Me.Panel3.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.dtgPeriodos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtgMostrarEstudiantes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
@@ -498,6 +514,7 @@ Partial Class FrmMostrarPeriodos
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents dtgMostrarEstudiantes As System.Windows.Forms.DataGridView
     Friend WithEvents lblNombreV As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button13 As System.Windows.Forms.Button
@@ -519,7 +536,9 @@ Partial Class FrmMostrarPeriodos
     Friend WithEvents lblNombre As System.Windows.Forms.Label
     Friend WithEvents btnSalir As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents dtgPeriodos As System.Windows.Forms.DataGridView
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
     Friend WithEvents lblRolesNoRegistrados As System.Windows.Forms.Label
-    Friend WithEvents chkPeriodosInactivos As System.Windows.Forms.CheckBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents cmbFiltroBusqueda As System.Windows.Forms.ComboBox
 End Class

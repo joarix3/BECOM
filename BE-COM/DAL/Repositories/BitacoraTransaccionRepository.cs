@@ -84,6 +84,36 @@ namespace DAL.Repositories
             return objBitacoraTransaccion;
         }
 
+<<<<<<< HEAD
+=======
+        public IEnumerable<BitacoraTransaccion> GetAllInactive()
+        {
+            List<BitacoraTransaccion> objBitacoraTransaccion = null;
+
+            //SqlCommand cmd = new SqlCommand();
+            //DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerBitacoraTransaccionsInactivos");
+
+
+
+            //if (ds.Tables[0].Rows.Count > 0)
+            //{
+            //    objBitacoraTransaccion = new List<BitacoraTransaccion>();
+            //    foreach (DataRow dr in ds.Tables[0].Rows)
+            //    {
+            //        objBitacoraTransaccion.Add(new BitacoraTransaccion
+            //        {
+            //            Id = Convert.ToInt32(dr["IdBitacoraTransaccion"]),
+            //            Nombre = dr["Nombre"].ToString(),
+            //            Dia = Convert.ToInt32(dr["Dia"]),
+            //            Mes = Convert.ToInt32(dr["Mes"]),
+            //            Estado = dr["Estado"].ToString()
+            //        });
+            //    }
+            //}
+
+            return objBitacoraTransaccion;
+        }
+>>>>>>> BECOMD
 
         public BitacoraTransaccion GetById(int id)
         {

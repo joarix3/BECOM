@@ -405,7 +405,7 @@ Partial Class FrmRegistrarRol
         Me.lblPermisos.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPermisos.Location = New System.Drawing.Point(515, 28)
         Me.lblPermisos.Name = "lblPermisos"
-        Me.lblPermisos.Size = New System.Drawing.Size(82, 25)
+        Me.lblPermisos.Size = New System.Drawing.Size(83, 25)
         Me.lblPermisos.TabIndex = 43
         Me.lblPermisos.Text = "Permisos"
         '

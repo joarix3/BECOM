@@ -139,6 +139,34 @@ namespace DAL.Repositories
             return pbeneficio;
         }
 
+        public IEnumerable<Beneficio> GetAllInactive()
+        {
+            List<Beneficio> objBeneficio = null;
+
+            //SqlCommand cmd = new SqlCommand();
+            //DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerBeneficiosInactivos");
+
+
+
+            //if (ds.Tables[0].Rows.Count > 0)
+            //{
+            //    objBeneficio = new List<Beneficio>();
+            //    foreach (DataRow dr in ds.Tables[0].Rows)
+            //    {
+            //        objBeneficio.Add(new Beneficio
+            //        {
+            //            Id = Convert.ToInt32(dr["IdBeneficio"]),
+            //            Nombre = dr["Nombre"].ToString(),
+            //            Dia = Convert.ToInt32(dr["Dia"]),
+            //            Mes = Convert.ToInt32(dr["Mes"]),
+            //            Estado = dr["Estado"].ToString()
+            //        });
+            //    }
+            //}
+
+            return objBeneficio;
+        }
+
         public void Save()
         {
             using (TransactionScope scope = new TransactionScope())

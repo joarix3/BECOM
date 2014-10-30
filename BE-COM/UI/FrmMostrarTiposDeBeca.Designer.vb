@@ -23,14 +23,19 @@ Partial Class FrmMostrarTiposDeBeca
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMostrarTiposDeBeca))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblRolesNoRegistrados = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.lblNombreV = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -49,13 +54,14 @@ Partial Class FrmMostrarTiposDeBeca
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.dtgMostrarTipoBeca = New System.Windows.Forms.DataGridView()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtgMostrarTipoBeca, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnVolver
@@ -97,15 +103,47 @@ Partial Class FrmMostrarTiposDeBeca
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.lblRolesNoRegistrados)
+        Me.Panel1.Controls.Add(Me.dtgMostrarTipoBeca)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.txtBuscar)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button13)
         Me.Panel1.Controls.Add(Me.Button14)
-        Me.Panel1.Controls.Add(Me.DataGridView1)
         Me.Panel1.Controls.Add(Me.lblNombreV)
-        Me.Panel1.Location = New System.Drawing.Point(232, 130)
+        Me.Panel1.Location = New System.Drawing.Point(232, 131)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(969, 589)
+        Me.Panel1.Size = New System.Drawing.Size(969, 588)
         Me.Panel1.TabIndex = 48
+        '
+        'lblRolesNoRegistrados
+        '
+        Me.lblRolesNoRegistrados.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRolesNoRegistrados.Location = New System.Drawing.Point(207, 225)
+        Me.lblRolesNoRegistrados.Name = "lblRolesNoRegistrados"
+        Me.lblRolesNoRegistrados.Size = New System.Drawing.Size(498, 143)
+        Me.lblRolesNoRegistrados.TabIndex = 55
+        Me.lblRolesNoRegistrados.Text = "No se encuentran los tipos de beca registrados que coincidan con su búsqueda."
+        Me.lblRolesNoRegistrados.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblRolesNoRegistrados.Visible = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(13, 17)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(66, 25)
+        Me.Label2.TabIndex = 54
+        Me.Label2.Text = "Buscar:"
+        '
+        'txtBuscar
+        '
+        Me.txtBuscar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBuscar.Location = New System.Drawing.Point(85, 14)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(186, 33)
+        Me.txtBuscar.TabIndex = 53
         '
         'Button2
         '
@@ -142,14 +180,6 @@ Partial Class FrmMostrarTiposDeBeca
         Me.Button14.Size = New System.Drawing.Size(55, 53)
         Me.Button14.TabIndex = 50
         Me.Button14.UseVisualStyleBackColor = True
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(21, 33)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(871, 463)
-        Me.DataGridView1.TabIndex = 49
         '
         'lblNombreV
         '
@@ -406,6 +436,49 @@ Partial Class FrmMostrarTiposDeBeca
         Me.Button1.Text = "Seguridad"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'dtgMostrarTipoBeca
+        '
+        Me.dtgMostrarTipoBeca.AllowUserToAddRows = False
+        Me.dtgMostrarTipoBeca.AllowUserToDeleteRows = False
+        Me.dtgMostrarTipoBeca.AllowUserToResizeColumns = False
+        Me.dtgMostrarTipoBeca.AllowUserToResizeRows = False
+        Me.dtgMostrarTipoBeca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dtgMostrarTipoBeca.BackgroundColor = System.Drawing.Color.White
+        Me.dtgMostrarTipoBeca.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgMostrarTipoBeca.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dtgMostrarTipoBeca.ColumnHeadersHeight = 40
+        Me.dtgMostrarTipoBeca.EnableHeadersVisualStyles = False
+        Me.dtgMostrarTipoBeca.GridColor = System.Drawing.Color.White
+        Me.dtgMostrarTipoBeca.Location = New System.Drawing.Point(18, 68)
+        Me.dtgMostrarTipoBeca.MultiSelect = False
+        Me.dtgMostrarTipoBeca.Name = "dtgMostrarTipoBeca"
+        Me.dtgMostrarTipoBeca.ReadOnly = True
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgMostrarTipoBeca.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dtgMostrarTipoBeca.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.dtgMostrarTipoBeca.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.dtgMostrarTipoBeca.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.dtgMostrarTipoBeca.RowTemplate.Height = 30
+        Me.dtgMostrarTipoBeca.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dtgMostrarTipoBeca.Size = New System.Drawing.Size(871, 463)
+        Me.dtgMostrarTipoBeca.TabIndex = 56
+        '
         'FrmMostrarTiposDeBeca
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -421,12 +494,12 @@ Partial Class FrmMostrarTiposDeBeca
         Me.Panel3.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtgMostrarTipoBeca, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -434,7 +507,6 @@ Partial Class FrmMostrarTiposDeBeca
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents lblNombreV As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button13 As System.Windows.Forms.Button
@@ -456,4 +528,8 @@ Partial Class FrmMostrarTiposDeBeca
     Friend WithEvents lblNombre As System.Windows.Forms.Label
     Friend WithEvents btnSalir As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
+    Friend WithEvents lblRolesNoRegistrados As System.Windows.Forms.Label
+    Friend WithEvents dtgMostrarTipoBeca As System.Windows.Forms.DataGridView
 End Class

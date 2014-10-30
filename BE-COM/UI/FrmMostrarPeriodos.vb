@@ -22,20 +22,38 @@ Public Class FrmMostrarPeriodos
     End Sub
 
     Private Sub FrmMostrarPeriodos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        dtgPeriodos.DataSource = gestorPeriodo.obtenerPeriodos
+        mostrarPeriodos()
         dtgPeriodos.Columns(0).Visible = False
-        dtgPeriodos.Columns(4).Visible = False
-
-        dtgPeriodos.Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        dtgPeriodos.Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        dtgPeriodos.Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-
         dtgPeriodos.Columns(1).HeaderText = "Nombre"
-        dtgPeriodos.Columns(2).HeaderText = "Dias"
         dtgPeriodos.Columns(3).HeaderText = "Meses"
+        dtgPeriodos.Columns(2).HeaderText = "Dias"
+        dtgPeriodos.Columns(4).Visible = False
 
 
     End Sub
+
+    Private Sub mostrarPeriodos()
+        If gestorPeriodo.obtenerPeriodos Is Nothing = False Then
+            lblRolesNoRegistrados.Visible = False
+            dtgPeriodos.DataSource = gestorPeriodo.obtenerPeriodos
+        Else
+            dtgPeriodos.DataSource = Nothing
+            lblRolesNoRegistrados.Visible = True
+        End If
+
+    End Sub
+
+    Private Sub mostrarPeriodosInactivos()
+        If gestorPeriodo.obtenerPeriodos Is Nothing = False Then
+            lblRolesNoRegistrados.Visible = False
+            dtgPeriodos.DataSource = gestorPeriodo.obtenerPeriodosInaactivos()
+        Else
+            dtgPeriodos.DataSource = Nothing
+            lblRolesNoRegistrados.Visible = True
+        End If
+
+    End Sub
+
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim p As Form = New FrmRegistrarPeriodo(Me)
@@ -44,13 +62,11 @@ Public Class FrmMostrarPeriodos
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
-        Dim objPeriodo As Periodo
 
         If (dtgPeriodos.SelectedRows.Count = 1) Then
 
             Dim id As Integer = Convert.ToInt32(dtgPeriodos.CurrentRow.Cells(0).Value)
-            objPeriodo = gestorPeriodo.ObtenerPeriodoPorId(id)
-            Dim p As New FrmModificarPeriodo(Me, objPeriodo)
+            Dim p As New FrmModificarPeriodo(Me, id)
             p.Show()
             Me.Hide()
         Else
@@ -60,5 +76,18 @@ Public Class FrmMostrarPeriodos
 
 
 
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        Dim idPeriodo As Integer = dtgPeriodos.CurrentRow.Cells(0).Value.ToString()
+        gestorPeriodo.eliminarPeriodo(idPeriodo)
+    End Sub
+
+    Private Sub chkPeriodosInactivos_CheckedChanged(sender As Object, e As EventArgs) Handles chkPeriodosInactivos.CheckedChanged
+        If chkPeriodosInactivos.Checked = True Then
+            mostrarPeriodosInactivos()
+        Else
+            mostrarPeriodos()
+        End If
     End Sub
 End Class

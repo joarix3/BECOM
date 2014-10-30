@@ -129,6 +129,34 @@ namespace DAL.Repositories
             return objCarrera;
         }
 
+        public IEnumerable<Carrera> GetAllInactive()
+        {
+            List<Carrera> objCarrera = null;
+
+            //SqlCommand cmd = new SqlCommand();
+            //DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerCarrerasInactivos");
+
+
+
+            //if (ds.Tables[0].Rows.Count > 0)
+            //{
+            //    objCarrera = new List<Carrera>();
+            //    foreach (DataRow dr in ds.Tables[0].Rows)
+            //    {
+            //        objCarrera.Add(new Carrera
+            //        {
+            //            Id = Convert.ToInt32(dr["IdCarrera"]),
+            //            Nombre = dr["Nombre"].ToString(),
+            //            Dia = Convert.ToInt32(dr["Dia"]),
+            //            Mes = Convert.ToInt32(dr["Mes"]),
+            //            Estado = dr["Estado"].ToString()
+            //        });
+            //    }
+            //}
+
+            return objCarrera;
+        }
+
 
         public IEnumerable<Carrera> GetAllByName(String pcarrera)
         {
