@@ -35,5 +35,13 @@ namespace EntitiesLayer
             Descripcion = pdescripcion;
         }
 
+        public Beneficio(int idBeneficio, string pnombre, double pporcentaje, string pdescripcion)
+        {
+            Id = idBeneficio;
+            Nombre = pnombre;
+            Porcentaje = pporcentaje;
+            Descripcion = pdescripcion;
+        }
+
     }
 }

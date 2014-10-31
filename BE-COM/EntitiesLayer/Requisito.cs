@@ -32,5 +32,12 @@ namespace EntitiesLayer
             Descripcion = pdescripcion;
         }
 
+        public Requisito(int pid, string pnombre, string pdescripcion)
+        {
+            Id = pid;
+            Nombre = pnombre;
+            Descripcion = pdescripcion;
+        }
+
     }
 }

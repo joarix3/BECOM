@@ -42,22 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Beneficio.cs" />
-    <Compile Include="BitacoraError.cs" />
     <Compile Include="BitacoraTransaccion.cs" />
-    <Compile Include="Carrera.cs" />
-<<<<<<< HEAD
-    <Compile Include="Correo.cs" />
-=======
-    <Compile Include="Curso.cs" />
->>>>>>> New
     <Compile Include="IEntity.cs" />
-    <Compile Include="Periodo.cs" />
-    <Compile Include="Permiso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requisito.cs" />
-    <Compile Include="Rol.cs" />
-    <Compile Include="TipoBeca.cs" />
-    <Compile Include="Usuario.cs" />
     <Compile Include="Validaciones.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

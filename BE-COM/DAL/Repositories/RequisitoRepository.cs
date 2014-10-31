@@ -38,13 +38,34 @@ namespace DAL.Repositories
             _updateItems.Add(entity);
         }
 
+        public IEnumerable<Requisito> GetAllByName(string nombre)
+        {
+            List<Requisito> prequisito = null;
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@nombre", nombre);
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarRequisitosPorNombre");
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                prequisito = new List<Requisito>();
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    prequisito.Add(new Requisito
+                    {
+                        Id = Convert.ToInt32(dr["IdRequisito"]),
+                        Nombre = dr["Nombre"].ToString(),
+                        Descripcion = dr["Descripcion"].ToString()
+                    });
+                }
+            }
+            return prequisito;
+        }
+
         public IEnumerable<Requisito> GetAll()
         {
             List<Requisito> prequisito = null;
-            var sqlQuery = "SELECT IdRequisito, Nombre, Descripcion FROM TbRequisito";
-            SqlCommand cmd = new SqlCommand(sqlQuery);
-
-            var ds = DBAccess.ExecuteQuery(cmd);
+            SqlCommand cmd = new SqlCommand();
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaMostrarRequisitos");
 
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -63,67 +84,12 @@ namespace DAL.Repositories
             return prequisito;
         }
 
-        public IEnumerable<Requisito> GetAllInactive()
-        {
-            List<Requisito> objRequisito = null;
-
-            //SqlCommand cmd = new SqlCommand();
-            //DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerRequisitosInactivos");
-
-
-
-            //if (ds.Tables[0].Rows.Count > 0)
-            //{
-            //    objRequisito = new List<Requisito>();
-            //    foreach (DataRow dr in ds.Tables[0].Rows)
-            //    {
-            //        objRequisito.Add(new Requisito
-            //        {
-            //            Id = Convert.ToInt32(dr["IdRequisito"]),
-            //            Nombre = dr["Nombre"].ToString(),
-            //            Dia = Convert.ToInt32(dr["Dia"]),
-            //            Mes = Convert.ToInt32(dr["Mes"]),
-            //            Estado = dr["Estado"].ToString()
-            //        });
-            //    }
-            //}
-
-            return objRequisito;
-        }
-
-        public IEnumerable<Requisito> GetAllByName(string pnombre)
-        {
-            List<Requisito> prequisito = null;
-            var sqlQuery = "SELECT IdRequisito, Nombre, Descripcion FROM TbRequisito";
-            SqlCommand cmd = new SqlCommand(sqlQuery);
-
-            var ds = DBAccess.ExecuteQuery(cmd);
-
-            if (ds.Tables[0].Rows.Count > 0)
-            {
-                prequisito = new List<Requisito>();
-                foreach (DataRow dr in ds.Tables[0].Rows)
-                {
-                    prequisito.Add(new Requisito
-                    {
-                        Id = Convert.ToInt32(dr["IdRequisito"]),
-                        Nombre = dr["Nombre"].ToString(),
-                        Descripcion = dr["Descripcion"].ToString()
-                    });
-                }
-            }
-
-            return prequisito;
-        }
-
-        public Requisito GetById(int id)
+        Requisito IRepository<Requisito>.GetById(int id)
         {
             Requisito objRequisito = null;
-            var sqlQuery = "SELECT IdRequisito, Nombre, Descripcion FROM TbRequisito WHERE id = @idRequisito";
-            SqlCommand cmd = new SqlCommand(sqlQuery);
-            cmd.Parameters.AddWithValue("@idRequisito", id);
-
-            var ds = DBAccess.ExecuteQuery(cmd);
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@id", id);
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarRequisitosPorId");
 
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -136,7 +102,6 @@ namespace DAL.Repositories
                     Descripcion = dr["Descripcion"].ToString()
                 };
             }
-
             return objRequisito;
         }
 
@@ -244,6 +209,7 @@ namespace DAL.Repositories
             {
                 SqlCommand cmd = new SqlCommand();
 
+                cmd.Parameters.Add(new SqlParameter("@id", objRequisito.Id));
                 cmd.Parameters.Add(new SqlParameter("@nombre", objRequisito.Nombre));
                 cmd.Parameters.Add(new SqlParameter("@descripcion", objRequisito.Descripcion));
 
@@ -276,11 +242,6 @@ namespace DAL.Repositories
                 //logear la excepcion a la bd con un Exception
                 //throw new DataAccessException("Ha ocurrido un error al eliminar un usuario", ex);
             }
-        }
-
-        Requisito IRepository<Requisito>.GetById(int id)
-        {
-            throw new NotImplementedException();
         }
 
     }

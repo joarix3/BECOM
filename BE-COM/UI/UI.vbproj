@@ -6,12 +6,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{182DE879-07E2-4021-ADD7-38E2CF2FB219}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>UI1.My.MyApplication</StartupObject>
-    <RootNamespace>UI1</RootNamespace>
-    <AssemblyName>UI1</AssemblyName>
+    <StartupObject>UI.My.MyApplication</StartupObject>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -20,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>UI1.xml</DocumentationFile>
+    <DocumentationFile>UI.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>UI1.xml</DocumentationFile>
+    <DocumentationFile>UI.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -46,18 +47,14 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="itextsharp">
-      <HintPath>..\..\..\..\Desktop\Nueva carpeta\itextsharp.dll</HintPath>
-    </Reference>
-    <Reference Include="itextsharp.pdfa">
-      <HintPath>..\..\..\..\Desktop\Nueva carpeta\itextsharp.pdfa.dll</HintPath>
-    </Reference>
+    <Reference Include="Accessibility" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -78,171 +75,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="DataSetPrincipal.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FrmAcademico.Designer.vb">
-      <DependentUpon>FrmAcademico.vb</DependentUpon>
+    <Compile Include="FrmModificarBeneficio.Designer.vb">
+      <DependentUpon>FrmModificarBeneficio.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmAcademico.vb">
+    <Compile Include="FrmModificarBeneficio.vb">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="FrmConfigurarParametros.Designer.vb">
-      <DependentUpon>FrmConfigurarParametros.vb</DependentUpon>
-=======
-    <Compile Include="FrmInformacionCarrera.Designer.vb">
-      <DependentUpon>FrmInformacionCarrera.vb</DependentUpon>
+    <Compile Include="FrmModificarRequisito.Designer.vb">
+      <DependentUpon>FrmModificarRequisito.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmInformacionCarrera.vb">
+    <Compile Include="FrmModificarRequisito.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAsociarCursoCarrera.Designer.vb">
-      <DependentUpon>FrmAsociarCursoCarrera.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmAsociarCursoCarrera.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMostrarCarreras.designer.vb">
-      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarCarreras.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMostrarCursosPorCarrera.Designer.vb">
-      <DependentUpon>FrmMostrarCursosPorCarrera.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarCursosPorCarrera.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMostrarCurso.Designer.vb">
-      <DependentUpon>FrmMostrarCurso.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarCurso.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmModificarCarrera.Designer.vb">
-      <DependentUpon>FrmModificarCarrera.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmModificarCarrera.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmModificarCurso.Designer.vb">
-      <DependentUpon>FrmModificarCurso.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmModificarCurso.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistrarCarrera.Designer.vb" />
-    <Compile Include="FrmRegistrarCarrera.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistrarCarrera1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>FrmRegistrarCarrera.resx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRegistrarCurso.Designer.vb">
-      <DependentUpon>FrmRegistrarCurso.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRegistrarCurso.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmIniciarSesion.Designer.vb">
-      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
->>>>>>> New
-    </Compile>
-    <Compile Include="FrmConfigurarParametros.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmModificarPerfil.Designer.vb">
-      <DependentUpon>FrmModificarPerfil.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmModificarPerfil.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmModificarRol.Designer.vb" />
-    <Compile Include="FrmModificarRol.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMostrarBitacoraTransaccion.Designer.vb">
-      <DependentUpon>FrmMostrarBitacoraTransaccion.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarBitacoraTransaccion.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMostrarBitacoraErrores.Designer.vb">
-      <DependentUpon>FrmMostrarBitacoraErrores.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarBitacoraErrores.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMostrarAyuda.Designer.vb">
-      <DependentUpon>FrmMostrarAyuda.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarAyuda.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMantenimientoUsuarios.Designer.vb">
-      <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMantenimientoUsuarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-<<<<<<< HEAD
-    <Compile Include="FrmMostrarUsuarios.Designer.vb">
-      <DependentUpon>FrmMostrarUsuarios.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarUsuarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-=======
->>>>>>> New
-    <Compile Include="FrmMostrarRoles.Designer.vb">
-      <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarRoles.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmModificarPeriodo.Designer.vb">
-      <DependentUpon>FrmModificarPeriodo.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmModificarPeriodo.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMostrarTiposDeBeca.Designer.vb">
-      <DependentUpon>FrmMostrarTiposDeBeca.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarTiposDeBeca.vb">
-      <SubType>Form</SubType>
-    </Compile>
-<<<<<<< HEAD
     <Compile Include="FrmRegistrarBeneficio.Designer.vb">
       <DependentUpon>FrmRegistrarBeneficio.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmRegistrarBeneficio.vb">
-      <SubType>Form</SubType>
-    </Compile>
-=======
->>>>>>> New
-    <Compile Include="FrmRegistrarPeriodo.Designer.vb">
-      <DependentUpon>FrmRegistrarPeriodo.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRegistrarPeriodo.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMostrarPeriodos.Designer.vb">
-      <DependentUpon>FrmMostrarPeriodos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMostrarPeriodos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPantallaPrincipal.Designer.vb">
-      <DependentUpon>FrmPantallaPrincipal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPantallaPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmRegistrarRequisito.Designer.vb">
@@ -251,19 +105,19 @@
     <Compile Include="FrmRegistrarRequisito.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegistrarRol.Designer.vb">
-      <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRegistrarRol.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistrarUsuario.Designer.vb">
-      <DependentUpon>FrmRegistrarUsuario.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRegistrarUsuario.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="GlobalModule.vb" />
+    <Compile Include="FrmMostrarBeneficios.Designer.vb">
+      <DependentUpon>FrmMostrarBeneficios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarBeneficios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarRequisitos.Designer.vb">
+      <DependentUpon>FrmMostrarRequisitos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarRequisitos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -278,31 +132,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-<<<<<<< HEAD
-    <Compile Include="PopExportadoExitoso.Designer.vb">
-      <DependentUpon>PopExportadoExitoso.vb</DependentUpon>
-    </Compile>
-    <Compile Include="PopExportadoExitoso.vb">
-=======
-    <Compile Include="PopEliminarCarrera.Designer.vb">
-      <DependentUpon>PopEliminarCarrera.vb</DependentUpon>
-    </Compile>
-    <Compile Include="PopEliminarCarrera.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PopError.Designer.vb">
-      <DependentUpon>PopError.vb</DependentUpon>
-    </Compile>
-    <Compile Include="PopError.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PopEliminarCurso.Designer.vb">
-      <DependentUpon>PopEliminarCurso.vb</DependentUpon>
-    </Compile>
-    <Compile Include="PopEliminarCurso.vb">
->>>>>>> New
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="PopAgregado.Designer.vb">
       <DependentUpon>PopAgregado.vb</DependentUpon>
@@ -328,125 +157,31 @@
     <Compile Include="PopMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SessionModule.vb" />
-    <Compile Include="PopRecuperarContrasenna.Designer.vb">
-      <DependentUpon>PopRecuperarContrasenna.vb</DependentUpon>
-    </Compile>
-    <Compile Include="PopRecuperarContrasenna.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmAcademico.resx">
-      <DependentUpon>FrmAcademico.vb</DependentUpon>
+    <EmbeddedResource Include="FrmModificarBeneficio.resx">
+      <DependentUpon>FrmModificarBeneficio.vb</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="FrmConfigurarParametros.resx">
-      <DependentUpon>FrmConfigurarParametros.vb</DependentUpon>
+    <EmbeddedResource Include="FrmModificarRequisito.resx">
+      <DependentUpon>FrmModificarRequisito.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmModificarPerfil.resx">
-      <DependentUpon>FrmModificarPerfil.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmModificarRol.resx" />
-    <EmbeddedResource Include="FrmMostrarBitacoraTransaccion.resx">
-      <DependentUpon>FrmMostrarBitacoraTransaccion.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarBitacoraErrores.resx">
-      <DependentUpon>FrmMostrarBitacoraErrores.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarAyuda.resx">
-      <DependentUpon>FrmMostrarAyuda.vb</DependentUpon>
-=======
-    <EmbeddedResource Include="FrmInformacionCarrera.resx">
-      <DependentUpon>FrmInformacionCarrera.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmAsociarCursoCarrera.resx">
-      <DependentUpon>FrmAsociarCursoCarrera.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarCarreras.resx">
-      <DependentUpon>FrmMostrarCarreras.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarCursosPorCarrera.resx">
-      <DependentUpon>FrmMostrarCursosPorCarrera.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarCurso.resx">
-      <DependentUpon>FrmMostrarCurso.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmModificarCarrera.resx">
-      <DependentUpon>FrmModificarCarrera.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmModificarCurso.resx">
-      <DependentUpon>FrmModificarCurso.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarCarrera.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>FrmRegistrarCarrera1.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarCurso.resx">
-      <DependentUpon>FrmRegistrarCurso.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmIniciarSesion.resx">
-      <DependentUpon>FrmIniciarSesion.vb</DependentUpon>
->>>>>>> New
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMantenimientoUsuarios.resx">
-      <DependentUpon>FrmMantenimientoUsuarios.vb</DependentUpon>
-    </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="FrmMostrarUsuarios.resx">
-      <DependentUpon>FrmMostrarUsuarios.vb</DependentUpon>
-    </EmbeddedResource>
-=======
->>>>>>> New
-    <EmbeddedResource Include="FrmMostrarRoles.resx">
-      <DependentUpon>FrmMostrarRoles.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmModificarPeriodo.resx">
-      <DependentUpon>FrmModificarPeriodo.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarTiposDeBeca.resx">
-      <DependentUpon>FrmMostrarTiposDeBeca.vb</DependentUpon>
+    <EmbeddedResource Include="FrmMostrarRequisitos.resx">
+      <DependentUpon>FrmMostrarRequisitos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarBeneficio.resx">
       <DependentUpon>FrmRegistrarBeneficio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarPeriodo.resx">
-      <DependentUpon>FrmRegistrarPeriodo.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMostrarPeriodos.resx">
-      <DependentUpon>FrmMostrarPeriodos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPantallaPrincipal.resx">
-      <DependentUpon>FrmPantallaPrincipal.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarRequisito.resx">
       <DependentUpon>FrmRegistrarRequisito.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarRol.resx">
-      <DependentUpon>FrmRegistrarRol.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarUsuario.resx">
-      <DependentUpon>FrmRegistrarUsuario.vb</DependentUpon>
+    <EmbeddedResource Include="FrmMostrarBeneficios.resx">
+      <DependentUpon>FrmMostrarBeneficios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="PopExportadoExitoso.resx">
-      <DependentUpon>PopExportadoExitoso.vb</DependentUpon>
-=======
-    <EmbeddedResource Include="PopEliminarCarrera.resx">
-      <DependentUpon>PopEliminarCarrera.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PopError.resx">
-      <DependentUpon>PopError.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PopEliminarCurso.resx">
-      <DependentUpon>PopEliminarCurso.vb</DependentUpon>
->>>>>>> New
     </EmbeddedResource>
     <EmbeddedResource Include="PopAgregado.resx">
       <DependentUpon>PopAgregado.vb</DependentUpon>
@@ -459,9 +194,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PopMenu.resx">
       <DependentUpon>PopMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PopRecuperarContrasenna.resx">
-      <DependentUpon>PopRecuperarContrasenna.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -485,10 +217,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Imagenes\" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
@@ -499,6 +230,20 @@
       <Project>{aaf9ed03-2d38-4a7e-8616-b656c7b4663e}</Project>
       <Name>EntitiesLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Accessibility1">
+      <Guid>{1EA4DBF0-3C3B-11CF-810C-00AA00389B71}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

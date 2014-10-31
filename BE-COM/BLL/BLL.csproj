@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Accessibility" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,17 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GestorRequisito.cs" /> 
-   <Compile Include="GestorBeneficio.cs" />
-    <Compile Include="GestorBitacoraTransaccion.cs" /> 
-
-    <Compile Include="GestorBitacora.cs" />
-    <Compile Include="GestorCarrera.cs" />
-    <Compile Include="GestorPeriodo.cs" />
-    <Compile Include="GestorTipoBeca.cs" />
-
-    <Compile Include="GestorCurso.cs" />
-    <Compile Include="GestorUsuarios.cs" />
+    <Compile Include="GestorBeneficio.cs" />
+    <Compile Include="GestorBitacoraTransaccion.cs" />
+    <Compile Include="GestorRequisito.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +54,17 @@
       <Project>{aaf9ed03-2d38-4a7e-8616-b656c7b4663e}</Project>
       <Name>EntitiesLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Accessibility1">
+      <Guid>{1EA4DBF0-3C3B-11CF-810C-00AA00389B71}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

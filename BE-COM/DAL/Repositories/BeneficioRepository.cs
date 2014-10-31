@@ -41,10 +41,8 @@ namespace DAL.Repositories
         public IEnumerable<Beneficio> GetAll()
         {
             List<Beneficio> pbeneficio = null;
-            var sqlQuery = "SELECT Id, Nombre, porcentaje, descripcion FROM TbBeneficio";
-            SqlCommand cmd = new SqlCommand(sqlQuery);
-
-            var ds = DBAccess.ExecuteQuery(cmd);
+            SqlCommand cmd = new SqlCommand();
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaMostrarBeneficios");
 
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -53,7 +51,7 @@ namespace DAL.Repositories
                 {
                     pbeneficio.Add(new Beneficio
                     {
-                        Id = Convert.ToInt32(dr["Id"]),
+                        Id = Convert.ToInt32(dr["IdBeneficio"]),
                         Nombre = dr["Nombre"].ToString(),
                         Porcentaje = Convert.ToInt32(dr["Porcentaje"]),
                         Descripcion = dr["Descripcion"].ToString()
@@ -64,13 +62,12 @@ namespace DAL.Repositories
             return pbeneficio;
         }
 
-        public IEnumerable<Beneficio> GetAllByName(string pnombre)
+        public IEnumerable<Beneficio> GetAllByName(string nombre)
         {
             List<Beneficio> pbeneficio = null;
-            var sqlQuery = "SELECT Id, Nombre, porcentaje, descripcion FROM TbBeneficio";
-            SqlCommand cmd = new SqlCommand(sqlQuery);
-
-            var ds = DBAccess.ExecuteQuery(cmd);
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@nombre", nombre);
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarBeneficiosPorNombre");
 
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -79,7 +76,7 @@ namespace DAL.Repositories
                 {
                     pbeneficio.Add(new Beneficio
                     {
-                        Id = Convert.ToInt32(dr["Id"]),
+                        Id = Convert.ToInt32(dr["IdBeneficio"]),
                         Nombre = dr["Nombre"].ToString(),
                         Porcentaje = Convert.ToInt32(dr["Porcentaje"]),
                         Descripcion = dr["Descripcion"].ToString()
@@ -89,14 +86,13 @@ namespace DAL.Repositories
 
             return pbeneficio;
         }
+
         public Beneficio GetById(int id)
         {
             Beneficio objBeneficio = null;
-            var sqlQuery = "SELECT IdBeneficio, Nombre, Porcentaje, Descripcion FROM TbBeneficio WHERE id = @idBeneficio";
-            SqlCommand cmd = new SqlCommand(sqlQuery);
-            cmd.Parameters.AddWithValue("@idBeneficio", id);
-
-            var ds = DBAccess.ExecuteQuery(cmd);
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@id", id);
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarBeneficiosPorId");
 
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -110,7 +106,6 @@ namespace DAL.Repositories
                     Descripcion = dr["Descripcion"].ToString()
                 };
             }
-
             return objBeneficio;
         }
 
@@ -129,7 +124,7 @@ namespace DAL.Repositories
                 {
                     pbeneficio.Add(new Beneficio
                     {
-                        Id = Convert.ToInt32(dr["Id"]),
+                        Id = Convert.ToInt32(dr["IdBeneficio"]),
                         Nombre = dr["Nombre"].ToString(),
                         Porcentaje = Convert.ToInt32(dr["Porcentaje"]),
                         Descripcion = dr["Descripcion"].ToString()
@@ -137,34 +132,6 @@ namespace DAL.Repositories
                 }
             }
             return pbeneficio;
-        }
-
-        public IEnumerable<Beneficio> GetAllInactive()
-        {
-            List<Beneficio> objBeneficio = null;
-
-            //SqlCommand cmd = new SqlCommand();
-            //DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerBeneficiosInactivos");
-
-
-
-            //if (ds.Tables[0].Rows.Count > 0)
-            //{
-            //    objBeneficio = new List<Beneficio>();
-            //    foreach (DataRow dr in ds.Tables[0].Rows)
-            //    {
-            //        objBeneficio.Add(new Beneficio
-            //        {
-            //            Id = Convert.ToInt32(dr["IdBeneficio"]),
-            //            Nombre = dr["Nombre"].ToString(),
-            //            Dia = Convert.ToInt32(dr["Dia"]),
-            //            Mes = Convert.ToInt32(dr["Mes"]),
-            //            Estado = dr["Estado"].ToString()
-            //        });
-            //    }
-            //}
-
-            return objBeneficio;
         }
 
         public void Save()
@@ -248,6 +215,7 @@ namespace DAL.Repositories
             {
                 SqlCommand cmd = new SqlCommand();
 
+                cmd.Parameters.Add(new SqlParameter("@id", objBeneficio.Id));
                 cmd.Parameters.Add(new SqlParameter("@nombre", objBeneficio.Nombre));
                 cmd.Parameters.Add(new SqlParameter("@porcentaje", objBeneficio.Porcentaje));
                 cmd.Parameters.Add(new SqlParameter("@descripcion", objBeneficio.Descripcion));
@@ -266,7 +234,7 @@ namespace DAL.Repositories
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                cmd.Parameters.Add(new SqlParameter("@", objBeneficio.Id));
+                cmd.Parameters.Add(new SqlParameter("@id", objBeneficio.Id));
                 DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaEliminarBeneficio");
 
             }
@@ -285,8 +253,24 @@ namespace DAL.Repositories
 
         Beneficio IRepository<Beneficio>.GetById(int id)
         {
-            throw new NotImplementedException();
-        }
+            Beneficio objBeneficio = null;
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@id", id);
+            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaBuscarBeneficioPorId");
 
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                var dr = ds.Tables[0].Rows[0];
+
+                objBeneficio = new Beneficio()
+                {
+                    Id = Convert.ToInt32(dr["IdBeneficio"]),
+                    Nombre = dr["Nombre"].ToString(),
+                    Porcentaje = Convert.ToInt32(dr["Porcentaje"]),
+                    Descripcion = dr["Descripcion"].ToString()
+                };
+            }
+            return objBeneficio;
+        }
     }
 }

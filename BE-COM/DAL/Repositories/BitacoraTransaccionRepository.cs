@@ -62,55 +62,11 @@ namespace DAL.Repositories
 
             return pbitacoraTransaccion;
         }
-        
-        public IEnumerable<BitacoraTransaccion> GetAllByName(string pnombre)
+
+        public IEnumerable<BitacoraTransaccion> GetAllByName(string nombre)
         {
-            List<BitacoraTransaccion> objBitacoraTransaccion = null;
-            SqlCommand cmd = new SqlCommand();
-            DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerBitacoraEventos");
-            if (ds.Tables[0].Rows.Count > 0)
-            {
-                objBitacoraTransaccion = new List<BitacoraTransaccion>();
-                foreach (DataRow dr in ds.Tables[0].Rows)
-                {
-                    objBitacoraTransaccion.Add(new BitacoraTransaccion
-                    {
-                        Id = Convert.ToInt32(dr["IdUsuario"]),
-                        Fecha = Convert.ToDateTime(dr["Fecha"]),
-                        Descripcion = dr["Descripcion"].ToString()
-                    });
-                }
-            }
-            return objBitacoraTransaccion;
-        }
-
-
-        public IEnumerable<BitacoraTransaccion> GetAllInactive()
-        {
-            List<BitacoraTransaccion> objBitacoraTransaccion = null;
-
-            //SqlCommand cmd = new SqlCommand();
-            //DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaObtenerBitacoraTransaccionsInactivos");
-
-
-
-            //if (ds.Tables[0].Rows.Count > 0)
-            //{
-            //    objBitacoraTransaccion = new List<BitacoraTransaccion>();
-            //    foreach (DataRow dr in ds.Tables[0].Rows)
-            //    {
-            //        objBitacoraTransaccion.Add(new BitacoraTransaccion
-            //        {
-            //            Id = Convert.ToInt32(dr["IdBitacoraTransaccion"]),
-            //            Nombre = dr["Nombre"].ToString(),
-            //            Dia = Convert.ToInt32(dr["Dia"]),
-            //            Mes = Convert.ToInt32(dr["Mes"]),
-            //            Estado = dr["Estado"].ToString()
-            //        });
-            //    }
-            //}
-
-            return objBitacoraTransaccion;
+            List<BitacoraTransaccion> pbitacora = null;
+            return pbitacora;
         }
 
         public BitacoraTransaccion GetById(int id)
@@ -128,7 +84,6 @@ namespace DAL.Repositories
 
                 objBitacoraTransaccion = new BitacoraTransaccion
                 {
-
                     Id = Convert.ToInt32(dr["IdUsuario"]),
                     Fecha = Convert.ToDateTime(dr["Fecha"]),
                     Transaccion = dr["Descripcion"].ToString()
@@ -203,7 +158,7 @@ namespace DAL.Repositories
 
                 cmd.Parameters.Add(new SqlParameter("@idUsuario", objBitacoraTransaccion.Id));
                 cmd.Parameters.Add(new SqlParameter("@Fecha", objBitacoraTransaccion.Fecha));
-                cmd.Parameters.Add(new SqlParameter("@Descripcion", objBitacoraTransaccion.Descripcion));
+                cmd.Parameters.Add(new SqlParameter("@Descripcion", objBitacoraTransaccion.Transaccion));
 
                 DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaInsertarBitacora");
 
@@ -223,7 +178,7 @@ namespace DAL.Repositories
 
                 cmd.Parameters.Add(new SqlParameter("@idUsuario", objBitacoraTransaccion.Id));
                 cmd.Parameters.Add(new SqlParameter("@Fecha", objBitacoraTransaccion.Fecha));
-                cmd.Parameters.Add(new SqlParameter("@Descripcion", objBitacoraTransaccion.Descripcion));
+                cmd.Parameters.Add(new SqlParameter("@Descripcion", objBitacoraTransaccion.Transaccion));
 
                 DataSet ds = DBAccess.ExecuteSPWithDS(ref cmd, "PaModificarBitacora");
 
@@ -259,6 +214,5 @@ namespace DAL.Repositories
         {
             throw new NotImplementedException();
         }
-
     }
 }

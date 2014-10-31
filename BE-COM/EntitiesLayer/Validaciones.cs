@@ -64,13 +64,13 @@ namespace EntitiesLayer
             }
             else
             {
-                if (Information.IsNumeric(textbox.Text) == false)
+                if (Information.IsNumeric(textbox.Text) == true)
                 {
-                    esTexto = false;
+                    esTexto = true;
                 }
                 else
                 {
-                    esTexto = true;
+                    esTexto = false;
                 }
             }
             return esTexto;

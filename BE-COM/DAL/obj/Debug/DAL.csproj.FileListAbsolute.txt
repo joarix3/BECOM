@@ -24,44 +24,25 @@ C:\Users\dani\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
 C:\Users\dani\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
 C:\Users\dani\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
 C:\Users\dani\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\dani\Documents\BECOM\BE-COM\DAL\obj\Debug\Interop.Accessibility.dll
+C:\Users\dani\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csproj.ResolveComReference.cache
 C:\Users\dani\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
 C:\Users\dani\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
-E:\Proyecto2\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
-E:\Proyecto2\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
-E:\Proyecto2\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
-E:\Proyecto2\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
-E:\Proyecto2\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-E:\Proyecto2\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
-E:\Proyecto2\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
-<<<<<<< HEAD
-
-C:\Users\Mario\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
-C:\Users\Mario\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
-C:\Users\Mario\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
-C:\Users\Mario\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
-C:\Users\Mario\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\Mario\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
-C:\Users\Mario\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
-C:\Users\Douglas\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
-=======
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.dll
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\DAL.pdb
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.dll
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\DAL\obj\Debug\DAL.pdb
->>>>>>> New
+C:\Users\dani\Desktop\BE-COM\DAL\bin\Debug\DAL.dll
+C:\Users\dani\Desktop\BE-COM\DAL\bin\Debug\DAL.pdb
+C:\Users\dani\Desktop\BE-COM\DAL\bin\Debug\EntitiesLayer.dll
+C:\Users\dani\Desktop\BE-COM\DAL\bin\Debug\EntitiesLayer.pdb
+C:\Users\dani\Desktop\BE-COM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\dani\Desktop\BE-COM\DAL\obj\Debug\Interop.Accessibility.dll
+C:\Users\dani\Desktop\BE-COM\DAL\obj\Debug\DAL.csproj.ResolveComReference.cache
+C:\Users\dani\Desktop\BE-COM\DAL\obj\Debug\DAL.dll
+C:\Users\dani\Desktop\BE-COM\DAL\obj\Debug\DAL.pdb
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\DAL\bin\Debug\DAL.dll
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\DAL\bin\Debug\DAL.pdb
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\DAL\bin\Debug\EntitiesLayer.dll
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\DAL\bin\Debug\EntitiesLayer.pdb
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\DAL\obj\Debug\Interop.Accessibility.dll
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\DAL\obj\Debug\DAL.csproj.ResolveComReference.cache
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\DAL\obj\Debug\DAL.dll
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\DAL\obj\Debug\DAL.pdb

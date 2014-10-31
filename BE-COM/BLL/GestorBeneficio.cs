@@ -25,6 +25,7 @@ namespace BLL
             }
         }
 
+        //Metodo que consulta la informacion de un beneficio que esten en estado activo 
         public IEnumerable<Beneficio> consultarBeneficioPorEstado()
         {
             return UoW.BeneficioRepository.GetAll();
@@ -32,6 +33,31 @@ namespace BLL
         public void guardarCambios()
         {
             UoW.BeneficioRepository.Save();
+        }
+
+        //Metodo que consulta la informacion de un beneficio por medio del nombre
+        public IEnumerable<Beneficio> consultarBeneficioPorNombre(string nombre)
+        {
+            return UoW.BeneficioRepository.GetAllByName(nombre);
+        }
+
+        //Metodo que consulta la informacion de un beneficio por medio del id
+        public Beneficio ObtenerBeneficioPorId(int pid)
+        {
+            return UoW.BeneficioRepository.GetById(pid);
+        }
+
+        //Metodo que modifica la informacion de un beneficio
+        public void modificarBeneficio(int pid, string pnombre, double pporcentaje, string pdescripcion)
+        {
+            Beneficio objBeneficio = new Beneficio(pid, pnombre, pporcentaje, pdescripcion);
+            UoW.BeneficioRepository.Update(objBeneficio);
+        }
+
+        public void eliminarBeneficio(int pid)
+        {
+            Beneficio objBeneficio = new Beneficio {Id = pid};
+            UoW.BeneficioRepository.Delete(objBeneficio);
         }
 
     }

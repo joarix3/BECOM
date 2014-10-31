@@ -16,32 +16,21 @@ namespace EntitiesLayer
             set { idUsuario = value; }
         }
         public String Transaccion { get; set; }
-
         public DateTime Fecha { get; set; }
-        public String Descripcion { get; set; }
-
 
 
         public BitacoraTransaccion()
         {
             Id = 0;
-
             Transaccion = "";
             Fecha = DateTime.Now;
         }
 
         public BitacoraTransaccion(int pid, string ptransaccion, DateTime pfecha)
         {
-            Id = 0;
-            Fecha = DateTime.Now;
-            Descripcion = "";
-        }
-
-        public BitacoraTransaccion(int pid, DateTime pfecha, String pdescripcion)
-        {
             Id = pid;
+            Transaccion = ptransaccion;
             Fecha = pfecha;
-            Descripcion = pdescripcion;
         }
 
     }

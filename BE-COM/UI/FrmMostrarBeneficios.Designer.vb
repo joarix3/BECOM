@@ -2,7 +2,7 @@
 Partial Class FrmMostrarBeneficios
     Inherits System.Windows.Forms.Form
 
-    'Form reemplaza a Dispose para limpiar la lista de componentes.
+    'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -14,15 +14,19 @@ Partial Class FrmMostrarBeneficios
         End Try
     End Sub
 
-    'Requerido por el Diseñador de Windows Forms
+    'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
-    'Se puede modificar usando el Diseñador de Windows Forms.  
-    'No lo modifique con el editor de código.
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMostrarBeneficios))
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -39,22 +43,27 @@ Partial Class FrmMostrarBeneficios
         Me.btnInicio = New System.Windows.Forms.Button()
         Me.btnAyuda = New System.Windows.Forms.Button()
         Me.btnPerfil = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
+        Me.gridMostrarAlumnos = New System.Windows.Forms.DataGridView()
+        Me.btnRegistrar = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnModificar = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.btnVolver = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtBuscar = New System.Windows.Forms.TextBox()
-        Me.cmbFiltroBusqueda = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.btnEditar = New System.Windows.Forms.Button()
-        Me.btnEliminar = New System.Windows.Forms.Button()
-        Me.btnRegistrar = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dtgBeneficios = New System.Windows.Forms.DataGridView()
+        Me.DataSetPrincipal = New UI.DataSetPrincipal()
+        Me.DataSetPrincipalBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.lblBeneficiosNoRegistrados = New System.Windows.Forms.Label()
         Me.Panel4.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridMostrarAlumnos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtgBeneficios, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSetPrincipal, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSetPrincipalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel4
@@ -73,10 +82,10 @@ Partial Class FrmMostrarBeneficios
         Me.Panel4.Controls.Add(Me.btnInicio)
         Me.Panel4.Controls.Add(Me.btnAyuda)
         Me.Panel4.Controls.Add(Me.btnPerfil)
-        Me.Panel4.Location = New System.Drawing.Point(1, 1)
+        Me.Panel4.Location = New System.Drawing.Point(0, -1)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(231, 717)
-        Me.Panel4.TabIndex = 30
+        Me.Panel4.Size = New System.Drawing.Size(231, 722)
+        Me.Panel4.TabIndex = 34
         '
         'Button10
         '
@@ -169,7 +178,7 @@ Partial Class FrmMostrarBeneficios
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.lblNombre)
-        Me.Panel1.Location = New System.Drawing.Point(0, -2)
+        Me.Panel1.Location = New System.Drawing.Point(3, 2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(231, 131)
         Me.Panel1.TabIndex = 30
@@ -294,15 +303,101 @@ Partial Class FrmMostrarBeneficios
         Me.btnPerfil.Text = "Mi perfil"
         Me.btnPerfil.UseVisualStyleBackColor = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(257, 157)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(67, 25)
+        Me.Label2.TabIndex = 43
+        Me.Label2.Text = "Buscar:"
+        '
+        'txtBuscar
+        '
+        Me.txtBuscar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBuscar.Location = New System.Drawing.Point(330, 154)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(201, 33)
+        Me.txtBuscar.TabIndex = 41
+        '
+        'gridMostrarAlumnos
+        '
+        Me.gridMostrarAlumnos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.gridMostrarAlumnos.BackgroundColor = System.Drawing.Color.White
+        Me.gridMostrarAlumnos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.gridMostrarAlumnos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        Me.gridMostrarAlumnos.EnableHeadersVisualStyles = False
+        Me.gridMostrarAlumnos.GridColor = System.Drawing.Color.White
+        Me.gridMostrarAlumnos.Location = New System.Drawing.Point(237, 193)
+        Me.gridMostrarAlumnos.Name = "gridMostrarAlumnos"
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.gridMostrarAlumnos.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.gridMostrarAlumnos.RowsDefaultCellStyle = DataGridViewCellStyle9
+        Me.gridMostrarAlumnos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.gridMostrarAlumnos.Size = New System.Drawing.Size(871, 463)
+        Me.gridMostrarAlumnos.TabIndex = 45
+        '
+        'btnRegistrar
+        '
+        Me.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRegistrar.Image = CType(resources.GetObject("btnRegistrar.Image"), System.Drawing.Image)
+        Me.btnRegistrar.Location = New System.Drawing.Point(1135, 238)
+        Me.btnRegistrar.Name = "btnRegistrar"
+        Me.btnRegistrar.Size = New System.Drawing.Size(55, 53)
+        Me.btnRegistrar.TabIndex = 48
+        Me.btnRegistrar.UseVisualStyleBackColor = True
+        '
+        'btnEliminar
+        '
+        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.Image = CType(resources.GetObject("btnEliminar.Image"), System.Drawing.Image)
+        Me.btnEliminar.Location = New System.Drawing.Point(1135, 384)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(55, 53)
+        Me.btnEliminar.TabIndex = 47
+        Me.btnEliminar.UseVisualStyleBackColor = True
+        '
+        'btnModificar
+        '
+        Me.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificar.Image = CType(resources.GetObject("btnModificar.Image"), System.Drawing.Image)
+        Me.btnModificar.Location = New System.Drawing.Point(1135, 311)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(55, 53)
+        Me.btnModificar.TabIndex = 46
+        Me.btnModificar.UseVisualStyleBackColor = True
+        '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.Panel3.Controls.Add(Me.btnVolver)
         Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Location = New System.Drawing.Point(238, 48)
+        Me.Panel3.Location = New System.Drawing.Point(231, -1)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(969, 130)
-        Me.Panel3.TabIndex = 32
+        Me.Panel3.Size = New System.Drawing.Size(980, 130)
+        Me.Panel3.TabIndex = 49
         '
         'btnVolver
         '
@@ -326,123 +421,84 @@ Partial Class FrmMostrarBeneficios
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(72, 39)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(349, 47)
+        Me.Label1.Size = New System.Drawing.Size(210, 47)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Mostrar Beneficios"
+        Me.Label1.Text = "Beneficios"
         '
-        'txtBuscar
+        'dtgBeneficios
         '
-        Me.txtBuscar.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBuscar.Location = New System.Drawing.Point(312, 149)
-        Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(201, 33)
-        Me.txtBuscar.TabIndex = 35
+        Me.dtgBeneficios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dtgBeneficios.BackgroundColor = System.Drawing.Color.White
+        Me.dtgBeneficios.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dtgBeneficios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dtgBeneficios.Location = New System.Drawing.Point(261, 219)
+        Me.dtgBeneficios.MultiSelect = False
+        Me.dtgBeneficios.Name = "dtgBeneficios"
+        Me.dtgBeneficios.ReadOnly = True
+        Me.dtgBeneficios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dtgBeneficios.Size = New System.Drawing.Size(847, 406)
+        Me.dtgBeneficios.TabIndex = 50
         '
-        'cmbFiltroBusqueda
+        'DataSetPrincipal
         '
-        Me.cmbFiltroBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbFiltroBusqueda.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbFiltroBusqueda.FormattingEnabled = True
-        Me.cmbFiltroBusqueda.Items.AddRange(New Object() {"Nombre"})
-        Me.cmbFiltroBusqueda.Location = New System.Drawing.Point(643, 149)
-        Me.cmbFiltroBusqueda.Name = "cmbFiltroBusqueda"
-        Me.cmbFiltroBusqueda.Size = New System.Drawing.Size(201, 33)
-        Me.cmbFiltroBusqueda.TabIndex = 36
+        Me.DataSetPrincipal.DataSetName = "DataSetPrincipal"
+        Me.DataSetPrincipal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'Label2
+        'DataSetPrincipalBindingSource
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(243, 153)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(67, 25)
-        Me.Label2.TabIndex = 38
-        Me.Label2.Text = "Buscar:"
+        Me.DataSetPrincipalBindingSource.DataSource = Me.DataSetPrincipal
+        Me.DataSetPrincipalBindingSource.Position = 0
         '
-        'Label4
+        'lblBeneficiosNoRegistrados
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(537, 153)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(100, 25)
-        Me.Label4.TabIndex = 40
-        Me.Label4.Text = "Buscar por:"
-        '
-        'btnEditar
-        '
-        Me.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEditar.Image = CType(resources.GetObject("btnEditar.Image"), System.Drawing.Image)
-        Me.btnEditar.Location = New System.Drawing.Point(1135, 293)
-        Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(55, 53)
-        Me.btnEditar.TabIndex = 41
-        Me.btnEditar.UseVisualStyleBackColor = True
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminar.Image = CType(resources.GetObject("btnEliminar.Image"), System.Drawing.Image)
-        Me.btnEliminar.Location = New System.Drawing.Point(1135, 366)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(55, 53)
-        Me.btnEliminar.TabIndex = 42
-        Me.btnEliminar.UseVisualStyleBackColor = True
-        '
-        'btnRegistrar
-        '
-        Me.btnRegistrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke
-        Me.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRegistrar.Image = CType(resources.GetObject("btnRegistrar.Image"), System.Drawing.Image)
-        Me.btnRegistrar.Location = New System.Drawing.Point(1135, 220)
-        Me.btnRegistrar.Name = "btnRegistrar"
-        Me.btnRegistrar.Size = New System.Drawing.Size(55, 53)
-        Me.btnRegistrar.TabIndex = 43
-        Me.btnRegistrar.UseVisualStyleBackColor = True
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(248, 220)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(871, 463)
-        Me.DataGridView1.TabIndex = 50
+        Me.lblBeneficiosNoRegistrados.Font = New System.Drawing.Font("Segoe UI Light", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBeneficiosNoRegistrados.Location = New System.Drawing.Point(443, 279)
+        Me.lblBeneficiosNoRegistrados.Name = "lblBeneficiosNoRegistrados"
+        Me.lblBeneficiosNoRegistrados.Size = New System.Drawing.Size(460, 158)
+        Me.lblBeneficiosNoRegistrados.TabIndex = 51
+        Me.lblBeneficiosNoRegistrados.Text = "No se encuentran beneficios registrados que coincidan con su búsqueda."
+        Me.lblBeneficiosNoRegistrados.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblBeneficiosNoRegistrados.Visible = False
         '
         'FrmMostrarBeneficios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1202, 720)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.lblBeneficiosNoRegistrados)
+        Me.Controls.Add(Me.dtgBeneficios)
+        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.btnRegistrar)
         Me.Controls.Add(Me.btnEliminar)
-        Me.Controls.Add(Me.btnEditar)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.btnModificar)
+        Me.Controls.Add(Me.gridMostrarAlumnos)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.cmbFiltroBusqueda)
         Me.Controls.Add(Me.txtBuscar)
-        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmMostrarBeneficios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "MostrarBeneficios"
         Me.Panel4.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridMostrarAlumnos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtgBeneficios, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSetPrincipal, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSetPrincipalBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents Button10 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
@@ -453,20 +509,17 @@ Partial Class FrmMostrarBeneficios
     Friend WithEvents btnInicio As System.Windows.Forms.Button
     Friend WithEvents btnAyuda As System.Windows.Forms.Button
     Friend WithEvents btnPerfil As System.Windows.Forms.Button
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
-    Friend WithEvents cmbFiltroBusqueda As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents btnVolver As System.Windows.Forms.Button
-    Friend WithEvents btnEditar As System.Windows.Forms.Button
-    Friend WithEvents btnEliminar As System.Windows.Forms.Button
+    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
+    Friend WithEvents gridMostrarAlumnos As System.Windows.Forms.DataGridView
     Friend WithEvents btnRegistrar As System.Windows.Forms.Button
-    Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button9 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents btnEliminar As System.Windows.Forms.Button
+    Friend WithEvents btnModificar As System.Windows.Forms.Button
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents btnVolver As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents dtgBeneficios As System.Windows.Forms.DataGridView
+    Friend WithEvents DataSetPrincipalBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DataSetPrincipal As UI.DataSetPrincipal
+    Friend WithEvents lblBeneficiosNoRegistrados As System.Windows.Forms.Label
 End Class

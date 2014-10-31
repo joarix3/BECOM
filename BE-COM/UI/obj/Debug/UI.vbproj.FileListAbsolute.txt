@@ -1,164 +1,100 @@
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmAcademico.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmConfigurarParametros.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPerfil.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarRol.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarBitacoraTransaccion.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarBitacoraErrores.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarAyuda.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarUsuarios.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPeriodo.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarBeneficio.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarPeriodo.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarPeriodos.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRequisito.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRol.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarUsuario.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.Resources.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopExportadoExitoso.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopAgregado.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopRecuperarContrasenna.resources
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.xml
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.dll
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.dll
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\itextsharp.dll
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\itextsharp.pdfa.dll
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.dll
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.pdb
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
-C:\Users\Mario\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.exe
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\UI1.xml
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\BLL.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\DAL.dll
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\BLL.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmAcademico.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarCarreras.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPeriodo.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarBeneficio.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarCarrera.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarPeriodo.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarPeriodos.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRequisito.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRol.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarUsuario.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.Resources.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopAgregado.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.exe
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.xml
-C:\Users\JuanManuel\Documents\BECOM\BECOM\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
-<<<<<<< HEAD
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.xml
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.dll
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.dll
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.dll
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.pdb
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmAcademico.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPeriodo.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarTiposDeBeca.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarBeneficio.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarPeriodo.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarPeriodos.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRequisito.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRol.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarUsuario.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.Resources.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopAgregado.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmConfigurarParametros.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPerfil.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarRol.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarBitacoraTransaccion.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarBitacoraErrores.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarAyuda.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarUsuarios.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopExportadoExitoso.resources
-C:\Users\Douglas\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopRecuperarContrasenna.resources
-=======
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmAcademico.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmInformacionCarrera.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmAsociarCursoCarrera.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarCursosPorCarrera.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarCurso.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarCarrera.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarCurso.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarCarrera.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarCurso.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmIniciarSesion.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMantenimientoUsuarios.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarRoles.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmModificarPeriodo.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarBeneficio.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarPeriodo.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarPeriodos.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmPantallaPrincipal.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRequisito.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarRol.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmRegistrarUsuario.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.Resources.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopEliminarCarrera.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopError.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopEliminarCurso.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopAgregado.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopFalloIngreso.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopIngresoAceptado.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.PopMenu.resources
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe.config
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.exe
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.pdb
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\UI1.xml
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.dll
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.dll
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.dll
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.pdb
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.exe
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.xml
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.pdb
-C:\Users\Mauricio Araica\Documents\BECOM\BE-COM\UI\obj\Debug\UI1.FrmMostrarCarreras.resources
->>>>>>> New
+C:\Users\dani\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.dll
+C:\Users\dani\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.dll
+C:\Users\dani\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.dll
+C:\Users\dani\Documents\BECOM\BE-COM\UI\bin\Debug\BLL.pdb
+C:\Users\dani\Documents\BECOM\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
+C:\Users\dani\Documents\BECOM\BE-COM\UI\bin\Debug\DAL.pdb
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\Interop.Accessibility.dll
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.ResolveComReference.cache
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
+C:\Users\dani\Documents\BECOM\BE-COM\UI\bin\Debug\UI.exe.config
+C:\Users\dani\Documents\BECOM\BE-COM\UI\bin\Debug\UI.exe
+C:\Users\dani\Documents\BECOM\BE-COM\UI\bin\Debug\UI.pdb
+C:\Users\dani\Documents\BECOM\BE-COM\UI\bin\Debug\UI.xml
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmAcademico.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmIniciarSesion.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmMantenimientoUsuarios.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmMostrarCarreras.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmMostrarHistorialAcademico.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmMostrarBeneficios.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmMostrarRoles.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmMostrarTiposDeBeca.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmPantallaPrincipal.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmRegistrarBeneficio.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmRegistrarRol.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.FrmRegistrarUsuario.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.Resources.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.PopAgregado.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.PopFalloIngreso.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.PopIngresoAceptado.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.PopMenu.resources
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.exe
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.xml
+C:\Users\dani\Documents\BECOM\BE-COM\UI\obj\Debug\UI.pdb
+C:\Users\dani\Desktop\BE-COM\UI\bin\Debug\UI.exe
+C:\Users\dani\Desktop\BE-COM\UI\bin\Debug\UI.exe.config
+C:\Users\dani\Desktop\BE-COM\UI\bin\Debug\UI.pdb
+C:\Users\dani\Desktop\BE-COM\UI\bin\Debug\UI.xml
+C:\Users\dani\Desktop\BE-COM\UI\bin\Debug\BLL.dll
+C:\Users\dani\Desktop\BE-COM\UI\bin\Debug\EntitiesLayer.dll
+C:\Users\dani\Desktop\BE-COM\UI\bin\Debug\DAL.dll
+C:\Users\dani\Desktop\BE-COM\UI\bin\Debug\BLL.pdb
+C:\Users\dani\Desktop\BE-COM\UI\bin\Debug\EntitiesLayer.pdb
+C:\Users\dani\Desktop\BE-COM\UI\bin\Debug\DAL.pdb
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\Interop.Accessibility.dll
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.vbproj.ResolveComReference.cache
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmAcademico.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmIniciarSesion.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmMantenimientoUsuarios.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmModificarBeneficio.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmModificarRequisito.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmMostrarCarreras.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmMostrarHistorialAcademico.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmMostrarRequisitos.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmMostrarRoles.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmMostrarTiposDeBeca.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmPantallaPrincipal.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmRegistrarBeneficio.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmRegistrarRequisito.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmRegistrarRol.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmRegistrarUsuario.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.FrmMostrarBeneficios.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.Resources.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.PopAgregado.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.PopFalloIngreso.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.PopIngresoAceptado.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.PopMenu.resources
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.exe
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.xml
+C:\Users\dani\Desktop\BE-COM\UI\obj\Debug\UI.pdb
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\bin\Debug\UI.exe.config
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\Interop.Accessibility.dll
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.vbproj.ResolveComReference.cache
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.exe
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.xml
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.pdb
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\bin\Debug\UI.exe
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\bin\Debug\UI.pdb
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\bin\Debug\UI.xml
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\bin\Debug\BLL.dll
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\bin\Debug\EntitiesLayer.dll
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\bin\Debug\DAL.dll
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\bin\Debug\BLL.pdb
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\bin\Debug\EntitiesLayer.pdb
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\bin\Debug\DAL.pdb
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.vbprojResolveAssemblyReference.cache
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.FrmModificarBeneficio.resources
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.FrmModificarRequisito.resources
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.FrmMostrarRequisitos.resources
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.FrmRegistrarBeneficio.resources
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.FrmRegistrarRequisito.resources
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.FrmMostrarBeneficios.resources
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.Resources.resources
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.PopAgregado.resources
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.PopFalloIngreso.resources
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.PopIngresoAceptado.resources
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.PopMenu.resources
+C:\Users\dani\Desktop\Versiones Daniel Maietta\BE-COM - V2\UI\obj\Debug\UI.vbproj.GenerateResource.Cache
